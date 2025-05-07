@@ -1,0 +1,53 @@
+	############################## giai đoạn thứ nhất nêu lên ##############################
+
+	#1: HIY Bạn có biết - Vé cường hóa 5 và vé cường hóa 7 có thể cường hóa trang bị lên 5 sao hoặc 7 sao ngay lập tức
+
+	1: HIY Ở trong trò chơi gặp được một ít Ác Bá chắn đường thì phải làm sao? Không cần lo lắng, ấn vào HIR 'F11' HIY thử xem ? ~
+
+	1: HIY Bạn có biết, sử dụng tổ hợp phím Ctr + (click chuột trái) vào người chơi để xem thông tin nhân vật.
+
+	1: HIY Vào ngày HIR thứ 3, thứ 5, thứ 7 và Chủ Nhật vào lúc 14 giờ - 16 giờ và 19 giờ - 22 giờ HIY Chiến tích sẽ được nhân đôi khi tham gia huyết chiến Trường Bình.
+
+	1: HIY Lúc đang cưỡi thú vẫn có thể tự động xạ kích hoặc công kích, cho dù là dịch chuyển sang bản đồ khác hoặc bị người khác tấn công vẫn không mất hiệu quả cưỡi thú.
+
+	1: HIY Vào ngày Thứ bảy và Chủ Nhật hàng tuần kinh nghiệm sẽ được nhân đôi khi giết quái vật !!!.
+
+	1: HIY [Lệnh Hỗ Trợ] Để xem hoạt động hôm nay gõ lệnh HIR /timeparty HIY hoặc xem tất cả hoạt động chính HIR /timeparty all
+
+	1: HIY [Lệnh Hỗ Trợ] Để xem phần thưởng mốc nạp dùng lệnh HIR /mocnap
+
+	1: HIY Đến NPC HIR Tiên Cô Thiên Sứ HIY để nhận quà mốc nạp tương ứng. (Tân thủ thôn 1 - 183,151).
+
+	1: HIY Bạn có biết - Khi mở Rương Tử Kim có cơ hội nhận được cánh hiếm - vĩnh viễn.
+	
+	1: HIY Lúc đang cưỡi thú vẫn có thể tự động xạ kích hoặc công kích, cho dù là dịch chuyển sang bản đồ khác hoặc bị người khác tấn công vẫn không mất hiệu quả cưỡi thú.
+	
+	1: HIY Vào ngày Thứ Sáu, Thứ bảy và Chủ Nhật hàng tuần kinh nghiệm sẽ được nhân đôi khi giết quái vật !!!
+	
+	1: HIY Sử dụng chuột phải kích vào nhân vật, sau đó trên ảnh chân dung của nhân vật đó sử dụng chuột phải, nhấp vào Mời Vào Nhóm là có thể xây dựng đội Nhóm rồi ~
+	
+	1: HIY Nhấn và giữ phím HIR Ctrl HIY tiếp đó nhấp HIR chuột trái HIY lên đối tượng, là có thể thấy được những thông tin cơ bản của đối tượng.
+
+	1: HIY Nhấn và giữ phím HIR Ctrl HIY tiếp đó nhấp HIR chuột phải HIY lên đối tượng, là có thể thấy được những trang bị đang mặc của đối tượng.
+
+	1: HIY Đè  HIR phím Alt HIR có thể phát hiện ra những vật phẩm bị che khuất trên mặt đất hoặc hiện rõ tên vật phẩm trong Cửa hàng, rất thuận tiện ~~
+		
+	1: HIY Tháp Cao Thủ có tất cả 10 tầng, đánh bại boss tầng bất kỳ bạn sẽ chiếm giữ và trở thành boss của tầng đó.
+	
+	1: HIY Tháp Cao Thủ - Chỉ số sức mạnh của boss sẽ tính toán dựa trên chỉ số sức mạnh của tên người giữ tầng hiện tại.
+	
+	900: HIY Trong Chiến Trường thông cấm sử dụng đạo cụ.
+
+	900: HIY Hệ thống chuyển đổi tự động Xu từ website vào game sẽ được thưởng thêm 25% tổng giá trị quy đổi.
+
+	900: HIY Trong Chiến Trường cứ cách 1 thời gian cố định đều xuất hiện Tay Sai ra HIR hiệp trợ tác chiến HIY .
+
+	900: HIY Mỗi lần xuất hiện 1 Tay Sai ra tác chiến, đều phải hao phí HIR 5 hai HIY bang phái tài chính.
+
+	900: HIY Nếu độ An Định cùng Nhân Khí của Bang phái đều bằng 0 thì Bang phái đó sẽ bị giải tán.
+
+	900: HIY Người chơi giúp tiêu diệt địch nhân trong Chiến Trường đều có thể nhận được kinh nghiệm.
+
+	900: HIY Bái phỏng Chấp chính NPC đều phải tiêu hao tài chính của Bang Phái.
+
+	900: HIY Mọi thắc mắc hỗ trợ vui lòng liên hệ Admin fanpage.

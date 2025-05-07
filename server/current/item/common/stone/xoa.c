@@ -1,0 +1,76 @@
+#include <item.h>
+#include <ansi.h>
+#include <equip.h>
+
+inherit ITEM;
+inherit "/inh/item/diamond";
+#define EQUIP "sys/item/equip"
+
+
+int get_level() { return 1; };
+int get_max_hole() { return 3; }
+int confirm_sell_item() { return 1; }
+int get_item_color() {return 1 ;}
+int is_add_hole() { return 1; }
+int is_specal_move() { return 1; }
+
+string get_diamond_type() { return "hole"; }
+
+void create()
+{
+        set_name("XOA");
+        set_real_name("Hole");
+        set_picid_1(6825);
+        set_picid_2(6825);
+        set_unit("块");
+        set_value(500);
+        set_level(1);
+}
+
+string get_desc() 
+{
+	return "Dụng cụ dùng để đục lỗ trang bị";
+}
+
+int move_item(object me, object item, object equip)
+{
+	return __FILE__->move_item_callout(me, item, equip, 1 );
+}
+
+int move_item2(object me, object item, object equip)
+{
+	return __FILE__->move_item_callout(me, item, equip, 2 );
+}
+
+int move_item_callout(object me, object item, object equip, int type)
+{
+	string result, forge;
+	object item2;
+	int i, p, level, rate, hole_number;	
+	
+	if( equip->is_equip()==0 && equip->get_real_name()!="Hole" )  return 0;
+	
+	if( equip->is_equip())
+	{
+		i=equip->get_equip_type();
+		if (i != WEAPON_TYPE && i != ARMOR_TYPE && i != HEAD_TYPE && i != BOOTS_TYPE && i != WAIST_TYPE && i != NECK_TYPE) {
+			return 0;
+		}
+	}
+	
+	if (type == 1)
+	{
+		equip->delete("hole");
+		//equip->delete("holeExp");
+		ITEM_EQUIP_D->reset_equip_prop_hole(equip);
+		write_user(me, ECHO "%s", equip->get("hole"));
+		write_user(me, ECHO "Số lỗ %d", EQUIP->get_hole_amount(equip));
+		write_user(me, ECHO "Số lỗ sử dụng %d", EQUIP->get_hole_used_amount(equip));
+
+		me->delete_save_2("HOLE");
+
+		send_user(me, "%c%d%c", 0x31, getoid(equip), 0);
+	}
+
+	return 1;
+}

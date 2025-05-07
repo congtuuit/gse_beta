@@ -1,0 +1,5 @@
+#/inh/user/list.c
+Effect ({})
+SaveDatabase ([])
+SaveDbase2 (["6":(["armorc":1107837448,"hair":1001,"back":0,"backc":0,"shape":11001,"back2":0,"name":"TESt","weaponc":0,"weapon":63,"number":4,"hairc":0,"family":"","armor":11001,"back2c":0,"weaponc2":0,"photo":1001,"gold":0,"level":0,]),"5":(["armorc":1107837448,"hair":1,"back":0,"backc":0,"shape":10001,"back2":0,"name":"111","weaponc":0,"weapon":63,"number":5,"hairc":0,"family":"","armor":10001,"back2c":0,"weaponc2":0,"photo":1,"gold":0,"level":0,]),"2":(["armorc":1107837448,"hair":1002,"back":0,"backc":0,"shape":11010,"back2":0,"name":"Thi_Huong","weaponc":0,"weapon":64,"number":2001,"hairc":0,"family":"","armor":11010,"back2c":0,"weaponc2":0,"photo":1001,"gold":0,"level":52,]),"1":(["armorc":1107837448,"hair":1001,"back":0,"backc":0,"shape":11001,"back2":0,"name":"123213","weaponc":0,"weapon":63,"number":1,"hairc":0,"family":"","armor":11001,"back2c":0,"weaponc2":0,"photo":1001,"gold":0,"level":10,]),])
+Owner "adm"

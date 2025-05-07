@@ -1,0 +1,1553 @@
+TASK_NEWBIE_00
+	1	接受百合仙子信件标志
+	2	Hoàn thành百合仙子送信任务
+	3	Chấp nhận nhiệm vụ tìm hiểu người mới trong làng
+	4	从武器店老板处获得木剑
+	5	Hoàn thành认识新手村任务
+	6	领取小试身手的任务
+	7	杀完稻草人
+	8	交接小试身手任务
+	9	拜访师爷(Nhận nhiệm vụ)
+	10	拜访师爷(Hoàn thành任务)
+	11	王捕头的美差(Nhận nhiệm vụ)
+	12	王捕头的美差(Hoàn thành任务)
+	13	找尉迟老镖头谈谈(Nhận nhiệm vụ)
+	14	找尉迟老镖头谈谈(Hoàn thành任务)
+	17	稻草人的脑袋(接受)
+	18	稻草人的脑袋(得到Đá Tinh Linh)
+	19	稻草人的脑袋(Hoàn thành)
+	20	Sư tử đá的问题
+TASK_NEWBIE_01
+	1	老村长的委托(接受)
+	2	老村长的委托(Hoàn thành)
+	3	合作事宜(接受)
+	4	合作事宜(Hoàn thành)
+	5	寻宝历险(接受)
+	6	寻宝历险(Hoàn thành)
+	7	家族玉佩(接受)
+	8	找到玉佩
+	9	家族玉佩(Hoàn thành)
+	10	探望病人(接受)
+	11	探望病人(Hoàn thành)
+	12	飞鸽传书(接受)
+	13	飞鸽传书(Hoàn thành)
+	14	修理店老板的铁锤(接受)
+	15	获得铁锤
+	16	修理店老板的铁锤(Hoàn thành)
+	17	破损的铁锹(接受)
+	18	破损的铁锹(Hoàn thành)
+	19	牛二报恩(接受)
+	20	牛二报恩(Hoàn thành)
+	21	牛二的苦恼(接受)
+	22	牛二的苦恼(Hoàn thành)
+	23	锻炼的机会(接受)
+	24	锻炼的机会(Hoàn thành)
+TASK_NEWBIE_02
+	1	Giao dịch(接受)
+	2	Giao dịch(获得火焰石)
+	3	Giao dịch(Hoàn thành)
+	4	讨厌的山鸡(接受)
+	5	杀死10只山鸡
+	6	讨厌的山鸡(Hoàn thành)
+	7	小鸡咕咕(接受)
+	8	得到饲料
+	9	小鸡咕咕(Hoàn thành)
+	10	智慧老人(接受)
+	11	智慧老人(Hoàn thành)
+	12	丢失的手镯(接受)
+	13	丢失的手镯(Hoàn thành)
+	14	惩治恶将(接受)
+	15	惩治恶将(消灭)
+	16	惩治恶将(Hoàn thành)
+	17	百步仙(接受)
+	18	Nguyên liệu thô để làm rượu(接受)
+	19	Nguyên liệu thô để làm rượu(获得)
+	20	Nguyên liệu thô để làm rượu(Hoàn thành)
+	21	百步仙(Hoàn thành)
+	22	夫妻间的争吵(接受)
+	23	夫妻间的争吵(Hoàn thành)
+	24	美味的蜜糖(接受)
+	25	美味的蜜糖(Hoàn thành)
+	26	乱蛰人的小蜜蜂(接受)
+	27	乱蛰人的小蜜蜂(Hoàn thành)
+	28	正义之战(接受)
+	29	正义之战(消灭)
+	30	正义之战(Hoàn thành)
+TASK_NEWBIE_03
+	1	取回货物(接受)
+	2	取回货物(Hoàn thành)
+	3	心上人的礼物(接受)
+	4	心上人的礼物(Hoàn thành)
+	5	消灭四脚蛇(接受)
+	6	消灭四脚蛇(Hoàn thành)
+	7	打造惊世之剑(接受)
+	8	打造惊世之剑(玄铁石)
+	9	打造惊世之剑(斑点狗)		
+	10	打造惊世之剑(Hoàn thành)
+	11	买椟还珠(楚国商人)
+	12	买椟还珠(楚国商人Hoàn thành)
+	13	买椟还珠(齐国商人)
+	14	买椟还珠(齐国商人Hoàn thành)
+	15	买椟还珠(公输班)
+	16	买椟还珠(公输班得到木头)
+	17	买椟还珠(公输班)
+	18	买椟还珠(公输班得到刨子)
+	19	木盒给齐国商人
+	20	孝顺的守卫
+	21	孝顺的守卫(Hoàn thành)
+	22	亡羊补牢1
+	23	亡羊补牢1
+	24	亡羊补牢2
+	25	亡羊补牢2
+	26	亡羊补牢3
+	27	亡羊补牢3(杀死NPC)
+	28	亡羊补牢3
+TASK_04
+	1	Kho bạc bị đánh cắp(领取)
+	2	Kho bạc bị đánh cắp(杀死NPC)
+	3	Kho bạc bị đánh cắp(Hoàn thành)
+	4	Những rắc rối của Cán bộ Nội vụ(领取)
+	5	Những rắc rối của Cán bộ Nội vụ(杀死NPC)
+	6	Những rắc rối của Cán bộ Nội vụ(Hoàn thành)
+	7	御使的烦恼(接受)
+	8	御使的烦恼(Hoàn thành)	
+	9	出使重任(接受)
+	10	出使重任(Hoàn thành)
+	11	宫廷的喧闹
+	12	宫廷的喧闹(Hoàn thành)
+	13	户籍密件
+	14	户籍密件(Hoàn thành)
+	15	神奇的彩衣
+	16	神奇的彩衣(Hoàn thành)
+	17	百姓的嘱托
+	18	百姓的嘱托(Hoàn thành)
+	19	工匠的苦恼
+	20	工匠的苦恼(Hoàn thành)
+	21	工匠的愿望
+	22	工匠的愿望(Hoàn thành)
+	23	Trừ gian diệt ác
+	24	Trừ gian diệt ác(杀死NPC)
+	25	Trừ gian diệt ác(Hoàn thành)
+	26	Truy bắt tội phạm
+	27	Truy bắt tội phạm(杀死NPC)
+	28	Truy bắt tội phạm(Hoàn thành)
+	29	将军之难
+	30	将军之难(Hoàn thành)
+TASK_05	
+	1	Giải cứu công tượng
+	2	Giải cứu công tượng(杀死NPC)
+	3	Giải cứu công tượng(Hoàn thành)
+	4	Bộ luật hình sự
+	5	Bộ luật hình sự
+	6	Bộ luật hình sự(Hoàn thành)
+	7	Đi vênh vang
+	8	Đi vênh vang(杀死NPC)
+	9	Đi vênh vang(Hoàn thành)
+	10	Đường mòn
+	11	Đường mòn
+	12	Đường mòn(Hoàn thành)
+	13	Huyền thoại bí ẩn
+	14	Huyền thoại bí ẩn
+	15	Huyền thoại bí ẩn(Hoàn thành)
+	16	Tính khí anh hùng
+	17	Tính khí anh hùng
+	18	Tính khí anh hùng(Hoàn thành)
+	19	Giấc mơ thợ may
+	20	Giấc mơ thợ may
+	21	Giấc mơ thợ may(Hoàn thành)
+	22	Kiếm Hồn		
+	23	Kiếm Hồn
+	24	Kiếm Hồn(Hoàn thành)
+	25	Quên lời thề	
+	26	Quên lời thề
+	27	Quên lời thề(Hoàn thành)
+	28	Tin đồn kho báu
+	29	Tin đồn kho báu
+	30	Tin đồn kho báu(Hoàn thành)
+TASK_06
+	1	Linh hồn khóc
+	2	Linh hồn khóc
+	3	Linh hồn khóc(Hoàn thành)
+	4	Tên cướp kiêu ngạo
+	5	Tên cướp kiêu ngạo
+	6	Tên cướp kiêu ngạo(Hoàn thành)
+	7	Giấc mơ anh hùng
+	8	Giấc mơ anh hùng
+	9	Giấc mơ anh hùng(Hoàn thành)
+	10	Giấc mơ xa
+	11	Giấc mơ xa
+	12	Giấc mơ xa(Hoàn thành)
+	13	Huyền thoại về hươu khổng lồ
+	14	Huyền thoại về hươu khổng lồ
+	15	Huyền thoại về hươu khổng lồ(Hoàn thành)
+	16	Tiếng vọng trong thung lũng
+	17	Tiếng vọng trong thung lũng
+	18	Tiếng vọng trong thung lũng(Hoàn thành)
+	19	Sự báo oán của các vị thần
+	20	Sự báo oán của các vị thần
+	21	Sự báo oán của các vị thần(Hoàn thành)
+	22	发绳
+	23	发绳
+	24	发绳(Hoàn thành)
+	25	Bọn trộm
+	26	Bọn trộm
+	27	Bọn trộm(Hoàn thành)
+	28	Trộm gà
+	29	Trộm gà
+	30	Trộm gà(Hoàn thành)
+TASK_07
+	1	好朋友
+	2	好朋友
+	3	好朋友(Hoàn thành)
+	4	去燕的盘缠
+	5	去燕的盘缠(Hoàn thành)
+	6	Hoa mẫu đơn
+	7	Hoa mẫu đơn
+	8	Hoa mẫu đơn(Hoàn thành)
+	9	返还盘缠(Hoàn thành)
+	10	Giấc mơ
+	11	Giấc mơ
+	12	Giấc mơ(Hoàn thành)
+	13	劫难之一
+	14	劫难之一
+	15	劫难之一(Hoàn thành)
+	16	劫难之二
+	17	劫难之二
+	18	劫难之二(Hoàn thành)
+	19	劫难之三
+	20	劫难之三
+	21	劫难之三(Hoàn thành)
+	22	Bữa tối cầu kỳ
+	23	Bữa tối cầu kỳ
+	24	Bữa tối cầu kỳ(Hoàn thành)
+	25	Ba lông
+	26	Ba lông
+	27	Ba lông(Hoàn thành)
+	28	唤醒记忆
+	29	唤醒记忆(Hoàn thành)	
+TASK_08
+	1	Quần áo bảo vệ
+	2	Quần áo bảo vệ
+	3	Quần áo bảo vệ(Hoàn thành)
+	4	Mảnh ghép thung lũng
+	5	Mảnh ghép thung lũng
+	6	Mảnh ghép thung lũng(Hoàn thành)
+	7	Truy tìm kho báu đầm lầy
+	8	Truy tìm kho báu đầm lầy
+	9	Truy tìm kho báu đầm lầy(Hoàn thành)
+	10	Đầm lầy
+	11	Đầm lầy
+	12	Đầm lầy(Hoàn thành)
+	13	Thiên thanh niên trên hồ
+	14	Thiên thanh niên trên hồ
+	15	Thiên thanh niên trên hồ(Hoàn thành)
+	16	Hào Quang Kim Long
+	17	Hào Quang Kim Long
+	18	Hào Quang Kim Long(Hoàn thành)
+	19	Lạc lối
+	20	Lạc lối
+	21	Lạc lối(Hoàn thành)
+	22	Câu thần chú của Đường Cangwu
+	23	Câu thần chú của Đường Cangwu
+	24	Câu thần chú của Đường Cangwu(Hoàn thành)
+	25	Lửa ma trong dung nham
+	26	Lửa ma trong dung nham
+	27	Lửa ma trong dung nham(Hoàn thành)
+	28	Kho báu ở thung lũng
+	29	Kho báu ở thung lũng
+	30	Kho báu ở thung lũng(Hoàn thành)
+TASK_09
+	1	Tiếng kêu dưới chân núi
+	2	Tiếng kêu dưới chân núi
+	3	Tiếng kêu dưới chân núi(Hoàn thành)
+	4	Vụ án đang chờ xử lý ở làng
+	5	Vụ án đang chờ xử lý ở làng
+	6	Vụ án đang chờ xử lý ở làng(Hoàn thành)
+	7	Bí mật của Châu Phi
+	8	Bí mật của Châu Phi
+	9	Bí mật của Châu Phi(Hoàn thành)
+	10	Máu ở làng
+	11	Máu ở làng
+	12	Máu ở làng(Hoàn thành)
+	13	Những gì còn lại
+	14	Những gì còn lại
+	15	Những gì còn lại(Hoàn thành)
+	16	Cháy rừng trên đường núi
+	17	Cháy rừng trên đường núi
+	18	Cháy rừng trên đường núi(Hoàn thành)
+	19	唇亡齿寒（1）
+	20	唇亡齿寒（1）(Hoàn thành)
+	21	唇亡齿寒（2）
+	22	唇亡齿寒（2）(Hoàn thành)
+	23	唇亡齿寒（3）
+	24	唇亡齿寒（3）
+	25	唇亡齿寒（3）(Hoàn thành)
+	26	唇亡齿寒（4）
+	27	唇亡齿寒（4）(Hoàn thành)
+	28	Hình phạt cho gian lận
+	29	Hình phạt cho gian lận
+	30	Hình phạt cho gian lận(Hoàn thành)
+TASK_10
+	1	带信给管仲（3）
+	2	带信给管仲（3）(Hoàn thành)
+	3	Yêu cầu rau quả
+	4	Yêu cầu rau quả
+	5	Yêu cầu rau quả(Hoàn thành)
+	6	带话给程风（2）
+	7	带话给程风（2）(Hoàn thành)
+	8	Bị mất đồ
+	9	Bị mất đồ
+	10	Bị mất đồ(Hoàn thành)
+	11	Kinh nghiệm kinh doanh
+	12	Kinh nghiệm kinh doanh
+	13	Kinh nghiệm kinh doanh(Hoàn thành)
+	14	Kế hoạch săn bắn
+	15	Kế hoạch săn bắn
+	16	Kế hoạch săn bắn(Hoàn thành)
+	17	Tìm kiếm công thức nấu ăn
+	18	Tìm kiếm công thức nấu ăn
+	19	Tìm kiếm công thức nấu ăn(Hoàn thành)
+	20	Chạy trốn
+	21	Chạy trốn
+	22	Chạy trốn(Hoàn thành)
+	23	Cuộc nổi dậy của lao động khổ sai
+	24	Cuộc nổi dậy của lao động khổ sai
+	25	Cuộc nổi dậy của lao động khổ sai(Hoàn thành)
+	26	Ngàn năm
+	27	Ngàn năm
+	28	Ngàn năm
+	29	兄弟情深
+	30	兄弟情深
+TASK_11
+	1	情锁秦宫（1）
+	2	情锁秦宫（1）
+	3	情锁秦宫（1）	
+	4	情锁秦宫（2）
+	5	情锁秦宫（2）
+	6	情锁秦宫（3）
+	7	情锁秦宫（3）
+	8	情锁秦宫（3）
+	9	情锁秦宫（4）
+	10	情锁秦宫（4）
+	11	Đá ma thuật
+	12	Đá ma thuật
+	13	Đá ma thuật
+	14	无奈的求助（1）
+	15	无奈的求助（1）
+	16	无奈的求助（2）
+	17	无奈的求助（2）
+	18	无奈的求助（2）
+	19	无奈的求助（3）
+	20	无奈的求助（3）
+	21	无奈的求助（3）	
+	22	无奈的求助（4）
+	23	无奈的求助（4）
+	24	Thử thách
+	25	Thử thách
+	26	Thử thách
+	27	Viên đá
+	28	Viên đá
+	29	Viên đá
+TASK_12
+	1	Ngọn gió của...
+	2	Ngọn gió của...
+	3	Ngọn gió của...
+	4	Tĩnh lặng như nước
+	5	Tĩnh lặng như nước
+	6	Tĩnh lặng như nước
+	7	Huyền thoại dòng sông
+	8	Huyền thoại dòng sông
+	9	Huyền thoại dòng sông
+	10	Dòng sông lớn
+	11	Dòng sông lớn
+	12	Dòng sông lớn
+	13	Những rắc rối
+	14	Những rắc rối
+	15	Những rắc rối
+	16	Giai thoại trong giấc mơ
+	17	Giai thoại trong giấc mơ
+	18	Giai thoại trong giấc mơ
+	19	Khóc ở nước Trịnh
+	20	Khóc ở nước Trịnh
+	21	Khóc ở nước Trịnh
+	22	Thần sông
+	23	Thần sông
+	24	Thần sông
+	25	Linh hồn của dòng sông
+	26	Linh hồn của dòng sông
+	27	Linh hồn của dòng sông
+	28	Các ý kiến ​​khác nhau
+	29	Các ý kiến ​​khác nhau
+	30	Các ý kiến ​​khác nhau	
+TASK_13
+	1	Bận tâm
+	2	Bận tâm
+	3	Bận tâm
+	4	Truyền thuyết về lụa lạnh
+	5	Truyền thuyết về lụa lạnh
+	6	Truyền thuyết về lụa lạnh
+	7	Lời tiên tri khủng khiếp
+	8	Lời tiên tri khủng khiếp
+	9	Lời tiên tri khủng khiếp
+	10	Huyền thoại về gương
+	11	Huyền thoại về gương
+	12	Huyền thoại về gương
+	13	Người lính vô song
+	14	Người lính vô song
+	15	Người lính vô song
+	16	山戎族奸细（1）
+	17	山戎族奸细（1）
+	18	山戎族奸细（1）
+	19	Gởi quốc tịch（2）
+	20	Gởi quốc tịch（2）
+	21	Gởi quốc tịch（2）
+	22	Tượng bùn
+	23	Tượng bùn
+	24	Tượng bùn
+	25	业务爱好
+	26	业务爱好
+	27	业务爱好
+	28	Nguy hiểm tìm ẩn
+	29	Nguy hiểm tìm ẩn
+	30	Nguy hiểm tìm ẩn
+TASK_14
+	1	Trả thù
+	2	Trả thù
+	3	Trả thù
+	4	珍贵的红宝石
+	5	珍贵的红宝石
+	6	珍贵的红宝石
+	7	浑仪（1）
+	8	浑仪（1）
+	9	浑仪（1）
+	10	浑仪（2）
+	11	浑仪（2）
+	12	浑仪（2）
+	13	浑仪（3）
+	14	浑仪（3）
+	15	Đàn nhị
+	16	Đàn nhị
+	17	Đàn nhị
+	18	Con gấu ngu ngốc
+	19	Con gấu ngu ngốc
+	20	Con gấu ngu ngốc
+	21	Nước mắt Vạn Lý Trường Thành
+	22	Nước mắt Vạn Lý Trường Thành
+	23	Nước mắt Vạn Lý Trường Thành
+	24	Những rắc rối của người hầu
+	25	Những rắc rối của người hầu
+	26	Những rắc rối của người hầu
+	27	Vạn Lý Trường Thành
+	28	Vạn Lý Trường Thành
+	29	Vạn Lý Trường Thành
+TASK_15
+	1	Bức tường vĩ đại
+	2	Bức tường vĩ đại
+	3	Bức tường vĩ đại
+	4	Rượu ngon
+	5	Rượu ngon
+	6	Rượu ngon
+	7	夫人的怪病（1）
+	8	夫人的怪病（1）
+	9	夫人的怪病（2）
+	10	夫人的怪病（2）
+	11	夫人的怪病（2）
+	12	夫人的怪病（3）
+	13	夫人的怪病（3）
+	14	夫人的怪病（3）
+	15	Cửa hàng trang sức
+	16	Cửa hàng trang sức
+	17	Cửa hàng trang sức
+	18	Người giàu có
+	19	Người giàu có
+	20	Người giàu có
+	21	Niềm vui thơ ấu
+	22	Niềm vui thơ ấu
+	23	Niềm vui thơ ấu
+	24	生产工具
+	25	生产工具
+	26	生产工具
+	27	除恶逞凶
+	28	除恶逞凶
+	29	除恶逞凶
+TASK_16
+	1	合伙做生意
+	2	合伙做生意
+	3	Chó đường phố
+	4	Chó đường phố
+	5	Chó đường phố
+	6	出使秦国
+	7	出使秦国
+	8	Thắt lưng buộc bụng
+	9	Thắt lưng buộc bụng
+	10	Thắt lưng buộc bụng
+	11	Với sự trừng phạt
+	12	Với sự trừng phạt
+	13	Với sự trừng phạt
+	14	Khóc trên Vạn Lý Trường Thành
+	15	Khóc trên Vạn Lý Trường Thành
+	16	Khóc trên Vạn Lý Trường Thành
+	17	Ma quỷ đang đến
+	18	Ma quỷ đang đến
+	19	Ma quỷ đang đến
+	20	Thức ăn
+	21	Thức ăn
+	22	Thức ăn
+	23	Truyền thuyết về quần áo thần
+	24	Truyền thuyết về quần áo thần
+	25	Truyền thuyết về quần áo thần
+	26	Một ngàn dặm đường đi bộ
+	27	Một ngàn dặm đường đi bộ
+	28	Một ngàn dặm đường đi bộ
+TASK_17
+	1	Hào quang trên bầu trời đêm
+	2	Hào quang trên bầu trời đêm
+	3	Hào quang trên bầu trời đêm
+	4	Âm thanh của bầu trời đêm
+	5	Âm thanh của bầu trời đêm
+	6	Âm thanh của bầu trời đêm
+	7	Vào nửa đêm
+	8	Vào nửa đêm
+	9	Vào nửa đêm
+	10	Khói trên đèn hiệu
+	11	Khói trên đèn hiệu
+	12	Khói trên đèn hiệu
+	13	Ánh sáng kì lạ
+	14	Ánh sáng kì lạ
+	15	Ánh sáng kì lạ
+	16	Than phiền cô đơn
+	17	Than phiền cô đơn
+	18	Than phiền cô đơn
+	19	Cuộc phiêu lưu
+	20	Cuộc phiêu lưu
+	21	Cuộc phiêu lưu
+	22	Huỳnh quang bí ẩn
+	23	Huỳnh quang bí ẩn
+	24	Huỳnh quang bí ẩn
+	25	Cướp nhà
+	26	Cướp nhà
+	27	Cướp nhà
+	28	Thông điệp
+	29	Thông điệp
+	30	Thông điệp
+TASK_18
+	1	Sự đau khổ của quản gia
+	2	Sự đau khổ của quản gia
+	3	Sự đau khổ của quản gia
+	4	Phản đồ
+	5	Phản đồ
+	6	Phản đồ
+	7	Báo động
+	8	Báo động
+	9	Báo động
+	10	Thật đáng tiếc
+	11	Thật đáng tiếc
+	12	Thật đáng tiếc
+	13	Pháo hoa trên Vạn Lý Trường Thành
+	14	Pháo hoa trên Vạn Lý Trường Thành
+	15	Pháo hoa trên Vạn Lý Trường Thành
+	16	大展神威（1）
+	17	大展神威（1）
+	18	大展神威（1）
+	19	大展神威（2）
+	20	大展神威（2）
+	21	大展神威（3）
+	22	大展神威（4）
+	23	大展神威（4）
+	24	大展神威（4）
+	25	大展神威（5）
+	26	大展神威（5）
+	27	大展神威（5）
+	28	贺礼
+	29	贺礼
+TASK_19
+	1	大葫芦（1）
+	2	大葫芦（1）
+	3	大葫芦（2）
+	4	大葫芦（2）
+	5	大葫芦（2）
+	6	大葫芦（3）
+	7	大葫芦（4）
+	8	大葫芦（4）
+	9	大葫芦（4）
+	10	大葫芦（5）
+	11	大葫芦（5）
+	12	大葫芦（5）
+	13	Kẻ phản bội
+	14	Kẻ phản bội
+	15	Kẻ phản bội
+	16	Rượu hảo hạng của Triệu
+	17	Rượu hảo hạng của Triệu
+	18	Rượu hảo hạng của Triệu
+	19	追捕逃犯
+	20	追捕逃犯
+	21	追捕逃犯
+	22	找吕不韦谈谈
+	23	找吕不韦谈谈
+	24	赵姬
+	25	赵姬
+	26	宝剑（3）
+	27	宝剑（3）
+	28	宝剑（3）
+	29	宝剑（4）
+	30	宝剑（4）
+TASK_20
+	1	Duyệt
+	2	Duyệt
+	3	Duyệt
+	4	Sát nhân
+	5	Sát nhân
+	6	Sát nhân
+	7	Rượu vang
+	8	Rượu vang
+	9	Rượu vang
+	10	重阳节（1）
+	11	重阳节（1）
+	12	重阳节（1）
+	13	重阳节（2）
+	14	重阳节（2）
+	15	重阳节（3）
+	16	重阳节（4）
+	17	重阳节（4）
+	18	重阳节（4）
+	19	修筑阿房宫1
+	20	修筑阿房宫1
+	21	修筑阿房宫2
+	22	修筑阿房宫2
+	23	修筑阿房宫2
+	24	修筑阿房宫3
+	25	修筑阿房宫3
+	26	修筑阿房宫3
+	27	修筑阿房宫4
+	28	修筑阿房宫4
+	29	修筑阿房宫4
+TASK_21
+	1	修筑阿房宫5
+	2	修筑阿房宫5
+	3	郦山之墓1
+	4	郦山之墓1
+	5	郦山之墓2
+	6	郦山之墓2
+	7	郦山之墓2
+	8	郦山之墓3
+	9	郦山之墓3
+	10	郦山之墓4
+	11	郦山之墓4
+	12	郦山之墓4
+	13	郦山之墓5
+	14	郦山之墓5
+	15	出使重任1
+	16	出使重任1
+	17	出使重任2
+	18	出使重任2
+	19	出使重任2
+	20	出使重任3
+	21	出使重任3
+	22	出使重任4
+	23	出使重任4
+	24	出使重任5
+	25	出使重任5
+	26	秦将蒙冤1
+	27	秦将蒙冤1
+	28	秦将蒙冤2
+	29	秦将蒙冤2
+	30	秦将蒙冤2
+TASK_22
+	1	秦将蒙冤3
+	2	秦将蒙冤3
+	3	秦将蒙冤4
+	4	秦将蒙冤4
+	5	秦将蒙冤5 
+	6	秦将蒙冤5 
+	7	秦将蒙冤5 
+	8	秦宫奇闻1
+	9	秦宫奇闻1
+	10	秦宫奇闻2
+	11	秦宫奇闻2
+	12	秦宫奇闻2
+	13	秦宫奇闻3
+	14	秦宫奇闻3
+	15	秦宫奇闻3
+	16	秦宫奇闻4
+	17	秦宫奇闻4
+	18	秦宫奇闻5
+	19	秦宫奇闻5
+	20	秦宫奇闻5
+	21	Gia vị nấu cá
+	22	Gia vị nấu cá
+	23	Gia vị nấu cá
+	24	Mồi câu vàng
+	25	Mồi câu vàng
+	26	Mồi câu vàng
+	27	Ma da
+	28	Ma da
+	29	Ma da
+TASK_23
+	1	Thảm họa rò rỉ
+	2	Thảm họa rò rỉ
+	3	Thảm họa rò rỉ
+	4	游魂（1）
+	5	游魂（1）
+	6	游魂（2）	
+	7	游魂（2）
+	8	游魂（3）
+	9	游魂（3）
+	10	游魂（3）
+	11	游魂（4）
+	12	游魂（4）
+	13	游魂（4）
+	14	游魂（5）
+	15	游魂（5）
+	16	游魂（5）
+	17	游魂（6）
+	18	游魂（6）
+	19	游魂（6）
+	20	游魂（7）
+	21	游魂（7）
+	22	Tình yêu（1）
+	23	Tình yêu（1）
+	24	Tình yêu（1）
+	25	Tình yêu（2）
+	26	Tình yêu（2）
+	27	Tình yêu（3）
+	28	Tình yêu（3）
+	29	Tình yêu（3）
+TASK_24
+	1	Tình yêu（4）
+	2	Tình yêu（4）
+	3	Tình yêu（4）
+	4	Ác ma trong lọ
+	5	Ác ma trong lọ
+	6	Ác ma trong lọ
+	7	Trà Jasmine（1）
+	8	Trà Jasmine（1）
+	9	Trà Jasmine（2）
+	10	Trà Jasmine（2）
+	11	Trà Jasmine（2）
+	12	Trà Jasmine（3）
+	13	Trà Jasmine（3）
+	14	Trà Jasmine（3）
+	15	Trà Jasmine（4）
+	16	Trà Jasmine（4）
+	17	Tìm kiếm con dấu chính thức
+	18	Tìm kiếm con dấu chính thức
+	19	Tìm kiếm con dấu chính thức
+	20	Chết tiệt
+	21	Chết tiệt
+	22	Chết tiệt
+	23	Chuẩn bị
+	24	Chuẩn bị
+	25	Chuẩn bị
+	26	Khám phá khủng khiếp
+	27	Khám phá khủng khiếp
+	28	Khám phá khủng khiếp
+	29	禀告齐王
+	30	禀告齐王
+TASK_25
+	1	Đòn quyết định
+	2	Đòn quyết định
+	3	Đòn quyết định
+	4	灵谷洞探密1
+	5	灵谷洞探密1
+	6	灵谷洞探密2
+	7	灵谷洞探密2
+	8	灵谷洞探密2
+	9	灵谷洞探密3
+	10	灵谷洞探密3
+	11	灵谷洞探密4
+	12	灵谷洞探密4
+	13	灵谷洞探密4
+	14	灵谷洞探密5
+	15	灵谷洞探密5
+	16	灵谷洞探密5
+	17	韩楚联盟1
+	18	韩楚联盟1
+	19	韩楚联盟2
+	20	韩楚联盟2
+	21	韩楚联盟2
+	22	韩楚联盟3
+	23	韩楚联盟3
+	24	韩楚联盟3
+	25	韩楚联盟4
+	26	韩楚联盟4
+	27	韩楚联盟5
+	28	韩楚联盟5
+	29	聂政刺韩傀1
+	30	聂政刺韩傀1
+TASK_26
+	1	聂政刺韩傀2
+	2	聂政刺韩傀2
+	3	聂政刺韩傀3
+	4	聂政刺韩傀3
+	5	聂政刺韩傀4
+	6	聂政刺韩傀4
+	7	聂政刺韩傀5
+	8	聂政刺韩傀5
+	9	聂政刺韩傀5
+	10	商人的悲哀1
+	11	商人的悲哀1
+	12	商人的悲哀2
+	13	商人的悲哀2
+	14	商人的悲哀3
+	15	商人的悲哀3
+	16	商人的悲哀3
+	17	商人的悲哀4
+	18	商人的悲哀4
+	19	商人的悲哀4
+	20	商人的悲哀5
+	21	商人的悲哀5
+	22	乐师的苦衷1
+	23	乐师的苦衷1
+	24	乐师的苦衷2
+	25	乐师的苦衷2
+	26	乐师的苦衷3
+	27	乐师的苦衷3
+	28	乐师的苦衷3
+	29	乐师的苦衷5
+	30	乐师的苦衷5
+TASK_27
+	1	乐师的苦衷4
+	2	乐师的苦衷4
+	3	乐师的苦衷4
+	4	Bảo vệ người chết
+	5	Bảo vệ người chết
+	6	Bảo vệ người chết
+	7	Bộ xương trong thảm sát
+	8	Bộ xương trong thảm sát
+	9	Bộ xương trong thảm sát
+	10	燕王好珍玩（1）
+	11	燕王好珍玩（1）
+	12	燕王好珍玩（2）
+	13	燕王好珍玩（2）
+	14	燕王好珍玩（2）
+	15	Yên Vương rất thích vàng（3）
+	16	Yên Vương rất thích vàng（4）
+	17	Yên Vương rất thích vàng（4）
+	18	Yên Vương rất thích vàng（4）
+	19	Tham quan hang động
+	20	Tham quan hang động
+	21	Tham quan hang động
+	22	Bảo vệ hối hận
+	23	Bảo vệ hối hận
+	24	Bảo vệ hối hận
+	25	Chờ và xem
+	26	Chờ và xem
+	27	Chờ và xem
+	28	Kiến
+	29	Kiến
+	30	Kiến
+TASK_28	
+	1	雕刻
+	2	雕刻
+	3	雕刻
+	4	Sâu trong đồng cỏ
+	5	Sâu trong đồng cỏ
+	6	Sâu trong đồng cỏ
+	7	木箱的秘密（1）
+	8	木箱的秘密（1）
+	9	木箱的秘密（1）
+	10	木箱的秘密（2）
+	11	木箱的秘密（2）
+	12	木箱的秘密（3）
+	13	木箱的秘密（3）
+	14	木箱的秘密（4）
+	15	木箱的秘密（4）
+	16	木箱的秘密（4）
+	17	Không ngừng
+	18	Không ngừng
+	19	Không ngừng
+	20	Trận chiến cuối cùng
+	21	Trận chiến cuối cùng
+	22	Trận chiến cuối cùng
+	23	Ngọc ở mộ cổ
+	24	Ngọc ở mộ cổ
+	25	Ngọc ở mộ cổ
+	26	Bằng chứng sức mạnh（1）
+	27	Bằng chứng sức mạnh（1）
+	28	Bằng chứng sức mạnh（1）
+	29	询问原因
+	30	询问原因
+TASK_29	
+	1	秘密行动
+	2	秘密行动
+	3	秘密行动
+	4	Cứu mọi người khỏi nguy hiểm
+	5	Cứu mọi người khỏi nguy hiểm
+	6	Cứu mọi người khỏi nguy hiểm
+	7	Sư tử đá
+	8	Sư tử đá
+	9	Sư tử đá
+	10	Điều kiện của bọn bắt cóc
+	11	Điều kiện của bọn bắt cóc
+	12	Điều kiện của bọn bắt cóc
+	13	Điều kiện để làm bảo vệ
+	14	Điều kiện để làm bảo vệ
+	15	Điều kiện để làm bảo vệ
+	16	打听消息
+	17	打听消息
+	18	Làm bài kiểm tra
+	19	Làm bài kiểm tra
+	20	Làm bài kiểm tra
+	21	水落石出
+	22	水落石出
+	23	Tìm kiếm kho báu
+	24	Tìm kiếm kho báu
+	25	Tìm kiếm kho báu
+	26	探访将军
+	27	探访将军
+	28	Tự kiểm tra
+	29	Tự kiểm tra
+	30	Tự kiểm tra
+TASK_30
+	1	将军信函
+	2	将军信函
+	3	民间探访
+	4	民间探访
+	5	Mất và phục hồi
+	6	Mất và phục hồi
+	7	Mất và phục hồi
+	8	询查原因
+	9	询查原因
+	10	明辨是非
+	11	明辨是非
+	12	Xác định đối thủ
+	13	Xác định đối thủ
+	14	Xác định đối thủ
+	15	Diệt trừ cái ác
+	16	Diệt trừ cái ác
+	17	Diệt trừ cái ác
+	18	驯服恶霸
+	19	驯服恶霸
+	20	深入民间
+	21	深入民间
+	22	商人诉苦
+	23	商人诉苦
+	24	Đơn độc trong mộ cổ
+	25	Đơn độc trong mộ cổ
+	26	Đơn độc trong mộ cổ
+	27	Tống khứ bọn cướp đi
+	28	Tống khứ bọn cướp đi
+	29	Tống khứ bọn cướp đi
+TASK_31
+	1	询问小贩
+	2	询问小贩
+	3	Nghi ngờ
+	4	Nghi ngờ
+	5	Nghi ngờ
+	6	Thoát khỏi kẻ bắt nạt
+	7	Thoát khỏi kẻ bắt nạt
+	8	Thoát khỏi kẻ bắt nạt
+	9	告知内政官
+	10	告知内政官
+	11	通告百姓
+	12	通告百姓
+	13	Truy nã
+	14	Truy nã
+	15	Truy nã
+	16	秘密（1）
+	17	秘密（1）
+	18	秘密（2）
+	19	秘密（2）
+	20	秘密（2）
+	21	秘密（3）
+	22	秘密（3）
+	23	秘密（3）
+	24	秘密（4）
+	25	秘密（4）
+	26	秘密（4）
+	27	Hỗ trợ
+	28	Hỗ trợ
+	29	Hỗ trợ
+TASK_32	
+	1	Dao đơn
+	2	Dao đơn
+	3	Dao đơn
+	4	Việc vặt（1）
+	5	Việc vặt（1）
+	6	Việc vặt（2）
+	7	Việc vặt（2）
+	8	Việc vặt（2）	
+	9	论语
+	10	论语
+	11	Xóa bỏ linh hồn
+	12	Xóa bỏ linh hồn
+	13	Xóa bỏ linh hồn
+	14	Thu thập táo tàu
+	15	Thu thập táo tàu
+	16	Thu thập táo tàu
+	17	Sức mạnh của trụy lạc
+	18	Sức mạnh của trụy lạc
+	19	Sức mạnh của trụy lạc
+	20	Nguồn gốc của tội lỗi
+	21	Nguồn gốc của tội lỗi
+	22	Nguồn gốc của tội lỗi
+	23	Giết nó
+	24	Giết nó
+	25	Giết nó
+	26	祖父的遗产（1）
+	27	祖父的遗产（1）
+	28	祖父的遗产（1）
+	29	祖父的遗产（2）
+	30	祖父的遗产（2）
+TASK_33
+	1	祖父的遗产（3）
+	2	祖父的遗产（3）
+	3	祖父的遗产（3）
+	4	祖父的遗产（4）
+	5	祖父的遗产（4）
+	6	祖父的遗产（4）
+	7	Cơ thể bận rộn
+	8	Cơ thể bận rộn
+	9	Cơ thể bận rộn
+	10	Trà Quan Vũ
+	11	Trà Quan Vũ
+	12	Trà Quan Vũ
+	13	Hoa hồng
+	14	Hoa hồng
+	15	Hoa hồng
+	16	Trừng phạt Lương Thiệu
+	17	Trừng phạt Lương Thiệu		
+	18	Trừng phạt Lương Thiệu
+	19	Giữ khoảng cách
+	20	Giữ khoảng cách
+	21	Giữ khoảng cách
+	22	Từ thực phẩm
+	23	Từ thực phẩm
+	24	Từ thực phẩm
+	25	打探消息（紫云传说）
+	26	打探消息
+	27	Bằng chứng sức mạnh
+	28	Bằng chứng sức mạnh
+	29	Bằng chứng sức mạnh
+TASK_34
+	1	Chấp nhận yêu cầu
+	2	Chấp nhận yêu cầu
+	3	Chấp nhận yêu cầu
+	4	寻宝历险
+	5	寻宝历险		
+	6	寻宝历险
+	7	魏国百姓
+	8	魏国百姓
+	9	了解情况(玄真解迷)
+	10	了解情况
+	11	Chứng minh bản thân
+	12	Chứng minh bản thân
+	13	Chứng minh bản thân
+	14	Loại bỏ tên dối trá
+	15	Loại bỏ tên dối trá
+	16	Loại bỏ tên dối trá
+	17	官府备案
+	18	官府备案
+	19	奏请王命
+	20	奏请王命
+	21	姻缘之路1
+	22	姻缘之路1
+	23	姻缘之路2
+	24	姻缘之路2
+	25	姻缘之路3
+	26	姻缘之路3
+	27	姻缘之路3
+	28	姻缘之路4
+	29	姻缘之路4
+	30	姻缘之路4
+TASK_35	
+	1	姻缘之路5
+	2	姻缘之路5
+	3	探访奇事
+	4	探访奇事
+	5	询问情况
+	6	询问情况
+	7	Thử kỹ năng của bạn
+	8	Thử kỹ năng của bạn
+	9	Thử kỹ năng của bạn
+	10	Đuổi theo bọn cướp
+	11	Đuổi theo bọn cướp
+	12	Đuổi theo bọn cướp
+	13	解除奇事
+	14	解除奇事
+	15	探明原因
+	16	探明原因
+	17	Dũng cảm đột nhập vào hang động
+	18	Dũng cảm đột nhập vào hang động
+	19	Dũng cảm đột nhập vào hang động
+	20	Giải quyết nguồn gốc của thảm họa
+	21	Giải quyết nguồn gốc của thảm họa
+	22	Giải quyết nguồn gốc của thảm họa
+	23	通报情况
+	24	通报情况
+	25	禀告魏王
+	26	禀告魏王
+	27	Ác ma trong lọ Tiên trong nồi
+	28	Ác ma trong lọ Tiên trong nồi
+	29	Ác ma trong lọ Tiên trong nồi
+TASK_36	
+	1	完美宝石（1）
+	2	完美宝石（1）
+	3	完美宝石（2）
+	4	完美宝石（2）
+	5	完美宝石（2）
+	6	完美宝石（3）
+	7	完美宝石（3）
+	8	完美宝石（3）
+	9	完美宝石（4）
+	10	完美宝石（4）
+	11	Không sợ
+	12	Không sợ
+	13	Không sợ
+	14	Bệnh dịch
+	15	Bệnh dịch
+	16	Bệnh dịch
+	17	Niết bàn
+	18	Niết bàn
+	19	Niết bàn
+	20	Cuộc thám hiểm
+	21	Cuộc thám hiểm
+	22	Cuộc thám hiểm
+	23	Kẻ phản bội
+	24	Kẻ phản bội
+	25	Kẻ phản bội
+	26	Nổi loạn của Kỳ
+	27	Nổi loạn của Kỳ
+	28	Nổi loạn của Kỳ
+	29	Tiểu Đồ（2）
+	30	Tiểu Đồ（2）
+TASK_37
+	1	Đột phá hệ tầng Thiên Môn
+	2	Đột phá hệ tầng Thiên Môn
+	3	Đột phá hệ tầng Thiên Môn
+	4	Tiểu Đồ（1）
+	5	Tiểu Đồ（1）
+	6	Tiểu Đồ（1）
+	7	Tiểu Đồ（3）
+	8	Tiểu Đồ（3）
+	9	Tiểu Đồ（3）
+	10	Tiểu Đồ（4）
+	11	Tiểu Đồ（4）
+	12	Tiểu Đồ（4）
+	13	门派向导的恩怨
+	14	门派向导的恩怨
+	15	收购珠宝
+	16	收购珠宝
+	17	韩总管的帮助
+	18	韩总管的帮助
+	19	崔大官人的请柬
+	20	崔大官人的请柬
+	21	家庭聚会
+	22	家庭聚会
+	23	临终委托
+	24	临终委托
+	25	带口信给齐国使节
+	26	带口信给齐国使节
+	27	种庄稼的锄头
+	28	种庄稼的锄头
+	29	交换心得
+	30	交换心得
+TASK_38
+	1	紫葡萄
+	2	紫葡萄
+	3	丢失的夜明珠
+	4	丢失的夜明珠
+	5	打造武器
+	6	打造武器
+	7	韩总管的托付
+	8	韩总管的托付
+	9	助人为乐
+	10	助人为乐
+	11	答谢
+	12	答谢
+	13	身世之谜
+	14	身世之谜
+	15	弟弟的问候
+	16	弟弟的问候
+	17	询问价格
+	18	询问价格
+	19	遗忘的佩剑
+	20	遗忘的佩剑
+	21	换份工作
+	22	换份工作
+	23	讨好
+	24	讨好
+	25	Thử thách
+	26	Thử thách
+	27	恩怨
+	28	恩怨
+	29	挖掘人才
+	30	挖掘人才
+TASK_39	
+	1	求份差事
+	2	求份差事
+	3	嘱托之事
+	4	嘱托之事
+	5	手巧的工匠
+	6	手巧的工匠
+	7	交好
+	8	交好
+	9	心愿
+	10	心愿
+	11	Kiểm soát số lượng
+	12	Kiểm soát số lượng
+	13	Kiểm soát số lượng
+	14	Điểm mấu chốt（1）
+	15	Điểm mấu chốt（1）
+	16	Điểm mấu chốt（1）
+	17	Điểm mấu chốt（2）
+	18	Điểm mấu chốt（2）
+	19	Điểm mấu chốt（2）
+	20	Điểm mấu chốt（3）
+	21	Điểm mấu chốt（3）
+	22	Điểm mấu chốt（3）
+	23	四面楚歌（1）
+	24	四面楚歌（1）
+	25	四面楚歌（2）
+	26	四面楚歌（2）
+	27	四面楚歌（2）
+	28	四面楚歌（4）
+	29	四面楚歌（4）
+	30	四面楚歌（4）
+TASK_40	
+	1	四面楚歌（3）
+	2	四面楚歌（3）
+	3	四面楚歌（5）
+	4	四面楚歌（5）
+	5	建帮的号角
+	6	建帮的号角
+	7	丢失的竹简
+	8	丢失的竹简
+	9	丢失的竹简
+	10	金色牛角
+	11	金色牛角
+	12	金色牛角
+	13	寻求王爷的帮助
+	14	寻求王爷的帮助
+	15	王之号角的雕琢
+	16	王之号角的雕琢
+	17	Rèn luyện bản thân
+	18	Rèn luyện bản thân
+	19	Rèn luyện bản thân
+	20	孤独
+	21	孤独
+	22	食物的来源
+	23	食物的来源
+	24	Đau đầu（1）
+	25	Đau đầu（1）
+	26	Đau đầu（2）
+	27	Đau đầu（2）
+	28	Đau đầu（2）
+	29	Đau đầu（3）
+TASK_41
+	1	Niệm chú lên con người
+	2	Niệm chú lên con người
+	3	Niệm chú lên con người
+	4	Rất nhiều bệnh khác nhau（1）
+	5	Rất nhiều bệnh khác nhau（1）
+	6	Rất nhiều bệnh khác nhau（2）
+	7	Rất nhiều bệnh khác nhau（2）
+	8	Rất nhiều bệnh khác nhau（2）
+	9	Rất nhiều bệnh khác nhau（3）
+	10	Rất nhiều bệnh khác nhau（3）
+	11	运箱子
+	12	运箱子
+	13	Trang trí nhà cửa
+	14	Trang trí nhà cửa
+	15	Trang trí nhà cửa
+	16	天门奇阵1
+	17	天门奇阵1
+	18	天门奇阵2
+	19	天门奇阵2
+	20	天门奇阵3
+	21	天门奇阵3
+	22	天门奇阵3
+	23	天门奇阵4
+	24	天门奇阵4
+	25	天门奇阵4
+	26	天门奇阵5
+	27	天门奇阵5
+	28	紧急战报4
+	29	紧急战报4
+	30	紧急战报4
+TASK_42
+	1	紧急战报1
+	2	紧急战报1
+	3	紧急战报2
+	4	紧急战报2
+	5	紧急战报3
+	6	紧急战报3
+	7	紧急战报5
+	8	紧急战报5
+	9	紧急战报5
+	10	巡城危机1
+	11	巡城危机1
+	12	巡城危机2
+	13	巡城危机2
+	14	巡城危机2
+	15	巡城危机3
+	16	巡城危机3
+	17	巡城危机3
+	18	巡城危机4
+	19	巡城危机4
+	20	巡城危机4
+	21	巡城危机5
+	22	巡城危机5
+	23	施行仁政1
+	24	施行仁政1
+	25	施行仁政2
+	26	施行仁政2
+	27	施行仁政2
+	28	施行仁政4
+	29	施行仁政4
+	30	施行仁政4
+TASK_43
+	1	施行仁政3
+	2	施行仁政3
+	3	施行仁政5
+	4	施行仁政5
+	5	城郊之迷1
+	6	城郊之迷1
+	7	城郊之迷2
+	8	城郊之迷2
+	9	城郊之迷3
+	10	城郊之迷3
+	11	城郊之迷3
+	12	城郊之迷4
+	13	城郊之迷4
+	14	城郊之迷4
+	15	城郊之迷5
+	16	城郊之迷5
+	17	Sự giúp đỡ của bạn bè
+	18	Sự giúp đỡ của bạn bè
+	19	Sự giúp đỡ của bạn bè
+	20	Nguồn cung cấp doanh trại
+	21	Nguồn cung cấp doanh trại
+	22	Nguồn cung cấp doanh trại
+	23	Bóng tối trước bình minh
+	24	Bóng tối trước bình minh
+	25	Bóng tối trước bình minh
+	26	Biểu tượng quyền lực
+	27	Biểu tượng quyền lực
+	28	Biểu tượng quyền lực
+TASK_44
+	1	Bóng tối bao trùm chúng ta
+	2	Bóng tối bao trùm chúng ta
+	3	Bóng tối bao trùm chúng ta
+	4	Giường đẹp（1）
+	5	Giường đẹp（1）
+	6	Giường đẹp（1）
+	7	Giường đẹp（2）
+	8	Giường đẹp（2）
+	9	Giường đẹp（2）
+	10	Giường đẹp（3）
+	11	Giường đẹp（3）
+	12	Giường đẹp（3）
+	13	Tư vấn nhiệt tình（1）
+	14	Tư vấn nhiệt tình（1）
+	15	Tư vấn nhiệt tình（1）
+	16	Tư vấn nhiệt tình（2）
+	17	Tư vấn nhiệt tình（2）
+	18	Tư vấn nhiệt tình（3）
+	19	Tư vấn nhiệt tình（3）
+	20	Tư vấn nhiệt tình（3）
+	21	Tư vấn nhiệt tình（4）
+	22	Tư vấn nhiệt tình（4）
+	23	Tư vấn nhiệt tình（4）
+	24	Ấm và lạnh（1）
+	25	Ấm và lạnh（1）
+	26	Ấm và lạnh（1）
+	27	Ấm và lạnh（2）
+	28	Ấm và lạnh（2）
+	29	Ấm và lạnh（2）
+TASK_45
+	1	Ấm và lạnh（3）
+	2	Ấm và lạnh（3）
+	3	Ấm và lạnh（3）
+	4	Đông cứng
+	5	Đông cứng
+	6	Đông cứng
+	7	Vinh quang tối cao（1）
+	8	Vinh quang tối cao（1）
+	9	Vinh quang tối cao（1）
+	10	Vinh quang tối cao（2）
+	11	Vinh quang tối cao（2）
+	12	Vinh quang tối cao（2）
+	13	Vinh quang tối cao（3）
+	14	Vinh quang tối cao（3）
+	15	Được mọi người ngưỡng mộ
+	16	Được mọi người ngưỡng mộ
+	17	Được mọi người ngưỡng mộ
+	18	Theo y tế （1）
+	19	Theo y tế （1）
+	20	Theo y tế （1）
+	21	Theo y tế （2）
+	22	Theo y tế （2）
+	23	Theo y tế （3）
+	24	Theo y tế （3）
+	25	Theo y tế （3）
+	26	Theo y tế （4）
+	27	Theo y tế （4）
+	28	Theo y tế （4）
+	29	Theo y tế （5）
+	30	Theo y tế （5）
+TASK_46
+	1	刀魂传说1
+	2	刀魂传说1
+	3	刀魂传说2
+	4	刀魂传说2
+	5	刀魂传说2
+	6	刀魂传说3
+	7	刀魂传说3
+	8	刀魂传说4
+	9	刀魂传说4
+	10	刀魂传说4
+	11	刀魂传说5
+	12	刀魂传说5
+	13	平阳之乱1
+	14	平阳之乱1
+	15	平阳之乱2
+	16	平阳之乱2
+	17	平阳之乱2
+	18	平阳之乱3
+	19	平阳之乱3
+	20	平阳之乱3
+	21	平阳之乱4
+	22	平阳之乱4
+	23	平阳之乱4
+	24	平阳之乱5
+	25	平阳之乱5
+	26	炼药之路1
+	27	炼药之路1
+	28	炼药之路2
+	29	炼药之路2
+	30	炼药之路2
+TASK_47
+	1	炼药之路3
+	2	炼药之路3
+	3	炼药之路4
+	4	炼药之路4
+	5	炼药之路4
+	6	炼药之路5
+	7	炼药之路5
+	8	破除谣言1
+	9	破除谣言1
+	10	破除谣言2
+	11	破除谣言2
+	12	破除谣言3
+	13	破除谣言3
+	14	破除谣言3
+	15	破除谣言4
+	16	破除谣言4
+	17	破除谣言5
+	18	破除谣言5
+	19	索取神剑1
+	20	索取神剑1
+	21	索取神剑2
+	22	索取神剑2
+	23	索取神剑3
+	24	索取神剑3
+	25	索取神剑3
+	26	索取神剑4
+	27	索取神剑4
+	28	索取神剑4
+	29	索取神剑5
+	30	索取神剑5
+TASK_48
+	1	小试身手1
+	2	小试身手2
+	3	小试身手3
+	4	合作事宜1
+	5	合作事宜2
+	6	寻宝历险1
+	7	寻宝历险2
+	8	家族玉佩1
+	9	家族玉佩2
+	10	家族玉佩3
+	11	探望病人1
+	12	探望病人2
+	13	飞鸽传书1
+	14	飞鸽传书2
+	15	修理店老板的铁锤1
+	16	修理店老板的铁锤2
+	17	修理店老板的铁锤3
+	18	Niệm chú lên con người1
+	19	Niệm chú lên con người2
+	20	Niệm chú lên con người3
+	21	Rất nhiều bệnh khác nhau（1）1
+	22	Rất nhiều bệnh khác nhau（1）2
+	23	Rất nhiều bệnh khác nhau（2）1
+	24	Rất nhiều bệnh khác nhau（2）2
+	25	Rất nhiều bệnh khác nhau（2）3
+	26	Rất nhiều bệnh khác nhau（3）1
+	27	Rất nhiều bệnh khác nhau（3）2
+	28	Trang trí nhà cửa1
+	29	Trang trí nhà cửa2
+	30	Trang trí nhà cửa3	
+TASK_49
+	1	Đau đầu（1）1
+	2	Đau đầu（1）2
+	3	Đau đầu（2）1
+	4	Đau đầu（2）2
+	5	Đau đầu（3）
+	6	Giao dịch1
+	7	Giao dịch2
+	8	Giao dịch3
+	9	丢失的手镯1
+	10	丢失的手镯2
+	11	门派向导的恩怨1
+	12	门派向导的恩怨2
+	13	试运镖任务1
+	14	试运镖任务2
+	15	蚂蚁的烦恼
+	16	蚂蚁的烦恼
+	17	蚂蚁的烦恼
+	18	Một con thỏ nhỏ
+	19	Một con thỏ nhỏ
+	20	Một con thỏ nhỏ
+	21	Hãy loại bỏ Bù nhìn
+	22	Hãy loại bỏ Bù nhìn
+	23	Hãy loại bỏ Bù nhìn
+	24	Khó khăn
+	25	Khó khăn
+	26	Khó khăn
+TASK_2_00	
+	1	Tiêu diệt lực lượng nổi loạn
+	2	Tiêu diệt lực lượng nổi loạn
+	3	Tiêu diệt lực lượng nổi loạn
+	4	Tên đầu bếp xấu xa
+	5	Tên đầu bếp xấu xa
+	6	Tên đầu bếp xấu xa
+	7	Hồn ma
+	8	Hồn ma
+	9	Hồn ma
+	10	王捕头的美差(新)
+	11	王捕头的美差(新)
+	12	拜访师爷(新)
+	13	拜访师爷(新)
+	14	拜访尉迟老镖头(新)
+	15	拜访尉迟老镖头(新)
+	16	拜访左丘明
+	17	拜访左丘明
+	18	拜访周王
+	19	拜访周王
+	20	Thăm viếng công tượng kỹ năng sống
+	21	Thăm viếng công tượng kỹ năng sống
+	22	Thăm viếng công tượng kỹ năng sống
+	23	Thăm viếng Chu
+	24	Thăm viếng Chu
+	25	Thăm viếng Chu
+	26	给楚管家的口信
+	27	给楚管家的口信
+	28	Phá hoại（副本）
+	29	Phá hoại（副本）
+	30	Phá hoại（副本）
+TASK_2_01	
+	1	Sự trở lại của linh hồn
+	2	Sự trở lại của linh hồn
+	3	Sự trở lại của linh hồn
+	4	Bản đồ bí mật（副本）
+	5	Bản đồ bí mật（副本）
+	6	Bản đồ bí mật（副本）
+	7	Tìm kiếm họ hàng xa（副本）
+	8	Tìm kiếm họ hàng xa（副本）
+	9	Tìm kiếm họ hàng xa（副本）
+	10	Thu thập các thành phần（副本）
+	11	Thu thập các thành phần（副本）
+	12	Thu thập các thành phần（副本）
+	

@@ -1,0 +1,35 @@
+
+#include <equip.h>
+
+inherit WEAPON;
+
+// 函数：构造处理
+void create()
+{
+        set_name("Côn Ngô Kiếm");
+        set_picid_1(7305);
+        set_picid_2(7305);
+        set_unit("柄");
+
+        set_level(50);
+        set_value(12000);
+        set_max_lasting(13599);
+        set("ap+", 600);
+		set("cp+", 600);
+		set("!%+", 10000);
+        set("c!%+", 100);
+		set_item_color(2);
+
+        setup();
+
+        set_weapon_type(SWORD);
+}
+
+// 函数：获取武器级别
+int get_weapon_level() { return 5; }
+
+// 函数：获取描述
+string get_desc()
+{
+        return "Trang bị “Kiếm Pháp”";
+}

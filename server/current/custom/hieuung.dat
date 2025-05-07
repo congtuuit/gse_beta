@@ -1,0 +1,158 @@
+﻿
+//Vong lua
+//pf += ({ 51313, 1, UNDER_FOOT });
+
+//Khoi vang
+//pf += ({ 59111, 1, UNDER_FOOT }); 
+
+//title
+//pf += ({ 41322, 1, UNDER_FOOT });
+
+//hieu ung tuyet xanh
+//pf += ({ 40812, 1, UNDER_FOOT });
+
+//vong chu to Ba vuong
+//pf += ({ 21152, 1, UNDER_FOOT });
+
+//vong chu I nho lag
+//pf += ({ 36321, 1, UNDER_FOOT });
+
+//vong ba vuong no CVQ
+//pf += ({ 23211, 1, UNDER_FOOT });
+
+//vong trieu hoi kem am thanh, mau tim
+//pf += ({ 41341, 1, UNDER_FOOT });
+
+//vong chu I to lag
+//pf += ({ 42100, 1, UNDER_FOOT });
+
+//vong bufff con luan
+//pf += ({ 51143, 1, UNDER_FOOT });
+
+//buff mau trang xanh
+//pf += ({ 41312, 1, UNDER_FOOT });
+
+//skill rong do mo`
+//pf += ({ 42332, 1, UNDER_FOOT });
+
+//buff vmc
+//pf += ({ 5116, 1, UNDER_FOOT });
+
+//vong mau vang 
+//pf += ({ 41332, 1, UNDER_FOOT });
+
+
+			
+/*
+
+
+if(item->get_name()=="Bá Vương Trấn Yêu Chuông")
+{
+//        			pf += ({ 36321, 1, UNDER_FOOT });
+	pf += ({ 51143, 1, UNDER_FOOT });
+	pf += ({ 5912, 1, UNDER_FOOT });
+	pf += ({ 5116, 1, UNDER_FOOT });
+}
+
+if(item->get_name()=="Bá Vương Trảm")
+{
+    pf += ({ 41321, 1, UNDER_FOOT });
+	pf += ({ 51143, 1, UNDER_FOOT });
+	pf += ({ 9009, 1, UNDER_FOOT });
+	pf += ({ 5116, 1, UNDER_FOOT });
+}
+
+if(item->get_name()=="Bá Vương Phong")
+{
+//        			pf += ({ 41311, 1, UNDER_FOOT });
+	pf += ({ 5916, 1, UNDER_FOOT });
+	pf += ({ 41331, 1, UNDER_FOOT });
+	pf += ({ 9009, 1, UNDER_FOOT });
+	pf += ({ 5116, 1, UNDER_FOOT });
+	pf += ({ 41332, 1, UNDER_FOOT });
+}
+
+if(item->get_name()=="Bá Vương Ám")
+{
+//        			pf += ({ 41342, 1, UNDER_FOOT });
+	pf += ({ 41311, 1, UNDER_FOOT });
+	pf += ({ 59112, 1, UNDER_FOOT });
+	pf += ({ 9009, 1, UNDER_FOOT });
+	pf += ({ 5116, 1, UNDER_FOOT });
+//					pf += ({ 41331, 1, UNDER_FOOT });
+}
+
+if(item->get_name()=="Bá Vương Quỷ Chuông")
+{
+    pf += ({ 9102, 1, UNDER_FOOT });
+	pf += ({ 5116, 1, UNDER_FOOT });
+	pf += ({ 5912, 1, UNDER_FOOT });
+}
+
+if(item->get_name()=="Bá Vương Thiên Địa Chuông")
+{
+    pf += ({ 41341, 1, UNDER_FOOT });
+	pf += ({ 5116, 1, UNDER_FOOT });
+	pf += ({ 5912, 1, UNDER_FOOT });
+}
+
+if(item->get_name()=="Bá Vương Phong Thuật Chuông")
+{
+    pf += ({ 41322, 1, UNDER_FOOT });
+	pf += ({ 5912, 1, UNDER_FOOT });
+	pf += ({ 5116, 1, UNDER_FOOT });
+}*/
+
+}
+
+/*	if (me->have_title("Y001"))
+{
+pf += ({ 42100, 1, UNDER_FOOT });	
+}
+
+if (me->have_title("Y010"))
+{
+pf += ({ 41100, 1, UNDER_FOOT });
+pf += ({ 42100, 1, UNDER_FOOT });	
+}
+
+if (me->have_title("Y015"))
+{
+pf += ({ 41341, 1, UNDER_FOOT });
+pf += ({ 41100, 1, UNDER_FOOT });
+pf += ({ 42100, 1, UNDER_FOOT });	
+}
+
+if (me->have_title("Y025"))
+{
+//	pf += ({ 21152, 1, UNDER_FOOT });	// vòng tròn to toả sáng
+pf += ({ 41311, 1, UNDER_FOOT });	// ánh sáng xanh bốc lên 
+//	pf += ({ 40812, 1, UNDER_FOOT });
+pf += ({ 41341, 1, UNDER_FOOT });	// vòng tím
+pf += ({ 41100, 1, UNDER_FOOT });	// thanh que quay vòng
+pf += ({ 42100, 1, UNDER_FOOT });	// thanh que quay vòng 2	
+}	*/
+
+
+/*	if (me->have_title("M001"))
+{
+pf += ({ 40812, 1, UNDER_FOOT });
+pf += ({ 59111, 1, UNDER_FOOT });															
+pf += ({ 95619, 1, UNDER_FOOT });
+}
+
+if (me->have_title("M002"))
+{
+pf += ({ 40812, 1, UNDER_FOOT });															
+pf += ({ 59111, 1, UNDER_FOOT });															
+pf += ({ 95619, 1, UNDER_FOOT });																														
+}*/
+/*	if (item = me->get_equip(104))
+{
+if(item->get_name()=="Bá Vương Chiến Bào")
+{
+    pf += ({ 40812, 1, UNDER_FOOT });															
+	pf += ({ 59111, 1, UNDER_FOOT });															
+	pf += ({ 95619, 1, UNDER_FOOT });
+}
+}	*/
