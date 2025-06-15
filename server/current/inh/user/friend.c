@@ -1,4 +1,3 @@
-
 #include <ansi.h>
 #include <time.h>
 
@@ -38,6 +37,8 @@ void add_friend(object who, int type)
 	string result;
 	string key = sprintf("%d", who->get_number());
 	int flag;
+	int friend_count = 0;
+
 	if (Friends == 0)
 		init_friend_dbase();
 	if (undefinedp(Friends[key]))
@@ -108,12 +109,27 @@ void add_friend(object who, int type)
 	send_user(me, "%c%c%d%c%c%c%c%w%s", 0x46, 1,
 			  who->get_number(), note->Type, note->Notify, note->Gender, note->City, note->Level, result);
 
+	friend_count = sizeof(Friends);
 	if (flag)
 	{
 		me->delete_friend_degree(id);
 		who->delete_friend_degree(me->get_number());
 		write_user(who, ECHO " %s ( %d ) thêm bạn vào thành hảo bằng hữu.", me->get_name(), me->get_number());
 		send_user(who, "%c%s", '!', sprintf(HIY " %s ( %d ) " NOR "thêm bạn vào thành hảo bằng hữu.", me->get_name(), me->get_number()));
+		
+		// Achievement System Integration - Social Achievements
+		//"sys/achievement/achievement"->check_achievement_progress(me, "add_friend", 1);
+		//"sys/achievement/achievement"->check_achievement_progress(who, "add_friend", 1);
+		
+		// Check friend count achievements
+		//"sys/achievement/achievement"->check_achievement_progress(me, "have_10_friends", friend_count);
+		//"sys/achievement/achievement"->check_achievement_progress(me, "have_50_friends", friend_count);
+		//"sys/achievement/achievement"->check_achievement_progress(me, "have_100_friends", friend_count);
+		
+		// Daily/Weekly/Monthly challenge integration
+		// "sys/content/daily_updates"->check_daily_challenge(me, "add_friends", 1);
+		// "sys/content/weekly_updates"->check_weekly_challenge(me, "add_weekly_friends", 1);
+		// "sys/content/monthly_updates"->check_monthly_challenge(me, "add_monthly_friends", 1);
 	}
 }
 

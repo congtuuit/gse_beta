@@ -202,7 +202,17 @@
 
 #define HOLE_D "/cmd/std/mixhole"
 
+// channel
+#define CHANNEL_GLOBAL          0
 #define CHANNEL_1               1
 #define CHANNEL_2               2
 #define CHANNEL_3               3
 #define CHANNEL_4               4
+
+// Channel names
+#define CHANNEL_NAME_1     "Kênh 1"
+#define CHANNEL_NAME_2     "Kênh 2"
+#define CHANNEL_NAME_3     "Kênh 3"
+#define CHANNEL_NAME_4     "Kênh 4"
+
+#define CHANNEL_D "/sys/channel/channel_d"

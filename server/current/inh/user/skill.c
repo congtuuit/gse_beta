@@ -1,4 +1,3 @@
-
 #include <skill.h>
 
 class SkillLevel
@@ -88,6 +87,24 @@ int set_skill(int skill, int level)
                         "/quest/help"->send_help_tips(me, 28);
                         "/quest/help"->send_help_tips(me, 46);
                 }
+                
+                // Achievement System Integration - Skill Achievements
+                // "sys/achievement/achievement"->check_achievement_progress(me, "learn_skill", 1);
+                // "sys/achievement/achievement"->check_achievement_progress(me, "master_skill", level);
+                
+                // if (level >= 50)
+                // {
+                // 	"sys/achievement/achievement"->check_achievement_progress(me, "expert_skill", 1);
+                // }
+                // if (level >= 100)
+                // {
+                // 	"sys/achievement/achievement"->check_achievement_progress(me, "master_skill_level", 1);
+                // }
+                
+                // Daily/Weekly/Monthly challenge integration
+                // "sys/content/daily_updates"->check_daily_challenge(me, "improve_skill", 1);
+                // "sys/content/weekly_updates"->check_weekly_challenge(me, "improve_weekly_skill", 1);
+                // "sys/content/monthly_updates"->check_monthly_challenge(me, "improve_monthly_skill", 1);
         }
 
         return level;

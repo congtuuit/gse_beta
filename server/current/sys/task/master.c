@@ -1,4 +1,3 @@
-
 #include <ansi.h>
 #include <task.h>
 #include <npc.h>
@@ -1860,6 +1859,14 @@ void task_bonus(object player, object master)
 	clear_task(player, 0);
 	extra_skill_bonus(player);
 	"/sys/sys/count"->add_task("Sư môn", 1);
+	
+	// Achievement System Integration - Task Achievements
+	// "sys/achievement/achievement"->check_achievement_progress(player, "complete_monthly_tasks", 1);
+	
+	// Daily/Weekly/Monthly challenge integration
+	// "sys/content/daily_updates"->check_daily_challenge(player, "complete_tasks", 1);
+	// "sys/content/weekly_updates"->check_weekly_challenge(player, "complete_weekly_tasks", 1);
+	// "sys/content/monthly_updates"->check_monthly_challenge(player, "complete_monthly_tasks", 1);
 }
 //司库询问 nhiệm vụHoàn thành
 void task_finish9(object player, object master)

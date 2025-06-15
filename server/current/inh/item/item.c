@@ -488,6 +488,30 @@ int add_to_user( int index )
         }     
         else   
         if (item->get_item_type()==ITEM_TYPE_DIAMOND_3) "/quest/help"->send_help_tips( who, 31 );
+        
+        // Achievement System Integration - Item Collection Achievements
+        if (item->is_equip())
+        {
+        	// "sys/achievement/achievement"->check_achievement_progress(who, "collect_equipment", 1);
+        	// if (item->get_item_color() > 0)
+        	// {
+        	// 	"sys/achievement/achievement"->check_achievement_progress(who, "collect_rare_equipment", 1);
+        	// }
+        	// if (item->get_level() >= 50)
+        	// {
+        	// 	"sys/achievement/achievement"->check_achievement_progress(who, "collect_high_level_equipment", 1);
+        	// }
+        }
+        else if (item->get_item_type() == ITEM_TYPE_DIAMOND_3)
+        {
+        	//"sys/achievement/achievement"->check_achievement_progress(who, "collect_diamonds", 1);
+        }
+        
+        // Daily/Weekly/Monthly challenge integration
+        // "sys/content/daily_updates"->check_daily_challenge(who, "collect_items", 1);
+        // "sys/content/weekly_updates"->check_weekly_challenge(who, "collect_weekly_items", 1);
+        // "sys/content/monthly_updates"->check_monthly_challenge(who, "collect_monthly_items", 1);
+        
 //        if( !get_user_id() ) set_user_id( who->get_id() );    // 最初获得者
         return 1;
 }

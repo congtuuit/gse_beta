@@ -580,7 +580,7 @@ private void send_loop_perform_3(object me, int *pf, int flag) // 发给自己
 			send_user(me, "%c%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], flag);
 			break;
 		case 8:
-			send_user(me, "%c%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], flag);
+			send_user(me, "%c%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], flag);
 			break;
 		case 10:
 			send_user(me, "%c%w%w%w%w%w%w%w%w%w%w%c", 0x81, pf[0], pf[1], pf[2], pf[3], pf[4], pf[5], pf[6], pf[7], pf[8], pf[9], flag);

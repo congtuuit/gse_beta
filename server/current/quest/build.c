@@ -1,18 +1,17 @@
-
-// 变量：任务列表
+// Biến: Danh sách nhiệm vụ
 string *Quest = ({
-        "Tạo Hoá Đơn",
+        "Tạo Hóa Đơn",
         "Bổ Tâm Đan",
-        "救急丹",
-        "活心丹",
-        "再造丸",
+        "Thuốc Cấp Cứu",
+        "Thuốc Hồi Sinh Tim",
+        "Thuốc Tái Sinh",
 
-        "辟毒散",
-        "清心丹",
-        "天王散",
+        "Bột Giải Độc",
+        "Thuốc Thanh Tâm",
+        "Bột Thiên Vương",
 });
 
 int sizeof_quest = sizeof(Quest);
 
-// 函数：获取任务
+// Hàm: Lấy nhiệm vụ
 string get_quest( object who ) { return Quest[ random(sizeof_quest) ]; }

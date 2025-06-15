@@ -1,4 +1,3 @@
-
 #include <map.h>
 #include <effect.h>
 #include <ansi.h>
@@ -506,6 +505,16 @@ void enter_world(object me, int channelCode)
 	if (me->get_save("login_count") > 2)
 		log_file("errlogin.txt", sprintf("id:%s number:%d\n", me->get_id(), me->get_number()));
 	me->add_save("login_count", 1);
+	// // Achievement System Integration - Login Achievements
+	// "sys/achievement/achievement"->check_achievement_progress(me, "first_login", 1);
+	// "sys/achievement/achievement"->check_achievement_progress(me, "login_7_days", 1);
+	// "sys/achievement/achievement"->check_achievement_progress(me, "login_30_days", 1);
+	// "sys/achievement/achievement"->check_achievement_progress(me, "login_100_days", 1);
+	
+	// Daily/Weekly/Monthly challenge integration
+	// "sys/content/daily_updates"->check_daily_challenge(me, "daily_login", 1);
+	// "sys/content/weekly_updates"->check_weekly_challenge(me, "weekly_login", 1);
+	// "sys/content/monthly_updates"->check_monthly_challenge(me, "monthly_login", 1);
 
 	USER_D->gm_channel(sprintf(HIR "%s : %s (%d) kết nối từ %s [%d].",
 							   get_name(), me->get_name(), me->get_number(), get_ip_name(me), me->get_channel()));

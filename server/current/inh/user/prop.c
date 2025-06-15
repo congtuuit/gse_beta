@@ -498,6 +498,19 @@ int set_level(int level)
 		send_user(me, "%c%c%w%d%d%d%w%w%d%d%d%d", 0x3d, 164,
 				  me->get_billion_exp(), me->get_exp(), me->get_potential(), me->get_bonus() / 10, me->get_gift_point(),
 				  level, me->get_upgrade_exp(), USER_EXP_D->get_level_exp(me->get_reincarnation(), level), me->get_cash(), me->get_savings());
+		
+		// Achievement System Integration - Level Achievements
+		// "sys/achievement/achievement"->check_achievement_progress(me, "reach_level_10", level);
+		// "sys/achievement/achievement"->check_achievement_progress(me, "reach_level_30", level);
+		// "sys/achievement/achievement"->check_achievement_progress(me, "reach_level_50", level);
+		// "sys/achievement/achievement"->check_achievement_progress(me, "reach_level_80", level);
+		// "sys/achievement/achievement"->check_achievement_progress(me, "reach_level_100", level);
+		
+		// Daily/Weekly/Monthly challenge integration
+		// "sys/content/daily_updates"->check_daily_challenge(me, "reach_level", 1);
+		// "sys/content/weekly_updates"->check_weekly_challenge(me, "reach_weekly_level", 1);
+		// "sys/content/monthly_updates"->check_monthly_challenge(me, "reach_monthly_level", 1);
+		
 		if (get_login_flag() >= 3)
 		{
 			switch (level)

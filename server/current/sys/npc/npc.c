@@ -1,4 +1,3 @@
-
 #include <npc.h>
 #include <ansi.h>
 #include <task.h>
@@ -539,6 +538,42 @@ void win_bonus(object me, object who)
 				}
 
 				me->check_legend_task(team[i]);
+				
+				// Achievement System Integration - Combat Achievements
+				/*
+				if (me->is_boss())
+				{
+					// Boss achievements
+					"sys/achievement/achievement"->check_achievement_progress(team[i], "first_boss", 1);
+					"sys/achievement/achievement"->check_achievement_progress(team[i], "kill_10_boss", 1);
+					"sys/achievement/achievement"->check_achievement_progress(team[i], "kill_50_boss", 1);
+					"sys/achievement/achievement"->check_achievement_progress(team[i], "kill_100_boss", 1);
+				}
+				else
+				{
+					// Normal monster achievements
+					"sys/achievement/achievement"->check_achievement_progress(team[i], "first_kill", 1);
+					"sys/achievement/achievement"->check_achievement_progress(team[i], "kill_100", 1);
+					"sys/achievement/achievement"->check_achievement_progress(team[i], "kill_1000", 1);
+					"sys/achievement/achievement"->check_achievement_progress(team[i], "kill_10000", 1);
+					"sys/achievement/achievement"->check_achievement_progress(team[i], "kill_100000", 1);
+				}
+				
+				// PvP achievements (if in PvP map)
+				if (map && map->is_pvp())
+				{
+					"sys/achievement/achievement"->check_achievement_progress(team[i], "first_pvp", 1);
+					"sys/achievement/achievement"->check_achievement_progress(team[i], "win_10_pvp", 1);
+					"sys/achievement/achievement"->check_achievement_progress(team[i], "win_50_pvp", 1);
+					"sys/achievement/achievement"->check_achievement_progress(team[i], "win_100_pvp", 1);
+				}
+				*/
+				
+				// Daily/Weekly/Monthly challenge integration
+				// "sys/content/daily_updates"->check_daily_challenge(team[i], "kill_boss", me->is_boss() ? 1 : 0);
+				// "sys/content/weekly_updates"->check_weekly_challenge(team[i], "kill_weekly_boss", me->is_boss() ? 1 : 0);
+				// "sys/content/monthly_updates"->check_monthly_challenge(team[i], "kill_monthly_boss", me->is_boss() ? 1 : 0);
+				
 				if (team[i]->get_save_2("refine.status") == 1 && random100() < team[i]->get_online_rate())
 				{
 					level2 = team[i]->get_save_2("refine.level");
