@@ -1,4 +1,3 @@
-
 #include <npc.h>
 #include <ansi.h>
 #include <cmd.h>
@@ -561,8 +560,8 @@ int set_pay_type(int flag) { return PayType = flag; }
 
 void get_more_tips(object me)
 {
-	send_user(me, "%c%c%d%s", 0x43, 10, 0, HIY "防沉迷系统会让您在游戏里的经验、收益都将随着时间变化而减少，最后将无法获取游戏收益。\n" NOR + HIY "如果您之前不慎身份证填写错误或使用非身份证以外证件注册，请及时至官方网站的会员中心帐号管理处进行“实名验证”修改身份证信息。");
-	send_user(me, "%c%s", ';', "防沉迷系统会让您在游戏里的经验、收益都将随着时间变化而减少，最后将无法获取游戏收益。\n如果您之前不慎身份证填写错误或使用非身份证以外证件注册，请及时至官方网站的会员中心帐号管理处进行“实名验证”修改身份证信息。");
+	send_user(me, "%c%c%d%s", 0x43, 10, 0, HIY "防沉迷系统会让您在游戏里的经验、收益都将随着时间变化而减少，最后将无法获取游戏收益。\n" NOR + HIY "如果您之前不慎身份证填写错误或使用非身份证以外证件注册，请及时至官方网站的会员中心帐号管理处进行"实名验证"修改身份证信息。");
+	send_user(me, "%c%s", ';', "防沉迷系统会让您在游戏里的经验、收益都将随着时间变化而减少，最后将无法获取游戏收益。\n如果您之前不慎身份证填写错误或使用非身份证以外证件注册，请及时至官方网站的会员中心帐号管理处进行"实名验证"修改身份证信息。");
 }
 
 private static int HeartSec = 0; // 心跳计时
@@ -1351,9 +1350,9 @@ void heart_beat_loop_callout(object me, int effect1, int effect2, int effect3, i
 			me->add_mp(add_mp);
 		}
 
-		if (me->get_idle_time() >= 180)
+		if (me->get_idle_time() >= 120)  // Giảm từ 180 xuống 120 giây (2 phút)
 		{
-			me->set_idle_time(300);
+			me->set_idle_time(180);      // Giảm từ 300 xuống 180 giây
 			QUIT_CMD->main(me, "");
 			return;
 		}

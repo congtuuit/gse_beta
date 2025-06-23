@@ -1,8 +1,7 @@
-
 #include <cmd.h>
 
-#define LOGIN_TIMEOUT 60  // 连线超时限制
-#define AUTH_TIMEOUT 1800 // 连线超时限制
+#define LOGIN_TIMEOUT 30   // Giảm từ 60 xuống 30 giây
+#define AUTH_TIMEOUT 300   // Giảm từ 1800 xuống 300 giây (5 phút)
 
 class UserList
 {

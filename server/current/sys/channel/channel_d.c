@@ -3,6 +3,9 @@ inherit F_DBASE;
 
 #define MAX_CHANNELS           4
 #define MAX_USERS_PER_CHANNEL  1000
+#define CLEANUP_INTERVAL       15    // Cleanup mỗi 15 giây thay vì 30
+#define ZOMBIE_TIMEOUT         60    // Timeout zombie connection sau 60 giây
+#define FORCE_DISCONNECT_TIME  120   // Force disconnect sau 120 giây
 
 #define CHANNEL_STATUS_OFFLINE     0
 #define CHANNEL_STATUS_ONLINE      1
@@ -10,6 +13,7 @@ inherit F_DBASE;
 
 private mapping channel_users = ([]);  // channel -> array of users
 private mapping user_channels = ([]);  // user_id -> channel
+private mapping user_last_activity = ([]); // user_id -> last activity time
 
 int add_user_to_channel(object user, int channel);
 int remove_user_from_channel(object user);
@@ -48,7 +52,7 @@ void create()
     {
         channel_users[i] = ({});
     }
-    call_out("cleanup_disconnected_users", 30);
+    call_out("cleanup_disconnected_users", CLEANUP_INTERVAL);
 }
 
 int add_user_to_channel(object user, int channel)
@@ -218,4 +222,93 @@ object *filter_by_channel(object *users, int channel)
 int is_valid_channel(int channel)
 {
     return channel >= 1 && channel <= MAX_CHANNELS;
+}
+
+void cleanup_disconnected_users()
+{
+    object *users, user;
+    string user_id;
+    int i, size, current_time;
+    
+    current_time = time();
+    
+    // Cleanup tất cả channels
+    for (i = 1; i <= MAX_CHANNELS; i++)
+    {
+        users = channel_users[i];
+        size = sizeof(users);
+        
+        for (int j = 0; j < size; j++)
+        {
+            user = users[j];
+            if (!objectp(user))
+                continue;
+                
+            user_id = user->get_id();
+            if (!stringp(user_id))
+                continue;
+            
+            // Kiểm tra zombie connection
+            if (!interactive(user) || user->get_idle_time() > ZOMBIE_TIMEOUT)
+            {
+                // Force disconnect zombie user
+                log_file("zombie_cleanup.log", sprintf("%s Force disconnect zombie user: %s (idle: %d)\n", 
+                    short_time(), user_id, user->get_idle_time()));
+                
+                // Gọi quit command để cleanup đúng cách
+                if (user->get_login_flag() >= 2)
+                {
+                    QUIT_CMD->main(user, "");
+                }
+                else
+                {
+                    destruct(user);
+                }
+                
+                // Xóa khỏi channel
+                remove_user_from_channel(user);
+            }
+            else
+            {
+                // Cập nhật last activity time
+                user_last_activity[user_id] = current_time;
+            }
+        }
+    }
+    
+    // Schedule next cleanup
+    call_out("cleanup_disconnected_users", CLEANUP_INTERVAL);
+}
+
+// Thêm function để force disconnect tất cả zombie users
+void force_disconnect_zombies()
+{
+    object *all_users, user;
+    int i, size;
+    
+    all_users = USER_D->get_user();
+    size = sizeof(all_users);
+    
+    for (i = 0; i < size; i++)
+    {
+        user = all_users[i];
+        if (!objectp(user))
+            continue;
+            
+        // Kiểm tra nếu user không interactive hoặc idle quá lâu
+        if (!interactive(user) || user->get_idle_time() > FORCE_DISCONNECT_TIME)
+        {
+            log_file("force_disconnect.log", sprintf("%s Force disconnect: %s (idle: %d, interactive: %d)\n", 
+                short_time(), user->get_id(), user->get_idle_time(), interactive(user)));
+                
+            if (user->get_login_flag() >= 2)
+            {
+                QUIT_CMD->main(user, "");
+            }
+            else
+            {
+                destruct(user);
+            }
+        }
+    }
 }
