@@ -11,7 +11,7 @@ int is_huowu() { return 1;}
 // 函数：构造处理
 void create()
 {
-        set_name( "钱老九的货物" );
+        set_name( "Hàng hóa của Tiền Lão Cửu" );
         set_picid_1(4);
         set_picid_2(4);
         set_value(1);

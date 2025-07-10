@@ -104,7 +104,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 15 && !who->get_legend(TASK_04,21)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    不久前，婆婆上山采药，丢失了一棵佛龙珠。佛龙珠乃火龙修炼五百年之神物，能避寒取暖，冬天悬挂在屋内，温暖如春。我婆婆一直希望我能寻回佛龙珠，那是我家失传已久的宝物。据说最近有人在翠华山一带见到过，你能帮我寻回吗？\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    不久前，婆婆上山采药，丢失了一棵佛龙珠。佛龙珠乃火龙修炼五百年之神物，能避寒取暖，冬天悬挂在屋内，温暖如春。我婆婆一直希望我能寻回佛龙珠，那是我家失传已久的宝物。据说最近有人在翠华山一带见到过，你能帮我寻回吗？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_04,21) && !who->get_legend(TASK_04,22) )
 			me->do_welcome(3);
         	break;

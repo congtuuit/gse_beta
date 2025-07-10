@@ -70,7 +70,7 @@ int get_use_effect_callout(object me)
 		//              write_user(me, ECHO "……可是没有任何效果。");
 		return 0;
 	}
-	if (present("贵重物品", me, 1, MAX_CARRY * 4))
+	if (present("Vật phẩm quý giá", me, 1, MAX_CARRY * 4))
 	{
 		send_user(me, "%c%s", '!', "Không thể sử dụng lúc này");
 		//              write_user(me, ECHO "……可是没有任何效果。");

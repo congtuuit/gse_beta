@@ -85,7 +85,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 105 && !who->get_legend(TASK_42,10) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我国探子报告最近发现一伙来路不明、鬼鬼祟祟的人聚集在城外附近，隐隐约约听得什么刺杀、将军、赏赐什么的，我命你速速前往市井向百姓打听一下，看有否人知道更详尽的消息。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我国探子报告最近发现一伙来路不明、鬼鬼祟祟的人聚集在城外附近，隐隐约约听得什么刺杀、将军、赏赐什么的，我命你速速前往市井向百姓打听一下，看有否人知道更详尽的消息。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 
         	break;
 	case 2:
@@ -102,7 +102,7 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_42,29) && !who->get_legend(TASK_42,30) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    枉法之人终于伏法，看来这次事件也值得我们深思啊。\n"ESC"Hoàn thành任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_42,30) && !who->get_legend(TASK_43,3) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    此番民情探察暴露了我国政法体制的诸多问题，值得深思啊，我写了一封奏章，关于本国律法及其实施的问题，你代我交给大王，希望大王多施仁政，以得民心。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    此番民情探察暴露了我国政法体制的诸多问题，值得深思啊，我写了一封奏章，关于本国律法及其实施的问题，你代我交给大王，希望大王多施仁政，以得民心。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 
         	break;
  	case 4:

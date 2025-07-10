@@ -71,9 +71,9 @@ int main( object me, object who, int x, int y, string arg )
                         printf( ECHO "带着钱票不能使用“" PF_NAME "”。" );
                         return 1;
                 }
-                if( present("贵重物品", me, 1, MAX_CARRY) )
+                if( present("Vật phẩm quý giá", me, 1, MAX_CARRY) )
                 {
-                        printf( ECHO "带着贵重物品不能使用“" PF_NAME "”。" );
+                        printf( ECHO "带着Vật phẩm quý giá不能使用“" PF_NAME "”。" );
                         return 1;
                 }
                 if( objectp( who = me->get_quest("escort.robber#") ) && who->is_escort_robber() )    // 寻找蒙面人

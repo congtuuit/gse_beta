@@ -29,8 +29,12 @@ private void auto_check_login(object me)
 
 private void create()
 {
-	string *line, indexServer, lemma, content;
-	int i, size;
+	string *line;
+	string indexServer;
+	string lemma;
+	string content;
+	int i;
+	int size;
 
 	line = explode(read_file(SERVER), "\n");
 	MAIN_D->set_host_type(0);
@@ -82,8 +86,17 @@ string get_name() { return "--> Kết nối "; }
 
 void logon(object me)
 {
-	string ip = get_ip_name(me);
-	int key1, key2, key3, key4, key5, key6, key7, key8;
+	string ip;
+	int key1;
+	int key2;
+	int key3;
+	int key4;
+	int key5;
+	int key6;
+	int key7;
+	int key8;
+
+	ip = get_ip_name(me);
 
 	if (!CHECK_D->is_passed_ip(ip) && CHECK_D->is_banned_ip(ip))
 	{
@@ -119,11 +132,24 @@ void logon(object me)
 
 void connect(object me, string id, string code, int order)
 {
-	string lowId, passwd, lowId2, passwd2, result, api;
+	string lowId;
+	string passwd;
+	string lowId2;
+	string passwd2;
+	string result;
+	string api;
 	object *user;
-	int size, time, number, isBaoTri = 0;
-	string errstr, *line, *data, *serverCheck, *dataServerCheck;
+	int size;
+	int time;
+	int number;
+	int isBaoTri;
+	string errstr;
+	string *line;
+	string *data;
+	string *serverCheck;
+	string *dataServerCheck;
 
+	isBaoTri = 0;
 	passwd = passwd_decrypt(me->get("key"), code);
 
 	if (me->get_login_flag() >= 2)
@@ -361,6 +387,12 @@ void enter_world(object me, int channelCode)
 
 	// Handle channel feature
 	me->set_channel(channelCode);
+
+	// Add user to channel manager
+	if (CHANNEL_D)
+	{
+		CHANNEL_D->add_user_to_channel(me, channelCode);
+	}
 
 	if ((is_gm(me) && CHECK_D->check_gm_ip(get_ip_name(me), 1) != 1) || (is_gm2(me) && CHECK_D->check_gm_ip(get_ip_name(me), 2) != 1) || (is_gm3(me) && CHECK_D->check_gm_ip(get_ip_name(me), 3) != 1) || (is_god(me) && CHECK_D->check_gm_ip(get_ip_name(me), 4) != 1))
 	{

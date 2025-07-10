@@ -158,7 +158,7 @@ void do_visit2(object me, string arg)
 		break;
 	case 1:
 		if (who->get_level() >= 50 && !who->get_legend(TASK_2_00, 4))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我从恩师学习厨艺，师傅德艺双馨，不光有厨艺还有一身好武艺。只是我比较不适合学武……我其实有一位师弟梁兴，他天生聪明，得到师傅大部真传，但却秉性不良，最后偷了师傅耗多年心血整理的师门祖传秘籍，打伤师傅，叛出师门……师傅又气又伤，就此一病不起，如今师傅病体缠绵将殁，唉！可叹我却无法为师傅报仇，诛却此贼。\n    看你似乎武艺高强，能否替我前去除掉他？听说他就在秦国成峤军营之中。\n"ESC"接受任务\ntalk %x# visit.2\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我从恩师学习厨艺，师傅德艺双馨，不光有厨艺还有一身好武艺。只是我比较不适合学武……我其实有一位师弟梁兴，他天生聪明，得到师傅大部真传，但却秉性不良，最后偷了师傅耗多年心血整理的师门祖传秘籍，打伤师傅，叛出师门……师傅又气又伤，就此一病不起，如今师傅病体缠绵将殁，唉！可叹我却无法为师傅报仇，诛却此贼。\n    看你似乎武艺高强，能否替我前去除掉他？听说他就在秦国成峤军营之中。\n"ESC"Nhận nhiệm vụ\ntalk %x# visit.2\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
 		else if (who->get_legend(TASK_2_00, 4) && !who->get_legend(TASK_2_00, 5))
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看来师弟武艺又提高了么……难道无法报仇了？\n"ESC"Rời khỏi.", me->get_name()));
 		else if (who->get_legend(TASK_2_00, 5) && !who->get_legend(TASK_2_00, 6))

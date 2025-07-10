@@ -82,7 +82,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 90 && !who->get_legend(TASK_31,27)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，我们几个守卫上次追捕天牢逃犯严飞的时候结果被逃犯打伤，整日呕血，头也疼的厉害，据说那家伙是什么神武堂的堂主，后来找许多医师看，都无计可施，远方亲戚秦药师倒是建议我们去找气脉丹，说我们受的是内伤，一般药是治不得的，他说困魔阵中可以找到，不知这位壮士能否为我等跑一趟？\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，我们几个守卫上次追捕天牢逃犯严飞的时候结果被逃犯打伤，整日呕血，头也疼的厉害，据说那家伙是什么神武堂的堂主，后来找许多医师看，都无计可施，远方亲戚秦药师倒是建议我们去找气脉丹，说我们受的是内伤，一般药是治不得的，他说困魔阵中可以找到，不知这位壮士能否为我等跑一趟？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_31,27) && !who->get_legend(TASK_31,28) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    怎么？没有么？唉，看来我们只有等死了……\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_31,28) && !who->get_legend(TASK_31,29) )
@@ -117,7 +117,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 4:
         	if ( who->get_level() >= 110 && !who->get_legend(TASK_44,1)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    自从天降异象，地气紊乱，大乱将至，鬼蜮乱舞，城外被地煞门和天极门盘踞之后情况更加糟糕，如今整个城市被一堆Quái vật搅得天昏地暗，人们都惶惶不可终日，看大侠你武艺高强，宅心仁厚，定不忍百姓如此受苦，恳求你伸以援手，去消灭地煞门众守9个，太极门众守11个，拯救一下受苦受难的百姓吧。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    自从天降异象，地气紊乱，大乱将至，鬼蜮乱舞，城外被地煞门和天极门盘踞之后情况更加糟糕，如今整个城市被一堆Quái vật搅得天昏地暗，人们都惶惶不可终日，看大侠你武艺高强，宅心仁厚，定不忍百姓如此受苦，恳求你伸以援手，去消灭地煞门众守9个，太极门众守11个，拯救一下受苦受难的百姓吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_44,1) && !who->get_legend(TASK_44,2) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，街道上冷冷清清，家家关门闭户，不知道何时才能得到安宁啊……\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_44,2) && !who->get_legend(TASK_44,3) )

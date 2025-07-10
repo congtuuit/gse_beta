@@ -61,7 +61,7 @@ void do_welcome2( object me, string arg )
         {
 	case 1:
 		if( who->get_level() >= 5 && !who->get_legend(TASK_NEWBIE_02, 26) )
-			send_user(who,"%c%s",':',sprintf("%s:\n    看看我周围这些小蜜蜂，以前挺和善的，可最近不知道怎么搞的，像着了魔一样，经常成群结队的攻击周围的行人、百姓，这事恐怕有蹊跷，但是当务之急是得尽快地消灭掉他们。你来得正好，出发吧！\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
+			send_user(who,"%c%s",':',sprintf("%s:\n    看看我周围这些小蜜蜂，以前挺和善的，可最近不知道怎么搞的，像着了魔一样，经常成群结队的攻击周围的行人、百姓，这事恐怕有蹊跷，但是当务之急是得尽快地消灭掉他们。你来得正好，出发吧！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
 		else if ( who->get_save_2("xiaomifeng") < 8 )
 			send_user(who,"%c%s",':',sprintf("%s:\n    奇怪？这么久了你还没有消灭掉他们？难道他们的毒性与攻击力又提升了？这可增加了难度，你得尽快呀！\n"ESC"Rời khỏi.",me->get_name()));
 		else 

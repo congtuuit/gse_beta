@@ -86,7 +86,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 20 && !who->get_legend(TASK_05,28)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    宝藏……哈哈，宝藏！\n    你说这个世界上真的有宝藏吗？我听说在一个很隐蔽的山洞里埋藏着大量的宝藏，但是要找到这批宝藏必须先找到一张青纹宝图，有了这张宝图才能找到那个山洞的确切位置，找到这张宝图才能证明这个埋藏宝藏的山洞真正存在！\n    据说这张宝图曾在白马庄的紫竹小居出现过，就在离桥边不远的地方，你仔细看看，或许埋在某块Đá cổ下。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    宝藏……哈哈，宝藏！\n    你说这个世界上真的有宝藏吗？我听说在一个很隐蔽的山洞里埋藏着大量的宝藏，但是要找到这批宝藏必须先找到一张青纹宝图，有了这张宝图才能找到那个山洞的确切位置，找到这张宝图才能证明这个埋藏宝藏的山洞真正存在！\n    据说这张宝图曾在白马庄的紫竹小居出现过，就在离桥边不远的地方，你仔细看看，或许埋在某块Đá cổ下。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_05,28) && !who->get_legend(TASK_05,29) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    难道我听错了吗？让我好好想想，应该不会错啊！\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_05,29) && !who->get_legend(TASK_05,30) )
@@ -120,7 +120,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 4:
         	if ( who->get_level() >= 25 && !who->get_legend(TASK_07,10)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    梦魇……恶魔……\n    秀丽小姐前日做了个噩梦，她梦见7只褐尾蝎从她的耳、口、眼、鼻七窍钻进身体，当时她就被吓醒了，她觉得这似乎预兆着什么，这些日子来她一直寡寡欲欢，茶不思，饭不香，眼看人消瘦了不少，大夫说她身体上根本就没病，可能是精神上受到了惊吓，为了消灭秀丽小姐的心魔，我想过了很多办法，可都无济于事，现在只剩下唯一的一个办法了，可尽管我重金悬赏，很多人都不愿意去做这件事！他们都不愿意去沼泽那鬼地方。\n    你去沼泽杀7只褐尾蝎吧，然后通知我一声，我看秀丽小姐能不能好点。办好这件事，我不会亏待你的！\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    梦魇……恶魔……\n    秀丽小姐前日做了个噩梦，她梦见7只褐尾蝎从她的耳、口、眼、鼻七窍钻进身体，当时她就被吓醒了，她觉得这似乎预兆着什么，这些日子来她一直寡寡欲欢，茶不思，饭不香，眼看人消瘦了不少，大夫说她身体上根本就没病，可能是精神上受到了惊吓，为了消灭秀丽小姐的心魔，我想过了很多办法，可都无济于事，现在只剩下唯一的一个办法了，可尽管我重金悬赏，很多人都不愿意去做这件事！他们都不愿意去沼泽那鬼地方。\n    你去沼泽杀7只褐尾蝎吧，然后通知我一声，我看秀丽小姐能不能好点。办好这件事，我不会亏待你的！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_07,10) && !who->get_legend(TASK_07,11) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    如果不能杀死那7只褐尾蝎，秀丽小姐的心里的这个结难解啦！\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_07,11) && !who->get_legend(TASK_07,12) )

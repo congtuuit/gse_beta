@@ -220,7 +220,7 @@ void do_welcome2( object me, string arg )
 		break;
 	case 13:
 		if ( who->get_legend(TASK_2_00,19) && !who->get_legend(TASK_2_00,20) ) 
-			send_user( who, "%c%c%w%s", ':',3,me->get_char_picid(), sprintf("%s:\n    别看现在周国势力减弱，但人才并不少，各种奇人异士都有。其中周国大厨、周国裁缝、周国采药师、周国铁匠、周国采矿师、周国机关师、周国炼丹师，周国石刻师每人都会一种生活技能，能制造出各种武器道具，你去拜访他们一下，对你的将来大有帮助。\n"ESC"接受任务\ntalk %x# welcome.14\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
+			send_user( who, "%c%c%w%s", ':',3,me->get_char_picid(), sprintf("%s:\n    别看现在周国势力减弱，但人才并不少，各种奇人异士都有。其中周国大厨、周国裁缝、周国采药师、周国铁匠、周国采矿师、周国机关师、周国炼丹师，周国石刻师每人都会一种生活技能，能制造出各种武器道具，你去拜访他们一下，对你的将来大有帮助。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.14\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
 		break;		
 	case 14:
 		if ( who->get_legend(TASK_2_00,19) && !who->get_legend(TASK_2_00,20) ) 
@@ -268,7 +268,7 @@ void do_welcome2( object me, string arg )
 		break;	
 	case 17:
 		if ( who->get_legend(TASK_2_00,22) && !who->get_legend(TASK_2_00,23) ) 
-			send_user( who, "%c%c%w%s", ':',3,me->get_char_picid(), sprintf("%s:\n    除了这些能工巧匠，周国还隐居着不少奇人异士，孔夫子能帮助拜师收徒，公输班能用晶石强化装备，申公豹能让你放弃不需要的生活技能，而月老和红娘能够让你和心上人喜结良缘，你去访问下他们，了解更详细的情况吧。\n"ESC"接受任务\ntalk %x# welcome.18\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
+			send_user( who, "%c%c%w%s", ':',3,me->get_char_picid(), sprintf("%s:\n    除了这些能工巧匠，周国还隐居着不少奇人异士，孔夫子能帮助拜师收徒，公输班能用晶石强化装备，申公豹能让你放弃不需要的生活技能，而月老和红娘能够让你和心上人喜结良缘，你去访问下他们，了解更详细的情况吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.18\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
 		break;		
 	case 18:
 		if ( who->get_legend(TASK_2_00,22) && !who->get_legend(TASK_2_00,23) ) 
@@ -310,7 +310,7 @@ void do_welcome2( object me, string arg )
 		break;
 	case 21:
 		if ( who->get_legend(TASK_2_00,25) && !who->get_legend(TASK_2_00,26) ) 
-			send_user( who, "%c%c%w%s", ':',3,me->get_char_picid(), sprintf("%s:\n    楚国的楚管家当年访问周国，和寡人很是谈得来，这么几年不见，寡人还真是有点想念他。你去楚国替我拜望一下他，叫他有机会再来周国看望寡人。\n"ESC"接受任务\ntalk %x# welcome.22\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
+			send_user( who, "%c%c%w%s", ':',3,me->get_char_picid(), sprintf("%s:\n    楚国的楚管家当年访问周国，和寡人很是谈得来，这么几年不见，寡人还真是有点想念他。你去楚国替我拜望一下他，叫他有机会再来周国看望寡人。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.22\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
 		break;		
 	case 22:
 		if ( who->get_legend(TASK_2_00,25) && !who->get_legend(TASK_2_00,26) ) 

@@ -12,7 +12,7 @@ int set_owner(int i) { return iOwner=i; }
 // 函数：构造处理
 void create()
 {
-        set_name( "丢失的手镯" );
+        set_name( "Vòng tay bị mất" );
         set_picid_1(8614);
         set_picid_2(8614);
         set_value(1);
@@ -23,5 +23,5 @@ void create()
 // 函数：获取描述
 string get_desc() 
 { 
-        return "Vật phẩm nhiệm vụ.酒店老板家传的用白玉雕琢成的手镯。"; 
+        return "Vật phẩm nhiệm vụ. Một chiếc vòng tay được chạm khắc từ ngọc bích trắng được truyền lại từ gia đình chủ khách sạn."; 
 }

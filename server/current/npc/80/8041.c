@@ -82,8 +82,8 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if( who->get_level() >= 10 && !who->get_legend(TASK_NEWBIE_03,1) )
-        		send_user(who,"%c%s",':',sprintf("%s:\n    嘻嘻……这位小兄看来是一副囊中羞涩的样子……要不要大哥我帮你这个忙？ \n    五天前我负责托运一批货物，通过楚方城的时候却被那群贪得无厌的守卫扣押了！碍于我们与官府的关系，也不好亲自出面讨回。但是如果你能帮大哥这个忙，将这批货物“取”回来，多少银子我都会付你的。\n    怎样？干不干？楚方城的入口就在十里林以西，从郢城出发半时辰的路程就到了。我相信那匹货物还扣押在楚方城上。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
-        	else if( objectp( present("钱老九的货物", who, 1, MAX_CARRY) ) )
+        		send_user(who,"%c%s",':',sprintf("%s:\n    嘻嘻……这位小兄看来是一副囊中羞涩的样子……要不要大哥我帮你这个忙？ \n    五天前我负责托运一批货物，通过楚方城的时候却被那群贪得无厌的守卫扣押了！碍于我们与官府的关系，也不好亲自出面讨回。但是如果你能帮大哥这个忙，将这批货物“取”回来，多少银子我都会付你的。\n    怎样？干不干？楚方城的入口就在十里林以西，从郢城出发半时辰的路程就到了。我相信那匹货物还扣押在楚方城上。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
+        	else if( objectp( present("Hàng hóa của Tiền Lão Cửu", who, 1, MAX_CARRY) ) )
         		send_user(who,"%c%s",':',sprintf("%s:\n    哈哈！不错不错！没想到这么轻易就到手了！！这是你的酬劳，拿好吧！\n"ESC"Hoàn thành任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
 		else
         		send_user(who,"%c%s",':',sprintf("%s:\n    货物呢？找到了吗？绝对就在楚方城上！给我好好的找啊！！\n"ESC"Rời khỏi.",me->get_name()));
@@ -99,7 +99,7 @@ void do_welcome2( object me, string arg )
         	}
         	break;
         case 3:
-        	if( !who->get_legend(TASK_NEWBIE_03,2) && objectp( item=present("钱老九的货物", who, 1, MAX_CARRY) ) )
+        	if( !who->get_legend(TASK_NEWBIE_03,2) && objectp( item=present("Hàng hóa của Tiền Lão Cửu", who, 1, MAX_CARRY) ) )
         	{
         		item->remove_from_user();
         		destruct(item);

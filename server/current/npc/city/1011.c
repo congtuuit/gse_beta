@@ -71,7 +71,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 80 && !who->get_legend(TASK_27,4) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    在灵谷洞出没那些Bảo vệ người chết其实都是一些我们以前战死的战友，但是自从长平之战后，他们的灵魂被人操纵了，得不到安息。我们看到自己昔日的战友死后也得不到安息当然心里面是不舒服了。你能不能帮我们去灵谷洞解决这些亡灵侍卫，让他们得到安息？\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    在灵谷洞出没那些Bảo vệ người chết其实都是一些我们以前战死的战友，但是自从长平之战后，他们的灵魂被人操纵了，得不到安息。我们看到自己昔日的战友死后也得不到安息当然心里面是不舒服了。你能不能帮我们去灵谷洞解决这些亡灵侍卫，让他们得到安息？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_27,4) && !who->get_legend(TASK_27,5) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看着我们那些昔日的战友死后还要成为亡灵侍卫不得安息，我们心里面就像悬着块大石头放不下来一样。\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_27,5) && !who->get_legend(TASK_27,6) )
@@ -104,7 +104,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 4:
        		if ( who->get_level() >= 85 && !who->get_legend(TASK_38,17) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    魏国商人那里有一批需要尽快处理的布匹出售，并且这批布并不是因为有质量问题才出售的，而是因为魏国商人要转行做别的生意，急需启动资金，所以才贱卖，这可是个好机会，或许我可以从买进卖出中小赚一笔，你去帮我问问魏国商人，那批布到底什么价格，你可不能自己偷偷的买走啊。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    魏国商人那里有一批需要尽快处理的布匹出售，并且这批布并不是因为有质量问题才出售的，而是因为魏国商人要转行做别的生意，急需启动资金，所以才贱卖，这可是个好机会，或许我可以从买进卖出中小赚一笔，你去帮我问问魏国商人，那批布到底什么价格，你可不能自己偷偷的买走啊。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		break; 
 	case 5:
 		if ( who->get_level() >= 85 && !who->get_legend(TASK_38,17) )

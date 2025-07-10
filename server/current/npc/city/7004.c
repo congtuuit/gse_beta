@@ -94,7 +94,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 90 && !who->get_legend(TASK_32,14) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    本官有亲人无意中患上一种暗疾，需要困魔阵中有阴气滋养的大枣才能治愈，你去困魔阵中帮我弄10个来。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    本官有亲人无意中患上一种暗疾，需要困魔阵中有阴气滋养的大枣才能治愈，你去困魔阵中帮我弄10个来。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_32,14) && !who->get_legend(TASK_32,15) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，我可真是口馋了，你可得给我尽快找过来啊。\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_32,15) && !who->get_legend(TASK_32,16) )

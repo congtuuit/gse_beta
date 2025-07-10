@@ -102,13 +102,13 @@ void do_welcome2( object me, string arg )
 		if ( who->get_legend(TASK_22,8) && !who->get_legend(TASK_22,9 ) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    呃……（一脸为难状），壮士片刻后前来，我必将给你一个答复。\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_22,9) && !who->get_legend(TASK_22,10) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，这位壮士我也不瞒你了，秦宫的确时有妖魔作祟，似乎有一个柔媚的男子迷住了我们的太子殿下，可是王后找来的道士去指出他是千年Yêu tinh所化，而太子殿下却极力护住他，反而将那道士赶出宫去，不过架不住我们王后隔三茬五的找来不同的会些道术的人暗地里对付他，而那千年Yêu tinh所化成的美男子在破了几个会些道术人的法之后可能觉得秦宫非久留之地，径自Rời khỏi.了，但是王后仍旧发现太子殿下常常会找借口出宫去到秦长城匝道一带，有人发现原来太子殿下还是与千年Yêu tinh所化的男子在一起，而那些自称的道术大家又不是那个Yêu tinh的对手，敢问壮士可能斩妖除魔，救我们的太子殿下？\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，这位壮士我也不瞒你了，秦宫的确时有妖魔作祟，似乎有一个柔媚的男子迷住了我们的太子殿下，可是王后找来的道士去指出他是千年Yêu tinh所化，而太子殿下却极力护住他，反而将那道士赶出宫去，不过架不住我们王后隔三茬五的找来不同的会些道术的人暗地里对付他，而那千年Yêu tinh所化成的美男子在破了几个会些道术人的法之后可能觉得秦宫非久留之地，径自Rời khỏi.了，但是王后仍旧发现太子殿下常常会找借口出宫去到秦长城匝道一带，有人发现原来太子殿下还是与千年Yêu tinh所化的男子在一起，而那些自称的道术大家又不是那个Yêu tinh的对手，敢问壮士可能斩妖除魔，救我们的太子殿下？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_22,10) && !who->get_legend(TASK_22,11) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    此Yêu tinh不除，恐怕秦宫将永无安宁之日。\n"ESC"Rời khỏi.", me->get_name()));
          	else if ( who->get_legend(TASK_22,11) && !who->get_legend(TASK_22,12) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    呵呵……本官一定会上奏大王重谢于你。\n"ESC"Hoàn thành任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_22,12) && !who->get_legend(TASK_22,13) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    大王得知Yêu tinh长时间与太子殿下在秦长城幽会而自己士兵全部装聋作哑，而不劝回王子，诛杀Yêu tinh时，感觉到非常震怒，他下令赐死秦长城上10个Tần Quốc刀盾兵、10个Tần Quốc枪兵、10个Tần Quốc弓兵以儆效尤。杀完之后报Tần Quốc典狱官备案。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    大王得知Yêu tinh长时间与太子殿下在秦长城幽会而自己士兵全部装聋作哑，而不劝回王子，诛杀Yêu tinh时，感觉到非常震怒，他下令赐死秦长城上10个Tần Quốc刀盾兵、10个Tần Quốc枪兵、10个Tần Quốc弓兵以儆效尤。杀完之后报Tần Quốc典狱官备案。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
           		
         	break; 
         case 2:
@@ -170,7 +170,7 @@ void do_welcome2( object me, string arg )
 		else if ( who->get_legend(TASK_44,19) && !who->get_legend(TASK_44,20) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    不错不错，年轻人，你够胆，够博，够细，你想想还差什么吧，想好了再来找我，我们大王最喜欢你这种进取的年轻人了，如果你都具备了各种条件，说不定封候拜相也是指日可待！\n"ESC"Hoàn thành任务\ntalk %x# welcome.9\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_44,20) && !who->get_legend(TASK_44,21) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我们大王赏识的人，除了有胆识、有阅历、细心之外，还需要谋略，现在地煞门、太极门匪类聚众在天门阵对抗国家，骚扰百姓，实乃一大祸害，现今我国军队无暇顾及这些匪类，这就要看你能不能运用谋略，击杀地煞门、太极门众守各8个，虚陵洞金精10个，刀魂4个，并且能全身而退，待得你成功之后，去找齐管家老儿吧，并且对他说，本总管谢谢他送来这么个壮士，他的良苦用心本总管明白。\n"ESC"接受任务\ntalk %x# welcome.10\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我们大王赏识的人，除了有胆识、有阅历、细心之外，还需要谋略，现在地煞门、太极门匪类聚众在天门阵对抗国家，骚扰百姓，实乃一大祸害，现今我国军队无暇顾及这些匪类，这就要看你能不能运用谋略，击杀地煞门、太极门众守各8个，虚陵洞金精10个，刀魂4个，并且能全身而退，待得你成功之后，去找齐管家老儿吧，并且对他说，本总管谢谢他送来这么个壮士，他的良苦用心本总管明白。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.10\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 			
 		break;
 	case 7:

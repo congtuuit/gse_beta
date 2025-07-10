@@ -96,9 +96,9 @@ int get_use_effect_2_callout( object me, object who, object item, string arg )
                         send_user( me, "%c%s", '!', "带着钱票不能使用土行珠。" );
                         return 1;
                 }
-                if( present("贵重物品", me, 1, MAX_CARRY*4) )
+                if( present("Vật phẩm quý giá", me, 1, MAX_CARRY*4) )
                 {
-                        send_user( me, "%c%s", '!', "带着贵重物品不能使用土行珠。" );
+                        send_user( me, "%c%s", '!', "带着Vật phẩm quý giá不能使用土行珠。" );
                         return 1;
                 }       
                 if( objectp( npc = me->get_quest("escort.robber#") ) && npc->is_escort_robber() )    // 寻找蒙面人

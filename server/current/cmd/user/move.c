@@ -362,7 +362,7 @@ int main( object me, string arg )
                         send_user( me, "%c%d%c", 0x4e, getoid(item), item->get_amount() );    // 补发消息
                         return 1;
                 }
-                if( item->get_name() == "贵重物品" )
+                if( item->get_name() == "Vật phẩm quý giá" )
                 {
                         notify( "Không thể bỏ đi những vật có giá trị。" );
                         send_user( me, "%c%d%c", 0x4e, getoid(item), item->get_amount() );    // 补发消息

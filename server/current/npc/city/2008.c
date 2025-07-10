@@ -82,7 +82,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 15 && !who->get_legend(TASK_04,26) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    大侠你终于出现了！监狱之中，不乏有高手异人。最近，有一名在押的重犯趁看守不备，越狱逃跑了。这事如果让大王知道了定会怪罪于我，本人官职定将不保。%s能否帮我将此重犯杀掉？我一定重谢你。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),NPC_RANK_D->get_respect_2(who),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    大侠你终于出现了！监狱之中，不乏有高手异人。最近，有一名在押的重犯趁看守不备，越狱逃跑了。这事如果让大王知道了定会怪罪于我，本人官职定将不保。%s能否帮我将此重犯杀掉？我一定重谢你。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),NPC_RANK_D->get_respect_2(who),getoid(me)));
 		else if ( who->get_legend(TASK_04,27) && !who->get_legend(TASK_04,28) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    多谢%s出手相助，不然真不知该如何向大王交差，本官一定会报答%s的恩德。\n"ESC"Hoàn thành任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),cmd1=NPC_RANK_D->get_respect_2(who),cmd1,getoid(me)));
         	else if ( who->get_legend(TASK_04,26) && !who->get_legend(TASK_04,27) )
@@ -124,7 +124,7 @@ void do_welcome2( object me, string arg )
         	break;    
         case 4:
         	if ( who->get_level() >= 20 && !who->get_legend(TASK_05,4) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    大侠你终于出现了，最近一个将要被问斩的犯人许横刀，被他的同伙劫走了。听闻许横刀现在正在虎牢关一带逃亡。这许横刀欺男霸女，做尽了坏事。为Bộ luật hình sự，Trừ gian diệt ác，还望%s前去将他除掉。我代韩国的民众先在这里谢谢你了。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),NPC_RANK_D->get_respect_2(who),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    大侠你终于出现了，最近一个将要被问斩的犯人许横刀，被他的同伙劫走了。听闻许横刀现在正在虎牢关一带逃亡。这许横刀欺男霸女，做尽了坏事。为Bộ luật hình sự，Trừ gian diệt ác，还望%s前去将他除掉。我代韩国的民众先在这里谢谢你了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),NPC_RANK_D->get_respect_2(who),getoid(me)));
 		else if ( who->get_legend(TASK_05,5) && !who->get_legend(TASK_05,6) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    多谢%s相助，这次你可立了大功，本官一定会奖赏你。\n"ESC"Hoàn thành任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),cmd1=NPC_RANK_D->get_respect_2(who),getoid(me)));
         	else if ( who->get_legend(TASK_05,4) && !who->get_legend(TASK_05,5) )

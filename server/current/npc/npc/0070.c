@@ -64,10 +64,10 @@ void check_legend_task( object who )
 		send_user(who,"%c%s",'!',sprintf("Ếch Tử Mẫu %d/1",i));
 		USER_TASK_D->send_task_intro(who,2,TID_NEWBIE_01,48);	
 	}
-	//掉火焰石
+	//掉Hỏa Thạch
 	if ( who->get_legend(TASK_49,6) && !who->get_legend(TASK_49,7) && random(100)<65 )
 	{
-		if ( objectp( item = present("火焰石", who, 1, MAX_CARRY) ) && item->is_huoyanshi() == 1 ) 
+		if ( objectp( item = present("Hỏa Thạch", who, 1, MAX_CARRY) ) && item->is_huoyanshi() == 1 ) 
 		{
 			if ( item->get_amount() < 5 )
 				item->add_amount(1);
@@ -93,9 +93,9 @@ void check_legend_task( object who )
 			{
 				who->set_legend(TASK_49,7);
 				send_user( who, "%c%c%c%w%w%s", 0x51, 2, 2,TID_NEWBIE_01,116,"Giao dịch(已经Hoàn thành)" );
-				send_user(who,"%c%s",';',"火焰石已经收集好,请找新手村的门派向导Hoàn thành任务");
+				send_user(who,"%c%s",';',"Hỏa Thạch已经收集好,请找新手村的门派向导Hoàn thành任务");
 			}
-			send_user(who,"%c%s",'!',sprintf(HIY"火焰石 %d/5",i));
+			send_user(who,"%c%s",'!',sprintf(HIY"Hỏa Thạch %d/5",i));
 			USER_TASK_D->send_task_intro(who,2,TID_NEWBIE_01,116);
 		}			
 	}

@@ -105,7 +105,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 20 && !who->get_legend(TASK_05,1) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    大侠你终于出现了。那恶官马三，克扣我的工钱。我前去找他理论，谁知他不但不给我一分钱，还叫他的手下将我毒打一顿。马三还命我今天继续上工，我这今天要是去了，定不会活着回来。%s你可有办法救我一命吗？\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),NPC_RANK_D->get_respect_2(who),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    大侠你终于出现了。那恶官马三，克扣我的工钱。我前去找他理论，谁知他不但不给我一分钱，还叫他的手下将我毒打一顿。马三还命我今天继续上工，我这今天要是去了，定不会活着回来。%s你可有办法救我一命吗？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),NPC_RANK_D->get_respect_2(who),getoid(me)));
 		else if ( who->get_legend(TASK_05,2) && !who->get_legend(TASK_05,3) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    呵呵，这下可好了！再也不用受那恶官欺负了。\n"ESC"Hoàn thành任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_05,1) && !who->get_legend(TASK_05,2) )

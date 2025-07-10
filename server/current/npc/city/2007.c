@@ -79,7 +79,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 15 && !who->get_legend(TASK_04,9) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    百密必有一疏，大王派我出使秦国，可是我却将出使礼物玉龙睛弄丢了，离出使之日不远了。还望%s能帮我将那玉龙睛寻回来，本使定当酬谢。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),NPC_RANK_D->get_respect_2(who),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    百密必有一疏，大王派我出使秦国，可是我却将出使礼物玉龙睛弄丢了，离出使之日不远了。还望%s能帮我将那玉龙睛寻回来，本使定当酬谢。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),NPC_RANK_D->get_respect_2(who),getoid(me)));
 		else if ( who->get_legend(TASK_04,9) && !who->get_legend(TASK_04,10) )
 			me->do_welcome(4);
         	break;
@@ -122,7 +122,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 5:
         	if ( who->get_level() >= 70 && !who->get_legend(TASK_22,24) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我特别喜欢钓鱼，据说在无定河畔有一种罕见的黄金鲤鱼，钓到这样的一条黄金鲤鱼是我们钓鱼者一生的愿望，当然这种黄金鲤鱼不是说钓就能钓的，钓这种鱼的钓具非常讲究，首先要有桂木做的鱼杆和桂木香料做鱼饵，还要用银丝做鱼丝，最后还需要用黄金做鱼钩，其他的我都已经准备好了，现在唯一缺少的就是做鱼钩的黄金，听说在弯道就有很多这些黄金。你能帮我去找些做鱼钩的黄金吗？如果你找到的话我会好好酬谢你的。\n"ESC"接受任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我特别喜欢钓鱼，据说在无定河畔有一种罕见的黄金鲤鱼，钓到这样的一条黄金鲤鱼是我们钓鱼者一生的愿望，当然这种黄金鲤鱼不是说钓就能钓的，钓这种鱼的钓具非常讲究，首先要有桂木做的鱼杆和桂木香料做鱼饵，还要用银丝做鱼丝，最后还需要用黄金做鱼钩，其他的我都已经准备好了，现在唯一缺少的就是做鱼钩的黄金，听说在弯道就有很多这些黄金。你能帮我去找些做鱼钩的黄金吗？如果你找到的话我会好好酬谢你的。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_22,24) && !who->get_legend(TASK_22,25) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，如果这鱼竿没有黄金鱼钩，会是多大的遗憾啊！\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_22,25) && !who->get_legend(TASK_22,26) )

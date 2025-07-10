@@ -97,7 +97,7 @@ void do_giveup2(  ) { TASK_MASTER_D->do_giveup2( this_player(), this_object() );
 
 // 函数：拜师
 void do_apprentice( string arg  ) { TASK_APPRENTICE_D->do_apprentice( this_player(), this_object(), arg ); }
-//接受任务
+//Nhận nhiệm vụ
 void accept_quest(  ) { TASK_MASTER_D->accept_quest( this_player(), this_object() ); }
 //任务信息
 void task_info(  ) { TASK_MASTER_D->task_info( this_player(), this_object() ); }

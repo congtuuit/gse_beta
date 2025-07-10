@@ -127,23 +127,23 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 65 && !who->get_legend(TASK_21,3) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    听闻最近大王对于机关术非常感兴趣，打算尽起国内巧匠将建一座集聚天下机关术大成的地宫，但是同时也严格晓谕不得劳民伤财动摇国之根本。听到此我技痒难忍，但不知道具体行程如何，你可向秦国内政官甘罗打听一下吗？\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    听闻最近大王对于机关术非常感兴趣，打算尽起国内巧匠将建一座集聚天下机关术大成的地宫，但是同时也严格晓谕不得劳民伤财动摇国之根本。听到此我技痒难忍，但不知道具体行程如何，你可向秦国内政官甘罗打听一下吗？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if (who->get_legend(TASK_21,4) && !who->get_legend(TASK_21,5))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    据说那郦山所处乱石之地，想要在那开山建造工事，没有开山锄是很麻烦的。据说这次大王分发了许多开山锄，都放在秦长城的烽火台让我们自己去领取，你是否愿意帮我领来开山锄呢？\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    据说那郦山所处乱石之地，想要在那开山建造工事，没有开山锄是很麻烦的。据说这次大王分发了许多开山锄，都放在秦长城的烽火台让我们自己去领取，你是否愿意帮我领来开山锄呢？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_21,5) && !who->get_legend(TASK_21,6) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    没有开山锄，在那乱石之地开山建造工事非常麻烦。\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_21,6) && !who->get_legend(TASK_21,7) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这下解决了修造郦山工事的大麻烦。\n"ESC"Hoàn thành任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if (who->get_legend(TASK_21,7) && !who->get_legend(TASK_21,8))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我所领工匠已经准备完毕，你可将这封建造信函转交秦王赢政，降旨修建地宫。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我所领工匠已经准备完毕，你可将这封建造信函转交秦王赢政，降旨修建地宫。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if (who->get_legend(TASK_21,9) && !who->get_legend(TASK_21,10))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    大王既已下令开始修造，小民即日开始动工。只是修造所用石料被Trương Phú垄断，一味抬高物价，这本是大王之事，他违抗王命，理应伏法，你能前去秦长城烽火台将他除去吗？\n"ESC"接受任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    大王既已下令开始修造，小民即日开始动工。只是修造所用石料被Trương Phú垄断，一味抬高物价，这本是大王之事，他违抗王命，理应伏法，你能前去秦长城烽火台将他除去吗？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_21,10) && !who->get_legend(TASK_21,11) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    恶霸不除，石料如何取得？难道真要纵容他任意哄抬物价吗？\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_21,11) && !who->get_legend(TASK_21,12) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这下可好了，为修造之路又除掉一大障碍。\n"ESC"Hoàn thành任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_21,12) && !who->get_legend(TASK_21,13) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    郦山地宫之事万事具备，只欠内政批文了，你将消息禀告秦国内政官，希望他能够尽快批文下来。\n"ESC"接受任务\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    郦山地宫之事万事具备，只欠内政批文了，你将消息禀告秦国内政官，希望他能够尽快批文下来。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 			
         	break;
 	case 2:
@@ -238,7 +238,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 9:
 		if ( who->get_level() >= 105 && !who->get_legend(TASK_39,3) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    之前赵国大将军嘱咐过我一件事情，当然，这是秘密，不能告诉你。\n    现在，这件事情我已替他办妥，因为是机密，所以我不能自己将这个消息告诉他，你只需替我找到赵国大将军，然后告诉他，工匠之事已办好就行了，我想他会重重赏赐你的。\n"ESC"接受任务\ntalk %x# welcome.10\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    之前赵国大将军嘱咐过我一件事情，当然，这是秘密，不能告诉你。\n    现在，这件事情我已替他办妥，因为是机密，所以我不能自己将这个消息告诉他，你只需替我找到赵国大将军，然后告诉他，工匠之事已办好就行了，我想他会重重赏赐你的。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.10\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	break; 
         case 10:
         	if ( who->get_level() >= 105 && !who->get_legend(TASK_39,3) )
@@ -252,7 +252,7 @@ void do_welcome2( object me, string arg )
         	break; 
 	case 11:
         	if ( who->get_level() >=110 && !who->get_legend(TASK_43,23) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    现在我军忙于备战，无暇他顾，以前潜伏的妖孽恶道纷纷猖獗起来，频频滋扰我关中辎重，使得我们辛辛苦苦作出来的武器装备要么不翼而飞，要么被破坏得支离破碎，看的我们心在滴血啊！大王整日都为一堆奏折搞得不堪其繁，甚至动用了禁卫军，但狡猾的妖孽恶道一闻军队调动，那帮子就龟缩起来，听闻大侠武功盖世，急公好义，不知能否为我等打击一下他们的嚣张气焰，杀掉虚陵洞的土精5只，九曲桥的龟仙人6只，天门阵的天罡门众守8个？在此代表我国匠人先谢过了。等到天下平定之后，这帮子妖孽恶道的日子就到头了。\n"ESC"接受任务\ntalk %x# welcome.12\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    现在我军忙于备战，无暇他顾，以前潜伏的妖孽恶道纷纷猖獗起来，频频滋扰我关中辎重，使得我们辛辛苦苦作出来的武器装备要么不翼而飞，要么被破坏得支离破碎，看的我们心在滴血啊！大王整日都为一堆奏折搞得不堪其繁，甚至动用了禁卫军，但狡猾的妖孽恶道一闻军队调动，那帮子就龟缩起来，听闻大侠武功盖世，急公好义，不知能否为我等打击一下他们的嚣张气焰，杀掉虚陵洞的土精5只，九曲桥的龟仙人6只，天门阵的天罡门众守8个？在此代表我国匠人先谢过了。等到天下平定之后，这帮子妖孽恶道的日子就到头了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.12\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_43,23) && !who->get_legend(TASK_43,24) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，为何那些妖孽恶道还是如此猖獗呢，难道大侠你也畏惧他们吗？\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_43,24) && !who->get_legend(TASK_43,25) )

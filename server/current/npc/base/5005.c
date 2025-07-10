@@ -80,7 +80,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 65 && !who->get_legend(TASK_2_01,1) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你是说若蝉姑娘吗？哎，真是可怜啊……她家搬来王城也有些年头了，与她指腹为婚青梅竹马的唐家小伙子名追的，因家中遭逢大变失散多年后来寻她完婚，为若蝉姑娘双亲不允，将之赶出。若蝉姑娘郁郁不乐，又不肯嫁与他人。过了一年那唐追又来，仍为不允。他走后若蝉姑娘就此痴痴呆呆，不言不语。我听说是那唐追学了些邪术，拘了姑娘三魂七魄之中Ba linh hồn và sáu linh hồn去了，因而才弄到这样。你可以帮忙去替若蝉姑娘回魂么……听说那唐追如今在骊山陵墓之中为恶，此去十分危险，但别无他法，唉！\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你是说若蝉姑娘吗？哎，真是可怜啊……她家搬来王城也有些年头了，与她指腹为婚青梅竹马的唐家小伙子名追的，因家中遭逢大变失散多年后来寻她完婚，为若蝉姑娘双亲不允，将之赶出。若蝉姑娘郁郁不乐，又不肯嫁与他人。过了一年那唐追又来，仍为不允。他走后若蝉姑娘就此痴痴呆呆，不言不语。我听说是那唐追学了些邪术，拘了姑娘三魂七魄之中Ba linh hồn và sáu linh hồn去了，因而才弄到这样。你可以帮忙去替若蝉姑娘回魂么……听说那唐追如今在骊山陵墓之中为恶，此去十分危险，但别无他法，唉！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_2_01,2) && !who->get_legend(TASK_2_01,3) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你对若蝉姑娘念咒“Sự trở lại của linh hồn”。\n"ESC"Rời khỏi.", me->get_name(),));
 

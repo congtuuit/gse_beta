@@ -97,7 +97,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 10 && who->get_legend(TASK_NEWBIE_03,11)==0 )
-        		send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嘿～～年轻人！我见你年纪轻轻就在外面游历，见识应该不少吧。听说过南海明珠吗？这可是个好东西！\n    近来，珠宝行情一路上涨，特别是那颗南海明珠更是炒到了天价，凑巧的是这颗珍珠刚好被我在齐国的兄弟收购了，他为这南海明珠可花了不少银子，当然也想卖个好价钱，他一直想找个盒子来装这颗南海明珠，但是一直都不能寻得合适的，你去看看能不能帮上他，他可是腰缠万贯的大富豪，不会亏待你的。\n    他就在齐国的临淄城内，过了桥在王府外你就能看到了。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+        		send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嘿～～年轻人！我见你年纪轻轻就在外面游历，见识应该不少吧。听说过南海明珠吗？这可是个好东西！\n    近来，珠宝行情一路上涨，特别是那颗南海明珠更是炒到了天价，凑巧的是这颗珍珠刚好被我在齐国的兄弟收购了，他为这南海明珠可花了不少银子，当然也想卖个好价钱，他一直想找个盒子来装这颗南海明珠，但是一直都不能寻得合适的，你去看看能不能帮上他，他可是腰缠万贯的大富豪，不会亏待你的。\n    他就在齐国的临淄城内，过了桥在王府外你就能看到了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	break;
         case 2:
         	if ( who->get_level() >= 10 && who->get_legend(TASK_NEWBIE_03,11)==0 )
@@ -111,7 +111,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 3:
         	if ( who->get_level() >= 30 && !who->get_legend(TASK_08,25) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我是一个生意人，长年累月在外面过着近乎流浪的生活，经常为了多赚点钱，天色很晚了才回家。俗话说，夜路走多了，总会遇到鬼。鬼我是没遇见，鬼火倒是见过一次。\n    我记得那天已经很晚了，我挑着担子穿过大别山的湘妃林，准备回家泡个热水澡，好好休息，突然，我发现那树林后面似乎有闪闪的星光，荧绿荧绿的，直觉告诉我，那一定是鬼火。\n    曾经听村里的老人家说过，在湘妃林一带有一个夜浮鬼，经常出来作恶，你去调查一下吧。\n"ESC"接受任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我是一个生意人，长年累月在外面过着近乎流浪的生活，经常为了多赚点钱，天色很晚了才回家。俗话说，夜路走多了，总会遇到鬼。鬼我是没遇见，鬼火倒是见过一次。\n    我记得那天已经很晚了，我挑着担子穿过大别山的湘妃林，准备回家泡个热水澡，好好休息，突然，我发现那树林后面似乎有闪闪的星光，荧绿荧绿的，直觉告诉我，那一定是鬼火。\n    曾经听村里的老人家说过，在湘妃林一带有一个夜浮鬼，经常出来作恶，你去调查一下吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_08,25) && !who->get_legend(TASK_08,26) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    下次做生意再也不从那条路上走了，免得被那恶鬼撞见。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_08,26) && !who->get_legend(TASK_08,27) )

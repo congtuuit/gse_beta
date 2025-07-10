@@ -118,7 +118,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 35 && !who->get_legend(TASK_09,19)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    秦、赵大战于长平，我Quốc与燕合力救赵。今赵军缺粮，派人到本王府，希望能给本Quốc财政官通报一声，借点粮食，有助于赵军继续攻秦。本总管希望你速速将此事禀报本Quốc财政官！\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    秦、赵大战于长平，我Quốc与燕合力救赵。今赵军缺粮，派人到本王府，希望能给本Quốc财政官通报一声，借点粮食，有助于赵军继续攻秦。本总管希望你速速将此事禀报本Quốc财政官！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_09,19) && !who->get_legend(TASK_09,20) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看来Triệu Quốc气数已尽，怪不得别人，财政官不肯帮他，也是预料之中，削弱自身Quốc力的事情谁都不愿去做！\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_09,26) && !who->get_legend(TASK_09,27) )
@@ -153,13 +153,13 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_29,16) && !who->get_legend(TASK_29,17) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这个嘛！我得好好想想。\n"ESC"Hoàn thành任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_29,17) && !who->get_legend(TASK_29,18) ) 
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    稀世宝玉可要看拥有他的人有没有福分，你去将军古墓二层杀掉30只Sư tử đá和30只石虎还能安全回来的话我可以考虑一下是否你消受得起。\n"ESC"接受任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    稀世宝玉可要看拥有他的人有没有福分，你去将军古墓二层杀掉30只Sư tử đá和30只石虎还能安全回来的话我可以考虑一下是否你消受得起。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_29,18) && !who->get_legend(TASK_29,19) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看来你是不行啊！就这点本事，还想帮人寻宝？\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_29,19) && !who->get_legend(TASK_29,20) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嗯～！不错，不错！\n"ESC"Hoàn thành任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_29,20) && !who->get_legend(TASK_29,21) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这件事我是知道的，但是这个宝玉据说有邪气，凡是拥有它放在家中都会闹鬼，它的上一任主人财政官的堂哥一家就是被它给害死的，所以财政官虽然很喜欢它，可是为了不让家人收到危害，只得将他丢弃在某个地方，这个具体的你得去问财政官了。\n"ESC"接受任务\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这件事我是知道的，但是这个宝玉据说有邪气，凡是拥有它放在家中都会闹鬼，它的上一任主人财政官的堂哥一家就是被它给害死的，所以财政官虽然很喜欢它，可是为了不让家人收到危害，只得将他丢弃在某个地方，这个具体的你得去问财政官了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 
 	    	break;
         case 5:
@@ -214,7 +214,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 9:
         	if ( who->get_level() >= 90 && !who->get_legend(TASK_31,1) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我每次出宫都要买齐小贩的包子，可是最近经过老是看到他垂头丧气，可是我的身份又不方便动问，你去帮我看看有什么可以帮忙的地方。\n"ESC"接受任务\ntalk %x# welcome.10\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我每次出宫都要买齐小贩的包子，可是最近经过老是看到他垂头丧气，可是我的身份又不方便动问，你去帮我看看有什么可以帮忙的地方。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.10\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	break;
         case 10:
         	if ( who->get_level() >= 90 && !who->get_legend(TASK_31,1) )
@@ -228,7 +228,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 11:
         	if ( who->get_level() >= 35 && !who->get_legend(TASK_37,29) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    听闻秦管家管事有方，诺大一个秦王府被他管理得头头是道，主子仆人上下井然，俗话说，没规矩不成方圆，我看我还得向秦管家讨教讨教，关于怎样管理好这大大小小的仆人，还真得下一番工夫。我看不如你替我去趟Tần Quốc，向秦管家取这管理的经。\n"ESC"接受任务\ntalk %x# welcome.12\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    听闻秦管家管事有方，诺大一个秦王府被他管理得头头是道，主子仆人上下井然，俗话说，没规矩不成方圆，我看我还得向秦管家讨教讨教，关于怎样管理好这大大小小的仆人，还真得下一番工夫。我看不如你替我去趟Tần Quốc，向秦管家取这管理的经。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.12\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	break;
         case 12:
         	if ( who->get_level() >= 35 && !who->get_legend(TASK_37,29) )
@@ -242,7 +242,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 13:
         	if ( who->get_level() >= 100 && !who->get_legend(TASK_36,17)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    东海渔村一个月前突然百鸟汇集，原来竟然是天降祥瑞，凤凰临世，想不到几日前几个游手好闲的所谓大侠为了宝物竟然乘凤凰临产突施杀手，东海渔村突下天火，凤凰浴火而重生，也烧死了那几个贪心的家伙，我Quốc旅秦侨民马显报告说卜卦得知凤凰Niết bàn留下一块凤凰玉佩，传言有青春永驻的功效，王后闻说甚为挂念，命老夫觅人秘密寻找，本官见你聪明伶俐，又多次圆满Hoàn thành交代你的任务，决定将这项美差交与你，如何，你可能胜任？\n"ESC"接受任务\ntalk %x# welcome.14\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    东海渔村一个月前突然百鸟汇集，原来竟然是天降祥瑞，凤凰临世，想不到几日前几个游手好闲的所谓大侠为了宝物竟然乘凤凰临产突施杀手，东海渔村突下天火，凤凰浴火而重生，也烧死了那几个贪心的家伙，我Quốc旅秦侨民马显报告说卜卦得知凤凰Niết bàn留下一块凤凰玉佩，传言有青春永驻的功效，王后闻说甚为挂念，命老夫觅人秘密寻找，本官见你聪明伶俐，又多次圆满Hoàn thành交代你的任务，决定将这项美差交与你，如何，你可能胜任？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.14\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_36,17) && !who->get_legend(TASK_36,18) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    难道是马显误报还是你搜寻的不够仔细？你再去看看，王后可是心急得很。\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_36,18) && !who->get_legend(TASK_36,19) )

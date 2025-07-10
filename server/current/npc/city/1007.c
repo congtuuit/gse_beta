@@ -82,7 +82,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 80 && !who->get_legend(TASK_27,19) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我幼年贪玩的时候被匪人掳到了一个非常美丽的洞穴，虽然起初被那些铜甲尸吓了个半死，弄得狼狈不堪，但是幸好后来被一个老道长救了出来，之后大病了一场，但是对于里面诡异奇丽的景色仍然念念不忘，现在终于打听到那个地方叫做灵谷洞，可是其中险山恶水，非我所能前往，况且职责所限，必须时刻听从召唤，不能亲自前去。你可以代我前去再次探察一番吗，还有顺便帮我杀10只铜甲尸以出当年恶气。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我幼年贪玩的时候被匪人掳到了一个非常美丽的洞穴，虽然起初被那些铜甲尸吓了个半死，弄得狼狈不堪，但是幸好后来被一个老道长救了出来，之后大病了一场，但是对于里面诡异奇丽的景色仍然念念不忘，现在终于打听到那个地方叫做灵谷洞，可是其中险山恶水，非我所能前往，况且职责所限，必须时刻听从召唤，不能亲自前去。你可以代我前去再次探察一番吗，还有顺便帮我杀10只铜甲尸以出当年恶气。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_27,19) && !who->get_legend(TASK_27,20) )
  			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    难道我少时只是一时病痛之间的幻觉吗？哎，世间美梦莫非如此？\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_27,20) && !who->get_legend(TASK_27,21) )
@@ -131,7 +131,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 6:
         	if ( who->get_level() >=54 && !who->get_legend(TASK_2_00,7) ) 
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你知道秦国有个成峤军营吗？听说是秦王的弟弟有心谋叛而私设的军营，军纪不严，常私掠人口进去不见出来。我担心怨气深重，将来兹事体大，你能否去替我收来Hồn ma，让我可以作法超度，以免今后会出来害人？这是搜魂法器，带它在身上杀死怨灵就能得到Hồn ma了。\n"ESC"接受任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你知道秦国有个成峤军营吗？听说是秦王的弟弟有心谋叛而私设的军营，军纪不严，常私掠人口进去不见出来。我担心怨气深重，将来兹事体大，你能否去替我收来Hồn ma，让我可以作法超度，以免今后会出来害人？这是搜魂法器，带它在身上杀死怨灵就能得到Hồn ma了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_2_00,7) && !who->get_legend(TASK_2_00,8) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你还没有带来Hồn ma么？真担心啊！\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_2_00,8) && !who->get_legend(TASK_2_00,9) )

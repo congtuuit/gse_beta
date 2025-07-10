@@ -135,7 +135,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 20 && !who->get_legend(TASK_06,4)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我上有老下有小，一大家人就靠我开这个酒店维持生活，我每天累死累活的就能糊个口，我容易吗？\n    可有个叫Hu Xiaosa的家伙，他就欺负我老实，限定我每个月必须给他交30两银子的保护费，不然他就砸了我的店，可怜我这个酒店一个月还赚不了30两，这可如何是好啊！你能去马踏湖的鱼龙村替我教训他吗？从我这里过去，穿过马陵道、白马庄就到马踏湖了。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我上有老下有小，一大家人就靠我开这个酒店维持生活，我每天累死累活的就能糊个口，我容易吗？\n    可有个叫Hu Xiaosa的家伙，他就欺负我老实，限定我每个月必须给他交30两银子的保护费，不然他就砸了我的店，可怜我这个酒店一个月还赚不了30两，这可如何是好啊！你能去马踏湖的鱼龙村替我教训他吗？从我这里过去，穿过马陵道、白马庄就到马踏湖了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_06,4) && !who->get_legend(TASK_06,5) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    算了，我还是按时交纳贡饷，免得到时候性命不保。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_06,5) && !who->get_legend(TASK_06,6) )
@@ -169,7 +169,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 4:
         	if ( who->get_level() >= 25 && !who->get_legend(TASK_06,13)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    用Kiến酿的酒再普通不过了，可是用玉Kiến酿的酒，我想普天之天，没有几个人尝过。\n    玉鹿，顾名思义，是皮毛像美玉一样晶莹剔透的一种鹿，世间罕见，而它的角更是价值连城，用玉Kiến酿出来的酒可以延年益寿，不少人想得到它，据我打听到的消息，这种Kiến还没有任何人找到过，平时酒店里人多口杂，我听到他们说在巨鹿附近有一枝巨Kiến，你是否有兴趣去寻找呢？因为玉鹿太珍贵，而知情的人又不多，所以你还得细心地慢慢地找寻，大概就在飞虎寨一带吧。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    用Kiến酿的酒再普通不过了，可是用玉Kiến酿的酒，我想普天之天，没有几个人尝过。\n    玉鹿，顾名思义，是皮毛像美玉一样晶莹剔透的一种鹿，世间罕见，而它的角更是价值连城，用玉Kiến酿出来的酒可以延年益寿，不少人想得到它，据我打听到的消息，这种Kiến还没有任何人找到过，平时酒店里人多口杂，我听到他们说在巨鹿附近有一枝巨Kiến，你是否有兴趣去寻找呢？因为玉鹿太珍贵，而知情的人又不多，所以你还得细心地慢慢地找寻，大概就在飞虎寨一带吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_06,13) && !who->get_legend(TASK_06,14) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看来这稀世佳酿算是不可能出现了。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_06,14) && !who->get_legend(TASK_06,15) )

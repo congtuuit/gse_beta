@@ -94,7 +94,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 20 && !who->get_legend(TASK_05,7)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    别看我其貌不扬，可因为我的手艺好，很多人还是愿意请我做工的，可就我这点手艺还让人惦记上了。\n    那呆在巨鹿平丘的无赖马大龙，居然经常冒充我的名号到处骗人，最起初还只是冒充我去给人做工，现在居然发展到拿了定金就走人，影响了我的名誉与生意，你能给我除掉他吗？\n    他知道我很生气，所以现在躲在了巨鹿的平丘，如果你从赵国去，到了巨鹿向右走就可以看到他了，他就躲在那颗巨大的仙人掌旁边。从太行山方向的话，过了桥一直往前走就能找到。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    别看我其貌不扬，可因为我的手艺好，很多人还是愿意请我做工的，可就我这点手艺还让人惦记上了。\n    那呆在巨鹿平丘的无赖马大龙，居然经常冒充我的名号到处骗人，最起初还只是冒充我去给人做工，现在居然发展到拿了定金就走人，影响了我的名誉与生意，你能给我除掉他吗？\n    他知道我很生气，所以现在躲在了巨鹿的平丘，如果你从赵国去，到了巨鹿向右走就可以看到他了，他就躲在那颗巨大的仙人掌旁边。从太行山方向的话，过了桥一直往前走就能找到。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_05,7) && !who->get_legend(TASK_05,8) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看来我得去报官才能把这无耻之徒绳之于法。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_05,8) && !who->get_legend(TASK_05,9) )
@@ -128,7 +128,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 4:
         	if ( who->get_level() >= 95 && !who->get_legend(TASK_34,9)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这段时间看到魏老汉徘徊城西河边，经常乱蹦乱跳，还在自己身上乱抹一些千奇百怪的东西，口中还常常念念有词，喊什么千秋万载，道仙保佑之类的话。我作为他的老友甚为担忧，但是他却每次抓住我就是翻来覆去那几句话，只得请你前去帮助他了。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这段时间看到魏老汉徘徊城西河边，经常乱蹦乱跳，还在自己身上乱抹一些千奇百怪的东西，口中还常常念念有词，喊什么千秋万载，道仙保佑之类的话。我作为他的老友甚为担忧，但是他却每次抓住我就是翻来覆去那几句话，只得请你前去帮助他了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 			
         	break;
         case 5:

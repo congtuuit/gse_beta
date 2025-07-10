@@ -73,7 +73,7 @@ void do_welcome2( object me, string arg )
         {
  	case 1:
         	if ( who->get_level() >=55 && !who->get_legend(TASK_16,3) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这赵长城本是我国百姓外出的必经之道，可有人却打起了它的主意，收起了过路费，真是一群见钱眼开的Chó đường phố！\n    就是那批剑盾兵，将这条必经之道用栅栏拦住，寻常百姓要想从此路过，必须得留下买路钱，真是目无王法，还希望%s能伸张正义，为百姓撑腰，除掉这群Chó đường phố。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(), NPC_RANK_D->get_respect_2(who),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这赵长城本是我国百姓外出的必经之道，可有人却打起了它的主意，收起了过路费，真是一群见钱眼开的Chó đường phố！\n    就是那批剑盾兵，将这条必经之道用栅栏拦住，寻常百姓要想从此路过，必须得留下买路钱，真是目无王法，还希望%s能伸张正义，为百姓撑腰，除掉这群Chó đường phố。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(), NPC_RANK_D->get_respect_2(who),getoid(me)));
 		else if ( who->get_legend(TASK_16,3) && !who->get_legend(TASK_16,4) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    如果不尽快解决这件事，这百姓的出行就变得极为不方便了。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_16,4) && !who->get_legend(TASK_16,5) )
@@ -105,7 +105,7 @@ void do_welcome2( object me, string arg )
         	break;  
         case 4:
         	if ( who->get_level() >= 80 && !who->get_legend(TASK_28,1) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我亲戚是一个有名的雕刻大师，他雕刻出来的东西惟妙惟肖，贵族王室都奉为珍品，他最近答应我帮我做一件镇宅笔架，需要8块木板和3块玉石，而且说玉石需用死玉，木块需用尸木，都常吸取怨灵之气方能以毒攻毒，而这两种东西万人坑中寻找最易，不知壮士可有空去跑一番？\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我亲戚是一个有名的雕刻大师，他雕刻出来的东西惟妙惟肖，贵族王室都奉为珍品，他最近答应我帮我做一件镇宅笔架，需要8块木板和3块玉石，而且说玉石需用死玉，木块需用尸木，都常吸取怨灵之气方能以毒攻毒，而这两种东西万人坑中寻找最易，不知壮士可有空去跑一番？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_28,1) && !who->get_legend(TASK_28,2) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    既然你有勇气去万人坑，还是希望你能找来我要的木板与玉石。\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_28,2) && !who->get_legend(TASK_28,3) )

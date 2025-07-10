@@ -91,7 +91,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 25 && !who->get_legend(TASK_06,25)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    本来我还打算叫爹带我出去玩，可昨天家里来了群土匪，把我家洗劫一空不说，还打了我爹，爹寡不敌众，现在伤得很严重，根本就起不了床！\n    我要给我爹报仇，可是我太小，所以只能请你帮忙，我记得那群土匪是15个人，你能给我去教训他们吗？\n    他们就聚集在牧野一带，你从我这里过去，穿过桂陵就到牧野了。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    本来我还打算叫爹带我出去玩，可昨天家里来了群土匪，把我家洗劫一空不说，还打了我爹，爹寡不敌众，现在伤得很严重，根本就起不了床！\n    我要给我爹报仇，可是我太小，所以只能请你帮忙，我记得那群土匪是15个人，你能给我去教训他们吗？\n    他们就聚集在牧野一带，你从我这里过去，穿过桂陵就到牧野了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_06,25) && !who->get_legend(TASK_06,26) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    连你都不能消灭他们，看来我爹的仇报不了啦！\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_06,26) && !who->get_legend(TASK_06,27) )
@@ -129,19 +129,19 @@ void do_welcome2( object me, string arg )
 		if (  who->get_legend(TASK_35,5) && !who->get_legend(TASK_35,6)  )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这件事情的确透着奇怪，如果是偷，怎么有的牲口又会出现在其他人的圈里，有的贴身事物又出现在邻人的房间中，如果说牲口能卖钱，那么那些贴身事物估计没有什么卖头吧，莫非谁有什么特殊收集的嗜好，况且这么多牲口，居然能够做到毫无生息，那些贴身事物更是人都不离身的，如何能够得手？这些事情说不是神仙妖怪做的还真的不敢相信，不过这么多日琢磨我也有点头绪了，就不知道你肯不肯听我的。\n"ESC"Hoàn thành任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));	
 		else if (  who->get_legend(TASK_35,6) && !who->get_legend(TASK_35,7)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我似乎看到了水精和火精的身影，你去玄真洞杀掉30个水精和30个火精给我看看，结果如何就让我们Chờ và xem。\n"ESC"接受任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));	
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我似乎看到了水精和火精的身影，你去玄真洞杀掉30个水精和30个火精给我看看，结果如何就让我们Chờ và xem。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));	
 		else if (  who->get_legend(TASK_35,7) && !who->get_legend(TASK_35,8)  )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嗯，你不想调查这件事了么？这是我现在想出的唯一线索。\n"ESC"Rời khỏi.", me->get_name()));	
 		else if (  who->get_legend(TASK_35,8) && !who->get_legend(TASK_35,9)  )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嗯，让我们这两天再观察观察。\n"ESC"Hoàn thành任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));	
 		else if (  who->get_legend(TASK_35,9) && !who->get_legend(TASK_35,10)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    火精和水精一下子减少了不少数量，我猜有可能是他们的幕后人出现了，我昨天晚上一直埋伏在牲口圈周围，发现了贼匪石大龙的踪迹，很有可能这一系列案件都是他一手做的，我后来跟踪他到了玄真洞北部，不过我不是他的对手不敢轻举妄动，你去那里将他干掉应该我们村庄的这些怪事就会消失了吧。\n"ESC"接受任务\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));	
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    火精和水精一下子减少了不少数量，我猜有可能是他们的幕后人出现了，我昨天晚上一直埋伏在牲口圈周围，发现了贼匪石大龙的踪迹，很有可能这一系列案件都是他一手做的，我后来跟踪他到了玄真洞北部，不过我不是他的对手不敢轻举妄动，你去那里将他干掉应该我们村庄的这些怪事就会消失了吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));	
 		else if (  who->get_legend(TASK_35,10) && !who->get_legend(TASK_35,11)  )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你也不是对手？这可如何是好？\n"ESC"Rời khỏi.", me->get_name()));	
 		else if (  who->get_legend(TASK_35,11) && !who->get_legend(TASK_35,12)  )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    好样的，看来我们可有一段安宁日子过了。\n"ESC"Hoàn thành任务\ntalk %x# welcome.9\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));	
 		else if (  who->get_legend(TASK_35,12) && !who->get_legend(TASK_35,13)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    虽然石大龙死无对证，不知道当初他是如何能够无声无息间做到这么多事情的，但是好歹现在小镇又恢复了祥和安宁，你代我回禀御史，让他宽心了。\n"ESC"接受任务\ntalk %x# welcome.10\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));	
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    虽然石大龙死无对证，不知道当初他是如何能够无声无息间做到这么多事情的，但是好歹现在小镇又恢复了祥和安宁，你代我回禀御史，让他宽心了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.10\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));	
 
 		break;
 	case 5:

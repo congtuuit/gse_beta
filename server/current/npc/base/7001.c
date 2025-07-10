@@ -73,7 +73,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 50 && !who->get_legend(TASK_13,7) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    听风水先生预言，不久后在郑国渠一带将有妖孽横空出世，这妖孽不知道会做出什么危害人间的事情，所以应该防范于未然，阻止他的出世，如果我没猜错的话，应该是逆世鬼在作祟，你是否愿意前去将此事调查清楚？\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    听风水先生预言，不久后在郑国渠一带将有妖孽横空出世，这妖孽不知道会做出什么危害人间的事情，所以应该防范于未然，阻止他的出世，如果我没猜错的话，应该是逆世鬼在作祟，你是否愿意前去将此事调查清楚？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_13,7) && !who->get_legend(TASK_13,8) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这段时间我是不会从郑国渠那里经过，以防万一。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_13,8) && !who->get_legend(TASK_13,9) )

@@ -105,7 +105,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 75 && !who->get_legend(TASK_24,17) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你看起来挺强的，我有件事想委托你帮我去做一下，但是你可不能把这件事告诉别人。前几天我在批阅官文的时候，放在我桌子上面的一碗豆子突然变成一个豆兵把我手上的官印抢走了，没有了官印我就不可以批阅官文了，现在我已经积压了三天的官文没有批阅了，不把官印找回来的话恐怕很快就要惊动到大王。我必须在大王发觉之前把我的官印找回来，我已经派人打听过了，那个豆兵是在灵谷洞的豆兵的其中之一。我看你是足够强的，你去帮我把我的官印找回来吧。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你看起来挺强的，我有件事想委托你帮我去做一下，但是你可不能把这件事告诉别人。前几天我在批阅官文的时候，放在我桌子上面的一碗豆子突然变成一个豆兵把我手上的官印抢走了，没有了官印我就不可以批阅官文了，现在我已经积压了三天的官文没有批阅了，不把官印找回来的话恐怕很快就要惊动到大王。我必须在大王发觉之前把我的官印找回来，我已经派人打听过了，那个豆兵是在灵谷洞的豆兵的其中之一。我看你是足够强的，你去帮我把我的官印找回来吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_24,17) && !who->get_legend(TASK_24,18) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你可以快点把我的官印找回来吗？看来这件事已经瞒不了大王多久了。\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_24,18) && !who->get_legend(TASK_24,19) )
@@ -140,7 +140,7 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_31,9) && !who->get_legend(TASK_31,10) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这种祸害，壮士除得好！\n"ESC"Hoàn thành任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_31,10) && !who->get_legend(TASK_31,11) ) 
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    此等欺行霸市之徒，终于铲除，你代本官告知百姓让他们安心生意生活。\n"ESC"接受任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    此等欺行霸市之徒，终于铲除，你代本官告知百姓让他们安心生意生活。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 
 		break;
         case 5:
@@ -168,7 +168,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 7:
         	if ( who->get_level() >= 100 && !who->get_legend(TASK_36,14)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    天哪，瘟神小两口吵架，结果瘟神躲到我们国家来兴风作浪，散播瘟疫，可恶，实在太可恶了，这位壮士，我要求你代表人民代表国家坚决对瘟神执行死刑！这种将自己私怨凌驾到百姓痛苦上的败类绝对不可以姑息迁忍！根据我们正义的眼线报告，瘟神正躲在白马庄肆意妄为，你速速前去消灭他！\n"ESC"接受任务\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    天哪，瘟神小两口吵架，结果瘟神躲到我们国家来兴风作浪，散播瘟疫，可恶，实在太可恶了，这位壮士，我要求你代表人民代表国家坚决对瘟神执行死刑！这种将自己私怨凌驾到百姓痛苦上的败类绝对不可以姑息迁忍！根据我们正义的眼线报告，瘟神正躲在白马庄肆意妄为，你速速前去消灭他！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_36,14) && !who->get_legend(TASK_36,15) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    什么，那瘟神还很拽，你都没法子对付他？难道就任由我们百姓生活在水深火热中？你于心何忍啊，跟他讲什么道义，多找几个哥们，并肩子上！\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_36,15) && !who->get_legend(TASK_36,16) )
@@ -203,7 +203,7 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_39,23) && !who->get_legend(TASK_39,24) ) 
  			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    他终于意识到了？唉，平时就不怎么好提醒他，既然他叫你问了，那你就帮他这个忙吧。\n"ESC"Hoàn thành任务\ntalk %x# welcome.11\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_39,24) && !who->get_legend(TASK_39,25) ) 
- 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    冰冻三尺非一日之寒，他有今天的处境，也是很多平时的点滴小事积累起来的。不知他是否还记得他曾经借过齐国百姓唐茂的锄头，并且弄坏了就没还，所以你替他找把锄头来还给齐国百姓唐茂吧。他当初在天门阵的最低层想挖财宝，结果弄坏了，就顺手扔那里了，进门口的那里有几根石柱，或许锄头就扔哪个箱子里。\n"ESC"接受任务\ntalk %x# welcome.12\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+ 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    冰冻三尺非一日之寒，他有今天的处境，也是很多平时的点滴小事积累起来的。不知他是否还记得他曾经借过齐国百姓唐茂的锄头，并且弄坏了就没还，所以你替他找把锄头来还给齐国百姓唐茂吧。他当初在天门阵的最低层想挖财宝，结果弄坏了，就顺手扔那里了，进门口的那里有几根石柱，或许锄头就扔哪个箱子里。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.12\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 
 		break;       	
 	case 11:

@@ -92,7 +92,7 @@ void do_welcome2( object me, string arg )
         {
  	case 1:
         	if ( who->get_level() >=55 && !who->get_legend(TASK_16,8) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哦，我记得你！上次就是你去牧场帮赵国大将军李牧消灭了赵长城上的叛贼头目吧？他一直说你神勇呢！什么？不是你？汗～～原来我记错了。\n    不过没关系，既然你上次没帮我的忙，那这次帮我个小忙，不介意吧？为了缩减开支，本应派军队消灭的叛贼只能请人去做，你去赵长城上给我消灭15个刀盾兵吧，对你来说，应该是一点问题都没有的。\n    赶紧去吧，记得回来领报酬啊～\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哦，我记得你！上次就是你去牧场帮赵国大将军李牧消灭了赵长城上的叛贼头目吧？他一直说你神勇呢！什么？不是你？汗～～原来我记错了。\n    不过没关系，既然你上次没帮我的忙，那这次帮我个小忙，不介意吧？为了缩减开支，本应派军队消灭的叛贼只能请人去做，你去赵长城上给我消灭15个刀盾兵吧，对你来说，应该是一点问题都没有的。\n    赶紧去吧，记得回来领报酬啊～\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_16,8) && !who->get_legend(TASK_16,9) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    如果没有人帮我，我就得申请出动军队了，唉，到时候财政怎么受得了哦。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_16,9) && !who->get_legend(TASK_16,10) )

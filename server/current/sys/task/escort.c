@@ -168,7 +168,7 @@ int check_before_quest(object who, object me, int flag, int gold)
 	}
 	return 1;
 }
-//接受任务
+//Nhận nhiệm vụ
 void accept_task(object who, object me)
 {
 	object* team, npc, item;
@@ -1226,7 +1226,7 @@ void check_time()
 		delete_save_2("player");
 		iFlag = 2;
 		iGame++;
-		CHAT_D->sys_channel(0, sprintf(HIY"第%d届小超人杯“Phiêu vương bá chiến”已经开始了！这是速度与运气的竞争, 智慧与技术的比拼！大奖在向您招手, 荣誉在您头顶盘旋, 最终花落谁家, 谁是真正的战国镖王, 只有试过才知道！赶快到尉迟老镖头处接受任务, 争夺镖王的荣誉吧！", iGame));
+		CHAT_D->sys_channel(0, sprintf(HIY"第%d届小超人杯“Phiêu vương bá chiến”已经开始了！这是速度与运气的竞争, 智慧与技术的比拼！大奖在向您招手, 荣誉在您头顶盘旋, 最终花落谁家, 谁是真正的战国镖王, 只有试过才知道！赶快到尉迟老镖头处Nhận nhiệm vụ, 争夺镖王的荣誉吧！", iGame));
 		save();
 		return;
 	}

@@ -58,7 +58,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 30 && !who->get_legend(TASK_08,19) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    赌博，是把杀人不见血的刀啊！\n    我迷恋上了赌博，家里的积蓄都被我偷偷的输光了，我头一犯昏将房屋也抵押掉了，现在夫人带着孩子回了娘家，并且表示，如果我不戒赌，就永远不回来了！现在我非常后悔，我发誓不再赌博，只要能找回房屋的抵押契约，我想夫人就会回来了。据说那抵押契约被人弄丢在大别山脚的松子岭，你能帮我寻回来吗？\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    赌博，是把杀人不见血的刀啊！\n    我迷恋上了赌博，家里的积蓄都被我偷偷的输光了，我头一犯昏将房屋也抵押掉了，现在夫人带着孩子回了娘家，并且表示，如果我不戒赌，就永远不回来了！现在我非常后悔，我发誓不再赌博，只要能找回房屋的抵押契约，我想夫人就会回来了。据说那抵押契约被人弄丢在大别山脚的松子岭，你能帮我寻回来吗？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_08,19) && !who->get_legend(TASK_08,20) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    呜呜……看来我真的要无家可归了。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_08,20) && !who->get_legend(TASK_08,21) )

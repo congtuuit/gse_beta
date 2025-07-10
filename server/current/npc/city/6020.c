@@ -105,7 +105,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 30 && !who->get_legend(TASK_08,22) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    大别山的苍梧道，你去过吗？\n    最近一段时间我常去那边做工，虽说那里悬崖陡峭，人烟稀少，但是一个人行走也从未出过事，直到那次……\n    那天活有点多，夜幕已笼罩了整个大地，我匆忙地往家赶，突然，我发现我的脚竟然不受我自己的控制，往悬崖边走去！当时，我惊呆了，我努力地想停住脚步，可我根本停不了！一直走到悬崖边缘，我眼看自己就要掉下悬崖，正在暗自着急的时候，又突然停了下来，我知道这附近有一只迷魂精灵，经常玩弄人，并且还使很多人无辜受伤甚至死去，所以我请你去一趟大别山的苍梧道，去将那害人的迷魂精灵给干掉！\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    大别山的苍梧道，你去过吗？\n    最近一段时间我常去那边做工，虽说那里悬崖陡峭，人烟稀少，但是一个人行走也从未出过事，直到那次……\n    那天活有点多，夜幕已笼罩了整个大地，我匆忙地往家赶，突然，我发现我的脚竟然不受我自己的控制，往悬崖边走去！当时，我惊呆了，我努力地想停住脚步，可我根本停不了！一直走到悬崖边缘，我眼看自己就要掉下悬崖，正在暗自着急的时候，又突然停了下来，我知道这附近有一只迷魂精灵，经常玩弄人，并且还使很多人无辜受伤甚至死去，所以我请你去一趟大别山的苍梧道，去将那害人的迷魂精灵给干掉！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_08,22) && !who->get_legend(TASK_08,23) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我下次再也不去那里做工了，还是自己的性命要紧。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_08,23) && !who->get_legend(TASK_08,24) )

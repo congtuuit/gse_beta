@@ -88,7 +88,7 @@ void do_welcome2( object me, string arg )
         case 1:
         	if ( who->get_level() >= 10 && !who->get_legend(TASK_NEWBIE_03,22) )
         	{
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    奸臣当道，目无朝纲，扰乱法纪，国之将乱矣。听说我们大王和庄辛意见不统一，现在庄辛与大王达成协议，准备迁至赵国居住，好象需要帮忙，作为一个爱国有为青年，您就去看看吧，他就在洞庭湖的君山一带。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    奸臣当道，目无朝纲，扰乱法纪，国之将乱矣。听说我们大王和庄辛意见不统一，现在庄辛与大王达成协议，准备迁至赵国居住，好象需要帮忙，作为一个爱国有为青年，您就去看看吧，他就在洞庭湖的君山一带。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	}
         	break;
         case 2:
@@ -103,7 +103,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 3:
         	if ( who->get_level() >= 30 && !who->get_legend(TASK_08,4) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    真是奇了怪了，怎么会有这样的事情呢？你想知道发生了什么事？\n    我前段日子上巫山打柴，打完柴准备回家的时候，在山上转来转去就是下不了山，要知道这条路我可是走了十多年了，不可能会迷路的！但是更奇怪的是，只要我在那里被困的时间超过一个时辰，我又突然能走出去了！\n    这到底是怎么回事呢？你能不能去那里给调查一下，看是不是巫山精灵在作怪！\n"ESC"接受任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    真是奇了怪了，怎么会有这样的事情呢？你想知道发生了什么事？\n    我前段日子上巫山打柴，打完柴准备回家的时候，在山上转来转去就是下不了山，要知道这条路我可是走了十多年了，不可能会迷路的！但是更奇怪的是，只要我在那里被困的时间超过一个时辰，我又突然能走出去了！\n    这到底是怎么回事呢？你能不能去那里给调查一下，看是不是巫山精灵在作怪！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_08,4) && !who->get_legend(TASK_08,5) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    莫非我那天头晕了吗？可能是我自己老糊涂了。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_08,5) && !who->get_legend(TASK_08,6) )
@@ -133,7 +133,7 @@ void do_welcome2( object me, string arg )
         	break;        
         case 6:
         	if ( who->get_level() >= 30 && !who->get_legend(TASK_08,28) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嘿，那边的%s，你听说过点石成金术吗？\n    我相信这个世界上任谁都会对点石成金术感兴趣，能将石头变成金子，多神奇啊！谁掌握了点石成金术不就不愁吃不愁喝了吗？对他来说，这片土地上有多少石头，就等于有多少金子。\n    你问我会不会？呵呵，我不会。但是我听说在大别山脚的九道谷里有枝绝世神笔，它的神奇之处就在于它能点石成金，如果你替我找来，我一定会好好报答你！\n"ESC"接受任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),NPC_RANK_D->get_respect_2(who),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嘿，那边的%s，你听说过点石成金术吗？\n    我相信这个世界上任谁都会对点石成金术感兴趣，能将石头变成金子，多神奇啊！谁掌握了点石成金术不就不愁吃不愁喝了吗？对他来说，这片土地上有多少石头，就等于有多少金子。\n    你问我会不会？呵呵，我不会。但是我听说在大别山脚的九道谷里有枝绝世神笔，它的神奇之处就在于它能点石成金，如果你替我找来，我一定会好好报答你！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),NPC_RANK_D->get_respect_2(who),getoid(me)));
         	else if ( who->get_legend(TASK_08,28) && !who->get_legend(TASK_08,29) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    难道那只是个传说，哎……害我空欢喜一场。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_08,29) && !who->get_legend(TASK_08,30) )
@@ -167,19 +167,19 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_24,7) && !who->get_legend(TASK_24,8) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我们楚国以前的确有这样的一种Trà Jasmine，而且我也懂怎么泡这种茶喝。但是因为泡这种茶所需要收集的材料都很难找到，所以现在已经很少人泡这种茶喝了。\n"ESC"Hoàn thành任务\ntalk %x# welcome.10\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_24,8) && !who->get_legend(TASK_24,9) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    如果你真的想要喝这种茶，我可以告诉你制作的方法，但是前提是你必须先去收集好泡茶所用的茶叶。这种Trà Jasmine的茶叶其实就是一种很稀有的Hoa nhài，这种Hoa nhài一般只生长在灵谷洞那边的豆兵身上，灵谷洞的豆兵可不好对付，如果你能在那里的豆兵身上取到那Hoa nhài回来的话，我就教你泡茶的方法。\n"ESC"接受任务\ntalk %x# welcome.11\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    如果你真的想要喝这种茶，我可以告诉你制作的方法，但是前提是你必须先去收集好泡茶所用的茶叶。这种Trà Jasmine的茶叶其实就是一种很稀有的Hoa nhài，这种Hoa nhài一般只生长在灵谷洞那边的豆兵身上，灵谷洞的豆兵可不好对付，如果你能在那里的豆兵身上取到那Hoa nhài回来的话，我就教你泡茶的方法。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.11\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_24,9) && !who->get_legend(TASK_24,10) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    Trà Jasmine一般只生长在灵谷洞的豆兵身上，但是那些豆兵太强了，如果你没有办法取到那些Hoa nhài也就不要勉强了。\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_24,10) && !who->get_legend(TASK_24,11) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你真的能从那些豆兵身上取到这些Hoa nhài啊？原来你的武功这么厉害！看来这次我们有希望可以再喝到这种好喝的Trà Jasmine了！\n"ESC"Hoàn thành任务\ntalk %x# welcome.12\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_24,11) && !who->get_legend(TASK_24,12) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    有了这些Hoa nhài，泡出Trà Jasmine是不成问题了，但是如果想要喝到真正茶味香浓的Trà Jasmine的话最好还是用长白天池的雪水冲泡，这样的话泡出来的Trà Jasmine不但茶味香浓，还可以有增进食欲，促进睡眠的功效。如果可以的话，你能去长白天池去找些雪水回来吗？对你来说这应该只是一件很简单的事情。那里的魍魉和花豹精身上都有可能有这些雪水。\n"ESC"接受任务\ntalk %x# welcome.13\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    有了这些Hoa nhài，泡出Trà Jasmine是不成问题了，但是如果想要喝到真正茶味香浓的Trà Jasmine的话最好还是用长白天池的雪水冲泡，这样的话泡出来的Trà Jasmine不但茶味香浓，还可以有增进食欲，促进睡眠的功效。如果可以的话，你能去长白天池去找些雪水回来吗？对你来说这应该只是一件很简单的事情。那里的魍魉和花豹精身上都有可能有这些雪水。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.13\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_24,12) && !who->get_legend(TASK_24,13) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    雪水找到了吗？在长白天池的魍魉和花豹精身上就有，这个对你来说肯定不成问题了！\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_24,13) && !who->get_legend(TASK_24,14) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你果然把雪水找回来了！现在我们终于又可以喝到这种不但茶味香浓、薰香扑鼻，而且可以增进食欲，促进睡眠的好茶，这是我们楚国农家最喜欢的茶了。放心，我现在马上就把泡这茶的方法告诉你。\n"ESC"Hoàn thành任务\ntalk %x# welcome.14\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_24,14) && !who->get_legend(TASK_24,15) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    现在，你拿着这些Trà Jasmine和雪水吧，冲泡的方法你已经学会了，你可以用这些Trà Jasmine跟雪水随时随地泡茶喝，也可以把这种香浓扑鼻的茶，泡给其他人喝，让其他国家的人也可以享受一下源自我们楚国的Trà Jasmine呀！\n"ESC"接受任务\ntalk %x# welcome.15\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    现在，你拿着这些Trà Jasmine和雪水吧，冲泡的方法你已经学会了，你可以用这些Trà Jasmine跟雪水随时随地泡茶喝，也可以把这种香浓扑鼻的茶，泡给其他人喝，让其他国家的人也可以享受一下源自我们楚国的Trà Jasmine呀！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.15\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 
         	break;
         case 10:
@@ -284,7 +284,7 @@ void do_welcome2( object me, string arg )
         	break;
 	case 16:
 		if ( who->get_level() >= 95 && !who->get_legend(TASK_33,19) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    那些火精、土精曾雇佣我来帮他们做一些不可告人之事，那时我鬼迷心窍就去了，现在有点后悔，它们害怕我把这件事情说出去，居然还要干掉我……干掉我！\n    所以，你看吧，永远都不要相信那些精灵。\n    问题是，我还有一些东西在它们手上，那些木槌、刨子我还是找工匠借的，你找到后直接交给他就是了。\n"ESC"接受任务\ntalk %x# welcome.17\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    那些火精、土精曾雇佣我来帮他们做一些不可告人之事，那时我鬼迷心窍就去了，现在有点后悔，它们害怕我把这件事情说出去，居然还要干掉我……干掉我！\n    所以，你看吧，永远都不要相信那些精灵。\n    问题是，我还有一些东西在它们手上，那些木槌、刨子我还是找工匠借的，你找到后直接交给他就是了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.17\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		break;
         case 17:
         	if ( who->get_level() >= 95 && !who->get_legend(TASK_33,19) )

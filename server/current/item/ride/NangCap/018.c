@@ -13,6 +13,7 @@ int get_item_color() { return 2; }
 // 函数：nh9h构造处理
 void create()
 {
+		// TANG TOC DO DI CHUYEN
         set_name( "Hỏa Kì Lân" );
         set_picid_1(10);
         set_picid_2(10);
@@ -26,7 +27,7 @@ int get_item_value() {return 500 ;}
 int get_item_value_2() {return 500 ;}
 string get_desc() 
 { 
-        return "Thú Cưỡi VIP gia tăng 500 Công kích và 200 Thân thủ sau khi cưỡi. ";
+        return "Thần Thú VIP gia tăng 500 Công kích và 200 Thân thủ sau khi cưỡi. ";
 }
 
 // 函数：nh9h使用效果
@@ -41,34 +42,37 @@ int get_use_effect_callout( object me, object item )
 	
 	if (me->get_ride()) 
 	{
-	me->set_2("thucuoi.ap", 0);
-	me->set_2("thucuoi.cp", 0);
-//	me->set_2("thucuoi.dp", 0);
-//	me->set_2("thucuoi.pp", 0);
-	me->set_2("thucuoi.sp", 0);
-	USER_ENERGY_D->count_ap(me);
-	USER_ENERGY_D->count_cp(me);
-//	USER_ENERGY_D->count_dp(me);
-//	USER_ENERGY_D->count_pp(me);
-	USER_ENERGY_D->count_sp(me);
-		me->set_ride(0);
-		me->add_to_scene(get_z(me), get_x(me), get_y(me), get_d(me));		
-		return 0;
+		me->set_2("thucuoi.ap", 0);
+		me->set_2("thucuoi.cp", 0);
+	//	me->set_2("thucuoi.dp", 0);
+	//	me->set_2("thucuoi.pp", 0);
+		me->set_2("thucuoi.sp", 0);
+		USER_ENERGY_D->count_ap(me);
+		USER_ENERGY_D->count_cp(me);
+	//	USER_ENERGY_D->count_dp(me);
+	//	USER_ENERGY_D->count_pp(me);
+		USER_ENERGY_D->count_sp(me);
+			me->set_ride(0);
+			me->add_to_scene(get_z(me), get_x(me), get_y(me), get_d(me));		
+			return 0;
 	}
+
 	if (me->set_ride(18))
 	{
-	me->set_2("thucuoi.ap", 500);
-	me->set_2("thucuoi.cp", 500);
-//	me->set_2("thucuoi.dp", 500);
-//	me->set_2("thucuoi.pp", 500);
-	me->set_2("thucuoi.sp", 200);
-	USER_ENERGY_D->count_ap(me);
-	USER_ENERGY_D->count_cp(me);
-//	USER_ENERGY_D->count_dp(me);
-//	USER_ENERGY_D->count_pp(me);
-	USER_ENERGY_D->count_sp(me);
-		me->add_to_scene(get_z(me), get_x(me), get_y(me), get_d(me));		
-		return 0;
+		//me->set_walk_speed(3); // NEED DEBUG
+
+		me->set_2("thucuoi.ap", 500);
+		me->set_2("thucuoi.cp", 500);
+	//	me->set_2("thucuoi.dp", 500);
+	//	me->set_2("thucuoi.pp", 500);
+		me->set_2("thucuoi.sp", 200);
+		USER_ENERGY_D->count_ap(me);
+		USER_ENERGY_D->count_cp(me);
+	//	USER_ENERGY_D->count_dp(me);
+	//	USER_ENERGY_D->count_pp(me);
+		USER_ENERGY_D->count_sp(me);
+			me->add_to_scene(get_z(me), get_x(me), get_y(me), get_d(me));		
+			return 0;
 	}
 	me->set_ride(RIDE_ID);
 	me->add_to_scene(get_z(me), get_x(me), get_y(me), get_d(me));

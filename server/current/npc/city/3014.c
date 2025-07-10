@@ -81,7 +81,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 80 && !who->get_legend(TASK_28,17) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    万人坑里面怨气很重，因为当初大多是遭遇横死的异地商客，他们因为有欲望未曾满足，躁动不安，继而危害四周，他们依附怨气而拥有了强大的邪恶的力量，而怨气使得很多高人都望而却步，尤其是僵尸危害甚广，纠集起来，成为了一股巨大的邪恶势力，如果你能够消灭20个僵尸减弱他们的力量，那我会代替受害的百姓多谢你。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    万人坑里面怨气很重，因为当初大多是遭遇横死的异地商客，他们因为有欲望未曾满足，躁动不安，继而危害四周，他们依附怨气而拥有了强大的邪恶的力量，而怨气使得很多高人都望而却步，尤其是僵尸危害甚广，纠集起来，成为了一股巨大的邪恶势力，如果你能够消灭20个僵尸减弱他们的力量，那我会代替受害的百姓多谢你。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_28,17) && !who->get_legend(TASK_28,18) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你有胆量去，却没能力Hoàn thành？可别叫我小看你！\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_28,18) && !who->get_legend(TASK_28,19) )

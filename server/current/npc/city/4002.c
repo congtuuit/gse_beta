@@ -86,7 +86,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if (who->get_level() >= 85 && !who->get_legend(TASK_29,7))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    将军古墓有一种诡异的机关，他们外形就是Sư tử đá，但是里面藏了好多厉害的毒针以及古怪的机活，进入的人往往以为他们只是装饰而疏忽大意，结果许多人命丧黄泉，最近大王派王储进去历练一番，但是我唯恐这类Sư tử đá误伤了公子，你先去扫除20个Sư tử đá，这样子王储就安全多了。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    将军古墓有一种诡异的机关，他们外形就是Sư tử đá，但是里面藏了好多厉害的毒针以及古怪的机活，进入的人往往以为他们只是装饰而疏忽大意，结果许多人命丧黄泉，最近大王派王储进去历练一番，但是我唯恐这类Sư tử đá误伤了公子，你先去扫除20个Sư tử đá，这样子王储就安全多了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_29,7) && !who->get_legend(TASK_29,8) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看来我应该多找几个人一起进将军古墓消灭他们，单凭你一个人的力量远远不够啊！\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_29,8) && !who->get_legend(TASK_29,9) )

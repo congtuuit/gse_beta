@@ -138,7 +138,7 @@ void do_welcome2( object me, string arg )
         	break;   
         case 3:
         	if ( who->get_level() >= 70 && !who->get_legend(TASK_24,4) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    前一阵子我军的军粮库被一群Ác ma trong lọPhá hoại，虽然粮食没有损失，但是我们用来装食物的罐子全部被这群Ác ma trong lọ抢走了，虽然那些食物罐被他们抢去之后就不可以再用来装粮食了，但是我们必须要对那群Ác ma trong lọ施以惩戒，让他们以后不敢来我的军营捣乱。你去帮我消灭10只Ác ma trong lọ，他们现在都已经逃到灵谷洞的一层了，事成之后我会好好的赏赐你的！\n"ESC"接受任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    前一阵子我军的军粮库被一群Ác ma trong lọPhá hoại，虽然粮食没有损失，但是我们用来装食物的罐子全部被这群Ác ma trong lọ抢走了，虽然那些食物罐被他们抢去之后就不可以再用来装粮食了，但是我们必须要对那群Ác ma trong lọ施以惩戒，让他们以后不敢来我的军营捣乱。你去帮我消灭10只Ác ma trong lọ，他们现在都已经逃到灵谷洞的一层了，事成之后我会好好的赏赐你的！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_24,4) && !who->get_legend(TASK_24,5) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我交代你去办的事办好了没有？如果你连这样的小事情都办不好的话你也别幻想可以在这个乱世出人头地了！\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_24,5) && !who->get_legend(TASK_24,6) )
@@ -173,7 +173,7 @@ void do_welcome2( object me, string arg )
         	break;  
         case 6:
         	if ( who->get_level() >= 75 && !who->get_legend(TASK_24,20) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    听王府里面的人说，最近齐王田建府里面经常闹鬼，搞得王府里面的人个个面容消瘦，无精打采。我决不允许这样的祸害威胁到大王！我已经派探子查到，在王府闹的鬼就是灵谷洞二层那些冤魂，你去灵谷洞二层去杀掉20个冤魂，让他们以后都不敢再来齐王田建府胡闹！\n"ESC"接受任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    听王府里面的人说，最近齐王田建府里面经常闹鬼，搞得王府里面的人个个面容消瘦，无精打采。我决不允许这样的祸害威胁到大王！我已经派探子查到，在王府闹的鬼就是灵谷洞二层那些冤魂，你去灵谷洞二层去杀掉20个冤魂，让他们以后都不敢再来齐王田建府胡闹！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_24,20) && !who->get_legend(TASK_24,21) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    赶快去吧！不杀死这些冤魂的话，王府每天晚上都不得安宁。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_24,21) && !who->get_legend(TASK_24,22) )
@@ -210,7 +210,7 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_29,26) && !who->get_legend(TASK_29,27) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哎！一言难尽啊！\n"ESC"Hoàn thành任务\ntalk %x# welcome.10\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_29,27) && !who->get_legend(TASK_30,1) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哎，前天来了两个刺客，搞得军营鸡飞狗跳，最后除了伤了我手下一个亲兵外，居然还将我的调兵信物威虎将军令偷去了，我们只抓住了一个刺客，可是她竟然宁死不招，现在我也没辙了，只好向御史大人求助了，你将我亲笔信函交给御史大人，看他是否有好办法。\n"ESC"接受任务\ntalk %x# welcome.11\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哎，前天来了两个刺客，搞得军营鸡飞狗跳，最后除了伤了我手下一个亲兵外，居然还将我的调兵信物威虎将军令偷去了，我们只抓住了一个刺客，可是她竟然宁死不招，现在我也没辙了，只好向御史大人求助了，你将我亲笔信函交给御史大人，看他是否有好办法。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.11\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_30,6) && !who->get_legend(TASK_30,7) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哈哈！这下我可以放心了。\n"ESC"Hoàn thành任务\ntalk %x# welcome.12\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	break;
@@ -257,7 +257,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 13:
         	if ( who->get_level() >= 100 && !who->get_legend(TASK_36,11)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    本将军将要大规模选拔一批有理想、有智谋、有勇气、有武力的青年作为本军的王牌劲旅，本将军想出了几个考核项目，第一个首先就要做到能够Không sợ，年轻人你想接受Thử thách，成为光荣的一员吗，你就先去九曲桥消灭8只罐中仙，11只龟仙人吧！\n"ESC"接受任务\ntalk %x# welcome.14\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    本将军将要大规模选拔一批有理想、有智谋、有勇气、有武力的青年作为本军的王牌劲旅，本将军想出了几个考核项目，第一个首先就要做到能够Không sợ，年轻人你想接受Thử thách，成为光荣的一员吗，你就先去九曲桥消灭8只罐中仙，11只龟仙人吧！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.14\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_36,11) && !who->get_legend(TASK_36,12) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    呃，实在抱歉，看来我们军队不需要你。\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_36,12) && !who->get_legend(TASK_36,13) )

@@ -1,0 +1,1 @@
+Get-ChildItem -Path .\log\* -File -Recurse | ForEach-Object { Set-Content $_.FullName -Value $null } 

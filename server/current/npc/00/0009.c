@@ -359,11 +359,11 @@ void do_buy(string arg)
 		if (who->get_legend(TASK_48, 21) && !who->get_legend(TASK_48, 22))
 			send_user(who, "%c%s", ':', sprintf(" %s :\n Theo tình hình ngươi thuật lại, xem ra thôn dân không phải phát bệnh, mà là trúng độc, ngươi giúp ta nghĩ cách giải độc đi, rồi hãy đến tìm ta.\n"ESC"Hoàn thành nhiệm vụ\ntalk %x# buy.102\n"ESC"Rời khỏi", me->get_name(), getoid(me)));
 		else if (who->get_legend(TASK_48, 22) && !who->get_legend(TASK_48, 23))
-			send_user(who, "%c%s", ':', sprintf("%s:\n    据我估计，村民们应该是中了一种名为软骨散的毒，而毒源就是村后的那口水井，中毒的村民都是饮用过村后那口水井里的水后，才出现此症状的.\n    解此毒必需雄黄散，并且要与其他药物配合才有疗效，这药配好后不止要给村民们服下，还得洒入水井中作解毒用.\n    你先去找来雄黄散吧，我听说幽谷一带的小蜜蜂、小蚂蚁、斑点蛙身上都带有雄黄散.\n    做完任务后，用alt+w打开人物属性界面，再使用新手信物就可以快速回到新手村哦！\n"ESC"接受任务\ntalk %x# buy.103\n"ESC"Rời khỏi", me->get_name(), getoid(me)));
+			send_user(who, "%c%s", ':', sprintf("%s:\n    据我估计，村民们应该是中了一种名为软骨散的毒，而毒源就是村后的那口水井，中毒的村民都是饮用过村后那口水井里的水后，才出现此症状的.\n    解此毒必需雄黄散，并且要与其他药物配合才有疗效，这药配好后不止要给村民们服下，还得洒入水井中作解毒用.\n    你先去找来雄黄散吧，我听说幽谷一带的小蜜蜂、小蚂蚁、斑点蛙身上都带有雄黄散.\n    做完任务后，用alt+w打开人物属性界面，再使用新手信物就可以快速回到新手村哦！\n"ESC"Nhận nhiệm vụ\ntalk %x# buy.103\n"ESC"Rời khỏi", me->get_name(), getoid(me)));
 		else if (who->get_legend(TASK_48, 24) && !who->get_legend(TASK_48, 25))
 			send_user(who, "%c%s", ':', sprintf(" %s :\n Ta trộn thuốc cần có 1 thời gian nhất định, 1 lúc sau ngươi hãy quay lại để lấy thuốc nhé!\n"ESC"Hoàn thành nhiệm vụ\ntalk %x# buy.104\n"ESC"Rời khỏi", me->get_name(), getoid(me)));
 		else if (who->get_legend(TASK_48, 25) && !who->get_legend(TASK_48, 26))
-			send_user(who, "%c%s", ':', sprintf("%s:\n    你将这包解药拿给卫队长，并且告诉他，千万要记得叮嘱村里人最近两天不要去村后的那口水井里打水饮用，记得要将解药拿给村民服用，还要将解药洒到水井内，这样才能治标又治本！\n    还有一件事，你千万不得声张，你告诉卫队长，我疑心是有人在水井里下了毒，还想请村长查明此事，揪出下毒的狠心之人.\n"ESC"接受任务\ntalk %x# buy.105\n"ESC"Rời khỏi", me->get_name(), getoid(me)));
+			send_user(who, "%c%s", ':', sprintf("%s:\n    你将这包解药拿给卫队长，并且告诉他，千万要记得叮嘱村里人最近两天不要去村后的那口水井里打水饮用，记得要将解药拿给村民服用，还要将解药洒到水井内，这样才能治标又治本！\n    还有一件事，你千万不得声张，你告诉卫队长，我疑心是有人在水井里下了毒，还想请村长查明此事，揪出下毒的狠心之人.\n"ESC"Nhận nhiệm vụ\ntalk %x# buy.105\n"ESC"Rời khỏi", me->get_name(), getoid(me)));
 		break;
 	case 102:
 		if (who->get_legend(TASK_48, 21) && !who->get_legend(TASK_48, 22))

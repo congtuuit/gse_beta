@@ -1,4 +1,3 @@
-
 private
 object *Chat = ({});
 private
@@ -12,7 +11,8 @@ void SAVE_BINARY() {}
 void create()
 {
         object *user;
-        int i, size;
+        int i;
+        int size;
 
         if (arrayp(user = users()))
         {
@@ -64,14 +64,40 @@ void chat_channel(int id, string chat)
 {
         Chat -= ({0});
         if (sizeof(Chat))
-                send_user(Chat, "%c%c%d%s", 0x43, 1, id, chat);
+        {
+                // Filter users by channel if channel_id is specified
+                if (id > 0 && CHANNEL_D)
+                {
+                        object *channel_users = CHANNEL_D->get_channel_users(id);
+                        if (sizeof(channel_users))
+                                send_user(channel_users, "%c%c%d%s", 0x43, 1, id, chat);
+                }
+                else
+                {
+                        // Send to all users (global chat)
+                        send_user(Chat, "%c%c%d%s", 0x43, 1, id, chat);
+                }
+        }
 }
 
 void rumor_channel(int id, string chat)
 {
         Rumor -= ({0});
         if (sizeof(Rumor))
-                send_user(Rumor, "%c%c%d%s", 0x43, 2, id, chat);
+        {
+                // Filter users by channel if channel_id is specified
+                if (id > 0 && CHANNEL_D)
+                {
+                        object *channel_users = CHANNEL_D->get_channel_users(id);
+                        if (sizeof(channel_users))
+                                send_user(channel_users, "%c%c%d%s", 0x43, 2, id, chat);
+                }
+                else
+                {
+                        // Send to all users (global rumor)
+                        send_user(Rumor, "%c%c%d%s", 0x43, 2, id, chat);
+                }
+        }
 }
 
 void rumor_player_channel(int id, string chat)

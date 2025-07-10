@@ -119,7 +119,7 @@ int get_use_effect_2_callout(object me, object who, object item, string arg)
 			send_user(me, "%c%s", '!', "Bạn không thể sử dụng Thổ Hành Châu lúc này。");
 			return 1;
 		}
-		if (present("贵重物品", me, 1, MAX_CARRY * 4))
+		if (present("Vật phẩm quý giá", me, 1, MAX_CARRY * 4))
 		{
 			send_user(me, "%c%s", '!', "Đang mang vật có giá trị không thể sử dụng Thổ Hành Châu。");
 			return 1;

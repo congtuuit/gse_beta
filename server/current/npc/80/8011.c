@@ -87,7 +87,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 75 && !who->get_legend(TASK_25,29) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近我们在襄陵道猎到的小动物都好像有点不正常，后来我们发现是襄陵道那条河的河水出了问题，现在我们都不敢用那条河的河水了。但是那条河的河水是我们生活用水的主要来源呀，你能帮我们把这件事汇报给Hàn Quốc的内政官，让他去处理一下这件事吗？\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近我们在襄陵道猎到的小动物都好像有点不正常，后来我们发现是襄陵道那条河的河水出了问题，现在我们都不敢用那条河的河水了。但是那条河的河水是我们生活用水的主要来源呀，你能帮我们把这件事汇报给Hàn Quốc的内政官，让他去处理一下这件事吗？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	break;
 	case 2:
         	if ( who->get_level() >= 75 && !who->get_legend(TASK_25,29) )

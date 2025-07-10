@@ -58,13 +58,13 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_36,29) && !who->get_legend(TASK_36,30) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    肖大哥中了僵尸毒了！我多日奔走倒是有个云游道长告诉了我个治疗偏房，可是配方太难找了，哎，如今我整日奔波，忧心忡忡，心中羞愧万分，也不敢捎信给大姐啊。\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_36,30) && !who->get_legend(TASK_37,7) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    肖大哥是中了僵尸毒，明确点说，他被僵尸咬了一口，现在已经是僵尸了，这种僵尸毒不是普通的解药能解的，必须要僵尸王身上的僵尸粉，而这种僵尸粉只有杀掉僵尸王才能拿到。现在僵尸王就在孤竹小筑的凝月湖，你穿过九曲桥就能找到。事情的详细经过，稍后再向你慢慢叙述吧。\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    肖大哥是中了僵尸毒，明确点说，他被僵尸咬了一口，现在已经是僵尸了，这种僵尸毒不是普通的解药能解的，必须要僵尸王身上的僵尸粉，而这种僵尸粉只有杀掉僵尸王才能拿到。现在僵尸王就在孤竹小筑的凝月湖，你穿过九曲桥就能找到。事情的详细经过，稍后再向你慢慢叙述吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_37,7) && !who->get_legend(TASK_37,8) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你也拿不到吗？哎，我要是救不回肖大哥，我也不想活了！\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_37,8) && !who->get_legend(TASK_37,9) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    谢天谢地，终于拿到僵尸粉了，这个最大的困难解决了，肖大哥也许可以恢复了！\n"ESC"Hoàn thành任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_37,9) && !who->get_legend(TASK_37,10) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    肖大哥的病况，在还差几件辅助的物品才能解毒，去九曲桥给我找点现行粉、糯米、保和丹来。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    肖大哥的病况，在还差几件辅助的物品才能解毒，去九曲桥给我找点现行粉、糯米、保和丹来。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_37,10) && !who->get_legend(TASK_37,11) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    肖大哥整日被两种毒折磨得死去活来，你怎么一点都不着急呢？\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_37,11) && !who->get_legend(TASK_37,12) ) 

@@ -65,7 +65,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
 	       	if ( who->get_level() >= 45 && !who->get_legend(TASK_12,22) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我是生意人，你也看出来了，做生意虽然能赚钱，但也非常辛苦，成天东奔西跑，在路上遇到打劫更是司空见惯。\n    上月我路过郑国渠，结果被一恶霸打劫。这恶霸如果不除，以后谁还敢从那里经过，你是否愿意解决此事？\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我是生意人，你也看出来了，做生意虽然能赚钱，但也非常辛苦，成天东奔西跑，在路上遇到打劫更是司空见惯。\n    上月我路过郑国渠，结果被一恶霸打劫。这恶霸如果不除，以后谁还敢从那里经过，你是否愿意解决此事？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_12,22) && !who->get_legend(TASK_12,23) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看来以后准备改行换业了，这恶霸不走，谁还敢从那里路过。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_12,23) && !who->get_legend(TASK_12,24) )
@@ -124,7 +124,7 @@ void do_welcome2( object me, string arg )
         	break;   
 	case 7 :
 	       	if ( who->get_level() >= 45 && !who->get_legend(TASK_12,28) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    郑国渠又有人失踪了，你知道吗？\n    最近大家都在讨论郑国渠一带经常有百姓离奇失踪之事，如今此事已弄得人心惶惶。不知你是否知道这世上有一种Bóng ma，它们专门迷惑人的心智，操纵人为他做一些伤天害理的事情，我猜想这次一连串的失踪，也和这Bóng ma有关，你前去郑国渠调查此事吧！\n"ESC"接受任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    郑国渠又有人失踪了，你知道吗？\n    最近大家都在讨论郑国渠一带经常有百姓离奇失踪之事，如今此事已弄得人心惶惶。不知你是否知道这世上有一种Bóng ma，它们专门迷惑人的心智，操纵人为他做一些伤天害理的事情，我猜想这次一连串的失踪，也和这Bóng ma有关，你前去郑国渠调查此事吧！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_12,28) && !who->get_legend(TASK_12,29) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这世道可真是无奇不有啊！\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_12,29) && !who->get_legend(TASK_12,30) )
@@ -132,7 +132,7 @@ void do_welcome2( object me, string arg )
 		break;		
 	case 8 :
 	       	if ( who->get_level() >= 50 && !who->get_legend(TASK_14,15) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    音乐，是人的精神食粮；音乐，最能接近人的灵魂；音乐，最能触动人心底的那根弦……\n    我喜欢乐器，特别是Đàn nhị，因为它的声音带给我哀怨的感觉，如泣如诉，或许我作为一个生意人，不该如此多愁善感，但是我的确收藏了不少的Đàn nhị，并且还在继续收藏，听说长白山有很好的Đàn nhị，你去长白山给我找来好么？\n"ESC"接受任务\ntalk %x# welcome.9\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    音乐，是人的精神食粮；音乐，最能接近人的灵魂；音乐，最能触动人心底的那根弦……\n    我喜欢乐器，特别是Đàn nhị，因为它的声音带给我哀怨的感觉，如泣如诉，或许我作为一个生意人，不该如此多愁善感，但是我的确收藏了不少的Đàn nhị，并且还在继续收藏，听说长白山有很好的Đàn nhị，你去长白山给我找来好么？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.9\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_14,15) && !who->get_legend(TASK_14,16) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n   唉，数来数去还是缺了那把Đàn nhị，你找到了吗？\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_14,16) && !who->get_legend(TASK_14,17) )

@@ -65,7 +65,7 @@ void do_welcome2( object me, string arg )
 	       	if ( who->get_legend(TASK_26,5) && !who->get_legend(TASK_26,6) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你终于来了，不必担心，其实师父在十年前就已经算到韩国会有今天的劫数，所以在他仙逝之前已经把那套解除诅咒的方法教给了我！但是在我施展法术解除诅咒的时候我还需要你的帮助。\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 	       	else if ( who->get_legend(TASK_26,6) && !who->get_legend(TASK_26,7) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    其实令到河水受诅咒的源头是灵谷洞三层的僵尸和疫鬼。所以在我施法解除河水的诅咒的同时，必须有一个武艺高强的人替我去灵谷洞的三层去杀掉这些诅咒河水的源头。我看你是个武艺高强的人，我现在就要施法解咒了，你也赶快去灵谷洞的三层杀掉30个僵尸和30个疫鬼，当你顺利杀掉这些诅咒的源头的时候，我的法事应该也做完了，到时候你就回来我这里吧。\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    其实令到河水受诅咒的源头是灵谷洞三层的僵尸和疫鬼。所以在我施法解除河水的诅咒的同时，必须有一个武艺高强的人替我去灵谷洞的三层去杀掉这些诅咒河水的源头。我看你是个武艺高强的人，我现在就要施法解咒了，你也赶快去灵谷洞的三层杀掉30个僵尸和30个疫鬼，当你顺利杀掉这些诅咒的源头的时候，我的法事应该也做完了，到时候你就回来我这里吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 	       	else if ( who->get_legend(TASK_26,7) && !who->get_legend(TASK_26,8) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看来你还是不行啊！\n    我已经在作法了，你也赶快去杀掉那些僵尸和疫鬼吧！想要解除河水的诅咒没有了你的帮助不行。\n"ESC"Rời khỏi.", me->get_name()));
 	       	else if ( who->get_legend(TASK_26,8) && !who->get_legend(TASK_26,9) )

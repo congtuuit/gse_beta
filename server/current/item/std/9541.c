@@ -75,9 +75,9 @@ int get_use_effect_2_callout( object me, object who, object item, string arg )  
                 send_user( me, "%c%s", '!', "对方身上带着钱票。" );
                 return 1;
         }
-        if( present("贵重物品", who, 1, MAX_CARRY*4) )
+        if( present("Vật phẩm quý giá", who, 1, MAX_CARRY*4) )
         {
-                send_user( me, "%c%s", '!', "对方身上带着贵重物品。" );
+                send_user( me, "%c%s", '!', "对方身上带着Vật phẩm quý giá。" );
                 return 1;
         }       
         if( objectp( npc = who->get_quest("escort.robber#") ) && npc->is_escort_robber() )    // 寻找蒙面人

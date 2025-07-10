@@ -85,7 +85,7 @@ void do_visit_call(object who, object npc, string arg)
 		if ( i == 3  )
 		{
 			if ( !who->get_legend(TASK_NEWBIE_02, 14) )
-				send_user( who, "%c%c%w%s", ':',3,npc->get_char_picid(), sprintf("%s:\n    恶将胡仗着自己家有钱有势，勾结地方官府，欺压百姓，至今Với sự trừng phạt。你要替天行道，杀死恶将胡。\n    他就在清溪的清溪北野，最东边的地方。\n"ESC"接受任务\ntalk %x# visit.4\n"ESC"Rời khỏi.",npc->get_name(),getoid(npc)));
+				send_user( who, "%c%c%w%s", ':',3,npc->get_char_picid(), sprintf("%s:\n    恶将胡仗着自己家有钱有势，勾结地方官府，欺压百姓，至今Với sự trừng phạt。你要替天行道，杀死恶将胡。\n    他就在清溪的清溪北野，最东边的地方。\n"ESC"Nhận nhiệm vụ\ntalk %x# visit.4\n"ESC"Rời khỏi.",npc->get_name(),getoid(npc)));
 			else if ( !who->get_legend(TASK_NEWBIE_02, 15) )
 				send_user( who, "%c%c%w%s", ':',3,npc->get_char_picid(), sprintf("%s:\n    你遇到困难了吗？还是那恶将胡又溜掉了？他可真狡猾，不过你还是去找找吧，想要做个Loại bỏ cái ác cho nhân dân的大英雄也不是那么容易的。\n"ESC"Rời khỏi.",npc->get_name(),getoid(npc)));
 			else if ( !who->get_legend(TASK_NEWBIE_02, 16) )
@@ -136,7 +136,7 @@ void do_visit_call(object who, object npc, string arg)
         {
         case 6: 
 		if ( who->get_level() >= 5 && !who->get_legend(TASK_41, 4) )
-			send_user(who,"%c%s",':',sprintf("%s:\n    新手村的村民几乎都患上了一种病，他们全身疲软无力，成天想睡觉，没有精神去耕种，去开店做生意，严重影响了村民的正常生活，之前我已经询问过药店老板了，可惜他也不知道这是种什么病，他说他行医这么多年从未见过如此奇怪的病症，他说智慧老人见多识广，应该会知道，所以想请你去趟智慧老人家，询问他关于村人病症之事。\n    智慧老人就在往巴丘去的路边，你好好找找吧。找到他后注意问得详细点。\n"ESC"接受任务\ntalk %x# visit.7\n"ESC"Rời khỏi.",npc->get_name(),getoid(npc)));
+			send_user(who,"%c%s",':',sprintf("%s:\n    新手村的村民几乎都患上了一种病，他们全身疲软无力，成天想睡觉，没有精神去耕种，去开店做生意，严重影响了村民的正常生活，之前我已经询问过药店老板了，可惜他也不知道这是种什么病，他说他行医这么多年从未见过如此奇怪的病症，他说智慧老人见多识广，应该会知道，所以想请你去趟智慧老人家，询问他关于村人病症之事。\n    智慧老人就在往巴丘去的路边，你好好找找吧。找到他后注意问得详细点。\n"ESC"Nhận nhiệm vụ\ntalk %x# visit.7\n"ESC"Rời khỏi.",npc->get_name(),getoid(npc)));
 		else if ( who->get_legend(TASK_41, 9) && !who->get_legend(TASK_41, 10) )
 			send_user(who,"%c%s",':',sprintf("%s:\n    是的！我早就疑心是有人下毒了，我定会好好调查此事的，这一路上辛苦你了！\n"ESC"Hoàn thành任务\ntalk %x# visit.8\n"ESC"Rời khỏi.",npc->get_name(),getoid(npc)));
 
@@ -166,7 +166,7 @@ void do_visit_call(object who, object npc, string arg)
 		break;	        
 	case 9:
 		if( who->get_level() >= 5 && !who->get_legend(TASK_NEWBIE_02, 24) )
-			send_user(who,"%c%s",':',sprintf("%s:\n    清溪的李小毛经常说这个世上最甜最美味的就是蜜糖。他真的很想尝尝，真是个可爱的小孩儿！\n    我知道清溪和幽谷附近的蜜蜂都会带着蜜糖在身上，你能帮这个可爱的小孩儿取3罐蜜糖吗？\n"ESC"接受任务\ntalk %x# visit.10\n"ESC"Rời khỏi.",npc->get_name(),getoid(npc)));
+			send_user(who,"%c%s",':',sprintf("%s:\n    清溪的李小毛经常说这个世上最甜最美味的就是蜜糖。他真的很想尝尝，真是个可爱的小孩儿！\n    我知道清溪和幽谷附近的蜜蜂都会带着蜜糖在身上，你能帮这个可爱的小孩儿取3罐蜜糖吗？\n"ESC"Nhận nhiệm vụ\ntalk %x# visit.10\n"ESC"Rời khỏi.",npc->get_name(),getoid(npc)));
 		
 		break;
 	case 10:

@@ -98,11 +98,11 @@ void do_welcome2(object me, string arg)
 		if (who->get_legend(TASK_NEWBIE_03, 13) && !who->get_legend(TASK_NEWBIE_03, 14))
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看你大老远的跑来不容易, 好吧!我可以答应你, 给你做这个盒子, 但是我这里没有合适的材料, 可能你得去找点木材来给我才行!\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
 		else if (who->get_legend(TASK_NEWBIE_03, 14) && !who->get_legend(TASK_NEWBIE_03, 15))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我已经答应了你, 给你做这个盒子, 但是我这里原材料不够, 据我估算, 做这个盒子需要20块木头, 你去收集20块木头来, 听说首阳山的地痞家就有!\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我已经答应了你, 给你做这个盒子, 但是我这里原材料不够, 据我估算, 做这个盒子需要20块木头, 你去收集20块木头来, 听说首阳山的地痞家就有!\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
 		else if (who->get_legend(TASK_NEWBIE_03, 15) && !who->get_legend(TASK_NEWBIE_03, 16))
 			me->do_welcome(4);
 		else if (who->get_legend(TASK_NEWBIE_03, 16) && !who->get_legend(TASK_NEWBIE_03, 17))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这些木头需要用刨子刨光才能用, 可凑巧的是刨子被人偷了, 你再给我找把刨子来, 我就开始做这个木盒!据说是楚方城的那帮刀兵和剑兵偷走了我的刨子.\n"ESC"接受任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这些木头需要用刨子刨光才能用, 可凑巧的是刨子被人偷了, 你再给我找把刨子来, 我就开始做这个木盒!据说是楚方城的那帮刀兵和剑兵偷走了我的刨子.\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
 		else if (who->get_legend(TASK_NEWBIE_03, 17) && !who->get_legend(TASK_NEWBIE_03, 18))
 			me->do_welcome(7);
 		else if (who->get_legend(TASK_NEWBIE_03, 18) && !who->get_legend(TASK_NEWBIE_03, 19))
@@ -205,7 +205,7 @@ void do_welcome2(object me, string arg)
 		if (who->get_legend(TASK_28, 12) && !who->get_legend(TASK_28, 13))
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我从未试过打造钥匙, 但是我想如果这木箱如此宝贵, 那么他所需要的钥匙也是与众不同的, 或许是用木头做的.\n"ESC"Hoàn thành任务\ntalk %x# welcome.10\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
 		else if (who->get_legend(TASK_28, 13) && !who->get_legend(TASK_28, 14))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这个锁的难度要求太高了, 我从这个锁孔的拓印来看, 似乎需要一种非常坚韧同时又能做小幅度弯曲的钥匙, 而世间能够做到这个要求的唯有华樟木, 而这种木头一向是王室显贵的收藏之物, 鲜有愿意示之人前的, 幸好老夫有个忘年之交, 唤作熊平, 为人十分豪爽, 当初老夫也为他打造过不少东西, 他曾言老夫但有所需, 府中原料任我取用, 其中恰巧就有这种特殊的木块原料, 华樟木, 你只需带了我的手信, 向他要来一小块木块就好了, 他是会爽快的给你的.不过他这人有个怪脾气, 喜欢找人比武, 所以你要当心他如果觉得你的武艺可以同他一搏的话, 他可不管你愿不愿意, 就要同你较量的.他就在晋阳, 你去打听就很容易找到他了.\n"ESC"接受任务\ntalk %x# welcome.11\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这个锁的难度要求太高了, 我从这个锁孔的拓印来看, 似乎需要一种非常坚韧同时又能做小幅度弯曲的钥匙, 而世间能够做到这个要求的唯有华樟木, 而这种木头一向是王室显贵的收藏之物, 鲜有愿意示之人前的, 幸好老夫有个忘年之交, 唤作熊平, 为人十分豪爽, 当初老夫也为他打造过不少东西, 他曾言老夫但有所需, 府中原料任我取用, 其中恰巧就有这种特殊的木块原料, 华樟木, 你只需带了我的手信, 向他要来一小块木块就好了, 他是会爽快的给你的.不过他这人有个怪脾气, 喜欢找人比武, 所以你要当心他如果觉得你的武艺可以同他一搏的话, 他可不管你愿不愿意, 就要同你较量的.他就在晋阳, 你去打听就很容易找到他了.\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.11\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
 		else if (who->get_legend(TASK_28, 14) && !who->get_legend(TASK_28, 15))
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这把钥匙必须要木质很好的钥匙才能做, 如果你找不来这种木块, 那我也无能为力.\n"ESC"Rời khỏi.", me->get_name()));
 		else if (who->get_legend(TASK_28, 15) && !who->get_legend(TASK_28, 16))
@@ -259,13 +259,13 @@ void do_welcome2(object me, string arg)
 		if (who->get_legend(TASK_40, 1) && !who->get_legend(TASK_40, 2))
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    修理这个小木桶很简单, 关键是需要一些材料, 可能需要你帮我找来.\n"ESC"Hoàn thành任务\ntalk %x# welcome.14\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
 		else if (who->get_legend(TASK_40, 2) && !who->get_legend(TASK_39, 28))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唔, 这个小木桶要想恢复原状不太可能了, 现在那里找成色质地都一样的红木啊, 就算找到也太过昂贵, 看来只有用普通的代替了, 断了一根桶板, 咬合也松动了, 这样吧, 我需要1只铁箍和5块木头, 你去虚陵洞给我找来吧.\n"ESC"接受任务\ntalk %x# welcome.15\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唔, 这个小木桶要想恢复原状不太可能了, 现在那里找成色质地都一样的红木啊, 就算找到也太过昂贵, 看来只有用普通的代替了, 断了一根桶板, 咬合也松动了, 这样吧, 我需要1只铁箍和5块木头, 你去虚陵洞给我找来吧.\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.15\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
 		else if (who->get_legend(TASK_39, 28) && !who->get_legend(TASK_39, 29))
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n   没有修理的材料, 我要怎么给你修理呢？\n"ESC"Rời khỏi.", me->get_name()));
 		else if (who->get_legend(TASK_39, 29) && !who->get_legend(TASK_39, 30))
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    好, 有了这些材料, 我很快就能修好了, 你过会儿来找我取这只木桶吧.\n"ESC"Hoàn thành任务\ntalk %x# welcome.16\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
 		else if (who->get_legend(TASK_39, 30) && !who->get_legend(TASK_40, 3))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    小木桶修好了, 可是我觉得你一味帮助他但是他却毫无悔过的意识, 这样并不能让他的人际关系得到改善, 不如你将木桶交给他, 然后由他自己归还给借他木桶的那人, 我想, 这样会好点吧.\n"ESC"接受任务\ntalk %x# welcome.17\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    小木桶修好了, 可是我觉得你一味帮助他但是他却毫无悔过的意识, 这样并不能让他的人际关系得到改善, 不如你将木桶交给他, 然后由他自己归还给借他木桶的那人, 我想, 这样会好点吧.\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.17\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
 
 		break;
 	case 14:
@@ -345,7 +345,7 @@ void do_welcome2(object me, string arg)
 		break;
 	case 19:
 		if (who->get_level() >= 65 && !who->get_legend(TASK_2_01, 4))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    壮士, 我家传木工技艺忝教世人尊为当世之首, 也曾制木牛流马以机关使死物行动, 可我听说秦王所建陵寝中有可飞天畅舞之机关金雁, 心甚羡之.听说那些Bản đồ bí mật分为3部存于陵寝之中, 你能否替我去寻找一番, 事成之后, 我必有重谢.\n"ESC"接受任务\ntalk %x# welcome.20\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    壮士, 我家传木工技艺忝教世人尊为当世之首, 也曾制木牛流马以机关使死物行动, 可我听说秦王所建陵寝中有可飞天畅舞之机关金雁, 心甚羡之.听说那些Bản đồ bí mật分为3部存于陵寝之中, 你能否替我去寻找一番, 事成之后, 我必有重谢.\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.20\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
 		else if (who->get_legend(TASK_2_01, 4) && !who->get_legend(TASK_2_01, 5))
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    壮士可曾前去寻觅Bản đồ bí mật了？\n"ESC"Rời khỏi.", me->get_name(), ));
 		else if (who->get_legend(TASK_2_01, 5) && !who->get_legend(TASK_2_01, 6))

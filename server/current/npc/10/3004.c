@@ -67,13 +67,13 @@ void do_welcome2( object me, string arg )
 		if ( who->get_legend(TASK_47,10)&&!who->get_legend(TASK_47,11) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嘿嘿嘿，雀妖本来是天上的太阳精灵三足鸟，由于数目太多引起地气阳气过剩，干旱连年遭后羿射杀，其中有只被射伤的恰好掉落到诛仙阵阵眼之上，得到了源源不断的魂气支持得以重生为妖，唉，我们大王啊，哪里抵的过雀妖的媚惑啊。\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_47,11)&&!who->get_legend(TASK_47,12) ) 
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你问我怎么知道得这么清楚，我老大许小四告诉我们小的啊，要不然我大字不识几个，怎么会知道这么隐秘的情况，有本事你去找我们老大问啊，不过放心我们老大可是很友善的，他会很友善的留下你的脑袋装酒，哈哈哈……我们老大在诛仙阵三层北部，他会盛情款待你的，哈哈……\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你问我怎么知道得这么清楚，我老大许小四告诉我们小的啊，要不然我大字不识几个，怎么会知道这么隐秘的情况，有本事你去找我们老大问啊，不过放心我们老大可是很友善的，他会很友善的留下你的脑袋装酒，哈哈哈……我们老大在诛仙阵三层北部，他会盛情款待你的，哈哈……\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_47,12)&&!who->get_legend(TASK_47,13) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嘿嘿，挑不过我们老大还敢来同我硬？\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_47,13)&&!who->get_legend(TASK_47,14) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    啊……（眼睛贼溜溜一阵转，掠过一丝不易察觉的精光）哼哼，你有本事！就不怕我们帮派的报复么？\n"ESC"Hoàn thành任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_47,14)&&!who->get_legend(TASK_47,15) ) 
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，其实不过是我那天去紫烟楼下讨酒喝的时候恰巧碰到大王出巡，秦老汉也在人群中，大家见了王妃觉得惊为天人，当下喝了点酒，神智糊涂，就瞎编乱造了一通，后来大家无聊，就越编越玄，小人真的没有半点造反的意思啊，求大侠高抬贵手，为我美言几句。不信你再去问问秦老汉，他可以为我作证。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，其实不过是我那天去紫烟楼下讨酒喝的时候恰巧碰到大王出巡，秦老汉也在人群中，大家见了王妃觉得惊为天人，当下喝了点酒，神智糊涂，就瞎编乱造了一通，后来大家无聊，就越编越玄，小人真的没有半点造反的意思啊，求大侠高抬贵手，为我美言几句。不信你再去问问秦老汉，他可以为我作证。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 
 		break;
         case 2:

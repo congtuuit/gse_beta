@@ -71,7 +71,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 35 && !who->get_legend(TASK_09,16) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我这里有一批已经修理好的茅山道士的装备，正要送过去茅山，本来巫山里的大王豺狗武者，我已经用钱买通。我可以顺利经过那里，谁知最近巫山不知道从哪来的一只鬼精怪，挡住了我的去路。\n    我跟豺狗武者谈过这事，它说它也拿这只妖怪没办法，眼看交货的日期就要到了。不知道你能否帮我这个忙，把那只妖怪收拾掉。它就在巫山的巫山山道，我会给你不错的报酬！  \n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我这里有一批已经修理好的茅山道士的装备，正要送过去茅山，本来巫山里的大王豺狗武者，我已经用钱买通。我可以顺利经过那里，谁知最近巫山不知道从哪来的一只鬼精怪，挡住了我的去路。\n    我跟豺狗武者谈过这事，它说它也拿这只妖怪没办法，眼看交货的日期就要到了。不知道你能否帮我这个忙，把那只妖怪收拾掉。它就在巫山的巫山山道，我会给你不错的报酬！  \n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_09,16) && !who->get_legend(TASK_09,17) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我下次再也不去那玩了。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_09,17) && !who->get_legend(TASK_09,18) )

@@ -59,9 +59,9 @@ void do_welcome2( object me, string arg )
                         send_user( who, "%c%s", '!', "您已经在传送中。" );
                         return;
                 }
-                if( present("贵重物品", who, 1, MAX_CARRY*4) )
+                if( present("Vật phẩm quý giá", who, 1, MAX_CARRY*4) )
                 {
-                        send_user(who, "%c%s", '!', "带着贵重物品不能旅行。");
+                        send_user(who, "%c%s", '!', "带着Vật phẩm quý giá不能旅行。");
         //              write_user(me, ECHO "……可是没有任何效果。");
                         return ;
                 }

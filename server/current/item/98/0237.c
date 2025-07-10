@@ -23,7 +23,7 @@ void create()
 {
         object item = this_object();
 
-        set_name("贵重物品");
+        set_name("Vật phẩm quý giá");
         set_picid_1(0001);
         set_picid_2(0001);
         set_unit("件");
@@ -53,7 +53,7 @@ string get_desc()
 // 函数：丢弃确认
 string get_drop_confirm()
 { 
-        return "丢弃贵重物品，将无法Hoàn thành运镖任务。\n";
+        return "丢弃Vật phẩm quý giá，将无法Hoàn thành运镖任务。\n";
 }
 
 // -------------------------------------------------------------

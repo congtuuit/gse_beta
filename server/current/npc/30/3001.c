@@ -66,13 +66,13 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_19,22)&&!who->get_legend(TASK_19,23) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    月出皎兮。佼人僚兮。舒窈纠兮。劳心悄兮。月出皓兮。佼人懰兮。舒忧受兮。劳心慅兮。月出照兮。佼人燎兮。舒夭绍兮。劳心惨兮……\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_19,23)&&!who->get_legend(TASK_19,24) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哎，我所心忧的，乃是一个女子啊，我自从在紫烟楼听过她的歌，见过她的舞，日日魂牵梦绕，哪一日没有去到紫烟楼见到她就会心神不宁，如此娇柔可人儿，我只恨不得她时时都伴我身边，但是这位歌姬却是个高傲之人，她在紫烟楼也只是挂个牌而已，多少王孙公子都欲讨她回家却被她婉言相拒，我想征服她的心，才能真正得到这个倾城的佳人，想我行商之前也是一方游侠，粗粗通一点诗文而已，我委托我手下匠人专门打造了这个凤蝶佩，刻上了我少年时一首小诗，你把这个礼物送给赵姬，希望她能明白我的真心，她就在邯郸东郊。\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哎，我所心忧的，乃是一个女子啊，我自从在紫烟楼听过她的歌，见过她的舞，日日魂牵梦绕，哪一日没有去到紫烟楼见到她就会心神不宁，如此娇柔可人儿，我只恨不得她时时都伴我身边，但是这位歌姬却是个高傲之人，她在紫烟楼也只是挂个牌而已，多少王孙公子都欲讨她回家却被她婉言相拒，我想征服她的心，才能真正得到这个倾城的佳人，想我行商之前也是一方游侠，粗粗通一点诗文而已，我委托我手下匠人专门打造了这个凤蝶佩，刻上了我少年时一首小诗，你把这个礼物送给赵姬，希望她能明白我的真心，她就在邯郸东郊。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_19,24)&&!who->get_legend(TASK_19,25) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看来是落花有意，流水无情啊，不然那赵姬为什么不托你带个信给我。\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_19,29)&&!who->get_legend(TASK_19,30) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哈哈！我明白她的意思了！我得快快准备，可能还需要你的帮助。\n"ESC"Hoàn thành任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if (who->get_legend(TASK_19,30)&&!who->get_legend(TASK_20,1))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这赵姬送我宝剑的意思……，嘿嘿，你去赵长城给我Duyệt吧，我和她需要一个安静的地方面谈。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这赵姬送我宝剑的意思……，嘿嘿，你去赵长城给我Duyệt吧，我和她需要一个安静的地方面谈。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_20,1)&&!who->get_legend(TASK_20,2) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    距我和赵姬约好的时间越来越近了，还是早点去Duyệt吧。\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_20,2)&&!who->get_legend(TASK_20,3) )

@@ -82,7 +82,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if( who->get_level() >= 10 && !who->get_legend(TASK_NEWBIE_03,5) )
-        		send_user(who,"%c%s",':',sprintf("%s:\n    不知何故，最近华山一带出现了许多四脚蛇，并且还常常袭击过往的旅人和商队。这些该死的畜生严重地阻碍了本府与桃源村正常的商路交往！老爷已经发出悬赏，召集所有的志士前去清剿那些害虫。你也有兴趣加入吗？本府一定会重重有赏的。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
+        		send_user(who,"%c%s",':',sprintf("%s:\n    不知何故，最近华山一带出现了许多四脚蛇，并且还常常袭击过往的旅人和商队。这些该死的畜生严重地阻碍了本府与桃源村正常的商路交往！老爷已经发出悬赏，召集所有的志士前去清剿那些害虫。你也有兴趣加入吗？本府一定会重重有赏的。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
         	else if( who->get_save_2("sijiaose") >= 18 )
         		send_user(who,"%c%s",':',sprintf("%s:\n    相当不错！如此一来我们与桃源村的交通便可畅通无阻了。\n"ESC"Hoàn thành任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
 		else

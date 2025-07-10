@@ -64,7 +64,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
 	       	if ( who->get_level() >= 75 && !who->get_legend(TASK_25,17) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近韩国国内到处妖物横行，灵谷洞那边每天妖气冲天，如果再不加以理会的话，很快我们韩国将会是妖物的天下。作为韩国国民我可不能对这事不闻不问，我看这件事定是有妖人想要加害于我们韩国。日前我已经把这件事的来龙去脉大致查清楚，你可以替我把这封请命函带到韩国内政官申不害那里去吗？让他上奏大王，派人去处理这件事！\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近韩国国内到处妖物横行，灵谷洞那边每天妖气冲天，如果再不加以理会的话，很快我们韩国将会是妖物的天下。作为韩国国民我可不能对这事不闻不问，我看这件事定是有妖人想要加害于我们韩国。日前我已经把这件事的来龙去脉大致查清楚，你可以替我把这封请命函带到韩国内政官申不害那里去吗？让他上奏大王，派人去处理这件事！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         		
         	break;
 	case 2:

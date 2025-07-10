@@ -70,7 +70,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if (who->get_level() >= 40 && !who->get_legend(TASK_10,29))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我有个哥哥，也在做守卫，可他在燕国，我已经很久没有见到他了，请你把我的想念之情带给我哥哥好吗？\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我有个哥哥，也在做守卫，可他在燕国，我已经很久没有见到他了，请你把我的想念之情带给我哥哥好吗？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_10,29) && !who->get_legend(TASK_10,30) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我哥哥也想念我了吧？他还说了别的吗？\n"ESC"Rời khỏi.", me->get_name()));
         	break;
@@ -86,7 +86,7 @@ void do_welcome2( object me, string arg )
         	break;
 	case 3:
         	if (who->get_level() >= 60 && !who->get_legend(TASK_19,22))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    吕不韦说你是他的心腹知交，托人四处找你，他最近有个事情要找你，你赶快回去赵国的赵府吧，说不定你立了什么大功赏赐抵的上你数年辛劳呢。\n"ESC"接受任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    吕不韦说你是他的心腹知交，托人四处找你，他最近有个事情要找你，你赶快回去赵国的赵府吧，说不定你立了什么大功赏赐抵的上你数年辛劳呢。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_19,22) && !who->get_legend(TASK_19,23) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你赶快去吧，他已经等急了。\n"ESC"Rời khỏi.", me->get_name()));
         	break;
@@ -102,7 +102,7 @@ void do_welcome2( object me, string arg )
         	break;
 	case 5:
         	if ( who->get_level() >= 100 && !who->get_legend(TASK_39,11) ) 
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    天门阵最近盲目扩招，使得守卫数量急剧增加，既严重威胁了本国的治安，他们的粮草储备也告急，最近他们的阵主私底下传函我王，希望能够借我王之手裁掉一部分不合格的守卫，同时减少开支，本着友邻互助的原则，我王在象征性的收取了他一坛美酒之后同意这种一举两得的合作要求，作为本国的十佳国民，你应该尽你一份义务，前去消灭5个天罡门众守、7个守阵天兵、7个守阵神将，至于原则，就以容易下手不伤己军为原则，不过千万不要杀多了，现在天门阵的阵主夫人还在同我王饮酒，你牢记要树立良好信誉，注意国际舆论影响，杀完之后回来报告我吧，我会转告大王的。\n"ESC"接受任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    天门阵最近盲目扩招，使得守卫数量急剧增加，既严重威胁了本国的治安，他们的粮草储备也告急，最近他们的阵主私底下传函我王，希望能够借我王之手裁掉一部分不合格的守卫，同时减少开支，本着友邻互助的原则，我王在象征性的收取了他一坛美酒之后同意这种一举两得的合作要求，作为本国的十佳国民，你应该尽你一份义务，前去消灭5个天罡门众守、7个守阵天兵、7个守阵神将，至于原则，就以容易下手不伤己军为原则，不过千万不要杀多了，现在天门阵的阵主夫人还在同我王饮酒，你牢记要树立良好信誉，注意国际舆论影响，杀完之后回来报告我吧，我会转告大王的。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_39,11) && !who->get_legend(TASK_39,12) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我王对你这么低效率很有不满呢，说不定你的十佳国民称号是要改改了。\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_39,12) && !who->get_legend(TASK_39,13) )

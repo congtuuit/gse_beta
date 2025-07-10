@@ -81,7 +81,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
 	       	if ( who->get_level() >= 45 && !who->get_legend(TASK_12,16) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    昨晚梦中见一百姓在郑国渠一带哭喊着救命。今天就听说有人在那里失踪，你是否愿意前去打探一下？\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    昨晚梦中见一百姓在郑国渠一带哭喊着救命。今天就听说有人在那里失踪，你是否愿意前去打探一下？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_12,16) && !who->get_legend(TASK_12,17) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看来我所梦之事是真的，太可怕了。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_12,17) && !who->get_legend(TASK_12,18) )
@@ -140,7 +140,7 @@ void do_welcome2( object me, string arg )
         	break;   
         case 6:
 	       	if ( who->get_level() >= 50 && !who->get_legend(TASK_13,13) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    力大无比之人才能拿得起巨灵神锤，但是只要能拿起它，它的威力是常人无法想象的，除了能使你出招力度更大，还能增加你的内力，所以，巨灵神锤是不少武林中人梦寐以求的兵器。\n    据说有人在郑国渠一带见到这巨灵神锤，你去找找，看能不能找到。\n"ESC"接受任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    力大无比之人才能拿得起巨灵神锤，但是只要能拿起它，它的威力是常人无法想象的，除了能使你出招力度更大，还能增加你的内力，所以，巨灵神锤是不少武林中人梦寐以求的兵器。\n    据说有人在郑国渠一带见到这巨灵神锤，你去找找，看能不能找到。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_13,13) && !who->get_legend(TASK_13,14) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看来此事是我平身最大的遗憾了。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_13,14) && !who->get_legend(TASK_13,15) )

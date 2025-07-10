@@ -114,7 +114,7 @@ void do_welcome2( object me, string arg )
 		if  ( who->get_legend(TASK_47,1) && !who->get_legend(TASK_47,2) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    此方补人之土气，需得导去人体中多余阴气，但是没有有效控制导流的方向和量，容易造成人阴气过虚以及体内脉象紊乱，容老夫想想该如何补救。\n"ESC"Hoàn thành任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if  ( who->get_legend(TASK_47,2) && !who->get_legend(TASK_47,3) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    经过我多方查证，月见草可以弥补此药缺陷，每十二枚丹药配一株月见草，据老夫所知诛仙阵三层北部宝箱中常常藏有此类药材，你可速速前去找到交与秦药师，并将我嘱咐你的话转告与他。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));	
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    经过我多方查证，月见草可以弥补此药缺陷，每十二枚丹药配一株月见草，据老夫所知诛仙阵三层北部宝箱中常常藏有此类药材，你可速速前去找到交与秦药师，并将我嘱咐你的话转告与他。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));	
 		else if  ( who->get_legend(TASK_47,6) && !who->get_legend(TASK_47,7) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    呵呵呵，你告诉秦老儿，谁怕谁啊，看谁先醉，只要别装醉把老夫撇下不付酒钱就得了！\n"ESC"Hoàn thành任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 
@@ -163,13 +163,13 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_47,21)&&!who->get_legend(TASK_47,22) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嘿嘿，想从我这里的得到神剑的消息可是要付出代价的。\n"ESC"Hoàn thành任务\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_47,22)&&!who->get_legend(TASK_47,23) ) 
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哦，原来你是代大将军派来取剑的，他的代价已经付过了，我可以告诉你了，不过这取剑之地非常危险，大将军几个得力手下都折在里面了，我可希望快点得到大将军给我的全部允诺，这样吧，你去诛仙阵三层杀30个剑魂和30个枪魂，我利用这些魂气和杀气帮你铸起一道防护，但愿你能够平安取剑归来。\n"ESC"接受任务\ntalk %x# welcome.9\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哦，原来你是代大将军派来取剑的，他的代价已经付过了，我可以告诉你了，不过这取剑之地非常危险，大将军几个得力手下都折在里面了，我可希望快点得到大将军给我的全部允诺，这样吧，你去诛仙阵三层杀30个剑魂和30个枪魂，我利用这些魂气和杀气帮你铸起一道防护，但愿你能够平安取剑归来。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.9\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_47,23)&&!who->get_legend(TASK_47,24) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    没有我为你铸起的防护你无疑还是去送死啊，你难道连自己性命都不爱惜了么？\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_47,24)&&!who->get_legend(TASK_47,25) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    好了，年轻人，站直了，别趴下，我的施法可能会有点痛苦，你可得挺住！\n（天哪，这只是有点痛苦吗，莫非这就是传说中的分筋错骨手？我宁愿再去杀3000个枪魂……）\n"ESC"Hoàn thành任务\ntalk %x# welcome.10\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_47,25)&&!who->get_legend(TASK_47,26) ) 
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("（夏侯党满意的看着缩成一团、全身哆嗦着、笼罩在似墨似朱的肤色中的你，嘿嘿直笑），好了，大功告成，你按照我刚才教你的阵法走位到诛仙阵三层西部角落，念一段破隐咒，神剑应该就藏在周围的箱子里。得到神剑之后直接交回大将军，可别想着私吞，神剑可不是你这种无福之人能够消受的。\n"ESC"接受任务\ntalk %x# welcome.11\n"ESC"Rời khỏi.", getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("（夏侯党满意的看着缩成一团、全身哆嗦着、笼罩在似墨似朱的肤色中的你，嘿嘿直笑），好了，大功告成，你按照我刚才教你的阵法走位到诛仙阵三层西部角落，念一段破隐咒，神剑应该就藏在周围的箱子里。得到神剑之后直接交回大将军，可别想着私吞，神剑可不是你这种无福之人能够消受的。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.11\n"ESC"Rời khỏi.", getoid(me)));
         	break;
         case 8:
         	if( who->get_legend(TASK_47,21)&&!who->get_legend(TASK_47,22) )

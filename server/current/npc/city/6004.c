@@ -99,7 +99,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 30 && !who->get_legend(TASK_08,1) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，终于找到一个能帮忙的人了。\n    据报，本国Quần áo bảo vệ已不足以御寒，但现在内政繁忙，不够人手去采购Quần áo bảo vệ，虽然数量不大，但也需要精挑细选，不仅要质量够好，足以御寒，还得物美价廉，据说沼泽一带的蛛蛛怪有一批很好的衣服，你看你是否跑上这一趟，我会按照衣服的质量付给你报酬的！\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，终于找到一个能帮忙的人了。\n    据报，本国Quần áo bảo vệ已不足以御寒，但现在内政繁忙，不够人手去采购Quần áo bảo vệ，虽然数量不大，但也需要精挑细选，不仅要质量够好，足以御寒，还得物美价廉，据说沼泽一带的蛛蛛怪有一批很好的衣服，你看你是否跑上这一趟，我会按照衣服的质量付给你报酬的！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_08,1) && !who->get_legend(TASK_08,2) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    如果没有御寒的衣服，这些千里挑一的守卫会不会抗议呢？\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_08,2) && !who->get_legend(TASK_08,3) )
@@ -134,7 +134,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 4:
         	if ( who->get_level() >= 30 && !who->get_legend(TASK_09,7) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嘘，这个事儿得小声点说！\n    我听别人说，有个宝物叫龙玉珠，遗失在大别山的珠丘一带，虽说我根本不知道这个宝物是用来干嘛的，但是直觉告诉我，它并不简单，如果流落到民间，可能会引起一场江湖争夺，到时候又不知道会有多少人葬身在这场江湖风暴下。\n    所以我派你去大别山的珠丘找到这颗龙玉珠，记住，千万不要走漏风声，不然会惹来杀身之祸！\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嘘，这个事儿得小声点说！\n    我听别人说，有个宝物叫龙玉珠，遗失在大别山的珠丘一带，虽说我根本不知道这个宝物是用来干嘛的，但是直觉告诉我，它并不简单，如果流落到民间，可能会引起一场江湖争夺，到时候又不知道会有多少人葬身在这场江湖风暴下。\n    所以我派你去大别山的珠丘找到这颗龙玉珠，记住，千万不要走漏风声，不然会惹来杀身之祸！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_09,7) && !who->get_legend(TASK_09,8) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看来必须我亲自带人去找才可以将那宝物寻到。\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_09,8) && !who->get_legend(TASK_09,9) )

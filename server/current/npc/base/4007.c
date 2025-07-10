@@ -71,7 +71,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >=20 && !who->get_legend(TASK_05, 13) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近传得沸沸扬扬的是什么，你知道吗？是一个灵桃从天而降！据说那灵桃还有治百病的功效，我家夫人一直身体状况欠佳，我想如果能找到那只灵桃，一定会使她的病有所起色。\n    你问我为什么自己不去找？你以为灵桃任何人都能找到吗？前些日子有个云游和尚告诉我，必须要一个叫%s的人才是这只灵桃的有缘人，我等了好久，终于等到你来，希望你能帮我这个忙。\n    据我打探到的消息，那只灵桃似乎落在了巨鹿的飞虎寨，你进入飞虎寨后直接往前走，看到那个装满水的大水缸后，我估计你就差不多要找到灵桃了。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),who->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近传得沸沸扬扬的是什么，你知道吗？是一个灵桃从天而降！据说那灵桃还有治百病的功效，我家夫人一直身体状况欠佳，我想如果能找到那只灵桃，一定会使她的病有所起色。\n    你问我为什么自己不去找？你以为灵桃任何人都能找到吗？前些日子有个云游和尚告诉我，必须要一个叫%s的人才是这只灵桃的有缘人，我等了好久，终于等到你来，希望你能帮我这个忙。\n    据我打探到的消息，那只灵桃似乎落在了巨鹿的飞虎寨，你进入飞虎寨后直接往前走，看到那个装满水的大水缸后，我估计你就差不多要找到灵桃了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),who->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_05,13) && !who->get_legend(TASK_05,14) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    难道那个灵桃的故事是别人糊弄我的吗？要是这样那就算了。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_05,14) && !who->get_legend(TASK_05,15) )

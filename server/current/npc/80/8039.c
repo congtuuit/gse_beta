@@ -102,7 +102,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >=60 && !who->get_legend(TASK_18,28) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嘿嘿，赵总管的老爹果然强人啊，居然老来得子，你最近去赵吗，如果顺路帮我将这份贺礼送给赵总管，赵少公子居然能在老爹80大寿光荣降生，将来必定前途不可限量啊，要不是老朽无暇分身，定会亲往祝贺访谈一番的。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嘿嘿，赵总管的老爹果然强人啊，居然老来得子，你最近去赵吗，如果顺路帮我将这份贺礼送给赵总管，赵少公子居然能在老爹80大寿光荣降生，将来必定前途不可限量啊，要不是老朽无暇分身，定会亲往祝贺访谈一番的。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_18,28) && !who->get_legend(TASK_18,29) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    快去吧，别在路上贪玩，尽早给我把贺礼送到！\n"ESC"Rời khỏi.", me->get_name()));
 			
@@ -132,7 +132,7 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_20,19) && !who->get_legend(TASK_20,20) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    大王是打算修缮冀阙宫，（秦管家好像很生气的样子）但是这也不是什么好事，给犬戎之人住的，哼，你叫那些工匠做好准备吧，大王要你们“好好的”修！\n"ESC"Hoàn thành任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_20,20) && !who->get_legend(TASK_20,21) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    冀阙宫的原始图纸遗失在了秦长城匝道附近，你前去将那Bản vẽ cung điện找到并交给Tần Quốc工匠。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    冀阙宫的原始图纸遗失在了秦长城匝道附近，你前去将那Bản vẽ cung điện找到并交给Tần Quốc工匠。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_20,21) && !who->get_legend(TASK_20,22) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    找到Bản vẽ cung điện了吗？\n"ESC"Rời khỏi.", me->get_name()));
 
@@ -196,7 +196,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 10:
         	if ( who->get_level() >=115 && !who->get_legend(TASK_46,1) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近手下报告，诛仙阵中的刀魂竟然能够在每月十日挣脱阵法束缚在城外平阳镇大肆杀戮，每月都有不少青壮年被其杀死，每次死时表情都甚为奇怪，仿佛安详的睡去，脸上挂着诡异的笑容，如今那个镇子人人自危，迁移的人越来越多，已经成为谈平阳色变的地步，我怀疑有什么邪门歪道利用刀魂汲取生魂做一些什么邪恶之事，甚或可能有关大秦命脉，你生为大秦义士断不会任此等邪魂任意妄为，残害百姓吧，我命你速速前去探察一番，听说秦老汉居住日久，博闻广识，你向他先问问看。\n"ESC"接受任务\ntalk %x# welcome.11\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近手下报告，诛仙阵中的刀魂竟然能够在每月十日挣脱阵法束缚在城外平阳镇大肆杀戮，每月都有不少青壮年被其杀死，每次死时表情都甚为奇怪，仿佛安详的睡去，脸上挂着诡异的笑容，如今那个镇子人人自危，迁移的人越来越多，已经成为谈平阳色变的地步，我怀疑有什么邪门歪道利用刀魂汲取生魂做一些什么邪恶之事，甚或可能有关大秦命脉，你生为大秦义士断不会任此等邪魂任意妄为，残害百姓吧，我命你速速前去探察一番，听说秦老汉居住日久，博闻广识，你向他先问问看。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.11\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_46,11)&&!who->get_legend(TASK_46,12) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    天佑我大秦，看来没有什么人在做威胁我们Quốc运的大事了，仅仅是个小混混弄出的意外而已，壮士你此番也辛苦了，至于一直殚精竭虑的马显先生你也代我送一件礼物给他。\n"ESC"Hoàn thành任务\ntalk %x# welcome.12\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 			
@@ -228,7 +228,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 13:
         	if ( who->get_level() >=115 && !who->get_legend(TASK_46,26) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    秦药师为吾王炼制仙丹，听说遇到一些麻烦，他请求我派人给予Hỗ trợ，不知道壮士你可愿意前往?\n"ESC"接受任务\ntalk %x# welcome.14\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    秦药师为吾王炼制仙丹，听说遇到一些麻烦，他请求我派人给予Hỗ trợ，不知道壮士你可愿意前往?\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.14\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 //		else if ( who->get_legend(TASK_46,11)&&!who->get_legend(TASK_46,12) ) 
 //			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这可真是件好事。\n"ESC"Hoàn thành任务\ntalk %x# welcome.12\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 			

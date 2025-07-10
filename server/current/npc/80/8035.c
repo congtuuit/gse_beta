@@ -85,7 +85,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 40 && !who->get_legend(TASK_10,14)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    现在可是狩猎的好季节。\n    我是一个猎人，我的生活来源就是靠打来的猎物换钱，每次到了狩猎的旺季，家里的情况就会宽裕很多，每年我都盼着这个时候呢！\n    我看你也是个习武之人，最近在东海渔村一带的虾兵蟹将也多了起来，你要是有兴趣的话，就去猎杀20只虾兵20只蟹将吧。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    现在可是狩猎的好季节。\n    我是一个猎人，我的生活来源就是靠打来的猎物换钱，每次到了狩猎的旺季，家里的情况就会宽裕很多，每年我都盼着这个时候呢！\n    我看你也是个习武之人，最近在东海渔村一带的虾兵蟹将也多了起来，你要是有兴趣的话，就去猎杀20只虾兵20只蟹将吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_10,14) && !who->get_legend(TASK_10,15) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    狩猎的好时机呀！如果不抓紧时间，可就没这么好的机会喽！\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_10,15) && !who->get_legend(TASK_10,16) )

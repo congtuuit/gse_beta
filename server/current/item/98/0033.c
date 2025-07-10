@@ -18,5 +18,5 @@ void create()
 // 函数：获取描述
 string get_desc() 
 { 
-        return "Vật phẩm nhiệm vụ.放贵重物品的箱子。"; 
+        return "Vật phẩm nhiệm vụ.放Vật phẩm quý giá的箱子。"; 
 }

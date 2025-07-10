@@ -184,7 +184,7 @@ void do_welcome_call(object me, string arg)
 		send_user(who, "%c%c%c%w%s", 0x51, 1, 1, TID_YUANFEN, "缘分对对碰");
 		send_user(who, "%c%c%c%w%w%s", 0x51, 1, 2, TID_YUANFEN, 1, "消灭噬情魔");
 		send_user(who, "%c%s", '!', "Nhận nhiệm vụ  消灭噬情魔");
-		send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s：\n    %s已经同意接受任务。\n", me->get_name(), member->get_name()));
+		send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s：\n    %s已经同意Nhận nhiệm vụ。\n", me->get_name(), member->get_name()));
 
 		member->set_save_2("dodolook_task.x", x);
 		member->set_save_2("dodolook_task.y", y);

@@ -63,7 +63,7 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_28,29) && !who->get_legend(TASK_28,30) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哎，玉器就仿佛我的生命，而我苦恼也就是玉器的事情啊。\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_28,29) && !who->get_legend(TASK_29,16) ) 
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我一生浸淫珠宝玉器，看过美玉不知凡几，但是传说中的稀世宝玉我却缘悭一面，惊鸿一瞥便再也难觅踪迹，我只想拥有他我就此生无憾了，但是山海茫茫，我的稀世宝玉到底藏身何处了呢，哎……听说齐总管见多识广，但是他似乎却不宵与同商人来往，只得拜托了你了。\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我一生浸淫珠宝玉器，看过美玉不知凡几，但是传说中的稀世宝玉我却缘悭一面，惊鸿一瞥便再也难觅踪迹，我只想拥有他我就此生无憾了，但是山海茫茫，我的稀世宝玉到底藏身何处了呢，哎……听说齐总管见多识广，但是他似乎却不宵与同商人来往，只得拜托了你了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_29,24) && !who->get_legend(TASK_29,25) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哈哈……我终于梦想成真了！\n"ESC"Hoàn thành任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 

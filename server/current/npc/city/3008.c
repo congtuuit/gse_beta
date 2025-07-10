@@ -85,13 +85,13 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_42,16) && !who->get_legend(TASK_42,17) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    啊，刺客居然如此无法无天，居然出了这么大的纰漏，连王府路线图都被别人弄了去，事情可就麻烦了。幸好义士先把刺客头目抓住了，我们得赶紧想办法补救才是。\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_42,17) && !who->get_legend(TASK_42,18) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    刺客必定会将王府路线图这种重要的东西藏在自己很快能拿到的地方，那刺客活动之处一定藏有王府路线图，你前去天门阵三层北部一带寻找，他们一定会小心收藏，一定会在他们的某个宝箱里。\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    刺客必定会将王府路线图这种重要的东西藏在自己很快能拿到的地方，那刺客活动之处一定藏有王府路线图，你前去天门阵三层北部一带寻找，他们一定会小心收藏，一定会在他们的某个宝箱里。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_42,18) && !who->get_legend(TASK_42,19) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    若不是考虑到派兵搜索打草惊蛇，会被贼子们转移图纸，我哪里用得着你这么个笨手笨脚的家伙！\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_42,19) && !who->get_legend(TASK_42,20) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    终于可以暂且舒一口气！\n"ESC"接受任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    终于可以暂且舒一口气！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_42,20) && !who->get_legend(TASK_42,21) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这次夭折的刺杀行动充分暴露了我国在王府保卫工作方面的巨大漏洞，本官为未能肃清匪类深刻检讨，同时请你进宫代我面奏大王，一方面希望能够加强保密工作和严格人员准入制度，一方面也要严格纪律性，严防玩忽职守，尸位素餐，导致我国大王安全受到严重威胁的事件再次发生，如若是因为人手不足，更应该严格筛选一批政治过硬，作风优良，武力强健的护卫充实我王的保卫工作。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这次夭折的刺杀行动充分暴露了我国在王府保卫工作方面的巨大漏洞，本官为未能肃清匪类深刻检讨，同时请你进宫代我面奏大王，一方面希望能够加强保密工作和严格人员准入制度，一方面也要严格纪律性，严防玩忽职守，尸位素餐，导致我国大王安全受到严重威胁的事件再次发生，如若是因为人手不足，更应该严格筛选一批政治过硬，作风优良，武力强健的护卫充实我王的保卫工作。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 
         	break; 
 	case 2:
@@ -146,7 +146,7 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_43,13) && !who->get_legend(TASK_43,14) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，何其不幸，为官必当通知家属，为他们妥善安排后事！\n"ESC"Hoàn thành任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_43,14) && !who->get_legend(TASK_43,15) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    此事终于水落石出，但是结果真是让人扼腕叹息，治下竟有此等穷凶极恶之徒，更有怪力乱神的方士之辈。我写了封案情奏章禀报大王，你代我转交一下吧。\n"ESC"接受任务\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    此事终于水落石出，但是结果真是让人扼腕叹息，治下竟有此等穷凶极恶之徒，更有怪力乱神的方士之辈。我写了封案情奏章禀报大王，你代我转交一下吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 
 		break;
 	case 7:

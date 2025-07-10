@@ -79,7 +79,7 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_10,3) && !who->get_legend(TASK_10,4) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    俗话说，巧妇难为无米之炊，没有好的种子怎么种得出好的庄稼，正好我这出了一批新种子，你拿去吧，也当是给我做做实验，送去回来后帮我催催那程风，叫他快点给我把东西运来。\n"ESC"得到菜种\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_10,4) && !who->get_legend(TASK_10,6) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    前几天朋友给我运了点东西，托尉迟老镖头给运过来，可听他说，当时因为人手不够，所以他找了个外面的人来帮他运这趟镖，虽说那人武艺高强，又是尉迟老镖头的好朋友，可我老放不下这颗心啊，这么多日子了，也没见他过来，据说他还逗留在Yên Quốc的禅武台，也不知道他在做什么，你给我去看看吧。\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    前几天朋友给我运了点东西，托尉迟老镖头给运过来，可听他说，当时因为人手不够，所以他找了个外面的人来帮他运这趟镖，虽说那人武艺高强，又是尉迟老镖头的好朋友，可我老放不下这颗心啊，这么多日子了，也没见他过来，据说他还逗留在Yên Quốc的禅武台，也不知道他在做什么，你给我去看看吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_10,6) && !who->get_legend(TASK_10,7) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    难道你这点小忙都不肯帮我吗？看在我帮过你的份上，你就去帮我找找他吧，我真的快急死了！\n"ESC"Rời khỏi.", me->get_name()));
 

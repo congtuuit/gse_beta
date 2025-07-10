@@ -85,7 +85,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if( who->get_level() >= 25 && !who->get_legend(TASK_07,13) )
-        		send_user(who,"%c%s",':',sprintf("%s:\n    最近有点烦，有个听说算命很灵的先生前天突然跑来我家，塞给我三个锦囊，告诉我这个月我将有三个劫难，并交代我万万不可擅自打开这三个锦囊，一定得等到一个名叫%s的人来找我后，才能打开第一个锦囊，今天我终于等到你了！\n    我打开了第一个锦囊，里面说需要你给我收集20个南瓜，方能化解第一个劫难，而这种南瓜只有杀掉大别山一带的牛头怪才能得到。我想你不会拒绝我这个快要遭受劫难的人吧！\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.",me->get_name(),who->get_name(),getoid(me)));
+        		send_user(who,"%c%s",':',sprintf("%s:\n    最近有点烦，有个听说算命很灵的先生前天突然跑来我家，塞给我三个锦囊，告诉我这个月我将有三个劫难，并交代我万万不可擅自打开这三个锦囊，一定得等到一个名叫%s的人来找我后，才能打开第一个锦囊，今天我终于等到你了！\n    我打开了第一个锦囊，里面说需要你给我收集20个南瓜，方能化解第一个劫难，而这种南瓜只有杀掉大别山一带的牛头怪才能得到。我想你不会拒绝我这个快要遭受劫难的人吧！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.",me->get_name(),who->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_07,13) && !who->get_legend(TASK_07,14) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    如果过了今天，还不能收集够20个南瓜，第一个劫难就要应验了，你能快点吗？\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_07,14) && !who->get_legend(TASK_07,15) )
@@ -120,7 +120,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 4:
         	if(who->get_legend(TASK_07,15) && !who->get_legend(TASK_07,16))
-        		send_user(who,"%c%s",':',sprintf("%s:\n    谢天谢地，你终于帮助我化解了第一个劫难！而第二个锦囊是需要化解第一个劫难后才能打开的。\n    我刚刚看了，锦囊上说，需要化解第二个劫难，便需要去杀巫山、鄱阳湖附近的20只猪妖与10只豺狗，并且还说到，如果化解第一个劫难的人愿意帮助我去杀猪妖与豺狗，那会更好！\n    所以，我希望你还能替我跑这一趟，拜托！\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
+        		send_user(who,"%c%s",':',sprintf("%s:\n    谢天谢地，你终于帮助我化解了第一个劫难！而第二个锦囊是需要化解第一个劫难后才能打开的。\n    我刚刚看了，锦囊上说，需要化解第二个劫难，便需要去杀巫山、鄱阳湖附近的20只猪妖与10只豺狗，并且还说到，如果化解第一个劫难的人愿意帮助我去杀猪妖与豺狗，那会更好！\n    所以，我希望你还能替我跑这一趟，拜托！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_07,16) && !who->get_legend(TASK_07,17) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    如果是猪妖和豺狗的能力太强大，而导致你不能帮助我化解第二个劫难，我想这是上天对我的惩罚！\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_07,17) && !who->get_legend(TASK_07,18) )
@@ -155,7 +155,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 7:
         	if(who->get_legend(TASK_07,18) && !who->get_legend(TASK_07,19))
-        		send_user(who,"%c%s",':',sprintf("%s:\n    你已经给我化解了前两个劫难，算命先生说，如果你愿意帮我化解这三个劫难，那么你将得到上天的眷顾。\n    我刚刚打开锦囊，上面说第三个劫难需要找到神秘泥人，我依稀记得神秘泥人在太湖的堂里村出现过。\n    我想你是不会拒绝我的，对吧！\n"ESC"接受任务\ntalk %x# welcome.8\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
+        		send_user(who,"%c%s",':',sprintf("%s:\n    你已经给我化解了前两个劫难，算命先生说，如果你愿意帮我化解这三个劫难，那么你将得到上天的眷顾。\n    我刚刚打开锦囊，上面说第三个劫难需要找到神秘泥人，我依稀记得神秘泥人在太湖的堂里村出现过。\n    我想你是不会拒绝我的，对吧！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.8\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_07,19) && !who->get_legend(TASK_07,20) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    其实最后一个劫难是最容易化解的，你能给我找回来那个神秘泥人吗？\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_07,20) && !who->get_legend(TASK_07,21) )

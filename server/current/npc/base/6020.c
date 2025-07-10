@@ -105,7 +105,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 5 && !who->get_legend(TASK_37,15) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我们经商的，听到哪有商机就往哪条路上走，这是必然的。\n    现在我做珠宝生意，自然是到处搜集珠宝，打听到谁家有收藏的珍贵宝石，那我可是一定会想方设法的弄到手，我听说城外的王满家有块家传宝玉，你去替我问问，他是否愿意出售，如果愿意的话，你将他开的价格报给我吧。\n    王满就在城外的百越村，他旁边还有户人家叫孙陆的，你也可以给我顺便问问孙陆有没有什么珠宝要出售。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我们经商的，听到哪有商机就往哪条路上走，这是必然的。\n    现在我做珠宝生意，自然是到处搜集珠宝，打听到谁家有收藏的珍贵宝石，那我可是一定会想方设法的弄到手，我听说城外的王满家有块家传宝玉，你去替我问问，他是否愿意出售，如果愿意的话，你将他开的价格报给我吧。\n    王满就在城外的百越村，他旁边还有户人家叫孙陆的，你也可以给我顺便问问孙陆有没有什么珠宝要出售。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		break;
         case 2:
         	if ( who->get_level() >= 5 && !who->get_legend(TASK_37,15) )

@@ -123,7 +123,7 @@ void do_visit2( object me, string arg )
 	        if( who->get_legend(TASK_49, 1) && !who->get_legend(TASK_49, 2) )
 			send_user(who,"%c%s",':',sprintf("%s:\n    灵芝草何等珍贵，怎能说给就给！要灵芝草是要付出代价的，你想好了再来找我吧。\n"ESC"Hoàn thành任务\ntalk %x# visit.12\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
 		else if( who->get_legend(TASK_49, 2) && !who->get_legend(TASK_49, 3) )
-			send_user(who,"%c%s",':',sprintf("%s:\n    其实我的要求并不高，我收购了这么多年的野味，啥都见过，也啥都收过，惟独有一样，从来没有收购过，那就是巴丘的赤褐蚁。    希望你能满足我这个心愿，抓一只赤褐蚁给我，我也就满足你的心愿——将灵芝草交给你！\n    先去杂货店老板那里买几条乾坤绳吧，是抓宠必需的。\n"ESC"接受任务\ntalk %x# visit.13\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
+			send_user(who,"%c%s",':',sprintf("%s:\n    其实我的要求并不高，我收购了这么多年的野味，啥都见过，也啥都收过，惟独有一样，从来没有收购过，那就是巴丘的赤褐蚁。    希望你能满足我这个心愿，抓一只赤褐蚁给我，我也就满足你的心愿——将灵芝草交给你！\n    先去杂货店老板那里买几条乾坤绳吧，是抓宠必需的。\n"ESC"Nhận nhiệm vụ\ntalk %x# visit.13\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
 		else if( who->get_legend(TASK_49, 3) && !who->get_legend(TASK_49, 4) && objectp(pet=USER_BEAST_D->have_beast(who,"赤褐蚁")))
 			send_user(who,"%c%s",':',sprintf("%s:\n    还算你遵守诺言，那我当然也不会食言，你拿着这颗灵芝草交给当铺老板去吧！\n"ESC"Hoàn thành任务\ntalk %x# visit.14\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
 			

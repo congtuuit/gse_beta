@@ -88,13 +88,13 @@ void do_welcome2( object me, string arg )
 //			if (!who->get_legend(TASK_NEWBIE_02,1) )
 			if ( who->get_legend(TASK_49, 5) && !who->get_legend(TASK_49, 6))
 				send_user( who, "%c%c%w%s", ':', 3, me->get_char_picid(),
-					sprintf("%s:\n    嘿，看来你需要一些行军散，这可是对你的气血非常有用的。对吗？\n    我很愿意给你一些行军散，但是，我有一个条件，门派向导一直想找点火焰石玩玩，我想讨好他，所以你帮他弄一些火焰石来，你看怎么样？\n    你去洞庭湖杀掉那些讨厌的持扇草人、赤褐蚁或子母蛙，就可能会有火焰石了，拿到后交给门派向导，他只需要5个，去吧！\n    做完任务后，用alt+w打开人物属性界面，再使用新手信物就可以快速回到新手村哦！\n"ESC"接受\ntalk %x# welcome.2\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
+					sprintf("%s:\n    嘿，看来你需要一些行军散，这可是对你的气血非常有用的。对吗？\n    我很愿意给你一些行军散，但是，我有一个条件，门派向导一直想找点Hỏa Thạch玩玩，我想讨好他，所以你帮他弄一些Hỏa Thạch来，你看怎么样？\n    你去洞庭湖杀掉那些讨厌的持扇草人、赤褐蚁或子母蛙，就可能会有Hỏa Thạch了，拿到后交给门派向导，他只需要5个，去吧！\n    做完任务后，用alt+w打开人物属性界面，再使用新手信物就可以快速回到新手村哦！\n"ESC"接受\ntalk %x# welcome.2\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
 			else if (!who->get_legend(TASK_NEWBIE_02,2) )
 				send_user( who, "%c%c%w%s", ':', 3, me->get_char_picid(),
-					sprintf("%s:\n   %s ，我交给你的任务呢？Hoàn thành了吗？我还等着你呢！村外就有很多野兔，你杀死它们就可以拿到火焰石了！”\n"ESC"Rời khỏi.",me->get_name(),NPC_RANK_D->get_respect_2(who)));
+					sprintf("%s:\n   %s ，我交给你的任务呢？Hoàn thành了吗？我还等着你呢！村外就有很多野兔，你杀死它们就可以拿到Hỏa Thạch了！”\n"ESC"Rời khỏi.",me->get_name(),NPC_RANK_D->get_respect_2(who)));
 			else if (!who->get_legend(TASK_NEWBIE_02,3) )
 				send_user( who, "%c%c%w%s", ':', 3, me->get_char_picid(),
-					sprintf("%s:\n    没想到你这么快就回来了，%s。青出于蓝而胜于蓝啊！我这把老骨头了，一个人也挺寂寞的，谢谢你找来这些火焰石供我把玩。这是给你的奖励！\n"ESC"Hoàn thành任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.",me->get_name(),NPC_RANK_D->get_respect_2(who),getoid(me)));
+					sprintf("%s:\n    没想到你这么快就回来了，%s。青出于蓝而胜于蓝啊！我这把老骨头了，一个人也挺寂寞的，谢谢你找来这些Hỏa Thạch供我把玩。这是给你的奖励！\n"ESC"Hoàn thành任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.",me->get_name(),NPC_RANK_D->get_respect_2(who),getoid(me)));
 			break;
 		case 2:
 //			if ( who->get_legend(TASK_NEWBIE_02,1) )
@@ -112,9 +112,9 @@ void do_welcome2( object me, string arg )
 		case 3:
 			if ( !who->get_legend(TASK_NEWBIE_02,1) || !who->get_legend(TASK_NEWBIE_02,2) || who->get_legend(TASK_NEWBIE_02,3) )
 				return ;	
-			if( !objectp( item = present("火焰石", who, 1, MAX_CARRY) ) || item->is_huoyanshi() != 1 )
+			if( !objectp( item = present("Hỏa Thạch", who, 1, MAX_CARRY) ) || item->is_huoyanshi() != 1 )
 			{
-				send_user(who,"%c%s",'!',"你的火焰石呢?");
+				send_user(who,"%c%s",'!',"你的Hỏa Thạch呢?");
 				return;	
 			}
 			inv = all_inventory(who, 1, MAX_CARRY);
@@ -123,7 +123,7 @@ void do_welcome2( object me, string arg )
                		{
                 		if ( !objectp(inv[i]) )
                 			continue;
-                		if ( inv[i]->get_name() != "火焰石" || inv[i]->is_huoyanshi() != 1 )
+                		if ( inv[i]->get_name() != "Hỏa Thạch" || inv[i]->is_huoyanshi() != 1 )
                 			continue;
                 		amount += inv[i]->get_amount();               			
                		}
@@ -136,7 +136,7 @@ void do_welcome2( object me, string arg )
                 	{
                 		if ( !objectp(inv[i]) )
                 			continue;
-                		if ( inv[i]->get_name() != "火焰石" || inv[i]->is_huoyanshi() != 1 )
+                		if ( inv[i]->get_name() != "Hỏa Thạch" || inv[i]->is_huoyanshi() != 1 )
                 			continue;
                 		inv[i]->remove_from_user();
                 		destruct(inv[i]);
@@ -161,7 +161,7 @@ void do_welcome2( object me, string arg )
 			break;
         case 4:
         	if ( !who->get_legend(TASK_40,17) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看上去你很少参加战斗，%s，我猜想你肯定还没有去过村外，也没有见过那些恼人的小山鸡、小野兔、稻草人，我觉得，你应该出村锻炼下自己，不止能让你自身的能力得到提高，还能让人见到一些你从未见过的东西，开阔你的视野。\n    我看不如这样吧，你去村外消灭3只小怪物（小山鸡、小野兔、稻草人），回来向我交差，我会给奖励给你的！\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(), who->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看上去你很少参加战斗，%s，我猜想你肯定还没有去过村外，也没有见过那些恼人的小山鸡、小野兔、稻草人，我觉得，你应该出村锻炼下自己，不止能让你自身的能力得到提高，还能让人见到一些你从未见过的东西，开阔你的视野。\n    我看不如这样吧，你去村外消灭3只小怪物（小山鸡、小野兔、稻草人），回来向我交差，我会给奖励给你的！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(), who->get_name(),getoid(me)));
 		else if ( !who->get_legend(TASK_40,18) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你应该出村锻炼下自己。\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( !who->get_legend(TASK_40,19) )
@@ -196,7 +196,7 @@ void do_welcome2( object me, string arg )
         case 7:
 //        	if ( who->get_level() >= 5 &&!who->get_legend(TASK_40,24) )
 	       	if ( who->get_legend(TASK_48, 30) && !who->get_legend(TASK_49, 1))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    为了这个当铺，我是日夜操劳，白天忙着为客人服务，晚上又得清算盘点，久而久之，便有了Đau đầu，每当遇到烦恼的事情时，脑袋里就撕裂般的疼痛，有时候实在是疼得受不了，我便拿自己的头往墙壁上撞。\n    我听说灵芝草对头疼有很强的疗效，我想请你去找野味收购商讨点灵芝草来，他收购野味应该也会收购一些药材，如果他有其他条件，你尽管答应好了，我会想办法让你做到的。\n"ESC"接受任务\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    为了这个当铺，我是日夜操劳，白天忙着为客人服务，晚上又得清算盘点，久而久之，便有了Đau đầu，每当遇到烦恼的事情时，脑袋里就撕裂般的疼痛，有时候实在是疼得受不了，我便拿自己的头往墙壁上撞。\n    我听说灵芝草对头疼有很强的疗效，我想请你去找野味收购商讨点灵芝草来，他收购野味应该也会收购一些药材，如果他有其他条件，你尽管答应好了，我会想办法让你做到的。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
 //        	else if ( who->get_legend(TASK_40,28) && !who->get_legend(TASK_40,29) )
 	       	else if ( who->get_legend(TASK_49, 4) && !who->get_legend(TASK_49, 5))
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    果然不负我所望，将灵芝草给我讨了来，我这Đau đầu就全靠你这颗灵芝草了，我要好好答谢你！\n"ESC"Hoàn thành任务\ntalk %x# welcome.9\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));

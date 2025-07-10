@@ -1,6 +1,4 @@
 
-// 变量：装备文件列表
-
 string *FileTable00b = ({
         "/item/60/0002",
         "/item/61/0002",
@@ -1210,7 +1208,6 @@ string *FileTable120 = ({
 int sizeof_file_120 = sizeof(FileTable120);
 
 
-// 函数：按等级获取装备
 string get_armor_file( int level ) 
 { 
         switch( level / 10 )
@@ -1232,7 +1229,6 @@ string get_armor_file( int level )
         }
 }
 
-// 函数：按等级获取装备(基本)
 string get_armor_file_0( int level ) 
 { 
         switch( level / 10 )
@@ -1246,7 +1242,6 @@ string get_armor_file_0( int level )
         }
 }
 
-// 函数：按等级获取装备(门派)
 string get_armor_file_2( int level ) 
 { 
         switch( level / 10 )
@@ -1268,7 +1263,6 @@ string get_armor_file_2( int level )
         }
 }
 
-// 函数：按等级段获取装备(门派)
 string get_armor_file_3( int level1, int level2 ) 
 { 
 	int begin, end, i;
@@ -1442,20 +1436,20 @@ string get_random_fam_level_equip(string family, int gender, int level)
 		armor = weapon ;
 	        if( gender == 1 ) switch( armor )
 	        {
-	       case 0 : file = sprintf( "/item/60/%04d", range_value(level3, 1, 50) );  break;    // 基本护具
-	      default : file = sprintf( "/item/60/%04d", 1000*armor + level3 );  break;    // 门派护具
+	       case 0 : file = sprintf( "/item/60/%04d", range_value(level3, 1, 50) );  break;    // Giáp Cơ Bản
+	      default : file = sprintf( "/item/60/%04d", 1000*armor + level3 );  break;    // Giáp Môn Phái
 	        }
 	        else switch( armor )
 	        {
-	       case 0 : file = sprintf( "/item/61/%04d", range_value(level3, 1, 50) );  break;    // 基本护具
-	      default : file = sprintf( "/item/61/%04d", 1000*armor + level3 );  break;    // 门派护具
+	       case 0 : file = sprintf( "/item/61/%04d", range_value(level3, 1, 50) );  break;    // Giáp Cơ Bản
+	      default : file = sprintf( "/item/61/%04d", 1000*armor + level3 );  break;    // Giáp Môn Phái
 		}	
 		break;
 	case 2:
 	        if( gender == 1 ) switch( armor )
 	        {
-	       case 0 : file = sprintf( "/item/65/%04d", range_value(level3, 1, 50) );  break;    // 基本护具
-	      default : file = sprintf( "/item/65/%04d", 1000*armor + level3 );  break;    // 门派护具
+	       case 0 : file = sprintf( "/item/65/%04d", range_value(level3, 1, 50) );  break;    // Giáp Cơ Bản
+	      default : file = sprintf( "/item/65/%04d", 1000*armor + level3 );  break;    // Giáp Môn Phái
 	        }
 	        else switch( armor )
 	        {

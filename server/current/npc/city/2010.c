@@ -69,7 +69,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 65 && !who->get_legend(TASK_38,9) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    齐国工匠家遭到山贼洗劫一空，夫人女儿都惨死在山贼的刀下，只留下齐国工匠一人在家忍受着悲痛，孤独与茫然……\n    我想，虽然我和他不是亲人，不是朋友，甚至我们不同国家，但是我想伸出我的Hỗ trợ之手来帮助他，帮助他缓解这一连串的打击，帮助他度过这段最难熬的时间，帮助他恢复对生活的信心。\n    你去一趟齐国，将我的意思转达给齐国工匠，并告知他，不久我将前去齐国，陪伴他走过这段日子。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    齐国工匠家遭到山贼洗劫一空，夫人女儿都惨死在山贼的刀下，只留下齐国工匠一人在家忍受着悲痛，孤独与茫然……\n    我想，虽然我和他不是亲人，不是朋友，甚至我们不同国家，但是我想伸出我的Hỗ trợ之手来帮助他，帮助他缓解这一连串的打击，帮助他度过这段最难熬的时间，帮助他恢复对生活的信心。\n    你去一趟齐国，将我的意思转达给齐国工匠，并告知他，不久我将前去齐国，陪伴他走过这段日子。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	break;
 	case 2:
         	if ( who->get_level() >= 65 && !who->get_legend(TASK_38,9) )

@@ -87,7 +87,7 @@ int main(object me, string arg)
 			send_user(me, "%c%s", '!', "Đối phương đang bán hàng rong");
 			return 1;
 		}
-		if (present("贵重物品", who, 1, MAX_CARRY * 4))
+		if (present("Vật phẩm quý giá", who, 1, MAX_CARRY * 4))
 		{
 			send_user(me, "%c%s", '!', "Nhau và với vật có giá trị。");
 			return 1;
@@ -167,7 +167,7 @@ int main(object me, string arg)
 			send_user(me, "%c%s", '!', "Bạn đang bán hàng rong");
 			return 1;
 		}
-		if (present("贵重物品", me, 1, MAX_CARRY * 4))
+		if (present("Vật phẩm quý giá", me, 1, MAX_CARRY * 4))
 		{
 			send_user(me, "%c%s", '!', "Bạn thực hiện với vật có giá trị。");
 			return 1;

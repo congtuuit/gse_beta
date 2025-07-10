@@ -85,7 +85,7 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_19,1) && !who->get_legend(TASK_19,2) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    此种子何等珍贵，我可不愿这样送人，若你想得到，需替我办件事。\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_19,2) && !who->get_legend(TASK_19,3) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这个种子可是我求仙人才求到的，当初我求的是长生不老药他不肯给，听过易水的白鹭村有人形何首乌，磨粉服用可以长生不老，如果你能给我找来我就送个种子给你。\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这个种子可是我求仙人才求到的，当初我求的是长生不老药他不肯给，听过易水的白鹭村有人形何首乌，磨粉服用可以长生不老，如果你能给我找来我就送个种子给你。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_19,3) && !who->get_legend(TASK_19,4) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    如果拿不来何首乌，这大葫芦种子我可不会送给你。\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_19,4) && !who->get_legend(TASK_19,5) )

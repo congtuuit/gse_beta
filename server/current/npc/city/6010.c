@@ -76,7 +76,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 15 && !who->get_legend(TASK_NEWBIE_03,20)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我母亲病得很重了，看了很多医生都无济于事，我打听到一个偏方，说用20个兽角熬成一碗水，喝了它就会痊愈。但自古忠孝不能两全，我每天还要在这看守城门，实在不能脱离岗位。你就帮我去找齐兽角吧！我一定会重重的谢你。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我母亲病得很重了，看了很多医生都无济于事，我打听到一个偏方，说用20个兽角熬成一碗水，喝了它就会痊愈。但自古忠孝不能两全，我每天还要在这看守城门，实在不能脱离岗位。你就帮我去找齐兽角吧！我一定会重重的谢你。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_save_2("souweisoujiao") < 20  )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    那兽角收集齐了吗？我母亲还等着它救命呢！\n"ESC"Rời khỏi.", me->get_name()));
 		else
@@ -110,7 +110,7 @@ void do_welcome2( object me, string arg )
         	break;
 	case 4:
 		if ( who->get_level() >= 90 && !who->get_legend(TASK_33,7) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n   我从小有个异能，就是能听家禽的谈话，我母亲怕极了，都严禁我对他人说起，可是最近邻居家的鸡鸭都莫名其妙的失踪了，我忍不住又去听剩下那些鸡鸭的谈话，发现是虚陵洞的水精和土精把他们偷去说是要祭五脏庙，五脏庙在什么地方我不知道，可是我都把这些鸡鸭当成我自己的兄弟姐妹，不想他们有什么闪失，可是母亲不许我Cơ thể bận rộn，所以我想委托你帮我办办这件事，想必你一定乐于帮助我吧！\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n   我从小有个异能，就是能听家禽的谈话，我母亲怕极了，都严禁我对他人说起，可是最近邻居家的鸡鸭都莫名其妙的失踪了，我忍不住又去听剩下那些鸡鸭的谈话，发现是虚陵洞的水精和土精把他们偷去说是要祭五脏庙，五脏庙在什么地方我不知道，可是我都把这些鸡鸭当成我自己的兄弟姐妹，不想他们有什么闪失，可是母亲不许我Cơ thể bận rộn，所以我想委托你帮我办办这件事，想必你一定乐于帮助我吧！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_33,7) && !who->get_legend(TASK_33,8) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    难道你连一点怜悯之心都没有吗，万物生灵，也是兄弟啊！\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_33,8) && !who->get_legend(TASK_33,9) )
@@ -144,7 +144,7 @@ void do_welcome2( object me, string arg )
         	break;
 	case 7:
 		if ( who->get_level() >= 95 && !who->get_legend(TASK_33,10) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n   我老父最近突然说道多年没有品尝虚陵洞的Trà Quan Vũ了，说是当年他迷路碰到两位仙人要到的，说他最近可能不行了，催促我快点给点再寻来以偿心愿，可是我一介丁卒，哪里有那个能耐去虚陵洞找仙人要茶，听说大侠你身手不凡，也时常与仙人来往，可否Hoàn thành老父这个心愿？只要20片可以泡一次的茶叶就好了。\n"ESC"接受任务\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n   我老父最近突然说道多年没有品尝虚陵洞的Trà Quan Vũ了，说是当年他迷路碰到两位仙人要到的，说他最近可能不行了，催促我快点给点再寻来以偿心愿，可是我一介丁卒，哪里有那个能耐去虚陵洞找仙人要茶，听说大侠你身手不凡，也时常与仙人来往，可否Hoàn thành老父这个心愿？只要20片可以泡一次的茶叶就好了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_33,10) && !who->get_legend(TASK_33,11) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唔，我老父天天念叨，你能快点吗？\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_33,11) && !who->get_legend(TASK_33,12) )
@@ -179,7 +179,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 10:
         	if ( who->get_level() >= 10 && !who->get_legend(TASK_37,17) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    母亲的身体一直很虚弱，现在冬天快来了，想给她买件厚实的棉袄过冬，可我手头有点拮据，所以我决定早做准备，多打几份工来凑足钱，我没念过书，很多东西不会，只能做点苦力活，突然想起那韩国韩总管是我家一个远房亲戚，你去问问他，看他能不能给我找个工钱高点的事做。\n    韩总管就在韩国王府里，你尽快去给我问问吧。\n"ESC"接受任务\ntalk %x# welcome.11\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    母亲的身体一直很虚弱，现在冬天快来了，想给她买件厚实的棉袄过冬，可我手头有点拮据，所以我决定早做准备，多打几份工来凑足钱，我没念过书，很多东西不会，只能做点苦力活，突然想起那韩国韩总管是我家一个远房亲戚，你去问问他，看他能不能给我找个工钱高点的事做。\n    韩总管就在韩国王府里，你尽快去给我问问吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.11\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		break;
         case 11:
         	if ( who->get_level() >= 10 && !who->get_legend(TASK_37,17) )

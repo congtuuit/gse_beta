@@ -1,4 +1,3 @@
-
 #include <city.h>
 #include <equip.h>
 #include <item.h>
@@ -262,6 +261,12 @@ void sub_user(object who)
 		FAMILY_D->sub_family(who);
 		FAMILY_D->sub_city(who);
 		FAMILY_D->sub_org(who);
+		
+		// Remove from channel manager
+		if (CHANNEL_D)
+		{
+			CHANNEL_D->remove_user_from_channel(who);
+		}
 	}
 }
 
@@ -288,10 +293,34 @@ void rumor_gm_channel(string chat)
 
 void save_all_data()
 {
-	object *user, who, me, obj, *inv, map, item, zom, *zombie, ben;
+	object *user;
+	object who;
+	object me;
+	object obj;
+	object *inv;
+	object map;
+	object item;
+	object zom;
+	object *zombie;
+	object ben;
 	mapping org;
-	int time, time2, i, size, level, cash, saving, size2, p, x, y, z, x1, y1, n;
-	string id, order;
+	int time;
+	int time2;
+	int i;
+	int size;
+	int level;
+	int cash;
+	int saving;
+	int size2;
+	int p;
+	int x;
+	int y;
+	int z;
+	int x1;
+	int y1;
+	int n;
+	string id;
+	string order;
 
 	if (arrayp(user = users()))
 		for (i = 0, size = sizeof(user); i < size; i++)

@@ -58,7 +58,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 30 && !who->get_legend(TASK_08,13) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我们这村子里最近老有人失踪，这些失踪的人都有一个共同特征，临失踪前都去过鄱阳湖，我很小的时候听老人们说过，在很多年前，鄱阳湖里有一只水湖怪，经常出来害人，被道士们封在湖底两百年，两百年过去了，封印解除了，所以我估计那些失踪的人口都与这只水湖怪有关，我年纪大了，做不了这件事了，所以请你前去鄱阳湖的鄱阳码头将那水湖怪铲除掉，然后回来告诉我一声，也好让村子里的人安心。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我们这村子里最近老有人失踪，这些失踪的人都有一个共同特征，临失踪前都去过鄱阳湖，我很小的时候听老人们说过，在很多年前，鄱阳湖里有一只水湖怪，经常出来害人，被道士们封在湖底两百年，两百年过去了，封印解除了，所以我估计那些失踪的人口都与这只水湖怪有关，我年纪大了，做不了这件事了，所以请你前去鄱阳湖的鄱阳码头将那水湖怪铲除掉，然后回来告诉我一声，也好让村子里的人安心。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_08,13) && !who->get_legend(TASK_08,14) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看来那水湖怪确实厉害，我得赶快通知我那些老朋友尽快搬家。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_08,14) && !who->get_legend(TASK_08,15) )

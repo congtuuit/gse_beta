@@ -96,7 +96,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 20 && !who->get_legend(TASK_04,29) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    上次在首阳山的聚贤坡操练军队，突遇黑色旋风，不知是妖魔做法还是天生异象。慌忙撤退中本将军竟然不小心把调兵符弄丢了。这可如何是好？%s能帮我把那调兵符寻回来吗？\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),NPC_RANK_D->get_respect_2(who),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    上次在首阳山的聚贤坡操练军队，突遇黑色旋风，不知是妖魔做法还是天生异象。慌忙撤退中本将军竟然不小心把调兵符弄丢了。这可如何是好？%s能帮我把那调兵符寻回来吗？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),NPC_RANK_D->get_respect_2(who),getoid(me)));
 		else if ( who->get_legend(TASK_04,29) && !who->get_legend(TASK_04,30) )
 			me->do_welcome(4);
         	break;
@@ -138,7 +138,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 5:
         	if ( who->get_level() >= 70 && !who->get_legend(TASK_23,1) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    自从长平之战后，六国之中已经没有任何一国可以单独与秦国对抗了，秦国一直对其他六国虎视眈眈，有传闻说秦国的第一个目标就是我们韩国，最近在弯道那边好象有些不寻常的动向，一批密探已经到达那里，一定是秦国的密探已经在开始收集我国的军事情报了，为了防范秦国，我们先得把这批密探除掉，你去弯道去帮我把那批密探杀掉吧！事成后我一定禀明大王对你重重有赏。\n"ESC"接受任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    自从长平之战后，六国之中已经没有任何一国可以单独与秦国对抗了，秦国一直对其他六国虎视眈眈，有传闻说秦国的第一个目标就是我们韩国，最近在弯道那边好象有些不寻常的动向，一批密探已经到达那里，一定是秦国的密探已经在开始收集我国的军事情报了，为了防范秦国，我们先得把这批密探除掉，你去弯道去帮我把那批密探杀掉吧！事成后我一定禀明大王对你重重有赏。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_23,1) && !who->get_legend(TASK_23,2) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    希望可以在这批密探获得的我国情报之前尽快把他除掉，不然我们国家就危险了。\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_23,2) && !who->get_legend(TASK_23,3) )
@@ -170,7 +170,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 8:
         	if ( who->get_level() >= 15 && !who->get_legend(TASK_37,19) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    听闻魏国的崔大官人是一个在行军作战方面不可多得的人才，虽然他失去了记忆，但是一个人的谋略是不可能失去的，所以我有意请他来我们军营做个师爷，只是不知道他是否会应承，现在我派你去魏国将这封请柬送给崔大官人，一定要亲手交给他本人，听到没！\n    崔大官人就居住在魏国的大梁城内。\n"ESC"接受任务\ntalk %x# welcome.9\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    听闻魏国的崔大官人是一个在行军作战方面不可多得的人才，虽然他失去了记忆，但是一个人的谋略是不可能失去的，所以我有意请他来我们军营做个师爷，只是不知道他是否会应承，现在我派你去魏国将这封请柬送给崔大官人，一定要亲手交给他本人，听到没！\n    崔大官人就居住在魏国的大梁城内。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.9\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		break;
         case 9:
         	if ( who->get_level() >= 15 && !who->get_legend(TASK_37,19) )
