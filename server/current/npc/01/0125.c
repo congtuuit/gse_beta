@@ -60,7 +60,7 @@ void do_welcome2( object me, string arg )
         {
 	case 1:
 		if( who->get_level() >= 5 && !who->get_legend(TASK_NEWBIE_02, 22))
-			send_user(who,"%c%s",':',sprintf("%s:\n    昨天晚上为搬家的问题和他吵了一架，唉，他早上出门了到现在还没回来，也该要吃饭了，可能还生我气，但又懒得和我计较，一个人在外面抽闷烟吧，夫妻哪能没有一点矛盾呢，拜托你帮我找到孟大伯，替我劝劝他。\n    他一般也不会去别处，就呆在这幽谷，可能就在我附近吧。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
+			send_user(who,"%c%s",':',sprintf("%s:\n    昨天晚上为搬家的问题和他吵了一架，唉，他早上出门了到现在还没回来，也该要吃饭了，可能还生我气，但又懒得和我计较，一个人在外面抽闷烟吧，夫妻哪能没有一点矛盾呢，拜托你帮我找到孟大伯，替我劝劝他。\n    他一般也不会去别处，就呆在这幽谷，可能就在我附近吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_NEWBIE_02, 22) && !who->get_legend(TASK_NEWBIE_02, 23))	
 			send_user(who,"%c%s",':',sprintf("%s:\n    是他不愿意回来，还是你没找到他呢？不会真的出什么问题了吧？都出去一整天了，你可得尽快给我找到他呀，我都快担心死了！\n"ESC"Rời khỏi.",me->get_name()));
 			

@@ -133,7 +133,7 @@ void do_welcome2( object me, string arg )
 		break;
 	case 13:
 		if ( who->get_legend(TASK_2_00,17) && !who->get_legend(TASK_2_00,18) ) 
-			send_user( who, "%c%c%w%s", ':',3,me->get_char_picid(), sprintf("%s:\n    战国乱世，群雄并起，昔日的周王室已经失去了号令天下的能力。当今周王姬延顺应世时，推出一套保险系统，希望能改变周国窘迫的现状，你要是有兴趣就去周王那里看看，会对你有好处的。顺着大路一直朝前走，周王就在尽头的宫殿里。\n"ESC"接受任务\ntalk %x# welcome.14\n"ESC"Rời khỏi",me->get_name(),getoid(me)));
+			send_user( who, "%c%c%w%s", ':',3,me->get_char_picid(), sprintf("%s:\n    战国乱世，群雄并起，昔日的周王室已经失去了号令天下的能力。当今周王姬延顺应世时，推出一套保险系统，希望能改变周国窘迫的现状，你要是有兴趣就去周王那里看看，会对你有好处的。顺着大路一直朝前走，周王就在尽头的宫殿里。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.14\n"ESC"Rời khỏi",me->get_name(),getoid(me)));
 		break;		
 	case 14:
 		if ( who->get_legend(TASK_2_00,17) && !who->get_legend(TASK_2_00,18) ) 

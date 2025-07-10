@@ -85,13 +85,13 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 80 && !who->get_legend(TASK_28,7) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我的记忆有些模糊了，但是我会尽量把我记得的细节告诉你。在万人坑的最底层有一只木箱，这是武林人士一辈子梦寐以求的东西，或许，它是一把开启财富之门的钥匙！\n    但是，我要警告你，%s，在万人坑潜伏着可怕的鬼怪，它们会忠心的守护着那只木箱。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),who->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我的记忆有些模糊了，但是我会尽量把我记得的细节告诉你。在万人坑的最底层有一只木箱，这是武林人士一辈子梦寐以求的东西，或许，它是一把开启财富之门的钥匙！\n    但是，我要警告你，%s，在万人坑潜伏着可怕的鬼怪，它们会忠心的守护着那只木箱。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),who->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_28,7) && !who->get_legend(TASK_28,8) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    或许那些守护着木箱的鬼怪太厉害，我看你还是找人帮助你吧！\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_28,8) && !who->get_legend(TASK_28,9) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这只木箱完全密封，如果砸碎它恐怕不太合适，万一砸碎了里面的宝物可就得不偿失了，看来还需要一把钥匙。\n"ESC"Hoàn thành任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_28,9) && !who->get_legend(TASK_28,10) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我只听说这城外有个王铁匠，我想既然他会打铁，那么打造一把钥匙应该也会很容易的，你去找他问问看。\n"ESC"接受任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我只听说这城外有个王铁匠，我想既然他会打铁，那么打造一把钥匙应该也会很容易的，你去找他问问看。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 
         	break;
 	case 2:
@@ -131,7 +131,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 5:
         	if ( who->get_level() >= 80 && !who->get_legend(TASK_38,15) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我哥哥去齐国做生意已经很久了，他一直都没有回家，我都不知道他现在过得好不好，听人说他的生意是越做越大啊，不止卖了Dưa hấu、橘子、Trái lê，连菠萝、Chuối他都有卖哦，还开了家分店专卖肉类，不如你去替我问问他的情况吧，告诉他，我和家人都很想念他。\n"ESC"接受任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我哥哥去齐国做生意已经很久了，他一直都没有回家，我都不知道他现在过得好不好，听人说他的生意是越做越大啊，不止卖了Dưa hấu、橘子、Trái lê，连菠萝、Chuối他都有卖哦，还开了家分店专卖肉类，不如你去替我问问他的情况吧，告诉他，我和家人都很想念他。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	break;
 	case 6:
         	if ( who->get_level() >= 80 && !who->get_legend(TASK_38,15) )

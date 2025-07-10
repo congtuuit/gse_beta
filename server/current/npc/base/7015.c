@@ -129,7 +129,7 @@ void do_welcome2( object me, string arg )
         {
 	case 1:
         	if ( who->get_level() >=45 && !who->get_legend(TASK_12,7) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    在很久很久以前，曾经有一条蛟龙，它经常出现在郑国渠一带，可在某一次游玩时，它不小心将它最喜爱的宝龙珠遗落在那，寻找了很久，没有找到。最后，它郁郁而终……\n    后来，江湖盛传这颗宝龙珠能增加武术内力，所以大家都去寻找，可惜，至今为止，没有任何人找到，你去碰碰运气吧，或许能找到呢？\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    在很久很久以前，曾经有一条蛟龙，它经常出现在郑国渠一带，可在某一次游玩时，它不小心将它最喜爱的宝龙珠遗落在那，寻找了很久，没有找到。最后，它郁郁而终……\n    后来，江湖盛传这颗宝龙珠能增加武术内力，所以大家都去寻找，可惜，至今为止，没有任何人找到，你去碰碰运气吧，或许能找到呢？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_12,7) && !who->get_legend(TASK_12,8) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    难道是我朋友骗我吗？不可能，我觉得这件事是真的。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_12,8) && !who->get_legend(TASK_12,9) )

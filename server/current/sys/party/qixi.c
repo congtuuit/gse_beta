@@ -274,22 +274,22 @@ void do_qixi(object me, object who, string arg)
 			if (team[0]->get_gender() == 1)
 				send_user(team[0], "%c%c%w%s", ':', 3, me->get_char_picid(),
 					sprintf("%s：\n    牛郎和织女的生活原本十分恩爱幸福，可惜触犯了王母娘娘的禁忌……\n    当时娘娘只是取下头钗轻轻一挥，便将他们隔在了天河的两端。\n    所以，解铃还须系铃人啊！现在王母娘娘正在人间巡查，只要你能找到娘娘就有希望。\n    前两天我遇到一个十分喜欢"HIR"云游"NOR"的人无意间说起曾经见到过王母娘娘。不过那个人喜欢四处跑，所以，我也不知道他现在在什么地方，不过在一些地方应该能打听到\n"
-						ESC "接受任务\ntalk %x# qixi.19\n"
+						ESC "Nhận nhiệm vụ\ntalk %x# qixi.19\n"
 						ESC "Rời khỏi.", me->get_name(), getoid(me)));
 			else
 				send_user(team[0], "%c%c%w%s", ':', 3, me->get_char_picid(),
 					sprintf("%s：\n    牛郎和织女的生活原本十分恩爱幸福，可惜触犯了王母娘娘的禁忌……\n    当时娘娘只是取下头钗轻轻一挥，便将他们隔在了天河的两端。\n    所以，解铃还须系铃人啊！现在王母娘娘正在人间巡查，只要你能找到娘娘就有希望。\n    前两天我遇到一个卖珍稀品的"HIR"商人"NOR"无意间说起过曾经见到过王母娘娘。不过那个商人已经Rời khỏi.了，不过那个商人很特别，在一些消息流通的地方应该能很容易打听到。\n"
-						ESC "接受任务\ntalk %x# qixi.19\n"
+						ESC "Nhận nhiệm vụ\ntalk %x# qixi.19\n"
 						ESC "Rời khỏi.", me->get_name(), getoid(me)));
 			if (team[1]->get_gender() == 1)
 				send_user(team[1], "%c%c%w%s", ':', 3, me->get_char_picid(),
 					sprintf("%s：\n    牛郎和织女的生活原本十分恩爱幸福，可惜触犯了王母娘娘的禁忌……\n    当时娘娘只是取下头钗轻轻一挥，便将他们隔在了天河的两端。\n    所以，解铃还须系铃人啊！现在王母娘娘正在人间巡查，只要你能找到娘娘就有希望。\n    前两天我遇到一个十分喜欢"HIR"云游"NOR"的人无意间说起曾经见到过王母娘娘。不过那个人喜欢四处跑，所以，我也不知道他现在在什么地方，不过在一些地方应该能打听到\n"
-						ESC "接受任务\ntalk %x# qixi.19\n"
+						ESC "Nhận nhiệm vụ\ntalk %x# qixi.19\n"
 						ESC "Rời khỏi.", me->get_name(), getoid(me)));
 			else
 				send_user(team[1], "%c%c%w%s", ':', 3, me->get_char_picid(),
 					sprintf("%s：\n    牛郎和织女的生活原本十分恩爱幸福，可惜触犯了王母娘娘的禁忌……\n    当时娘娘只是取下头钗轻轻一挥，便将他们隔在了天河的两端。\n    所以，解铃还须系铃人啊！现在王母娘娘正在人间巡查，只要你能找到娘娘就有希望。\n    前两天我遇到一个卖珍稀品的"HIR"商人"NOR"无意间说起过曾经见到过王母娘娘。不过那个商人已经Rời khỏi.了，不过那个商人很特别，在一些消息流通的地方应该能很容易打听到。\n"
-						ESC "接受任务\ntalk %x# qixi.19\n"
+						ESC "Nhận nhiệm vụ\ntalk %x# qixi.19\n"
 						ESC "Rời khỏi.", me->get_name(), getoid(me)));
 		}
 		break;
@@ -409,7 +409,7 @@ void do_qixi3(object me, object who, string arg)
 		{
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(),
 				sprintf("%s：\n    其实，王母娘娘早就知道了你们会来找她，因此娘娘留下仙丹，只要你们通过了考验，就可以得到仙丹。牛郎织女服下仙丹，以后就自由了。赶快给他们送"HIR"(ALT+G)"NOR"去吧！\n"
-					ESC "接受任务\ntalk %x# qixi.6\n"
+					ESC "Nhận nhiệm vụ\ntalk %x# qixi.6\n"
 					ESC "Rời khỏi.", me->get_name(), getoid(me)));
 		}
 		break;

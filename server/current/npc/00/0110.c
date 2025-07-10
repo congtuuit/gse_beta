@@ -138,7 +138,7 @@ void do_welcome2( object me, string arg )
 //		if ( who->get_level() < 5 )
 //			return ;
 //		if (!who->get_legend(TASK_NEWBIE_01, 21) )
-//			send_user( who, "%c%c%w%s", ':',3,me->get_char_picid(), sprintf("%s:\n    我从小打猎习武，就是为了把身体练的强壮，好等成年以后去拜师学艺。好不容易等我成年以后，去找村口的那个门派向导让他帮我介绍个师傅。结果……哎～他说我年纪太大，习武之人要从小开始打基础。说什么也不肯帮我介绍师傅。拜师学得一身武艺这可是我一生的夙愿。你愿意帮我去说说情吗？听说他喜欢下棋，这是一张棋谱你带我送给他。\n"ESC"接受\ntalk %x# welcome.11\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));			
+//			send_user( who, "%c%c%w%s", ':',3,me->get_char_picid(), sprintf("%s:\n    我从小打猎习武，就是为了把身体练的强壮，好等成年以后去拜师学艺。好不容易等我成年以后，去找村口的那个门派向导让他帮我介绍个师傅。结果……哎～他说我年纪太大，习武之人要从小开始打基础。说什么也不肯帮我介绍师傅。拜师学得一身武艺这可是我一生的夙愿。你愿意帮我去说说情吗？听说他喜欢下棋，这是一张Sách cờ你带我送给他。\n"ESC"接受\ntalk %x# welcome.11\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));			
 //		else if (!who->get_legend(TASK_NEWBIE_01, 22))
 //			send_user( who, "%c%c%w%s", ':',3,me->get_char_picid(), sprintf("%s:\n    拜师学艺，这可是我一生的夙愿啊！还望%s能尽心尽力帮我Hoàn thành这件事。\n"ESC"Rời khỏi.",me->get_name(),NPC_RANK_D->get_respect_2(who)));			
 //		

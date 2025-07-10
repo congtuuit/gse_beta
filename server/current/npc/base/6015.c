@@ -138,7 +138,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 30 && !who->get_legend(TASK_07,25)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    如今你的机缘已到，不知你是否愿意做这个有缘人，唤醒崔大官人的记忆呢？\n    崔大官人在三年前的一次失事中失去了记忆，可怜他的老婆孩子不幸丧命，他老婆临死之前交给他Ba lông，他失去记忆后却弄丢了那Ba lông，我想这可能是唯一能使他恢复记忆的方法了，你去收集这Ba lông来我这吧，我再告诉你下一步怎么做！\n    羽毛在鄱阳湖的猪妖身上出现过。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    如今你的机缘已到，不知你是否愿意做这个有缘人，唤醒崔大官人的记忆呢？\n    崔大官人在三年前的一次失事中失去了记忆，可怜他的老婆孩子不幸丧命，他老婆临死之前交给他Ba lông，他失去记忆后却弄丢了那Ba lông，我想这可能是唯一能使他恢复记忆的方法了，你去收集这Ba lông来我这吧，我再告诉你下一步怎么做！\n    羽毛在鄱阳湖的猪妖身上出现过。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_07,25) && !who->get_legend(TASK_07,26) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    如果不能找到那Ba lông，崔大官人的记忆看来是恢复不了啦！\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_07,26) && !who->get_legend(TASK_07,27) )
@@ -172,7 +172,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 4:
         	if ( who->get_legend(TASK_07,27) && !who->get_legend(TASK_07,28) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你已经找来了这Ba lông，而这Ba lông是唯一可能会使崔大官人恢复记忆的物品，因为这是他老婆临终时留下的。\n    崔大官人失去记忆后就一直居住在魏国的大梁城内，你将这Ba lông交给他，试试能不能使他恢复记忆。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你已经找来了这Ba lông，而这Ba lông是唯一可能会使崔大官人恢复记忆的物品，因为这是他老婆临终时留下的。\n    崔大官人失去记忆后就一直居住在魏国的大梁城内，你将这Ba lông交给他，试试能不能使他恢复记忆。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_07,28) && !who->get_legend(TASK_07,29) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你不去怎么知道这Ba lông能不能唤醒崔大官人的记忆呢？\n"ESC"Rời khỏi.", me->get_name()));
         	break;
@@ -188,7 +188,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 6:
         	if ( who->get_level() >= 30 && !who->get_legend(TASK_09,1) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近常听见鄱阳湖的大孤山脚传来一阵阵的哭喊声，颤巍巍的，悲愤，却又忍辱负重，在山谷里飘荡，久久不能散去。\n    我不明白那是怎样的一种哭喊，也不知道确切的方位，但是我能体会到那种痛楚，撕心裂肺、肝肠寸断，被凌辱却不敢吭声，被压迫却不敢反抗，只有用那一声声的哭喊，洗脱、宣泄内心积攒的种种情绪。\n    我猜想，应该又是张大升在仗势欺负生活在鄱阳湖大孤山脚的老百姓，你过去看看吧。\n"ESC"接受任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近常听见鄱阳湖的大孤山脚传来一阵阵的哭喊声，颤巍巍的，悲愤，却又忍辱负重，在山谷里飘荡，久久不能散去。\n    我不明白那是怎样的一种哭喊，也不知道确切的方位，但是我能体会到那种痛楚，撕心裂肺、肝肠寸断，被凌辱却不敢吭声，被压迫却不敢反抗，只有用那一声声的哭喊，洗脱、宣泄内心积攒的种种情绪。\n    我猜想，应该又是张大升在仗势欺负生活在鄱阳湖大孤山脚的老百姓，你过去看看吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_09,1) && !who->get_legend(TASK_09,2) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    现在不好好教训那恶霸，以后非出大乱不可。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_09,2) && !who->get_legend(TASK_09,3) )

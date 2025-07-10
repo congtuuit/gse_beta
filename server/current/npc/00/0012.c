@@ -61,7 +61,7 @@ void do_welcome2( object me, string arg )
 	                 "    其实有一个问题已经困惑我好长一段时间了……\n"
 	                 "    正如你所看到的，我整个身体除了一堆稻草外就只有布片和木杆了。因此那些该死的乌鸦便老是嘲笑我没大脑。虽然很生气，但这也是事实。如果我也像人类一样有一个大脑的话，那些乌鸦也不敢再嘲笑我了。\n"
 	                 "    我听说清溪的丁大叔曾经在长白天池中取到了不少的Đá Tinh Linh，如果用那些Đá Tinh Linh作为我的脑袋应该相当不错。可惜我没有脚，不能走过去。如果你能帮我这个忙，我会很感激你的。\n"
-	                 ESC "接受任务\ntalk %x# welcome.2\n"
+	                 ESC "Nhận nhiệm vụ\ntalk %x# welcome.2\n"
 	                 ESC "Rời khỏi.",
 	                 me->get_name(), getoid(me) ) );
 		}

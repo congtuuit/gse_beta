@@ -89,7 +89,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 25 && !who->get_legend(TASK_06,22)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    二姑家的大哥娶媳妇儿，爹叫我和他一起去庆祝，大家闺秀出门怎样也得打扮打扮，我也得打扮得漂亮点，别给爹丢脸了，想把这一头秀发编成几个辫子，可惜了身边只有发钗，没有发绳，拜托你给我找20个发绳来。\n    桂陵、牧野一带的草寇虽然凶猛，但是很疼家里的娘子，我估计他们身上会有发绳，所以你去那里肯定能找到，路程不远，所以希望你能快点给我找来，小女子给你道谢了。\n    从我这出去没多远就到了桂陵，赶紧去吧！\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    二姑家的大哥娶媳妇儿，爹叫我和他一起去庆祝，大家闺秀出门怎样也得打扮打扮，我也得打扮得漂亮点，别给爹丢脸了，想把这一头秀发编成几个辫子，可惜了身边只有发钗，没有发绳，拜托你给我找20个发绳来。\n    桂陵、牧野一带的草寇虽然凶猛，但是很疼家里的娘子，我估计他们身上会有发绳，所以你去那里肯定能找到，路程不远，所以希望你能快点给我找来，小女子给你道谢了。\n    从我这出去没多远就到了桂陵，赶紧去吧！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_06,22) && !who->get_legend(TASK_06,23) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我委托你找的发绳呢？可别耽误了我去喝喜酒！\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_06,23) && !who->get_legend(TASK_06,24) )
@@ -127,7 +127,7 @@ void do_welcome2( object me, string arg )
 		if ( who->get_legend(TASK_34,21) && !who->get_legend(TASK_34,22) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    呜呜呜，我不想活了……我要私奔！可是天下之大，真的逃得了吗？\n"ESC"Hoàn thành任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_34,22) && !who->get_legend(TASK_34,23) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哎，两年前，我上街赏玩花灯的时候遇到了异地求学的书生李德，我们争猜灯谜，互不相让，后来彼此心折，诗词吟和，只等他求学有成，向爹爹禀明婚事了，但是不久前我们前去湘妃林游玩时我们不甚走失，我竟然遇到了孙少爷，他在那里多有轻薄之言，我慌忙走掉，找到李德赶紧回家，不料孙少爷竟然上我家提亲，我爹贪图富贵，竟然将我许了他，我哀求哭闹都无济于事，李德如今一介书生，整日愁眉苦脸也无计可施，我想孙少爷虽然轻薄，但当时看他尚是明理之人，我一介女子不好前去私自见他，你能帮我向孙少爷求情吗？\n"ESC"接受任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哎，两年前，我上街赏玩花灯的时候遇到了异地求学的书生李德，我们争猜灯谜，互不相让，后来彼此心折，诗词吟和，只等他求学有成，向爹爹禀明婚事了，但是不久前我们前去湘妃林游玩时我们不甚走失，我竟然遇到了孙少爷，他在那里多有轻薄之言，我慌忙走掉，找到李德赶紧回家，不料孙少爷竟然上我家提亲，我爹贪图富贵，竟然将我许了他，我哀求哭闹都无济于事，李德如今一介书生，整日愁眉苦脸也无计可施，我想孙少爷虽然轻薄，但当时看他尚是明理之人，我一介女子不好前去私自见他，你能帮我向孙少爷求情吗？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_35,1) && !who->get_legend(TASK_35,2) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    呜呜呜，真是太感谢了，除了以身相许，我拿什么感谢你都可以。\n"ESC"Hoàn thành任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 

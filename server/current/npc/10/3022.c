@@ -60,7 +60,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if (who->get_level() >= 35 && !who->get_legend(TASK_10,8))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我刚来太公府做棋童没几天，就弄丢了几颗棋子，虽然老爷夫人没有责怪我，可我老觉得内疚，想要弥补自己的过错。\n    听说泰山的黑熊那有棋子，我想去找3颗来，可那泰山实在太险恶，我一个小孩子，不敢只身前往，哥哥/姐姐，我看你一身武艺了得，能不能帮帮我，去给我找3颗棋子来呢？\n    从我这太公府出去，就能直接到泰山了。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我刚来太公府做棋童没几天，就弄丢了几颗棋子，虽然老爷夫人没有责怪我，可我老觉得内疚，想要弥补自己的过错。\n    听说泰山的黑熊那有棋子，我想去找3颗来，可那泰山实在太险恶，我一个小孩子，不敢只身前往，哥哥/姐姐，我看你一身武艺了得，能不能帮帮我，去给我找3颗棋子来呢？\n    从我这太公府出去，就能直接到泰山了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_10,8) && !who->get_legend(TASK_10,9) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，虽然老爷和夫人不会责怪我，但是我还是想弥补自己的过错，你能再跑一趟吗？\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_10,9) && !who->get_legend(TASK_10,10) )

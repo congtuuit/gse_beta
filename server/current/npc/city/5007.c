@@ -105,15 +105,15 @@ void do_welcome2( object me, string arg )
         	break;   
         case 3:
         	if (  who->get_level() >= 65 && !who->get_legend(TASK_21,15)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    现今齐国联合诸国意欲图谋我国，本使以为，我国与赵国本是同根生，都是大神蚩尤的子孙，如若修缮赵国的关系应该是最为容易，况且兄弟一心，其利断金，这样子既可破坏齐国意欲联合六国图谋我们的计划，也可以让赵国工商之利与我国矿产之丰互利互助，可谓互有裨益。\n"ESC"接受任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    现今齐国联合诸国意欲图谋我国，本使以为，我国与赵国本是同根生，都是大神蚩尤的子孙，如若修缮赵国的关系应该是最为容易，况且兄弟一心，其利断金，这样子既可破坏齐国意欲联合六国图谋我们的计划，也可以让赵国工商之利与我国矿产之丰互利互助，可谓互有裨益。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_21,16) && !who->get_legend(TASK_21,17) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    本使虽然志在必得，然而却有他国奸细不愿我们秦赵修好，最近本使收到密报，有个叫做石七的奸细意欲破坏我们两家友好，意欲在我出使的路上行刺本使，本使死不足惜，叹只叹我秦赵兄弟之盟不成，反为外人所乘啊，据说那刺客埋伏在秦长城匝道一带，你可愿意前去将他铲除吗？\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    本使虽然志在必得，然而却有他国奸细不愿我们秦赵修好，最近本使收到密报，有个叫做石七的奸细意欲破坏我们两家友好，意欲在我出使的路上行刺本使，本使死不足惜，叹只叹我秦赵兄弟之盟不成，反为外人所乘啊，据说那刺客埋伏在秦长城匝道一带，你可愿意前去将他铲除吗？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_21,17) && !who->get_legend(TASK_21,18) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    不杀掉那个奸细，恐怕这次出使，我将有性命之危，还望你全力以赴。\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_21,18) && !who->get_legend(TASK_21,19) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这下出使赵国就不用担心自己的性命了。\n"ESC"Hoàn thành任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_21,19) && !who->get_legend(TASK_21,20) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    虽然说秦赵是同宗兄弟之邦，但是这次出使，我希望能够更好Hoàn thành出使重任，加强胜算，我当初同赵国使节毛遂也有点交情，如果他能够在赵王迁身边吹吹风可以降低我出使的难度，但我使团行程已定，你能代我先行将出使信函交与赵国使节毛遂吗？\n"ESC"接受任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    虽然说秦赵是同宗兄弟之邦，但是这次出使，我希望能够更好Hoàn thành出使重任，加强胜算，我当初同赵国使节毛遂也有点交情，如果他能够在赵王迁身边吹吹风可以降低我出使的难度，但我使团行程已定，你能代我先行将出使信函交与赵国使节毛遂吗？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 			
         	break;
 	case 4:

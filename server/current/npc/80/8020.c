@@ -81,7 +81,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 55 && !who->get_legend(TASK_17,10) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这世上就是有这些无聊的人，没事儿瞎折腾，搞得人心惶惶。\n    你说那燕长城的匝道上空突然升起一团烟雾，这事不是有人搞鬼，难道还是鬼搞鬼啊！你快点去看看，我估计是那个叫李四的家伙弄的，天干物燥，要小心火烛啊！\n    见到他后记得要教训他一顿，免得他不长记性，又搞出这样的事情来！\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这世上就是有这些无聊的人，没事儿瞎折腾，搞得人心惶惶。\n    你说那燕长城的匝道上空突然升起一团烟雾，这事不是有人搞鬼，难道还是鬼搞鬼啊！你快点去看看，我估计是那个叫李四的家伙弄的，天干物燥，要小心火烛啊！\n    见到他后记得要教训他一顿，免得他不长记性，又搞出这样的事情来！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_17,10) && !who->get_legend(TASK_17,11) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这种人真是太可恶了！\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_17,11) && !who->get_legend(TASK_17,12) )
@@ -116,7 +116,7 @@ void do_welcome2( object me, string arg )
 	       	if ( who->get_legend(TASK_23,25) && !who->get_legend(TASK_23,26) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    其实所谓的不识字的人能看的懂的信，只是我画的画而已。因为我画的画取材自委托者的内心，所以我可以把人内心想说的话用图画表现出来。所以，人们都把我画替别人画的画叫做不识字的人也能看懂的信。\n"ESC"Hoàn thành任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 	       	else if ( who->get_legend(TASK_23,26) && !who->get_legend(TASK_23,27) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    前一阵子我经过Ngụy Quốc的临河镇的时候我也曾经见过这位寻儿姑娘，听说她丈夫被捉到韩Quốc去已经十年都没有音信了，她却一直没有改嫁，一直在等候着她丈夫回来。帮助这样的一对痴情夫妻我自然是义不容辞。但是，我听说她这些日子一直受到一个叫赵讯的地主逼婚，现在寻儿姑娘甚至快要到了走投无路的地步。我想你在把这封信交给寻儿姑娘之前最好还是到无定河畔的小农社旁边把赵讯教训一下，然后再把信交到寻儿姑娘手上比较好一点。\n"ESC"接受任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    前一阵子我经过Ngụy Quốc的临河镇的时候我也曾经见过这位寻儿姑娘，听说她丈夫被捉到韩Quốc去已经十年都没有音信了，她却一直没有改嫁，一直在等候着她丈夫回来。帮助这样的一对痴情夫妻我自然是义不容辞。但是，我听说她这些日子一直受到一个叫赵讯的地主逼婚，现在寻儿姑娘甚至快要到了走投无路的地步。我想你在把这封信交给寻儿姑娘之前最好还是到无定河畔的小农社旁边把赵讯教训一下，然后再把信交到寻儿姑娘手上比较好一点。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 
         	break;   
         case 5:

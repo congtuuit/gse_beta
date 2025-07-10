@@ -80,7 +80,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 20 && !who->get_legend(TASK_06,7)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    见过了将军驰骋沙场的英勇，从小便梦想身披英雄甲驰骋在沙场之上！可这个Giấc mơ anh hùng却并没有那么容易实现，我想我需要做好充足的准备，当然，强健的体魄是最重要的，但是，除了锻炼身体外，我急切地想得到一套英雄甲，有人说在马踏湖的三贤亭见过英雄甲，从我这里出发，穿过马陵道与白马庄就到马踏湖了，如果你脚程快，我估计半个时辰不到你就能找到了。\n    你找来了英雄甲，等于圆了我半个梦，我一定不会亏待你的。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    见过了将军驰骋沙场的英勇，从小便梦想身披英雄甲驰骋在沙场之上！可这个Giấc mơ anh hùng却并没有那么容易实现，我想我需要做好充足的准备，当然，强健的体魄是最重要的，但是，除了锻炼身体外，我急切地想得到一套英雄甲，有人说在马踏湖的三贤亭见过英雄甲，从我这里出发，穿过马陵道与白马庄就到马踏湖了，如果你脚程快，我估计半个时辰不到你就能找到了。\n    你找来了英雄甲，等于圆了我半个梦，我一定不会亏待你的。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_06,7) && !who->get_legend(TASK_06,8) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看来我这辈子是别想实现我的这个Giấc mơ anh hùng了，还是老老实实站好我的岗吧！\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_06,8) && !who->get_legend(TASK_06,9) )

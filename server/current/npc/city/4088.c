@@ -97,7 +97,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 20 && !who->get_legend(TASK_05,25)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你认识劫匪李大山吗？我很小的时候就在我父亲面前立下誓言，一定要除掉这个作恶多端的土匪！一晃这么多年过去了，但我还未实现当年立下的誓言，看来我得靠别人的帮助才能实现了。\n    这些年来，那个劫匪不仅抢走了太多的财物，还害死了很多贫苦的百姓，希望你能伸出正义之手，将这个劫匪李大山除掉！\n    他现在正在白马庄的白马湖附近游玩，从马踏湖与马陵道都可以到白马庄。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你认识劫匪李大山吗？我很小的时候就在我父亲面前立下誓言，一定要除掉这个作恶多端的土匪！一晃这么多年过去了，但我还未实现当年立下的誓言，看来我得靠别人的帮助才能实现了。\n    这些年来，那个劫匪不仅抢走了太多的财物，还害死了很多贫苦的百姓，希望你能伸出正义之手，将这个劫匪李大山除掉！\n    他现在正在白马庄的白马湖附近游玩，从马踏湖与马陵道都可以到白马庄。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_05,25) && !who->get_legend(TASK_05,26) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看来我还是找别人来帮忙算了！\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_05,26) && !who->get_legend(TASK_05,27) )

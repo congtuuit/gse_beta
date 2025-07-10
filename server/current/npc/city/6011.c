@@ -68,7 +68,7 @@ void do_welcome2( object me, string arg )
         {
 	case 1:
 		if ( who->get_level() >= 95 && !who->get_legend(TASK_33,13) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，最近我每天晚上都睡不着觉，每天来站岗都是黑眼圈，谁可以救救我啊？呃你问我什么事情？说起来真不好意思，我最近暗恋上了一个人，可是一直没有勇气去表白，听说Hoa hồng代表爱情，我想给心上人送11朵Hoa hồng，可惜城门官硬是不准假，没有时间去虚陵洞找，你能帮我找来吗？\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，最近我每天晚上都睡不着觉，每天来站岗都是黑眼圈，谁可以救救我啊？呃你问我什么事情？说起来真不好意思，我最近暗恋上了一个人，可是一直没有勇气去表白，听说Hoa hồng代表爱情，我想给心上人送11朵Hoa hồng，可惜城门官硬是不准假，没有时间去虚陵洞找，你能帮我找来吗？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_33,13) && !who->get_legend(TASK_33,14) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    没有Hoa hồng，我要怎样表达我的心意呢？\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_33,14) && !who->get_legend(TASK_33,15) )

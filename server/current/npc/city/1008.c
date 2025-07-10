@@ -79,7 +79,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 75 && !who->get_legend(TASK_24,26) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近本国监狱里面发生了一场可怕的瘟疫，几乎监狱里面所有的人都感染了瘟疫，虽然我已经把监狱与外界隔离了，但是我担心瘟疫还是会有一天传染到监狱外面来。引起这场瘟疫的是在灵谷洞的疫鬼，只要把这些疫鬼杀掉，或许就可以令这场瘟疫平静下来，你去灵谷洞去把这些瘟疫的源头消灭掉吧！这些疫鬼一群一共是20个，把他们全部消灭掉后回来我这里，我会按照你的功劳给你报酬的。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近本国监狱里面发生了一场可怕的瘟疫，几乎监狱里面所有的人都感染了瘟疫，虽然我已经把监狱与外界隔离了，但是我担心瘟疫还是会有一天传染到监狱外面来。引起这场瘟疫的是在灵谷洞的疫鬼，只要把这些疫鬼杀掉，或许就可以令这场瘟疫平静下来，你去灵谷洞去把这些瘟疫的源头消灭掉吧！这些疫鬼一群一共是20个，把他们全部消灭掉后回来我这里，我会按照你的功劳给你报酬的。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_24,26) && !who->get_legend(TASK_24,27) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    现在监狱里面的瘟疫还是得不到控制，如果不消灭这群疫鬼，恐怕瘟疫还将蔓延下去。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_24,27) && !who->get_legend(TASK_24,28) )

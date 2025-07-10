@@ -96,7 +96,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 50 && !who->get_legend(TASK_13,10) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    传说有一面明镜，只要将它悬挂在门庭之上，就能让从这门庭经过的人受到熏陶，心智变得清明，任何贪赃枉法之念都会被它驱除，我想如果在我们王宫的门庭上挂上这样一面明镜，那么贪赃Kẻ biến thái就会越来越少了，而我的工作也会越来越轻松。\n    有人曾在郑国渠一带见过那面明镜，你去帮我找来吧！\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    传说有一面明镜，只要将它悬挂在门庭之上，就能让从这门庭经过的人受到熏陶，心智变得清明，任何贪赃枉法之念都会被它驱除，我想如果在我们王宫的门庭上挂上这样一面明镜，那么贪赃Kẻ biến thái就会越来越少了，而我的工作也会越来越轻松。\n    有人曾在郑国渠一带见过那面明镜，你去帮我找来吧！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_13,10) && !who->get_legend(TASK_13,11) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这难道只是个传说吗？真希望此事确实存在。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_13,11) && !who->get_legend(TASK_13,12) )
@@ -134,19 +134,19 @@ void do_welcome2( object me, string arg )
         	break; 
         case 4:
         	if ( who->get_level() >= 50 && !who->get_legend(TASK_14,7) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    平时我还有点观察星星的爱好，想做个能更近距离的观察到他们的仪器，你去燕长城给我收集3个制作这个仪器的圆环来好吗？\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    平时我还有点观察星星的爱好，想做个能更近距离的观察到他们的仪器，你去燕长城给我收集3个制作这个仪器的圆环来好吗？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_14,7) && !who->get_legend(TASK_14,8) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这事可能是有点难度，不过还是希望你会帮助我。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_14,8) && !who->get_legend(TASK_14,9) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    谢谢你，现在我可以开始动手做了，但是我可能还需要你的帮忙。\n"ESC"Hoàn thành任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_14,9) && !who->get_legend(TASK_14,10) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    平时我还有点观察星星的爱好，想做个能更近距离的观察到他们的仪器，你去燕长城给我找到制作这个仪器需要的金属轴好吗？\n"ESC"接受任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    平时我还有点观察星星的爱好，想做个能更近距离的观察到他们的仪器，你去燕长城给我找到制作这个仪器需要的金属轴好吗？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_14,10) && !who->get_legend(TASK_14,11) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这事可能是有点难度，不过还是希望你会帮助我。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_14,11) && !who->get_legend(TASK_14,12) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    谢谢你，现在我可以开始动手做了，但是我可能还需要你的帮忙。\n"ESC"Hoàn thành任务\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
          	else if ( who->get_legend(TASK_14,12) && !who->get_legend(TASK_14,13) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    仪器做好了，还得取个名字，还有那3个圆环，也得给他取个好名字，听说那赵国李防是一位高人，知识渊博，你去请教请教他吧。\n"ESC"接受任务\ntalk %x# welcome.9\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    仪器做好了，还得取个名字，还有那3个圆环，也得给他取个好名字，听说那赵国李防是一位高人，知识渊博，你去请教请教他吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.9\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_14,13) && !who->get_legend(TASK_14,14) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    是否取好名字了？\n"ESC"Rời khỏi.", me->get_name()));
            		

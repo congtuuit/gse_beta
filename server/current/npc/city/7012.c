@@ -80,7 +80,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 90 && !who->get_legend(TASK_32,17) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我昨晚做了一个梦，梦见困魔阵中的骷髅妖与骸骨精们，不断的自相吞噬，成为越来越大的妖魔，最后冲天而起，化成冲天的黑雾，笼罩了整个大燕，黑雾过处，宫室人畜无一幸存，满目都是断壁残垣，断臂残肢，看的我心神俱裂，大叫醒来。太可怕了，如此看来，那些堕落了的骷髅妖与骸骨精们如若不消灭，必定日渐强大，祸国殃民啊，你速速先去消灭消灭骷髅妖、骸骨精各8只，我会找更多人竭力去阻止他们。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我昨晚做了一个梦，梦见困魔阵中的骷髅妖与骸骨精们，不断的自相吞噬，成为越来越大的妖魔，最后冲天而起，化成冲天的黑雾，笼罩了整个大燕，黑雾过处，宫室人畜无一幸存，满目都是断壁残垣，断臂残肢，看的我心神俱裂，大叫醒来。太可怕了，如此看来，那些堕落了的骷髅妖与骸骨精们如若不消灭，必定日渐强大，祸国殃民啊，你速速先去消灭消灭骷髅妖、骸骨精各8只，我会找更多人竭力去阻止他们。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_32,17)  && !who->get_legend(TASK_32,18) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    啊，莫非梦魇就将变为现实了么，这可如何是好？\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_32,18)  && !who->get_legend(TASK_32,19) )

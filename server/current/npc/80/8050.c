@@ -99,11 +99,11 @@ void do_welcome2( object me, string arg )
 		if ( who->get_legend(TASK_27,10) && !who->get_legend(TASK_27,11) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    天下的宝物我都知道，很多人都找我打听一些宝物的下落，但是我可不是这么轻易会告诉人我所知道的宝物的下落的哦。\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if (who->get_legend(TASK_27,11) && !who->get_legend(TASK_27,12))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    每个来向我打听宝物的消息的人，我都会写给他一封写着这宝物的信。但是这封信必须是要用在灵谷洞一、二、三层分别找到给我的毛笔、砚台、墨块三样东西写成的。所以你必须要替我到灵谷洞找到这三样东西。但是那地方很危险，我想你最好还是找些人陪一起你去。\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    每个来向我打听宝物的消息的人，我都会写给他一封写着这宝物的信。但是这封信必须是要用在灵谷洞一、二、三层分别找到给我的毛笔、砚台、墨块三样东西写成的。所以你必须要替我到灵谷洞找到这三样东西。但是那地方很危险，我想你最好还是找些人陪一起你去。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if (who->get_legend(TASK_27,12) && !who->get_legend(TASK_27,13))
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    如果你连那三样东西都找不回来的话我根本没兴趣告诉你想要找的东西在哪里。\n"ESC"Rời khỏi.", me->get_name()));
         	else if (who->get_legend(TASK_27,13) && !who->get_legend(TASK_27,14))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    不错，你经得起这样的考验足够证明你是一个有能力的人了。既然你是有能力的人，我就告诉你你要找的东西的所在吧。拿好这封信，回去好好琢磨一下你就明白了。\n"ESC"接受任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    不错，你经得起这样的考验足够证明你是一个有能力的人了。既然你是有能力的人，我就告诉你你要找的东西的所在吧。拿好这封信，回去好好琢磨一下你就明白了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         		
         	break;
         case 2:

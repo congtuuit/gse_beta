@@ -137,7 +137,7 @@ void do_welcome2( object me, string arg )
 //		if ( who->get_legend(TASK_NEWBIE_01, 14) )
 //			return;		
 		if ( who->get_legend(TASK_48, 14) && !who->get_legend(TASK_48, 15) )
-		send_user( who, "%c%c%w%s", ':',3,me->get_char_picid(), sprintf("%s:\n    前些日子修理店老板来我这想买一把铁锤，可惜我这里没有，但是我答应他，给他找到铁锤，据我打听得来的消息，在清溪有两种叫做小蚂蚁与小蜜蜂的动物，他们身上带着铁锤，可能对于你来说，他们的力量有点强大，所以你一定要小心哦。当然，比较困难的事情我一般会给比较高的报酬哦。你拿到铁锤后直接交给修理店老板就行了。\n    做完任务后，用alt+w打开人物属性界面，再使用新手信物就可以快速回到新手村哦！\n"ESC"接受任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
+		send_user( who, "%c%c%w%s", ':',3,me->get_char_picid(), sprintf("%s:\n    前些日子修理店老板来我这想买一把铁锤，可惜我这里没有，但是我答应他，给他找到铁锤，据我打听得来的消息，在清溪有两种叫做小蚂蚁与小蜜蜂的动物，他们身上带着铁锤，可能对于你来说，他们的力量有点强大，所以你一定要小心哦。当然，比较困难的事情我一般会给比较高的报酬哦。你拿到铁锤后直接交给修理店老板就行了。\n    做完任务后，用alt+w打开人物属性界面，再使用新手信物就可以快速回到新手村哦！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.4\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
 		break;
 	case 4:
 //		if ( who->get_legend(TASK_NEWBIE_01, 14) )
@@ -157,7 +157,7 @@ void do_welcome2( object me, string arg )
 		break;
         case 6:
         	if ( who->get_level() >=5 && !who->get_legend(TASK_41,11) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    村外的刘大叔托我买的东西，我已经全部收集齐了，把它们全放在这个箱子里了，你能给我运过去吗？\n    刘大叔就住在往巴丘去的大路旁边，和李老汉是很好的邻居呢，如果你以前往那个方向走过，你应该很容易就找到他的，不过没去过也不要紧，你往那条路上走，见到两个独门独户的房子，就是刘大叔家了。\n"ESC"接受任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    村外的刘大叔托我买的东西，我已经全部收集齐了，把它们全放在这个箱子里了，你能给我运过去吗？\n    刘大叔就住在往巴丘去的大路旁边，和李老汉是很好的邻居呢，如果你以前往那个方向走过，你应该很容易就找到他的，不过没去过也不要紧，你往那条路上走，见到两个独门独户的房子，就是刘大叔家了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
         	break;
 	case 7:
         	if ( who->get_level() >=5 && !who->get_legend(TASK_41,11) )
@@ -173,7 +173,7 @@ void do_welcome2( object me, string arg )
         	break;			
         case 8:
 		if( who->get_level() >=5 && !who->get_legend(TASK_49, 15) )
-        		send_user(who,"%c%s",':',sprintf("%s\n    我从小就爱吃蜂蜜，一吃起来就没个够，现在年纪虽然不小了，口味却一直没变。前些天我一位老朋友从巴丘过来，给我带来了十罐蜂蜜，我把它们收藏在幽谷的木屋里。不过幽谷那里有很多小蚂蚁活动，我一直很担心它们会去偷吃我的蜂蜜，你要是有空去帮我干掉几只小蚂蚁，那样我就能安心了。\n"ESC"接受任务\ntalk %x# welcome.9\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
+        		send_user(who,"%c%s",':',sprintf("%s\n    我从小就爱吃蜂蜜，一吃起来就没个够，现在年纪虽然不小了，口味却一直没变。前些天我一位老朋友从巴丘过来，给我带来了十罐蜂蜜，我把它们收藏在幽谷的木屋里。不过幽谷那里有很多小蚂蚁活动，我一直很担心它们会去偷吃我的蜂蜜，你要是有空去帮我干掉几只小蚂蚁，那样我就能安心了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.9\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_49, 16) && !who->get_legend(TASK_49, 17) )
         		send_user(who,"%c%s",':',sprintf("%s\n    你已经干掉小蚂蚁了？太好了，我终于放心了，这些钱是我谢谢你的，省着点，别一次花完了。\n"ESC"Hoàn thành任务\ntalk %x# welcome.10\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
         	break;

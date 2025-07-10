@@ -47,7 +47,7 @@ void reset()
         if( gone_time( get("birthday") ) >= 600 )    // 10 分钟
         {
                 if(     objectp( owner = find_player( sprintf("%d", get("task") ) ) )
-                &&      objectp( item = present("贵重物品", owner, 1, MAX_CARRY) ) )
+                &&      objectp( item = present("Vật phẩm quý giá", owner, 1, MAX_CARRY) ) )
                         item->set_heart_3min();    // 下个３分钟
 
                 remove_from_scene();
@@ -126,7 +126,7 @@ void win_bonus_callout( object me, object who )    // 玩家死亡调用
         object owner, item;
 
         if(     objectp( owner = find_player( sprintf("%d", me->get("task") ) ) )
-        &&      objectp( item = present("贵重物品", owner, 1, MAX_CARRY) ) )
+        &&      objectp( item = present("Vật phẩm quý giá", owner, 1, MAX_CARRY) ) )
                 item->set_heart_3min();    // 下个３分钟
 }
 

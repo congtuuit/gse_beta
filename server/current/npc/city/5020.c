@@ -107,25 +107,25 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 65 && !who->get_legend(TASK_20,19) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    听说秦王最近打算修缮冀阙宫，这可是个好差使，你帮我到秦管家处探听一下虚实。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    听说秦王最近打算修缮冀阙宫，这可是个好差使，你帮我到秦管家处探听一下虚实。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_20,19) && !who->get_legend(TASK_20,20) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    去秦管家处探听到消息了吗？\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_20,22) && !who->get_legend(TASK_20,23) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    有了冀阙宫的原始图纸，修缮起来容易多了！\n"ESC"Hoàn thành任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_20,23) && !who->get_legend(TASK_20,24) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我仔细看了那Bản vẽ cung điện，后来勘测了一下冀阙宫情况，发现太庙里原先有一处用Gỗ gụ thiên niên kỷ的地方竟然被刀兵所坏，必须得更换了，据说在秦长城的烽火台处有一根，你前去将它运回来。\n"ESC"接受任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我仔细看了那Bản vẽ cung điện，后来勘测了一下冀阙宫情况，发现太庙里原先有一处用Gỗ gụ thiên niên kỷ的地方竟然被刀兵所坏，必须得更换了，据说在秦长城的烽火台处有一根，你前去将它运回来。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_20,24) && !who->get_legend(TASK_20,25) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    那根Gỗ gụ thiên niên kỷ是非换不可，况且太庙庄严之地，不能随便用什么杂木凑合。\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_20,25) && !who->get_legend(TASK_20,26) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这根红木找到了，这处最伤大雅的地方终于可以修缮了。\n"ESC"Hoàn thành任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_20,26) && !who->get_legend(TASK_20,27) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    除了宫殿建造原图和木料，还需要上好的秦长城附近采石场的青石料，可是那附近的恶霸秦老四把持了石料开采，居然还敢不卖给大王，真是不要脑袋了！你给我去将这个胆大妄为的家伙干掉！\n"ESC"接受任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    除了宫殿建造原图和木料，还需要上好的秦长城附近采石场的青石料，可是那附近的恶霸秦老四把持了石料开采，居然还敢不卖给大王，真是不要脑袋了！你给我去将这个胆大妄为的家伙干掉！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_20,27) && !who->get_legend(TASK_20,28) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    恶霸不除，没有那种好石料，怎么才能Hoàn thành大王交给的修缮任务啊。\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_20,28) && !who->get_legend(TASK_20,29) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    好了，一切就绪，三月之内，冀阙宫修缮必定完工。\n"ESC"Hoàn thành任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_20,29) && !who->get_legend(TASK_20,30) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    现在所有一切都已经准备齐全，冀阙宫的修缮即刻可以动工。不过在动工之前须先禀告一下秦国内政官备案，你愿意前去禀告吗？\n"ESC"接受任务\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    现在所有一切都已经准备齐全，冀阙宫的修缮即刻可以动工。不过在动工之前须先禀告一下秦国内政官备案，你愿意前去禀告吗？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 
         	break;
 	case 2:

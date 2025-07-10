@@ -88,7 +88,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 60 && !who->get_legend(TASK_19,19) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近侍卫玩忽职守，只顾搜刮油水，那些犯了军纪的犯人更加肆无忌惮，居然有人通过重重耳目探得了大王行猎，侍卫大多带去的消息，乘机里通外和，逃到了秦长城上，还计划停留一阵就逃往域外，大王已经震怒，如此藐视王威，若不立即抓捕处决并将使内外将臣群起效之，你速去秦长城将那20个弓兵乱刀杀死！\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近侍卫玩忽职守，只顾搜刮油水，那些犯了军纪的犯人更加肆无忌惮，居然有人通过重重耳目探得了大王行猎，侍卫大多带去的消息，乘机里通外和，逃到了秦长城上，还计划停留一阵就逃往域外，大王已经震怒，如此藐视王威，若不立即抓捕处决并将使内外将臣群起效之，你速去秦长城将那20个弓兵乱刀杀死！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_19,19) && !who->get_legend(TASK_19,20) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    如果这次这么轻易的放过他们，以后会有更多的犯人以他们为榜样，给我添乱！\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_19,20) && !who->get_legend(TASK_19,21) )
@@ -141,7 +141,7 @@ void do_welcome2( object me, string arg )
 		if ( who->get_legend(TASK_22,14) && !who->get_legend(TASK_22,15) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这些士兵死的有些冤枉啊！太子是储君，他的事情谁敢干涉！\n"ESC"Hoàn thành任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_22,15) && !who->get_legend(TASK_22,16) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    大王这样杀戮恐怕将会寒了为大王誓死效命的将士们的心啊，再说长城乃是防御犬戎侵我关中的战略要冲，要是将士们军心不稳，将来受害的可不止是长城内外的百姓，更是我王社稷啊，本官刚刚写了一封劝谏书，你转给内政官让他代为提点一下大王吧。\n"ESC"接受任务\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    大王这样杀戮恐怕将会寒了为大王誓死效命的将士们的心啊，再说长城乃是防御犬戎侵我关中的战略要冲，要是将士们军心不稳，将来受害的可不止是长城内外的百姓，更是我王社稷啊，本官刚刚写了一封劝谏书，你转给内政官让他代为提点一下大王吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 			
         	break; 
         case 7:

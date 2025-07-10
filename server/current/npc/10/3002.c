@@ -69,19 +69,19 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_33,25) && !who->get_legend(TASK_33,26) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    呵呵，你也是听了市井流言来找我问宝物的事情？\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_33,26) && !who->get_legend(TASK_33,27) ) 
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉看来世人贪婪之性果然强于安危啊，我也不多说了，那宝物是土精和金精的守护之物，你想取得，得先取了三十个土精和三十个金精的魂魄来，我自会告诉你下一步如何做。\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉看来世人贪婪之性果然强于安危啊，我也不多说了，那宝物是土精和金精的守护之物，你想取得，得先取了三十个土精和三十个金精的魂魄来，我自会告诉你下一步如何做。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_33,27) && !who->get_legend(TASK_33,28) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我看你还是打消取宝的念头吧！\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_33,28) && !who->get_legend(TASK_33,29) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看来你贪婪是贪婪，不过真的有两把刷子嘛!\n"ESC"Hoàn thành任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_33,29) && !who->get_legend(TASK_34,1) ) 
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    恶霸朱九不知道何处习得修道之术，最近躲在虚陵洞中以那些精灵为驱，以宝物精灵珠为引修习道术，而晚上就常常来我们梦中将我们都掳到一个不知名的地方给它做人气引，而做过人气引之后那些人的身体一日不如一日，仿佛生命流失了一般，我已经被他掳去三回了，不知道如此情形继续还没有命在，你既然能够战胜为他护法的精灵，一定有办法除掉他，他就在虚陵洞的西南角。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    恶霸朱九不知道何处习得修道之术，最近躲在虚陵洞中以那些精灵为驱，以宝物精灵珠为引修习道术，而晚上就常常来我们梦中将我们都掳到一个不知名的地方给它做人气引，而做过人气引之后那些人的身体一日不如一日，仿佛生命流失了一般，我已经被他掳去三回了，不知道如此情形继续还没有命在，你既然能够战胜为他护法的精灵，一定有办法除掉他，他就在虚陵洞的西南角。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_34,1) && !who->get_legend(TASK_34,2) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，下次你再来就给我收尸吧。\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_34,2) && !who->get_legend(TASK_34,3) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我们终于可以不再受他祸害了，可是这个身子，不知道如何能医治。\n"ESC"Hoàn thành任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_34,3) && !who->get_legend(TASK_34,4) ) 
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你干掉恶霸朱九处有注意到那旁边的宝箱吗？就在虚陵洞西南处的宝箱，那里面就有紫云洞的蕴涵了精灵之气的精灵珠，你找到之后给魏国内政官信陵君吧，他正急需这样东西，他会给你丰厚的报酬的。\n"ESC"接受任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你干掉恶霸朱九处有注意到那旁边的宝箱吗？就在虚陵洞西南处的宝箱，那里面就有紫云洞的蕴涵了精灵之气的精灵珠，你找到之后给魏国内政官信陵君吧，他正急需这样东西，他会给你丰厚的报酬的。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 
 	    	break;
         case 2:

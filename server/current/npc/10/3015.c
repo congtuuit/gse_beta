@@ -66,7 +66,7 @@ void do_welcome2( object me, string arg )
 	       	if ( who->get_legend(TASK_26,22) && !who->get_legend(TASK_26,23) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    呜～～！很感谢大家都这么关心我呀。但是，现在这是什么世道呀！我父亲是冤枉的啊！\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 	       	else if ( who->get_legend(TASK_26,23) && !who->get_legend(TASK_26,24) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我的父亲本来是大王宫中御厨，他已经在宫中侍奉了大王十多年了。但是，最近因为王府里面的一件宝物含鳞珠被窃，调查之下居然说是我父亲偷的。后来经过内政官审判，就把我父亲定罪收监了。但是我父亲生性忠厚，是绝对不会偷东西的，我一定要为我父亲申诉，你可以帮我将这封诉苦书交给韩国御史郑国吗？\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我的父亲本来是大王宫中御厨，他已经在宫中侍奉了大王十多年了。但是，最近因为王府里面的一件宝物含鳞珠被窃，调查之下居然说是我父亲偷的。后来经过内政官审判，就把我父亲定罪收监了。但是我父亲生性忠厚，是绝对不会偷东西的，我一定要为我父亲申诉，你可以帮我将这封诉苦书交给韩国御史郑国吗？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         		
         	break;
 	case 2:

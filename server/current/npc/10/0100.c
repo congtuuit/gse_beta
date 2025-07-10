@@ -53,7 +53,7 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_09,21) && !who->get_legend(TASK_09,22) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    赵国对于燕、齐两国来说，是西方的一道屏障，就像牙齿有嘴唇这道屏障一样，嘴唇没有了，牙齿就会感到寒冷。如果赵国今天灭亡了，明天就会轮到齐、燕两国，所以要救赵国，而且一定要迅速。\n    稻子为信，你去给我找9束稻子，然后交给财政官，他就明白我的意思了！\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_09,22) && !who->get_legend(TASK_09,23) ) 
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    赵国对于燕、齐两国来说，是西方的一道屏障，就像牙齿有嘴唇这道屏障一样，嘴唇没有了，牙齿就会感到寒冷。如果赵国今天灭亡了，明天就会轮到齐、燕两国，所以要救赵国，而且一定要迅速。\n    稻子为信，你去给我找9束稻子，然后交给财政官，他就明白我的意思了！消灭大别山的狼妖就可以拿到稻子。\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    赵国对于燕、齐两国来说，是西方的一道屏障，就像牙齿有嘴唇这道屏障一样，嘴唇没有了，牙齿就会感到寒冷。如果赵国今天灭亡了，明天就会轮到齐、燕两国，所以要救赵国，而且一定要迅速。\n    稻子为信，你去给我找9束稻子，然后交给财政官，他就明白我的意思了！消灭大别山的狼妖就可以拿到稻子。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_09,23) && !who->get_legend(TASK_09,25) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    还没给财政官传达我的意思吗?\n"ESC"Rời khỏi.", me->get_name()));
         	break;

@@ -120,7 +120,7 @@ void do_giveup2(  ) { TASK_MASTER_D->do_giveup2( this_player(), this_object() );
 
 // 函数：拜师
 void do_apprentice( string arg  ) { TASK_APPRENTICE_D->do_apprentice( this_player(), this_object(), arg ); }
-//接受任务
+//Nhận nhiệm vụ
 void accept_quest(  ) { TASK_MASTER_D->accept_quest( this_player(), this_object() ); }
 //任务信息
 void task_info(  ) { TASK_MASTER_D->task_info( this_player(), this_object() ); }
@@ -179,19 +179,19 @@ void do_welcome2( object me, string arg )
 		if ( who->get_legend(TASK_45,21) && !who->get_legend(TASK_45,22) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    世子这病还真有点棘手，容我考虑考虑，待会你再来找我吧。\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_45,22) && !who->get_legend(TASK_45,23) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我终于找到了一张上古仙方有类似病的记载，应该说世子是中了降而非病，王侯之家这种类似的事太多频繁了，唉，不过也不是老朽能够评测的，我只尽我医师的本分吧，其他不要问我太多了。解降需要许多世间罕见的药材，其中最重要的药引是诛仙阵中凝结了诸多魂气的虎皮，此种虎皮混合魂气的极阴之气与虎本身极阳之气糅合一起，乃解此种降的最佳药引，你先去诛仙阵与虎谋皮吧……\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我终于找到了一张上古仙方有类似病的记载，应该说世子是中了降而非病，王侯之家这种类似的事太多频繁了，唉，不过也不是老朽能够评测的，我只尽我医师的本分吧，其他不要问我太多了。解降需要许多世间罕见的药材，其中最重要的药引是诛仙阵中凝结了诸多魂气的虎皮，此种虎皮混合魂气的极阴之气与虎本身极阳之气糅合一起，乃解此种降的最佳药引，你先去诛仙阵与虎谋皮吧……\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_45,23) && !who->get_legend(TASK_45,24) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    赵王迁吩咐你来的时候难道一点都不着急么，既然如此，那老朽也不必为你们瞎操心了。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_45,24) && !who->get_legend(TASK_45,25) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    药引有了，可是此等秘药还需要特殊的制药容器，待会我再交代你吧，你先去周围转转休息一会。\n"ESC"Hoàn thành任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_45,25) && !who->get_legend(TASK_45,26) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我有各种炼药的宝鼎，可惜炼解降的药的那种青云宝鼎却被紫云洞的精灵偷去了，近段时间老朽病人和弟子太多实在无暇顾及他们，既然你现在需要炼这种药，就前去紫云洞将青云宝鼎弄回来吧，我也不知道是哪个精灵身上，反正问他们要就没错了，那些精灵非常自私，是不会将宝鼎共享的，所以他们一定会随身携带的，但是他们应该不懂宝鼎大小如意之法，即使偷去了也不能用，真不知道那些小家伙老是偷我的吃饭家伙做什么，太调皮了。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我有各种炼药的宝鼎，可惜炼解降的药的那种青云宝鼎却被紫云洞的精灵偷去了，近段时间老朽病人和弟子太多实在无暇顾及他们，既然你现在需要炼这种药，就前去紫云洞将青云宝鼎弄回来吧，我也不知道是哪个精灵身上，反正问他们要就没错了，那些精灵非常自私，是不会将宝鼎共享的，所以他们一定会随身携带的，但是他们应该不懂宝鼎大小如意之法，即使偷去了也不能用，真不知道那些小家伙老是偷我的吃饭家伙做什么，太调皮了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_45,26) && !who->get_legend(TASK_45,27) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    宝鼎上有增加药性的苻刻，没有那种专用宝鼎，我炼丹效果会大打折扣，你还是再去找找吧。就在紫云洞那些精灵身上。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_45,27) && !who->get_legend(TASK_45,28) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    啊，你居然杀了他们，你你你，唉，事已至此，我也不好多说你什么，为甚为了救得一人性命就要伤及许多人性命呢，他们只不过调皮而已，你教训教训就是了，断不至于狠心置死啊，唉，我现在需要闭关炼丹，你先走开，老朽现在不想看到你，等我炼好了你拿丹速速走人。\n"ESC"Hoàn thành任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_45,28) && !who->get_legend(TASK_45,29) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你鬼鬼祟祟望什么望，过来，虽然我对你非常痛恨，但是医者父母心，该给你我还是会尽心尽力的给你做好，这盒御风丹花了老夫三天三夜炼制，终于还是成了，你送回给赵王迁，告诉他这盒中4枚丹药分别在第一日、第二日、第四日、第八日分四次都在午时阳气最旺之时服用，另外每日阴气最旺的子时给他喝千年人参为主熬成的补汤，两者相辅而成，相信不出其他意外十日内必将痊愈。\n"ESC"接受任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你鬼鬼祟祟望什么望，过来，虽然我对你非常痛恨，但是医者父母心，该给你我还是会尽心尽力的给你做好，这盒御风丹花了老夫三天三夜炼制，终于还是成了，你送回给赵王迁，告诉他这盒中4枚丹药分别在第一日、第二日、第四日、第八日分四次都在午时阳气最旺之时服用，另外每日阴气最旺的子时给他喝千年人参为主熬成的补汤，两者相辅而成，相信不出其他意外十日内必将痊愈。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 			
         	break;
         case 2:

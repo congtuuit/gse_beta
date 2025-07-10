@@ -74,7 +74,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 30 && !who->get_legend(TASK_08,16) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    曾经我拥有一颗照世宝石，它是那种通透的白色，周身散发着荧荧的冷光，这颗宝石是一位客人当在我这里的，当期是三个月，可三个月过之后，他却没有来取，所以这颗宝石就属于了我，你不知道，我是多么的宝贝那颗宝石，可越是自己珍惜的东西似乎越容易弄丢，在一次游玩中我不小心将那颗照世宝石遗失了，而昨晚，我看见巫山的龙骨坡方向有一道灵光直射云霄，那荧荧的冷光，我敢断定是照世宝石发出的！你赶快去巫山的龙骨坡替我寻回宝石吧。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    曾经我拥有一颗照世宝石，它是那种通透的白色，周身散发着荧荧的冷光，这颗宝石是一位客人当在我这里的，当期是三个月，可三个月过之后，他却没有来取，所以这颗宝石就属于了我，你不知道，我是多么的宝贝那颗宝石，可越是自己珍惜的东西似乎越容易弄丢，在一次游玩中我不小心将那颗照世宝石遗失了，而昨晚，我看见巫山的龙骨坡方向有一道灵光直射云霄，那荧荧的冷光，我敢断定是照世宝石发出的！你赶快去巫山的龙骨坡替我寻回宝石吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_08,16) && !who->get_legend(TASK_08,17) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    难道是我分析错误了吗？可能那只是个传说罢了。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_08,17) && !who->get_legend(TASK_08,18) )
@@ -106,7 +106,7 @@ void do_welcome2( object me, string arg )
         	break;   
         case 4:
         	if ( who->get_level() >= 35 && !who->get_legend(TASK_09,13) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这几天有件事情被传得沸沸扬扬，在巫山的龙骨坡发现了一具遗骸，死相非常的难看，似乎死前受到过巨大的惊吓，官府派了不少人去调查，我出于好奇也过去看了。\n    他的脖子上有几道明显的抓痕，官府分析是被人掐住脖子窒息而死，但是我估计事情恐怕没有这么简单。据我所知，在巫山那带会有骨魔精出来害人，被它们杀害的人的标志就是脖子上会有几道抓痕，那是它们长长的爪子所致。\n    我看你也是个行侠仗义的武林中人，不如你去巫山的龙骨坡干掉它Loại bỏ cái ác cho nhân dân吧！\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这几天有件事情被传得沸沸扬扬，在巫山的龙骨坡发现了一具遗骸，死相非常的难看，似乎死前受到过巨大的惊吓，官府派了不少人去调查，我出于好奇也过去看了。\n    他的脖子上有几道明显的抓痕，官府分析是被人掐住脖子窒息而死，但是我估计事情恐怕没有这么简单。据我所知，在巫山那带会有骨魔精出来害人，被它们杀害的人的标志就是脖子上会有几道抓痕，那是它们长长的爪子所致。\n    我看你也是个行侠仗义的武林中人，不如你去巫山的龙骨坡干掉它Loại bỏ cái ác cho nhân dân吧！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_09,13) && !who->get_legend(TASK_09,14) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    真是可怕，我以后再也不去那里了。\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_09,14) && !who->get_legend(TASK_09,15) )

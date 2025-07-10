@@ -9,7 +9,7 @@ int is_huoyanshi() { return 1;}
 // 函数：构造处理
 void create()
 {
-        set_name( "火焰石" );
+        set_name( "Hỏa Thạch" );
         set_picid_1(8904);
         set_picid_2(8904);
         set_value(1);

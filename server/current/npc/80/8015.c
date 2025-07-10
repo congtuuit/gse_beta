@@ -106,13 +106,13 @@ void do_welcome2( object me, string arg )
 		if ( who->get_legend(TASK_25,9) && !who->get_legend(TASK_25,10) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你怎么知道我有藏宝图？一定是财政官那家伙告诉你的吧？但是能让财政官那家伙漏这口风看来你也不简单。\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_25,10) && !who->get_legend(TASK_25,11) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你来得正好，能让财政官那家伙漏这口风看来你也不简单。我正要找个有点能耐的人帮我去做件事，但是我现在还不相信你的实力，如果你想证明你的实力的话就先去灵谷洞杀掉20个豆兵和20个Ác ma trong lọ吧！等你杀掉这些妖怪还能安然回来的话，我会把我要委托你的事告诉你。当然，如果你能顺利Hoàn thành的话你最终将获得我这藏宝图。\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你来得正好，能让财政官那家伙漏这口风看来你也不简单。我正要找个有点能耐的人帮我去做件事，但是我现在还不相信你的实力，如果你想证明你的实力的话就先去灵谷洞杀掉20个豆兵和20个Ác ma trong lọ吧！等你杀掉这些妖怪还能安然回来的话，我会把我要委托你的事告诉你。当然，如果你能顺利Hoàn thành的话你最终将获得我这藏宝图。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_25,11) && !who->get_legend(TASK_25,12) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你怎么跑回来了？难道说你没有那么实力消灭那些妖怪？\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_25,12) && !who->get_legend(TASK_25,13) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    呵呵……你果然是有点实力，看来我烦恼多时的事终于可以找到一个可以委托的人了。\n"ESC"Hoàn thành任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_25,13) && !who->get_legend(TASK_25,14) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    前一阵子我外出巡视，路过灵谷洞附近的时候被从里面跳出来的一群豆兵和Ác ma trong lọ把我的传家之宝——翠玉之晴抢走了，翠玉之晴可是我们家代代相传的宝物，我可不能让它在我手上失传了。现在那些豆兵和Ác ma trong lọ已经被你制服了。你现在要做的是再去灵谷洞的2层替我将翠玉之晴找回来。等你把翠玉之晴找回来之后我会把我的藏宝图交给你。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    前一阵子我外出巡视，路过灵谷洞附近的时候被从里面跳出来的一群豆兵和Ác ma trong lọ把我的传家之宝——翠玉之晴抢走了，翠玉之晴可是我们家代代相传的宝物，我可不能让它在我手上失传了。现在那些豆兵和Ác ma trong lọ已经被你制服了。你现在要做的是再去灵谷洞的2层替我将翠玉之晴找回来。等你把翠玉之晴找回来之后我会把我的藏宝图交给你。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_25,14) && !who->get_legend(TASK_25,15) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    如果翠玉之晴找不回来的话，我如何面对我们的列祖列宗啊？\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_25,15) && !who->get_legend(TASK_25,16) )

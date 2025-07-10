@@ -87,7 +87,7 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_07,4) && !who->get_legend(TASK_07,5) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，我现在手头也比较紧，一下子拿出这么多钱可能也有点困难，最近街上有人在卖花，我看赚钱挺快的，可能还得麻烦你去收集一些山芍药来，我拿去卖凑够盘缠了就给你！\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_07,5) && !who->get_legend(TASK_07,6) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，你来得可真不是时候！刚好碰上我手头紧，一下子要拿出这么多钱还真有点困难，我给你想想办法吧！\n    有了！前天市集上有人在卖花，我上前打听了下，山芍药是价钱最高也是卖得最好的，不过这山芍药采起来可没那么容易，只有无定河的鬼火那才有。如果你想帮孟求这个忙，那你就去无定河找来山芍药吧，我想只要卖掉10个山芍药，就能凑够孟求的盘缠了。\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，你来得可真不是时候！刚好碰上我手头紧，一下子要拿出这么多钱还真有点困难，我给你想想办法吧！\n    有了！前天市集上有人在卖花，我上前打听了下，山芍药是价钱最高也是卖得最好的，不过这山芍药采起来可没那么容易，只有无定河的鬼火那才有。如果你想帮孟求这个忙，那你就去无定河找来山芍药吧，我想只要卖掉10个山芍药，就能凑够孟求的盘缠了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_07,6) && !who->get_legend(TASK_07,7) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    如果不能收集到10个芍药，盘缠恐怕难以凑足。\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_07,7) && !who->get_legend(TASK_07,8) )
@@ -146,7 +146,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 5:
         	if (who->get_level() >= 85 && !who->get_legend(TASK_29,10))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我儿子昨天同着邻居家的妞妞出去玩，结果妞妞哭着回来，说是有个很凶的大叔抓了我儿子，要我用祖传的玉雕去换，哎，都怪我以前得到的时候到处宣扬，其实这东西哪里是我祖传的，不过是我有次跟着一个貌似侠士进到将军古墓捡漏乘他不注意拣到的而已，那早就被我换了钱花光了，如今我哪里有那个本事自己一个人进去将军古墓再去拿玉雕啊，看来侠士倒是一副好筋骨，不知道能否救救我儿子，去将军古墓里收集20个玉雕？\n"ESC"接受任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我儿子昨天同着邻居家的妞妞出去玩，结果妞妞哭着回来，说是有个很凶的大叔抓了我儿子，要我用祖传的玉雕去换，哎，都怪我以前得到的时候到处宣扬，其实这东西哪里是我祖传的，不过是我有次跟着一个貌似侠士进到将军古墓捡漏乘他不注意拣到的而已，那早就被我换了钱花光了，如今我哪里有那个本事自己一个人进去将军古墓再去拿玉雕啊，看来侠士倒是一副好筋骨，不知道能否救救我儿子，去将军古墓里收集20个玉雕？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_29,10) && !who->get_legend(TASK_29,11) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    找不到玉雕可怎么办啊！我又不敢轻举妄动，万一他们恼羞成怒把我儿子……唉，真不敢想象！\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_29,11) && !who->get_legend(TASK_29,12) )
@@ -181,7 +181,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 8:
         	if ( who->get_level() >= 95 && !who->get_legend(TASK_33,25) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    前天，听城郊西处的李德说，紫云洞有一件神奇的宝物。你心动了吗？心动了就赶紧去问他本人。\n"ESC"接受任务\ntalk %x# welcome.9\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    前天，听城郊西处的李德说，紫云洞有一件神奇的宝物。你心动了吗？心动了就赶紧去问他本人。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.9\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_34,7) && !who->get_legend(TASK_34,8) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    了解！遵命！\n"ESC"Hoàn thành任务\ntalk %x# welcome.10\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 

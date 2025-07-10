@@ -112,13 +112,13 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_09,19) && !who->get_legend(TASK_09,20) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这事有点棘手，我国与赵是盟友，若不帮赵国，于情于理都说不过去，但若帮了赵国，势必会削弱本国自身的国力与经济，如若赵败于长平，秦来攻击我国，到时处境可能有点不妙，这事我还得听听周子的意见！\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_09,20) && !who->get_legend(TASK_09,21) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    关于赵求助之事有点棘手，恐怕我一人也拿不定主意，周子是我王一直信任的人，恐怕还得听听他的意见，看他有何好的对策，你去替我询问他吧！周子最近前往鄱阳湖观景，大概在鄱阳亭吧！\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    关于赵求助之事有点棘手，恐怕我一人也拿不定主意，周子是我王一直信任的人，恐怕还得听听他的意见，看他有何好的对策，你去替我询问他吧！周子最近前往鄱阳湖观景，大概在鄱阳亭吧！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_09,21) && !who->get_legend(TASK_09,22) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    快去快回，情况紧急啊！\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_09,24) && !who->get_legend(TASK_09,25) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    好一个唇亡齿寒！周子果然是聪明人！你速去回复齐总管，过两日，待我们准备妥当后，自当将粮食运去长平。\n"ESC"Hoàn thành任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_09,25) && !who->get_legend(TASK_09,26) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    周子的唇亡齿寒论果然是一针见血！你速去回复齐总管，过两日，待我们准备妥当后，自当将粮食运去长平。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    周子的唇亡齿寒论果然是一针见血！你速去回复齐总管，过两日，待我们准备妥当后，自当将粮食运去长平。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 
         	break;
 
@@ -174,7 +174,7 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_29,21) && !who->get_legend(TASK_29,22) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哦！是齐总管介绍你来的，看来你还真不简单。\n"ESC"Hoàn thành任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_29,22) && !who->get_legend(TASK_29,23) ) 
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哎，那可是不祥之物啊，既然你坚持要要，我也不阻拦你，只是忠告你如果家中出现闹鬼就要快快将它抛弃，美丽的往往充满了危险啊，千万不要因为一时的贪欲而造成家人的不幸，我堂哥家的事情你也知道了吧，哎，我也不好多说了，自求多福吧。它就在将军古墓的二层的小箱子里，上面为防万一我封了小符咒，你打开的时候站远点小心应该没有什么大碍。\n"ESC"接受任务\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哎，那可是不祥之物啊，既然你坚持要要，我也不阻拦你，只是忠告你如果家中出现闹鬼就要快快将它抛弃，美丽的往往充满了危险啊，千万不要因为一时的贪欲而造成家人的不幸，我堂哥家的事情你也知道了吧，哎，我也不好多说了，自求多福吧。它就在将军古墓的二层的小箱子里，上面为防万一我封了小符咒，你打开的时候站远点小心应该没有什么大碍。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	
 
 	    	break;

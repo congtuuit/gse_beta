@@ -81,7 +81,7 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_34,17) && !who->get_legend(TASK_34,18) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嗯，这种骗子是该杀。\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_34,18) && !who->get_legend(TASK_34,19) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    啊，魏老汉的事情我已经听说了，现在这些神棍实在太可恶了，骗人钱财，扰乱治安，本官起草了一份请奏书，你代我转呈大王，必定要让这些装神弄鬼之人无立锥之地。\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    啊，魏老汉的事情我已经听说了，现在这些神棍实在太可恶了，骗人钱财，扰乱治安，本官起草了一份请奏书，你代我转呈大王，必定要让这些装神弄鬼之人无立锥之地。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	break; 
 	case 2:
         	if ( who->get_legend(TASK_34,17) && !who->get_legend(TASK_34,18) )

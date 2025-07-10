@@ -128,7 +128,7 @@ void do_welcome2( object me, string arg )
         {
 	case 1:
 		if ( who->get_level() >= 55 && !who->get_legend(TASK_2_00,28) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嘘！噤声！我看你不是本地人，对秦国严刑峻法也看不惯的吧。秦王贪暴不仁，人人切齿。我奉王命前来，潜伏在这很久了，想要破坏骊山陵墓的建设，可是一直没有机会进行，你可以帮帮我吗？去杀掉那些苦役和工匠，就没有人帮他修陵了！\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嘘！噤声！我看你不是本地人，对秦国严刑峻法也看不惯的吧。秦王贪暴不仁，人人切齿。我奉王命前来，潜伏在这很久了，想要破坏骊山陵墓的建设，可是一直没有机会进行，你可以帮帮我吗？去杀掉那些苦役和工匠，就没有人帮他修陵了！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_2_00,28) && !who->get_legend(TASK_2_00,29) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哎，日子难过了……\n"ESC"Rời khỏi.", me->get_name(),));
 		else if ( who->get_legend(TASK_2_00,29) && !who->get_legend(TASK_2_00,30) )

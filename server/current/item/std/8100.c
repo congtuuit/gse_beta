@@ -23,7 +23,7 @@ void create()
 {
         object item = this_object();
 
-        set_name("贵重物品");
+        set_name("Vật phẩm quý giá");
         set_picid_1(0001);
         set_picid_2(0001);
         set_unit("件");

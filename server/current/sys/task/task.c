@@ -997,7 +997,7 @@ void get_task_list(object who) {
 	}
 	if (who->get_legend(TASK_NEWBIE_03, 1) && !who->get_legend(TASK_NEWBIE_03, 2)) {
 		send_user(who, "%c%c%c%w%s", 0x51, 2, 1, TID_CHUGUO, "Sở Quốc");
-		if (!objectp(present("钱老九的货物", who, 1, MAX_CARRY)))
+		if (!objectp(present("Hàng hóa của Tiền Lão Cửu", who, 1, MAX_CARRY)))
 			send_user(who, "%c%c%c%w%w%s", 0x51, 2, 2, TID_CHUGUO, 1, "Thu hàng về");
 		else
 			send_user(who, "%c%c%c%w%w%s", 0x51, 2, 2, TID_CHUGUO, 1, "Thu hàng về(Hoàn thành)");
@@ -1957,7 +1957,7 @@ string send_task_intro(object who, int iFlag, int iTask, int iKind) {
 																						BLK "   Giết con thỏ bên ngoài làng Đi mới, lấy viên đá lửa và đưa viên đá lửa cho chủ tiệm cầm đồ\n"
 																						BLK "Đá lửa:%d/5\n"
 																						BLK "Miêu tả nhiệm vụ:\n"
-																						BLK "    刚从仙灵岛来到这儿,还真需要一些行军散,这些都是对我的气血非常有用的.对吗？既然当铺老板很愿意给我一些行军散,虽然他叫我帮他弄5个火焰石来,但是这些都难不倒我!只要Đi新手村外杀掉那些讨厌的野兔,就可能会有火焰石了.\n"
+																						BLK "    刚从仙灵岛来到这儿,还真需要一些行军散,这些都是对我的气血非常有用的.对吗？既然当铺老板很愿意给我一些行军散,虽然他叫我帮他弄5个Hỏa Thạch来,但是这些都难不倒我!只要Đi新手村外杀掉那些讨厌的野兔,就可能会有Hỏa Thạch了.\n"
 																						BLK "Phần thưởng:行军散10包,Kinh nghiệm +100点", who->get_save_2("huoyanshi"));
 																			}
 																			else

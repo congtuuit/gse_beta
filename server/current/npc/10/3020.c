@@ -72,19 +72,19 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_30,10) && !who->get_legend(TASK_30,11) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你是什么人，也想来管我们村的闲事?\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_30,11) && !who->get_legend(TASK_30,12) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哈哈哈，河边这块地就是我家的，怎么了？要同我斗，告诉你，我有将军古墓四层的30个枪俑河30个弓箭石俑做守卫，你有本事先闯过他们的阵再来同我说话，哈哈！\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哈哈哈，河边这块地就是我家的，怎么了？要同我斗，告诉你，我有将军古墓四层的30个枪俑河30个弓箭石俑做守卫，你有本事先闯过他们的阵再来同我说话，哈哈！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_30,12) && !who->get_legend(TASK_30,13) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你想管我的事，还嫩了点！\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_30,13) && !who->get_legend(TASK_30,14) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    啊，你小子还没有死？\n"ESC"Hoàn thành任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_30,14) && !who->get_legend(TASK_30,15) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我那守卫可是向朱三要来的，你杀了他的手下，你有难了！哈哈哈，将军古墓四层东北将成为你的埋骨之处。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我那守卫可是向朱三要来的，你杀了他的手下，你有难了！哈哈哈，将军古墓四层东北将成为你的埋骨之处。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_30,15) && !who->get_legend(TASK_30,16) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哈哈……敢去找我大哥麻烦，自讨苦吃！\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_30,16) && !who->get_legend(TASK_30,17) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你怎么还能活着！\n"ESC"Hoàn thành任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_30,17) && !who->get_legend(TASK_30,18) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你告诉李屠那小子，回来修他的屋檐和半边墙吧，我没有搭理他了。\n"ESC"接受任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你告诉李屠那小子，回来修他的屋檐和半边墙吧，我没有搭理他了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
  
         	break;
         case 2:

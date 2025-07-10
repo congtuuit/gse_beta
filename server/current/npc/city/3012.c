@@ -82,7 +82,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 80 && !who->get_legend(TASK_28,4) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    邯郸城的原阳牧场处处透着诡异，据说商旅路过都是结伴同行，饶是如此，稍有不慎就会失去踪迹，而后只能找到破碎的尸首和凌乱的货物，而此间居然有个叫做李刃的居住，之所以不称他为人，是因为大家都怀疑就是他亲手导演了这一幕幕惨剧，虽然平常经过他也热情待客，可是总觉得他的笑容阴森森的，说不出的诡异，所以尽管怕把他惹得当场发飙而留下来歇歇脚，可是大家都心惊胆战的，水不敢喝，东西也不敢碰，后来慢慢开始流传他原本是个正在修炼的僵尸，所以选择了这个荒无人烟但是又有行旅经过的地方既避开人群的生气侵扰，又可以适时补充鲜血提高法力。对于这种危害大众的人我们的职责就是坚决予以清除，我命你速速前去铲除这个李刃，还大家一个太平的道路。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    邯郸城的原阳牧场处处透着诡异，据说商旅路过都是结伴同行，饶是如此，稍有不慎就会失去踪迹，而后只能找到破碎的尸首和凌乱的货物，而此间居然有个叫做李刃的居住，之所以不称他为人，是因为大家都怀疑就是他亲手导演了这一幕幕惨剧，虽然平常经过他也热情待客，可是总觉得他的笑容阴森森的，说不出的诡异，所以尽管怕把他惹得当场发飙而留下来歇歇脚，可是大家都心惊胆战的，水不敢喝，东西也不敢碰，后来慢慢开始流传他原本是个正在修炼的僵尸，所以选择了这个荒无人烟但是又有行旅经过的地方既避开人群的生气侵扰，又可以适时补充鲜血提高法力。对于这种危害大众的人我们的职责就是坚决予以清除，我命你速速前去铲除这个李刃，还大家一个太平的道路。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_28,4) && !who->get_legend(TASK_28,5) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嗯？没有李刃？莫非他会隐身还是一切只是玄之又玄的传说？\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_28,5) && !who->get_legend(TASK_28,6) )
@@ -116,7 +116,7 @@ void do_welcome2( object me, string arg )
         	break; 
         case 4:
 		if ( who->get_level() >= 110 && !who->get_legend(TASK_39,9) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我的兄弟得了重病，已经奄奄一息了。\n    他这辈子最大的心愿就是见一下秦管家，秦管家是一个足智多谋的人，他听说过秦管家的一些事迹后，相当崇拜他，现在他已在弥留之际，只希望能见到秦管家一面。\n    你能去将这个心愿告诉秦管家吗？\n    \n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我的兄弟得了重病，已经奄奄一息了。\n    他这辈子最大的心愿就是见一下秦管家，秦管家是一个足智多谋的人，他听说过秦管家的一些事迹后，相当崇拜他，现在他已在弥留之际，只希望能见到秦管家一面。\n    你能去将这个心愿告诉秦管家吗？\n    \n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	break; 
         case 5:
         	if ( who->get_level() >= 110 && !who->get_legend(TASK_39,9) )

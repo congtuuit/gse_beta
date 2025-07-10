@@ -60,7 +60,7 @@ void do_welcome2( object me, string arg )
        		if (who->get_legend(TASK_23,28)&&!who->get_legend(TASK_23,29))
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    10年了！终于有他的消息了！以前虽然一直没有他任何消息，但是我相信他总有一天会荣归故里，和我团聚的。这些日子赵讯那恶棍逼得我走投无路，我都已经想寻死几次了，幸好有你替我除掉这个恶棍，现在我可以安心养好身体，一定要等到我的相公回来这一天。\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if (who->get_legend(TASK_23,29)&&!who->get_legend(TASK_24,1))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近这些日子我身子好象特别差，郎中说我相思过度，再加上赵讯哪个恶棍逼害，抑郁成疾，要是这样下去的话，还等不到我相公回来，我的身体就要垮下去。郎中给我开了个药方，上面说要在弯道上找的心莲、冬虫草、金银花这三味草药才可以把我的病治好，但是弯道那里现在到处都是贼匪，我根本没办法去那里找这三味草药，你可以再帮我这个忙吗？\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近这些日子我身子好象特别差，郎中说我相思过度，再加上赵讯哪个恶棍逼害，抑郁成疾，要是这样下去的话，还等不到我相公回来，我的身体就要垮下去。郎中给我开了个药方，上面说要在弯道上找的心莲、冬虫草、金银花这三味草药才可以把我的病治好，但是弯道那里现在到处都是贼匪，我根本没办法去那里找这三味草药，你可以再帮我这个忙吗？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if (who->get_legend(TASK_24,1)&&!who->get_legend(TASK_24,2))
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    弯道是一个很危险的地方，收集草药的时候你一定要小心啊。为了我相公，我一定要好好活下去！\n"ESC"Rời khỏi.", me->get_name()));
 		else if (who->get_legend(TASK_24,2)&&!who->get_legend(TASK_24,3))

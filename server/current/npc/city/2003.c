@@ -102,7 +102,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 15 && !who->get_legend(TASK_04,1) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    大侠你终于出现了！昨晚一个飞盗趁我库银兵守备不严，盗走了一箱黄金。现在大王还不知道此事，如果大王知道此事一定会撤了我的官职。还望%s替我追回那箱黄金，保着本人的官职，本官定有酬谢！\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),NPC_RANK_D->get_respect_2(who),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    大侠你终于出现了！昨晚一个飞盗趁我库银兵守备不严，盗走了一箱黄金。现在大王还不知道此事，如果大王知道此事一定会撤了我的官职。还望%s替我追回那箱黄金，保着本人的官职，本官定有酬谢！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),NPC_RANK_D->get_respect_2(who),getoid(me)));
 		else if ( who->get_legend(TASK_04,2) && !who->get_legend(TASK_04,3) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    呵呵……这下不用担心向大王交不了差了，本官一定会好好报答你的。\n"ESC"Hoàn thành任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_04,1) && !who->get_legend(TASK_04,2) )
@@ -137,13 +137,13 @@ void do_welcome2( object me, string arg )
 		if ( who->get_legend(TASK_25,4) && !who->get_legend(TASK_25,5) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哦！你是为那宝图而来，让我想想，这件事情好久没人提起，我都快把这件事情给忘记了。\n"ESC"Hoàn thành任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_25,5) && !who->get_legend(TASK_25,6) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    不是我不愿意和你说这宝图事情，而是有个叫李三的劫盗威胁我。如果我将这宝图的事情说出去，他将会取我性命。你愿意前去灵谷洞一层将他杀掉吗？\n"ESC"接受任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    不是我不愿意和你说这宝图事情，而是有个叫李三的劫盗威胁我。如果我将这宝图的事情说出去，他将会取我性命。你愿意前去灵谷洞一层将他杀掉吗？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_25,6) && !who->get_legend(TASK_25,7) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    宝图这件事关系我的性命，他不被除掉，我怎么敢随便说。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_25,7) && !who->get_legend(TASK_25,8) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    好了，让我想想，我把这事情的真相和你说吧！\n"ESC"Hoàn thành任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_25,8) && !who->get_legend(TASK_25,9) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    其实王府里面的那张藏宝图就在我们的韩总管身上，但是要他把藏宝图给你可不是一件容易的事。韩总管最近为着一些事烦恼，我想你想获得那张藏宝图的话或许这是一个机会，你先去跟他谈谈吧。\n"ESC"接受任务\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    其实王府里面的那张藏宝图就在我们的韩总管身上，但是要他把藏宝图给你可不是一件容易的事。韩总管最近为着一些事烦恼，我想你想获得那张藏宝图的话或许这是一个机会，你先去跟他谈谈吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 
         	break;
         case 5:

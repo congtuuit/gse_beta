@@ -39,7 +39,7 @@ void create()
 
 // 函数：开始任务
    void do_task_start(string arg) { TASK_ESCORT_D->do_task_start( this_player(), this_object(),arg ); }
-// 函数：接受任务
+// 函数：Nhận nhiệm vụ
    void accept_task() { TASK_ESCORT_D->accept_task( this_player(), this_object() ); }
 // 函数：加入任务
    void join_task() { TASK_ESCORT_D->join_task( this_player(), this_object() ); }

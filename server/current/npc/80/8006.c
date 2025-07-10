@@ -84,7 +84,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 100 && !who->get_legend(TASK_37,1)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我们跑镖的就怕路过天门阵，里面的守卫很厉害，硬闯根本没有几人通的过，使得我们每次跑镖都要绕远路，白白浪费好多时间，我们的雇主也有很大意见，听说大侠乃人中龙凤，Quốc之翘楚，可否为我等清理出一条通道来，就最近那条路消灭天罡门众守4个、守阵天兵3个、神将4个就可以勉强过镖了，崔某多谢了。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我们跑镖的就怕路过天门阵，里面的守卫很厉害，硬闯根本没有几人通的过，使得我们每次跑镖都要绕远路，白白浪费好多时间，我们的雇主也有很大意见，听说大侠乃人中龙凤，Quốc之翘楚，可否为我等清理出一条通道来，就最近那条路消灭天罡门众守4个、守阵天兵3个、神将4个就可以勉强过镖了，崔某多谢了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_37,1) && !who->get_legend(TASK_37,2) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    啊，看来我们要继续绕远路了……\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_37,2) && !who->get_legend(TASK_37,3) )

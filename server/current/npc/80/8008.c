@@ -114,7 +114,7 @@ void do_welcome2( object me, string arg )
         	break; 
         case 3:
         	if ( who->get_level() >= 100 && !who->get_legend(TASK_36,23)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我晕我晕我晕晕晕，Tần Quốc也太牛了吧，居然能够让人变身为怪物？嘘，这可是顶级机密，前段时间听闻有大战，而跑到Tần Quốc去避难的百姓不知道受了什么蛊惑，有些接受了Tần Quốc的特殊训练，居然能够维持一段时间的怪物外形，又潜回我Quốc九曲桥附近为Tần Quốc做内应，孰可忍，孰不可忍！一定要让他们知道Kẻ phản bội的下场，一定要彻底摧毁Tần Quốc的这个阴谋！你看到那些像破罐子一样的东西了吗？是的，你去杀掉它们，你干掉10只罐中仙，我倒要看看，Tần Quốc还有什么招术！\n"ESC"接受任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我晕我晕我晕晕晕，Tần Quốc也太牛了吧，居然能够让人变身为怪物？嘘，这可是顶级机密，前段时间听闻有大战，而跑到Tần Quốc去避难的百姓不知道受了什么蛊惑，有些接受了Tần Quốc的特殊训练，居然能够维持一段时间的怪物外形，又潜回我Quốc九曲桥附近为Tần Quốc做内应，孰可忍，孰不可忍！一定要让他们知道Kẻ phản bội的下场，一定要彻底摧毁Tần Quốc的这个阴谋！你看到那些像破罐子一样的东西了吗？是的，你去杀掉它们，你干掉10只罐中仙，我倒要看看，Tần Quốc还有什么招术！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_36,23) && !who->get_legend(TASK_36,24) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    不要管他们是不是Tề Quốc百姓，记住，叛Quốc者死！\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_36,24) && !who->get_legend(TASK_36,25) )
@@ -146,13 +146,13 @@ void do_welcome2( object me, string arg )
         	break; 
 	case 6:
 		if ( who->get_level() >= 110 && !who->get_legend(TASK_44,13) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看你走路昂首阔步，一定觉得自己已经不错了吧，但是年轻人，百炼才能成钢，趁年轻多经历风雨，多历练些总是好的，看样子你练功已经遇到瓶颈了吧，听闻上古遗阵诛仙阵里多有上古仙兵凝结成的魂气，对于你现在的成长是很有好处的，可能还有意料之外的收获哦。\n    你先去消灭刀魂、剑魂各8只证明Chứng minh bản thân的能力吧。\n"ESC"接受任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看你走路昂首阔步，一定觉得自己已经不错了吧，但是年轻人，百炼才能成钢，趁年轻多经历风雨，多历练些总是好的，看样子你练功已经遇到瓶颈了吧，听闻上古遗阵诛仙阵里多有上古仙兵凝结成的魂气，对于你现在的成长是很有好处的，可能还有意料之外的收获哦。\n    你先去消灭刀魂、剑魂各8只证明Chứng minh bản thân的能力吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_44,13) && !who->get_legend(TASK_44,14) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    莫非你的修为只是投机取巧么？连去诛仙阵的胆气都没有了？练功首先要练心，你现在练心都做不到，怎么能指望突破瓶颈呢？\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_44,14) && !who->get_legend(TASK_44,15) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    年轻人，此番诛仙阵之行获益匪浅吧，孺子可教也，如果你还想再接再厉，还可以来找我。\n"ESC"Hoàn thành任务\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_44,15) && !who->get_legend(TASK_44,16) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    现在天下七分，困守一地无异于故步自封，你得趁年轻到处看看，汲取各地军事文化的精髓，方能够高屋建瓴，得到更大的发展，光从军事领域来说，Tần Quốc无疑是现在最强的Quốc家，而秦长城在抵御外虏的作用上是首屈一指的，若是抛除Quốc籍的成见，驻守的蒙恬、王离将军对于避免Quốc民遭受外虏侵袭上可是功不可没。如今秦赵交恶，我也不能给你更多指引，听闻秦总管善待有才之士，你去问问他秦长城的情况，应该他会乐于介绍，不至于难为你。\n"ESC"接受任务\ntalk %x# welcome.9\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    现在天下七分，困守一地无异于故步自封，你得趁年轻到处看看，汲取各地军事文化的精髓，方能够高屋建瓴，得到更大的发展，光从军事领域来说，Tần Quốc无疑是现在最强的Quốc家，而秦长城在抵御外虏的作用上是首屈一指的，若是抛除Quốc籍的成见，驻守的蒙恬、王离将军对于避免Quốc民遭受外虏侵袭上可是功不可没。如今秦赵交恶，我也不能给你更多指引，听闻秦总管善待有才之士，你去问问他秦长城的情况，应该他会乐于介绍，不至于难为你。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.9\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_44,22) && !who->get_legend(TASK_44,23) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    此番游历，获益匪浅吧，来来来，我们细细谈谈……\n"ESC"Hoàn thành任务\ntalk %x# welcome.10\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 

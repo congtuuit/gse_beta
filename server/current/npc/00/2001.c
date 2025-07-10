@@ -111,7 +111,7 @@ void do_look( object who )
 	}
 	else if ( z == 62 && who->get_legend(TASK_NEWBIE_03, 1) && !who->get_legend(TASK_NEWBIE_03, 2) )
 	{
-		if( !objectp( item = present("钱老九的货物", who, 1, MAX_CARRY) ) )
+		if( !objectp( item = present("Hàng hóa của Tiền Lão Cửu", who, 1, MAX_CARRY) ) )
 		{
 			if (get_effect(who, EFFECT_OPEN_BOX)) return;
 			send_user(who, "%c%c%w%s", 0x5a, 0, 10, "Đang mở……");
@@ -339,7 +339,7 @@ void into_effect( object who )
 	}
 	else if (z == 62 && who->get_legend(TASK_NEWBIE_03, 1) && !who->get_legend(TASK_NEWBIE_03, 2) )
 	{
-		if( !objectp( item = present("钱老九的货物", who, 1, MAX_CARRY) ) )
+		if( !objectp( item = present("Hàng hóa của Tiền Lão Cửu", who, 1, MAX_CARRY) ) )
 		{
 			item = new("item/98/0001");
 			if ( !item ) return;
@@ -347,7 +347,7 @@ void into_effect( object who )
 			{
                                 p =item->move(who, -1);
                                 item->add_to_user(p);		
-                                send_user( who, "%c%s", '!', "您获得了"HIY"钱老九的货物！");
+                                send_user( who, "%c%s", '!', "您获得了"HIY"Hàng hóa của Tiền Lão Cửu！");
                                 send_user( who, "%c%c%c%w%w%s", 0x51, 2, 2,TID_CHUGUO,1,"取回货物(Hoàn thành)" );					
 				USER_TASK_D->send_task_intro(who,2,TID_CHUGUO,1);
 			}

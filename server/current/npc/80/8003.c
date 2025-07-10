@@ -82,7 +82,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 35 && !who->get_legend(TASK_10,3)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    俗话说，巧妇难为无米之炊。种子不好，怎么施肥都长不出好的庄稼，我可是吃尽了这坏种子的苦头，一年辛苦到头，收成却不好，这一家几口都过着饥一顿饱一顿的日子。\n    我听说有个叫王凯的一直在研究种子，估计他那里会有好点的种子，那这里的野兔这么猖狂，我根本就脱不开身，所以你去给我找王凯要点种子来吧。\n    王凯离我这儿也不远，就在我东南方向的碣石镇。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    俗话说，巧妇难为无米之炊。种子不好，怎么施肥都长不出好的庄稼，我可是吃尽了这坏种子的苦头，一年辛苦到头，收成却不好，这一家几口都过着饥一顿饱一顿的日子。\n    我听说有个叫王凯的一直在研究种子，估计他那里会有好点的种子，那这里的野兔这么猖狂，我根本就脱不开身，所以你去给我找王凯要点种子来吧。\n    王凯离我这儿也不远，就在我东南方向的碣石镇。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_10,3) && !who->get_legend(TASK_10,4) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    那王凯为难你了吧？别泄气，你再去找他要，他一定会给你的！\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_10,4) && !who->get_legend(TASK_10,5) )

@@ -87,7 +87,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 55 && !who->get_legend(TASK_16,6) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    有了上次成功的出使秦国，大王对我更放心了，这次又派我出使秦国，并且还说我可以带助手，你愿意和我一起出使秦国吗？如果愿意的话，你可以先行一步拜访秦国使节，我随后就到。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    有了上次成功的出使秦国，大王对我更放心了，这次又派我出使秦国，并且还说我可以带助手，你愿意和我一起出使秦国吗？如果愿意的话，你可以先行一步拜访秦国使节，我随后就到。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_16,6) && !who->get_legend(TASK_16,7) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你可以先行到秦国，无须等我。\n"ESC"Rời khỏi.", me->get_name(),NPC_RANK_D->get_respect_2(who)));
         	break;
@@ -105,7 +105,7 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_21,20) && !who->get_legend(TASK_21,21) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    信函我已收到，看来我们鸟夷人是该修好方不为外族所乘，我会在朝堂之上隐讳的向我王吹吹风，成与不成却只有看天意了。\n"ESC"Hoàn thành任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_21,21) && !who->get_legend(TASK_21,22) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    今日朝堂之上我已经向大王提起了秦赵相亲的好处，同时内政官大人也向大王通报了秦国使节在路上的消息，但是君威难测，至于如何决断，你最好亲自面见大王才能问个清楚。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    今日朝堂之上我已经向大王提起了秦赵相亲的好处，同时内政官大人也向大王通报了秦国使节在路上的消息，但是君威难测，至于如何决断，你最好亲自面见大王才能问个清楚。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 
         	break;
 	case 4:
@@ -135,7 +135,7 @@ void do_welcome2( object me, string arg )
         	break;        	
 	case 6:
 		if ( who->get_level() >= 110 && !who->get_legend(TASK_43,5) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我在出使的路过邯郸城郊时，时常听得人们议论纷纷，说得是那里经常发生人口失踪之事，我对此甚为忧心，但是职责所系，不能多做停留，你去向本国百姓细细探察一下此事原委。\n"ESC"接受任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我在出使的路过邯郸城郊时，时常听得人们议论纷纷，说得是那里经常发生人口失踪之事，我对此甚为忧心，但是职责所系，不能多做停留，你去向本国百姓细细探察一下此事原委。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		break;
 	case 7:
 		if ( who->get_level() >= 110 && !who->get_legend(TASK_43,5) )

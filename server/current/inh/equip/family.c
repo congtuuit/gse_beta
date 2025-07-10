@@ -101,7 +101,7 @@ int get_use_effect_callout( object me, object item )
                 send_user(me, "%c%s", '!', "Không thể sử dụng ở chiến trường.");
                 return 0;
         }
-        if( present("贵重物品", me, 1, MAX_CARRY) )
+        if( present("Vật phẩm quý giá", me, 1, MAX_CARRY) )
         {
                 send_user(me, "%c%s", '!', "Không thể được sử dụng với vật có giá trị。");
                 return 0;

@@ -84,7 +84,7 @@ void do_welcome2( object me, string arg )
         {
 	case 1:
         	if ( who->get_level() >=45 && !who->get_legend(TASK_12,10) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近，郑Quốc渠被蒙上了一层恐怖的阴影，原因就在于——在这段时间，经过郑Quốc渠的人都会离奇失踪！\n    据我的推测，应该是鬼之魅在那里作祟，你前去将鬼之魅杀掉吧！\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近，郑Quốc渠被蒙上了一层恐怖的阴影，原因就在于——在这段时间，经过郑Quốc渠的人都会离奇失踪！\n    据我的推测，应该是鬼之魅在那里作祟，你前去将鬼之魅杀掉吧！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_12,10) && !who->get_legend(TASK_12,11) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我得告诉我的亲戚朋友，叫他们不要从那里走。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_12,11) && !who->get_legend(TASK_12,12) )
@@ -117,7 +117,7 @@ void do_welcome2( object me, string arg )
         	break;   
 	case 4:
         	if ( who->get_level() >=50 && !who->get_legend(TASK_15,15) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    老太婆我虽然老了，但是自认为审美观还是挺好的，所以我开一家经营发夹的店，你能去燕长城给我收集10个发夹来吗？\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    老太婆我虽然老了，但是自认为审美观还是挺好的，所以我开一家经营发夹的店，你能去燕长城给我收集10个发夹来吗？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_15,15) && !who->get_legend(TASK_15,16) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    没有发夹，我要怎么做饰物的生意呢？\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_15,16) && !who->get_legend(TASK_15,17) )

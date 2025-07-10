@@ -86,7 +86,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 20 && !who->get_legend(TASK_06,10)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    刀客胡子山，人称天下第一刀客，那把刀被他用得是出神入化，惊天地泣鬼神。\n    我曾经Thử thách过他，可都以失败告终，但是我能感觉到，每每与他决斗后，我都得到很大的提升，虽然如此，但是我却发现与他之间的差距越来越大，打败第一刀客胡子山扬名立万是我的梦想，可是经过这几番的Thử thách，我觉得这个梦想离我越来越遥远，我想如果你愿意的话，你可以试试去Thử thách他，他每天都会在马踏湖的灵谷崖一带练刀。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    刀客胡子山，人称天下第一刀客，那把刀被他用得是出神入化，惊天地泣鬼神。\n    我曾经Thử thách过他，可都以失败告终，但是我能感觉到，每每与他决斗后，我都得到很大的提升，虽然如此，但是我却发现与他之间的差距越来越大，打败第一刀客胡子山扬名立万是我的梦想，可是经过这几番的Thử thách，我觉得这个梦想离我越来越遥远，我想如果你愿意的话，你可以试试去Thử thách他，他每天都会在马踏湖的灵谷崖一带练刀。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_06,10) && !who->get_legend(TASK_06,11) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    难道那胡子山刀法又进步了吗？\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_06,11) && !who->get_legend(TASK_06,12) )
@@ -120,7 +120,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 4:
         	if (who->get_level() >= 85 && !who->get_legend(TASK_29,13))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你以为在这里站着就能做一名好守卫吗？其实成为守卫我容易嘛我，干啥都是需要很大的努力的，什么，你认为其实很轻松，去去去，年轻人啥都不会就爱冲动说大话，你说你不是说大话，好啊，你去将军古墓杀死 10只石虎，8只刀俑再回来找我。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你以为在这里站着就能做一名好守卫吗？其实成为守卫我容易嘛我，干啥都是需要很大的努力的，什么，你认为其实很轻松，去去去，年轻人啥都不会就爱冲动说大话，你说你不是说大话，好啊，你去将军古墓杀死 10只石虎，8只刀俑再回来找我。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_29,13) && !who->get_legend(TASK_29,14) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看来你还不够格做一名守卫哦！\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_29,14) && !who->get_legend(TASK_29,15) )
@@ -154,7 +154,7 @@ void do_welcome2( object me, string arg )
         	break; 
         case 7:
 		if ( who->get_level() >= 95 && !who->get_legend(TASK_38,21) )
-  			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，每天都站在这里，像雕塑一般，日复一日，月复一月，年复一年。\n    我已经厌倦了这样的工作。\n    我听说齐国准备加固长城，或许我能去给他们工地上做巡逻兵，我想这样会比在这里做守卫有意思得多，可我自己也不敢太明目张胆的去询问，你能去给我问问齐国财政官吗，他掌管财政，肯定知道有无此计划？\n"ESC"接受任务\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+  			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，每天都站在这里，像雕塑一般，日复一日，月复一月，年复一年。\n    我已经厌倦了这样的工作。\n    我听说齐国准备加固长城，或许我能去给他们工地上做巡逻兵，我想这样会比在这里做守卫有意思得多，可我自己也不敢太明目张胆的去询问，你能去给我问问齐国财政官吗，他掌管财政，肯定知道有无此计划？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		break;
         case 8:
         	if ( who->get_level() >= 95 && !who->get_legend(TASK_38,21) )

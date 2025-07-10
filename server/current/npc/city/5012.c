@@ -83,7 +83,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if (who->get_level() >= 60 && !who->get_legend(TASK_20,4))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近秦长城一带的百姓常常莫名其妙被分尸杀害，追查许久，终于发现原来是秦长城上杀人成瘾的刀盾兵所为，然而他们凶恶成性又异常狡猾，大王严令不许一个人漏网，但是又不能因此而同守城的将领起嫌隙，他命我们暗地里找个身手高强，又能严守秘密的壮士去执行此事，我看壮士正是适当人员，就请你走一趟，消灭那20个为非作歹，灭绝人性的刀盾兵吧。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近秦长城一带的百姓常常莫名其妙被分尸杀害，追查许久，终于发现原来是秦长城上杀人成瘾的刀盾兵所为，然而他们凶恶成性又异常狡猾，大王严令不许一个人漏网，但是又不能因此而同守城的将领起嫌隙，他命我们暗地里找个身手高强，又能严守秘密的壮士去执行此事，我看壮士正是适当人员，就请你走一趟，消灭那20个为非作歹，灭绝人性的刀盾兵吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_20,4) && !who->get_legend(TASK_20,5) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    恶魔不除，王法何在，天理何存，百姓何苦！\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_20,5) && !who->get_legend(TASK_20,6) )
@@ -115,19 +115,19 @@ void do_welcome2( object me, string arg )
         	break;     
 	case 4:
         	if ( who->get_level() >= 100 && !who->get_legend(TASK_39,14) ) 
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嗯，最近有个神秘人物要做一件非常重要同时又难办的事情，需要天门阵的蓝魔之泪，那些守阵的神将身上一定有。你可别问我为什么要找这个，不然你会有更多的麻烦，这个神秘人物的这件秘密，你最好还是躲远点好。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嗯，最近有个神秘人物要做一件非常重要同时又难办的事情，需要天门阵的蓝魔之泪，那些守阵的神将身上一定有。你可别问我为什么要找这个，不然你会有更多的麻烦，这个神秘人物的这件秘密，你最好还是躲远点好。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_39,14) && !who->get_legend(TASK_39,15) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    找不来的话，永远都别想知道为什么！\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_39,15) && !who->get_legend(TASK_39,16) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    说了你别问你还要问，你这不是拿自己小命当儿戏吗，我是不忍心你年纪轻轻就送了性命，你还是走吧，什么？你不怕？好，好，好，你等等我，我们找个僻静角落。\n"ESC"Hoàn thành任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_39,16) && !who->get_legend(TASK_39,17) ) 
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哎，都说是为了你好了，你这不难为我嘛，我可不想被人骂作误人性命啊，这样吧，你先去天门阵收集5个棉线、7个皂角，回来再说吧。\n"ESC"接受任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哎，都说是为了你好了，你这不难为我嘛，我可不想被人骂作误人性命啊，这样吧，你先去天门阵收集5个棉线、7个皂角，回来再说吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_39,17) && !who->get_legend(TASK_39,18) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哈哈，说过不要有太大的好奇心，不然会惹来一身的麻烦！\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_39,18) && !who->get_legend(TASK_39,19) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你还要问吗？如果还有好奇心的话，你是要付出代价的。\n"ESC"Hoàn thành任务\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_39,19) && !who->get_legend(TASK_39,20) ) 
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你果真契而不舍啊，但是我担心你会遭到别人追杀，那你先去干掉天门阵2层的地煞门众守3个，3层的太极门众守6个，据说就是他们在监视和追杀你，你干掉了我就可以放心告诉你了。\n"ESC"接受任务\ntalk %x# welcome.9\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你果真契而不舍啊，但是我担心你会遭到别人追杀，那你先去干掉天门阵2层的地煞门众守3个，3层的太极门众守6个，据说就是他们在监视和追杀你，你干掉了我就可以放心告诉你了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.9\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_39,20) && !who->get_legend(TASK_39,21) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你不能Hoàn thành我吩咐的事情，我是怎样都不会告诉你的！\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_39,21) && !who->get_legend(TASK_39,22) )

@@ -69,7 +69,7 @@ void do_welcome2( object me, string arg )
         {
 	case 1:
 		if( who->get_level() >= 5 && !who->get_legend(TASK_NEWBIE_02, 17) )
-			send_user(who,"%c%s",':',sprintf("%s:\n    村中的人都知道李老汉是一位藏酒的名家，据说有一壶天下名酒‘百步仙’就收藏于他家中。我曾多次登门向他讨酒，可惜他说什么都不愿将酒给我。如果有幸让我尝上一口百步仙，就算死一回也值了。\n    李老汉就在我的西北方，在去往巴丘的那条路上，你很容易就找到他了，前天我还在他那喝了次酒，路不远，我知道的。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
+			send_user(who,"%c%s",':',sprintf("%s:\n    村中的人都知道李老汉是一位藏酒的名家，据说有一壶天下名酒‘百步仙’就收藏于他家中。我曾多次登门向他讨酒，可惜他说什么都不愿将酒给我。如果有幸让我尝上一口百步仙，就算死一回也值了。\n    李老汉就在我的西北方，在去往巴丘的那条路上，你很容易就找到他了，前天我还在他那喝了次酒，路不远，我知道的。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
 		else if( who->get_legend(TASK_NEWBIE_02, 17) && !who->get_legend(TASK_NEWBIE_02, 20) )
 			send_user(who,"%c%s",':',sprintf("%s:\n    那李老汉不肯是吧？还是有别的条件？我能帮上你的我一定帮你！\n"ESC"Rời khỏi.",me->get_name()));
 		else if( who->get_legend(TASK_NEWBIE_02, 17) && who->get_legend(TASK_NEWBIE_02, 20) && !who->get_legend(TASK_NEWBIE_02, 21))	

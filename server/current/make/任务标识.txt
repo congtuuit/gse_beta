@@ -44,7 +44,7 @@ TASK_NEWBIE_01
 	24	锻炼的机会(Hoàn thành)
 TASK_NEWBIE_02
 	1	Giao dịch(接受)
-	2	Giao dịch(获得火焰石)
+	2	Giao dịch(获得Hỏa Thạch)
 	3	Giao dịch(Hoàn thành)
 	4	讨厌的山鸡(接受)
 	5	杀死10只山鸡
@@ -54,8 +54,8 @@ TASK_NEWBIE_02
 	9	小鸡咕咕(Hoàn thành)
 	10	智慧老人(接受)
 	11	智慧老人(Hoàn thành)
-	12	丢失的手镯(接受)
-	13	丢失的手镯(Hoàn thành)
+	12	Vòng tay bị mất(接受)
+	13	Vòng tay bị mất(Hoàn thành)
 	14	惩治恶将(接受)
 	15	惩治恶将(消灭)
 	16	惩治恶将(Hoàn thành)
@@ -1488,8 +1488,8 @@ TASK_49
 	6	Giao dịch1
 	7	Giao dịch2
 	8	Giao dịch3
-	9	丢失的手镯1
-	10	丢失的手镯2
+	9	Vòng tay bị mất1
+	10	Vòng tay bị mất2
 	11	门派向导的恩怨1
 	12	门派向导的恩怨2
 	13	试运镖任务1

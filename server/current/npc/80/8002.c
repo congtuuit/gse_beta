@@ -89,7 +89,7 @@ void do_welcome2( object me, string arg )
         	else if ( who->get_legend(TASK_44,28) && !who->get_legend(TASK_44,29) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这李屠真是个受人滴水之恩，当涌泉相报之人啊。\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_44,29) && !who->get_legend(TASK_45,1) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    既然李屠处境这么艰难还要帮助我，我也得再为他做点事情，不过现在我扩建作坊无暇分身，大侠能否代我走一趟？我听说天门阵的太极门众守曾经在李屠下狱之后抢劫了他家，结果他的儿女不知所踪，而他母亲听说为了保住什么东西自杀了，可恨我等无高强武艺傍身，不能为他亲手报仇，唯有劳烦大侠了，请你消灭天门阵的太极门众守18个，你放心，报酬是绝对不会少的。\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    既然李屠处境这么艰难还要帮助我，我也得再为他做点事情，不过现在我扩建作坊无暇分身，大侠能否代我走一趟？我听说天门阵的太极门众守曾经在李屠下狱之后抢劫了他家，结果他的儿女不知所踪，而他母亲听说为了保住什么东西自杀了，可恨我等无高强武艺傍身，不能为他亲手报仇，唯有劳烦大侠了，请你消灭天门阵的太极门众守18个，你放心，报酬是绝对不会少的。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_45,1) && !who->get_legend(TASK_45,2) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    那些贼子狡猾多端，可是让大侠吃了苦头?\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_45,2) && !who->get_legend(TASK_45,3) ) 

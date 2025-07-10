@@ -146,13 +146,13 @@ void do_welcome2( object me, string arg )
 		if ( who->get_legend(TASK_41,18) && !who->get_legend(TASK_41,19) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    大将军终于找到可以托付寻书的人了么，好，我一定把情形细细告诉你。\n"ESC"Hoàn thành任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_41,19) && !who->get_legend(TASK_41,20) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    天门阵法处于天门阵的层层守护之中，你先要破去阵图中的六劫煞，否则你还未碰到书就会离奇暴亡，幸亏我Quốc细作潜入天门阵多年终于探得了六劫煞之名及其关键，可叹之前已有多个壮士无谓身死，六劫煞破除必须得是内力精纯、心底毫无旁骛之人，按照六劫煞的六劫方位逐一杀掉30个守阵天兵和30个守阵神将，你破除了六劫煞之后来告知我，我再教你如何做。\n"ESC"接受任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    天门阵法处于天门阵的层层守护之中，你先要破去阵图中的六劫煞，否则你还未碰到书就会离奇暴亡，幸亏我Quốc细作潜入天门阵多年终于探得了六劫煞之名及其关键，可叹之前已有多个壮士无谓身死，六劫煞破除必须得是内力精纯、心底毫无旁骛之人，按照六劫煞的六劫方位逐一杀掉30个守阵天兵和30个守阵神将，你破除了六劫煞之后来告知我，我再教你如何做。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_41,20) && !who->get_legend(TASK_41,21) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    怎么？你没有按照我的吩咐去破除六劫煞么？那你可不能去取阵法书，我可不想你达不成任务又白白送了性命！\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_41,21) && !who->get_legend(TASK_41,22) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    谢天谢地，六劫煞终于破除了！你可仔细听好了，我告诉你怎么去取天门阵法，也容不得半点差错。\n"ESC"Hoàn thành任务\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_41,22) && !who->get_legend(TASK_41,23) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    天门阵法放置在一个加了符咒的箱子中，你必须秘念临、兵、斗、者、皆、阵、列、在、前五遍方可开启箱子，否则符咒内有小元阵法的机关就会突降小元雷煞将你顷刻间化为飞灰，切记切记！箱子在天门阵二层的西北处，你可细细寻找，牢记我的嘱咐！\n"ESC"接受任务\ntalk %x# welcome.9\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    天门阵法放置在一个加了符咒的箱子中，你必须秘念临、兵、斗、者、皆、阵、列、在、前五遍方可开启箱子，否则符咒内有小元阵法的机关就会突降小元雷煞将你顷刻间化为飞灰，切记切记！箱子在天门阵二层的西北处，你可细细寻找，牢记我的嘱咐！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.9\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 
 		break;
         case 6:

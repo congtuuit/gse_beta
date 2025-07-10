@@ -87,7 +87,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 20 && !who->get_legend(TASK_05,19)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你知道千年蚕丝这个东西吗？它做成的衣服可以刀枪不入，冬暖夏凉。我一直想做一件这样的绝世宝衣，可千年蚕丝是可遇不可求的，所以这个愿望我一直没有达成，现在机会来了！\n    我听人说在马陵道的幽谷林里有一种Hoa Tơ，那些千年蚕偏爱这种花，所吐的丝也缠绕着它们，虽然能拿到千年蚕丝的机会不大，但是我还是想去试试，你替我跑一趟吧！\n    幽谷林中间的那丛白色的花就是Hoa Tơ了，你赶快去找找吧，去晚了机会更小。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你知道千年蚕丝这个东西吗？它做成的衣服可以刀枪不入，冬暖夏凉。我一直想做一件这样的绝世宝衣，可千年蚕丝是可遇不可求的，所以这个愿望我一直没有达成，现在机会来了！\n    我听人说在马陵道的幽谷林里有一种Hoa Tơ，那些千年蚕偏爱这种花，所吐的丝也缠绕着它们，虽然能拿到千年蚕丝的机会不大，但是我还是想去试试，你替我跑一趟吧！\n    幽谷林中间的那丛白色的花就是Hoa Tơ了，你赶快去找找吧，去晚了机会更小。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_05,19) && !who->get_legend(TASK_05,20) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看来我得亲自前去寻找那传说中的千年蚕丝。不管是真是假，我都要将它找到来Hoàn thành我的梦想。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_05,20) && !who->get_legend(TASK_05,21) )

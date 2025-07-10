@@ -78,7 +78,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if( who->get_level() >= 10 && !who->get_legend(TASK_NEWBIE_03,3) )
-        		send_user(who,"%c%s",':',sprintf("%s:\n    呜……呜……呜！没天理呀！难道要我单身一辈子？\n    前些日子我准备向酒店老板的女儿求婚，买了一串珍珠项链做定婚礼物。可是在经过Hoa đào源时被一群可恶的独角仙抢走了，你去给我找回来吧！我敢肯定，那串项链绝对挂在某只独角仙的身上。我的终身幸福就握在你的手中，一定要帮我夺回定婚礼物呀！\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
+        		send_user(who,"%c%s",':',sprintf("%s:\n    呜……呜……呜！没天理呀！难道要我单身一辈子？\n    前些日子我准备向酒店老板的女儿求婚，买了一串珍珠项链做定婚礼物。可是在经过Hoa đào源时被一群可恶的独角仙抢走了，你去给我找回来吧！我敢肯定，那串项链绝对挂在某只独角仙的身上。我的终身幸福就握在你的手中，一定要帮我夺回定婚礼物呀！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
         	else if( objectp( item=present("珍珠项链", who, 1, MAX_CARRY) ) && item->is_xianglian() == 1 )
         		send_user(who,"%c%s",':',sprintf("%s:\n    找回来了！太好了，这下我的后半生不再孤独了！\n"ESC"Hoàn thành任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
 		else

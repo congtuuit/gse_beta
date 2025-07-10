@@ -55,13 +55,13 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 100 && !who->get_legend(TASK_37,4) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我听其他猎人说，长白天池的黑风口是常年异兽的聚集之地，也是此次狩猎的必经之途，诸如蜘蛛精、树精雪怪都有出没，还听说成年的蜘蛛精善于变化媚人，常常抓壮年男子进补，哎要是我家相公……无论如何，壮士都要救救我们母子，救救我家相公啊，无论情形如何绑也要把相公绑回来啊，什么神兽猎不到就算了，那些天物，可不是我们这些普通人家能够消受的，能够一家子平平安安过一辈子就安心了。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我听其他猎人说，长白天池的黑风口是常年异兽的聚集之地，也是此次狩猎的必经之途，诸如蜘蛛精、树精雪怪都有出没，还听说成年的蜘蛛精善于变化媚人，常常抓壮年男子进补，哎要是我家相公……无论如何，壮士都要救救我们母子，救救我家相公啊，无论情形如何绑也要把相公绑回来啊，什么神兽猎不到就算了，那些天物，可不是我们这些普通人家能够消受的，能够一家子平平安安过一辈子就安心了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_37,4) && !who->get_legend(TASK_37,5) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    呜，相公，你怎可丢下我一人……\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_37,5) && !who->get_legend(TASK_37,6) ) 
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你碰到的蜘蛛精容貌丑陋远远不能同我相比，呀哟，你讲笑了，咦，我家相公那，没有一起回来吗？难道还有另外一个蜘蛛精？天哪，这可如何是好啊……\n"ESC"Hoàn thành任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_37,6) && !who->get_legend(TASK_36,29) ) 
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    当初我家相公是同着我的妹夫马铜一起出门的，他们哥俩儿应该一直在一起的，你帮我去东海渔村问问马铜回家没有，有没有我家相公的消息。\n"ESC"接受任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    当初我家相公是同着我的妹夫马铜一起出门的，他们哥俩儿应该一直在一起的，你帮我去东海渔村问问马铜回家没有，有没有我家相公的消息。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 			
         	break;
 	case 2:

@@ -8,11 +8,9 @@ inherit OFFICER;
 void do_goto( int flag );
 void accept_task(string arg);
 
-// 函数：获取人物造型
 int get_char_picid() { return 4143; }
 void do_welcome( string arg );
 
-// 函数：构造处理
 void create()
 {
         set_name("Sứ Giả Môn Phái");
@@ -48,18 +46,18 @@ void do_look( object who )
 //		result = ESC"去武功修练场。\n" + sprintf("talk %x# welcome.10\n", id);
 	if ( who->get_legend(TASK_NEWBIE_01, 21) && !who->get_legend(TASK_NEWBIE_01, 22) )	
 	{
-		if ( sizeof(result) )
-			result += ESC"牛二的苦恼。\n" + sprintf("talk %x# task.3\n", id); 
+		if (sizeof(result))
+			result += ESC "Nỗi khổ của Ngưu Nhị.\n" + sprintf("talk %x# task.3\n", id);
 		else
-			result = ESC"牛二的苦恼。\n" + sprintf("talk %x# task.3\n", id); 	
+			result = ESC "Nỗi khổ của Ngưu Nhị.\n" + sprintf("talk %x# task.3\n", id);
 	}
-	if ( who->get_level() >= 5 && !who->get_legend(TASK_2_00,10) ) 
-			result += ESC HIY "Cơ Hội Từ Vương Bộ Đầu.\n" + sprintf("talk %x# welcome.1\n", id); 
-	if ( who->get_legend(TASK_49, 9) && !who->get_legend(TASK_49, 10) && objectp( item = present("丢失的手镯", who, 1, MAX_CARRY) ) && item->is_souzuo() == 1 )
-	        	result += sprintf(ESC HIY "丢失的手镯\ntalk %x# welcome.3\n",id);
-	if ( who->get_legend(TASK_49, 7) && !who->get_legend(TASK_49, 8))
-		result +=  sprintf(ESC  +HIY+ "Giao dịch\ntalk %x# welcome.5\n",id);
-        if( who->get_fam_name() == "" )
+	if (who->get_level() >= 5 && !who->get_legend(TASK_2_00, 10))
+		result += ESC HIY "Cơ Hội Từ Vương Bộ Đầu.\n" + sprintf("talk %x# welcome.1\n", id);
+	if (who->get_legend(TASK_49, 9) && !who->get_legend(TASK_49, 10) && objectp(item = present("Vòng tay bị mất", who, 1, MAX_CARRY)) && item->is_souzuo() == 1)
+		result += sprintf(ESC HIY "Vòng tay bị mất\ntalk %x# welcome.3\n", id);
+	if (who->get_legend(TASK_49, 7) && !who->get_legend(TASK_49, 8))
+		result += sprintf(ESC + HIY + "Giao dịch\ntalk %x# welcome.5\n", id);
+	if (who->get_fam_name() == "")
 
                 send_user( who, "%c%c%w%s", ':', 3, 4153, sprintf( " %s :\n Vị " + NPC_RANK_D->get_respect(who) + " này nếu muốn đến nơi những cao nhân sống ẩn dật, ta đây không lấy phí.\n"
                         ESC "Đi đến Đào Hoa Nguyên.\n"   + sprintf( "talk %x# 1\n", id ) +
@@ -96,33 +94,49 @@ void do_goto( int flag )
                 send_user( who, "%c%s", '!', "Đẳng cấp của bạn quá thấp, không thích hợp với những con đường gồ ghề." );
                 return;
         }          
-        if( present("贵重物品", who, 1, MAX_CARRY) )
-        {
-                send_user( who, "%c%s", '!', "您不能携带贵重物品。" );    // 带着贵重物品不能使用驿站。
-                return;
-        }
-        if( objectp( npc = who->get_quest("escort.robber#") ) && npc->is_escort_robber() )    // 寻找蒙面人
-        {
-                send_user( who, "%c%s", '!', "蒙面人出现，您的行动受到影响。" );
-                return;
-        }
+        if (present("Vật phẩm quý giá", who, 1, MAX_CARRY))
+		{
+			send_user(who, "%c%s", '!', "Bạn không thể mang theo vật phẩm quý giá."); // Mang vật phẩm quý giá không thể sử dụng dịch trạm.
+			return;
+		}
+		if (objectp(npc = who->get_quest("escort.robber#")) && npc->is_escort_robber()) // Tìm kiếm người bịt mặt
+		{
+			send_user(who, "%c%s", '!', "Người bịt mặt xuất hiện, hành động của bạn bị ảnh hưởng.");
+			return;
+		}
         gold = 0;
 
-        switch( who->get_fam_name() )
-        {
-              default : gold =  0;  break;
-        case "Đào Hoa Nguyên" : flag = 1;  break;
-          case "Thục Sơn" : flag = 2;  break;
-        case "Cấm Vệ Quân" : flag = 3;  break;
-          case "Đường Môn" : flag = 4;  break;
-          case "Mao Sơn" : flag = 5;  break;
-        case "Côn Luân" : flag = 6;  break;
-        case "Vân Mộng Cốc" : flag = 7;  break;
-        }
+        switch (who->get_fam_name())
+		{
+			default:
+				gold = 0;
+				break;
+			case "Đào Hoa Nguyên":
+				flag = 1;
+				break;
+			case "Thục Sơn":
+				flag = 2;
+				break;
+			case "Cấm Vệ Quân":
+				flag = 3;
+				break;
+			case "Đường Môn":
+				flag = 4;
+				break;
+			case "Mao Sơn":
+				flag = 5;
+				break;
+			case "Côn Luân":
+				flag = 6;
+				break;
+			case "Vân Mộng Cốc":
+				flag = 7;
+				break;
+		}
 
         if( who->get_cash() < gold )
         {
-                send_user( who, "%c%s", '!', "您手上的现金不够。" );
+                send_user(who, "%c%s", '!', "Tiền mặt trên tay bạn không đủ.");
                 return;
         }
 
@@ -138,16 +152,16 @@ void do_goto( int flag )
        case 7 : z = 165;  p = get_jumpin(z, 20);  break;
         }
 
-        if( p )
-        {
-//                who->add_cash( -gold );  who->add_gold_log("pay", gold);
-                who->add_to_scene( z, p / 1000, p % 1000, get_d(who), 40971, 0, 40971, 0 );
+        if (p)
+		{
+			// who->add_cash( -gold );  who->add_gold_log("pay", gold);
+			who->add_to_scene(z, p / 1000, p % 1000, get_d(who), 40971, 0, 40971, 0);
 
-                if( map = get_map_object(z) && gold>0 ) 
-                {
-                        write_user( who, ECHO "您花费 %d 金来到%s。\n", gold, map->get_name() );
-                }
-        }
+			if (map = get_map_object(z) && gold > 0)
+			{
+				write_user(who, ECHO "Bạn đã tiêu tốn %d vàng để đến %s。\n", gold, map->get_name());
+			}
+		}
 }
 
 void accept_task(string arg)
@@ -158,37 +172,37 @@ void accept_task(string arg)
 		return ;
 
 	i = to_int(arg);
-	if ( i == 1  )
+	if (i == 1)
 	{
-		if ( !who->get_legend(TASK_NEWBIE_01, 1) )
-			send_user( who, "%c%c%w%s", ':', 3, 4153,sprintf("%s\n    听老村长说最近村子里不太平，可能需要你们这些江湖人士的帮助，你去看看吧，他如果能委托你做点事情，你应该会拿到非常丰厚的报酬哦！\n    老村长离我这也不远，就在我的西南方，村子的最南边。\n"ESC"接受任务\ntalk %x# task.2\n"ESC"Rời khỏi.",get_name(),getoid(this_object())));	
-		else if ( !who->get_legend(TASK_NEWBIE_01, 2) )
-			send_user( who, "%c%c%w%s", ':', 3, 4153,sprintf("%s\n    年轻人，做事得积极点，慢吞吞的，一点朝气都没有！老村长那里急着呢，你赶快去吧！\n"ESC"Rời khỏi.",get_name()));	}
+		if (!who->get_legend(TASK_NEWBIE_01, 1))
+			send_user(who, "%c%c%w%s", ':', 3, 4153, sprintf("%s\n    Nghe nói từ trưởng làng già, gần đây trong làng không được yên bình, có thể cần sự giúp đỡ của những người giang hồ như các bạn. Bạn hãy đến gặp ông ấy xem sao, nếu ông ấy giao phó cho bạn làm việc gì đó, bạn chắc chắn sẽ nhận được phần thưởng hậu hĩnh! \n    Trưởng làng già cũng không xa chỗ tôi, ở phía tây nam của tôi, tận cùng phía nam của làng.\n" ESC "Nhận nhiệm vụ\ntalk %x# task.2\n" ESC "Rời khỏi.", get_name(), getoid(this_object())));
+		else if (!who->get_legend(TASK_NEWBIE_01, 2))
+			send_user(who, "%c%c%w%s", ':', 3, 4153, sprintf("%s\n    Người trẻ tuổi, làm việc phải tích cực lên, chậm chạp như vậy, chẳng có chút sức sống nào cả! Trưởng làng già đang cần gấp, bạn mau đến đó đi!\n" ESC "Rời khỏi.", get_name()));
+	}
 	else if ( i == 2 && !who->get_legend(TASK_NEWBIE_01, 1))
 	{
 		who->set_legend(TASK_NEWBIE_01, 1);
-		send_user( who, "%c%c%c%w%s", 0x51, 2, 1,TID_NEWBIE_01,"新手村" );
-		send_user( who, "%c%c%c%w%w%s", 0x51, 2, 2,TID_NEWBIE_01,12,"老村长的委托" );
-		send_user( who, "%c%s", '!', "你接受了"HIY"老村长的委托"NOR"任务");
+		send_user(who, "%c%c%c%w%s", 0x51, 2, 1, TID_NEWBIE_01, "Tân Thủ Thôn");
+		send_user(who, "%c%c%c%w%w%s", 0x51, 2, 2, TID_NEWBIE_01, 12, "Sự ủy thác của trưởng làng già");
+		send_user(who, "%c%s", '!', "Bạn đã nhận" HIY "Sự ủy thác của trưởng làng già" NOR "nhiệm vụ");
 	}
-	else if ( i ==  3 && who->get_legend(TASK_NEWBIE_01, 21) && !who->get_legend(TASK_NEWBIE_01, 22))
+	else if (i == 3 && who->get_legend(TASK_NEWBIE_01, 21) && !who->get_legend(TASK_NEWBIE_01, 22))
 	{
-		send_user( who, "%c%c%w%s", ':',3, 4153, sprintf("%s:\n    不是我不肯帮他啊！不收成年之人这是各大门派的老传统啊！你让我怎么去介绍呢？看在棋谱的份上，我就去试一下吧！能不能成？就看他造化了。\n"ESC"Hoàn thành任务\ntalk %x# task.4\n"ESC"Rời khỏi.",get_name(),getoid(this_object())));
-		
+		send_user(who, "%c%c%w%s", ':', 3, 4153, sprintf("%s:\n    Không phải tôi không muốn giúp anh ta! Nhưng việc không nhận người trưởng thành là truyền thống lâu đời của các môn phái lớn. Bạn bảo tôi giới thiệu kiểu gì đây? Nể tình sách cờ, tôi sẽ thử một lần xem sao! Thành hay không thì tùy vào số phận của anh ta.\n" ESC "Hoàn thành nhiệm vụ\ntalk %x# task.4\n" ESC "Rời khỏi.", get_name(), getoid(this_object())));
 	}
 	else if ( i ==  4 && who->get_legend(TASK_NEWBIE_01, 21) && !who->get_legend(TASK_NEWBIE_01, 22))
 	{
-		if( !objectp( item = present("棋谱", who, 1, MAX_CARRY) ) || item->is_qipu() != 1 )
+		if (!objectp(item = present("Sách cờ", who, 1, MAX_CARRY)) || item->is_qipu() != 1)
 		{
-			send_user(who,"%c%s",'!',"你的棋谱呢?");
-			return;	
+			send_user(who, "%c%s", '!', "Sách cờ của bạn đâu rồi?");
+			return;
 		}
 		item->remove_from_user();
 		destruct(item);
 		who->set_legend(TASK_NEWBIE_01, 22);
 		who->add_exp(100);
 		who->add_potential(50);
-		send_user(who,"%c%s",';',"牛二的苦恼 经验 100 tiềm năng 50");
+		send_user(who, "%c%s", ';', "Nỗi khổ của Ngưu Nhị Kinh nghiệm 100 Tiềm năng 50");
 		send_user( who, "%c%c%c%w%w%s", 0x51, 2, 2,TID_NEWBIE_01,11,"" );			
 	}
 }
@@ -212,7 +226,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
 		if ( who->get_level() >= 5 && !who->get_legend(TASK_2_00,10) ) 
-			send_user(who, "%c%c%w%s", ':', 3, 4153, sprintf("%s:\n    周国王捕头可不是一般人，不管是窃贼宵小还是江洋大盗，都休想逃脱他的手心。\n    不过王捕头那里最近差事太多，人手也不够，听说是因为犯人逃跑了，周王悬赏捉拿这些人，想想看，王都下命令了，那奖赏肯定不少，你去了可得机灵点，给王捕头一点小意思，道理就不用我说了吧。王捕头就在周国城内的驿站旁边，还挺近的，你好好找找吧！\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me))); 	
+			send_user(who, "%c%c%w%s", ':', 3, 4153, sprintf("%s:\n    Đội trưởng bộ khoái Vương Quốc không phải là người tầm thường, dù là đạo tặc vặt vãnh hay giang hồ đại đạo, cũng đừng hòng thoát khỏi tay ông ấy.\n    Tuy nhiên, gần đây chỗ đội trưởng Vương thiếu người làm việc, công việc thì chất đống, nghe nói là do phạm nhân bỏ trốn. Vương Quốc đã treo thưởng để bắt những kẻ này. Nghĩ mà xem, lệnh do Vương Quốc ban ra, phần thưởng chắc chắn không nhỏ đâu. Khi đến đó, nhớ phải khôn khéo một chút, đưa cho đội trưởng Vương chút quà ra mắt, đạo lý này chắc không cần ta nói thêm nhỉ. Đội trưởng Vương ở ngay cạnh trạm dịch trong thành Vương Quốc, cũng khá gần, bạn chịu khó tìm một chút nhé! \n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me))); 	
 		break;
         case 2:
 		if ( who->get_level() >= 5 && !who->get_legend(TASK_2_00,10) ) 
@@ -222,21 +236,21 @@ void do_welcome2( object me, string arg )
         		if ( TASK_LEGEND_D->can_task_add(who) != 1 ) return;
 //        		TASK_LEGEND_D->give_item(who,"item/98/0177",1);	
 //        		who->set_legend(TASK_49,11);
-			who->set_legend(TASK_2_00,10);
-			send_user( who, "%c%c%c%w%s", 0x51, 2, 1,TID_NEWBIE_01,"新手村" );
-			send_user( who, "%c%c%c%w%w%s", 0x51, 2, 2,TID_NEWBIE_01,119,"王捕头的美差" );
-			send_user( who, "%c%s", '!', "Nhận nhiệm vụ  "HIY"王捕头的美差");
+			who->set_legend(TASK_2_00, 10);
+			send_user(who, "%c%c%c%w%s", 0x51, 2, 1, TID_NEWBIE_01, "Tân Thủ Thôn");
+			send_user(who, "%c%c%c%w%w%s", 0x51, 2, 2, TID_NEWBIE_01, 119, "Nhiệm vụ tuyệt vời của Vương Bộ Đầu");
+			send_user(who, "%c%s", '!', "Nhận nhiệm vụ  " HIY "Nhiệm vụ tuyệt vời của Vương Bộ Đầu");
         	}
         	break;
         	
         case 3:
-		if ( who->get_legend(TASK_49, 9) && !who->get_legend(TASK_49, 10) && objectp( item = present("丢失的手镯", who, 1, MAX_CARRY) ) && item->is_souzuo() == 1 )
-			send_user(who, "%c%c%w%s", ':', 3, 4153, sprintf("%s:\n    先把手镯交给我吧，我好好的进行消毒，稍后我会自己交给酒店老板的。\n"ESC"Hoàn thành任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+		if ( who->get_legend(TASK_49, 9) && !who->get_legend(TASK_49, 10) && objectp( item = present("Vòng tay bị mất", who, 1, MAX_CARRY) ) && item->is_souzuo() == 1 )
+			send_user(who, "%c%c%w%s", ':', 3, 4153, sprintf("%s:\n    Đưa vòng tay cho tôi trước, tôi sẽ khử trùng cẩn thận, sau đó tôi sẽ tự mình giao cho chủ khách sạn。\n"ESC"Hoàn thành nhiệm vụ\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		break;
         case 4:
-		if ( who->get_legend(TASK_49, 9) && !who->get_legend(TASK_49, 10) && objectp( item = present("丢失的手镯", who, 1, MAX_CARRY) ) && item->is_souzuo() == 1 )
+		if ( who->get_legend(TASK_49, 9) && !who->get_legend(TASK_49, 10) && objectp( item = present("Vòng tay bị mất", who, 1, MAX_CARRY) ) && item->is_souzuo() == 1 )
 		{
-			if( objectp( item = present("丢失的手镯", who, 1, MAX_CARRY) ) && item->is_souzuo() == 1 )
+			if( objectp( item = present("Vòng tay bị mất", who, 1, MAX_CARRY) ) && item->is_souzuo() == 1 )
 			{
 				item->remove_from_user();
 				destruct(item);
@@ -249,7 +263,7 @@ void do_welcome2( object me, string arg )
 				who->delete_save_2("dssouzuo1");
 				TASK_LEGEND_D->task_finish(who);
 				who->set_legend(TASK_49,10);
-				send_user(who,"%c%s",';',"丢失的手镯 经验 300 tiềm năng 20 初学者腰带 1 ");
+				send_user(who,"%c%s",';',"Vòng tay bị mất 经验 300 tiềm năng 20 初学者腰带 1 ");
 				send_user( who, "%c%c%c%w%w%s", 0x51, 2, 2,TID_NEWBIE_01,117,"" );
 				me->do_welcome(1);
 			}
@@ -257,12 +271,12 @@ void do_welcome2( object me, string arg )
 		break;
 	case 5:
 		if ( who->get_legend(TASK_49, 7) && !who->get_legend(TASK_49, 8))
-			send_user(who,"%c%s",':',sprintf("%s\n    “没想到这当铺老板对我的事还真上心，谢谢你找来这些火焰石供我把玩。这是给你的奖励！”\n"ESC"Hoàn thành任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.",me->get_name(),getoid(me))); 		
+			send_user(who,"%c%s",':',sprintf("%s\n    “Không ngờ ông chủ tiệm cầm đồ lại quan tâm đến việc của tôi như vậy, cảm ơn bạn đã tìm được những Hỏa Thạch này cho tôi giải trí. Đây là phần thưởng dành cho bạn！”\n"ESC"Hoàn thành nhiệm vụ\ntalk %x# welcome.6\n"ESC"Rời khỏi.",me->get_name(),getoid(me))); 		
 		break;
 	case 6:
 		 if ( who->get_legend(TASK_49, 7) && !who->get_legend(TASK_49, 8))
        		 {
-        		if (TASK_LEGEND_D->check_task_item(who,"火焰石",5) != 1 )
+        		if (TASK_LEGEND_D->check_task_item(who, "Hỏa Thạch", 5) != 1)
         			return;
         		who->delete_save("huoyanshi");
 			item = new( "/item/91/9100" );   //行军散

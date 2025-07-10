@@ -56,9 +56,9 @@ int get_use_effect_callout(object who, object item)
 		return 0;
 	}
 
-	if (present("贵重物品", who, 1, MAX_CARRY))
+	if (present("Vật phẩm quý giá", who, 1, MAX_CARRY))
 	{
-		send_user(who, "%c%s", '!', "带着贵重物品不能使用。");
+		send_user(who, "%c%s", '!', "带着Vật phẩm quý giá不能使用。");
 		return 0;
 	}
 	if (objectp(npc = who->get_quest("escort.robber#")) && npc->is_escort_robber())    // 寻找蒙面人

@@ -112,7 +112,7 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_NEWBIE_03,11) && !who->get_legend(TASK_NEWBIE_03,12) )
         		send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    年轻人！是我兄弟叫你来的吧！是这样的：前些日子我收购了一颗名贵的珍珠，我想卖个好价钱，可一直找不到漂亮盒子装，郁闷死了。\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_NEWBIE_03,12) && !who->get_legend(TASK_NEWBIE_03,13) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    前些日子我收购了一颗名贵的珍珠，我想卖个好价钱，可一直找不到漂亮盒子装，你愿意去周国的妙手公输班那儿给我做个盒子吗？我不会亏待你的。\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    前些日子我收购了一颗名贵的珍珠，我想卖个好价钱，可一直找不到漂亮盒子装，你愿意去周国的妙手公输班那儿给我做个盒子吗？我不会亏待你的。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_NEWBIE_03,11) && !who->get_legend(TASK_NEWBIE_03,18) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我的盒子呢？公输班做好了吗？\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_NEWBIE_03,18) && !who->get_legend(TASK_NEWBIE_03,19) )
@@ -161,7 +161,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 5:
         	if ( who->get_level() >= 35 && !who->get_legend(TASK_10,11)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    听人说军营里又来了不少新兵，这些人嗜酒如命，这应该是一笔大生意，要拿下它，我看得先贿赂他们的头。\n    听说东海渔村一带的虾兵蟹将窝藏了一批在地下埋藏了上百年的名酒，如果这时候有人能帮我找10坛这样的酒，让我拿去送给军营里的头，那可真是帮了我的大忙了，我一定会好好谢谢他的！\n"ESC"接受任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    听人说军营里又来了不少新兵，这些人嗜酒如命，这应该是一笔大生意，要拿下它，我看得先贿赂他们的头。\n    听说东海渔村一带的虾兵蟹将窝藏了一批在地下埋藏了上百年的名酒，如果这时候有人能帮我找10坛这样的酒，让我拿去送给军营里的头，那可真是帮了我的大忙了，我一定会好好谢谢他的！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_10,11) && !who->get_legend(TASK_10,12) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这名酒还真是不好找，看来我的发财大计很难实现啊！\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_10,12) && !who->get_legend(TASK_10,13) )
@@ -197,13 +197,13 @@ void do_welcome2( object me, string arg )
 		if ( who->get_legend(TASK_30,22) && !who->get_legend(TASK_30,23) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哎，走多了夜路难免撞鬼啊！\n"ESC"Hoàn thành任务\ntalk %x# welcome.9\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_30,23) && !who->get_legend(TASK_30,24) )	
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    呜呜呜，你说我怎么就这么倒霉呢，我整天都提防着有人抢我，财不敢露白，人不敢独行，结果还是被抢了，我没有想到自己雇佣的30个Sư tử đá居然同那抢劫的30个石虎是一伙的，他们后面都有人指挥着，我此恨难消啊，你快点去将军古墓二层把那背叛我的30个Sư tử đá和抢劫我的30个石虎杀掉!\n"ESC"接受任务\ntalk %x# welcome.10\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    呜呜呜，你说我怎么就这么倒霉呢，我整天都提防着有人抢我，财不敢露白，人不敢独行，结果还是被抢了，我没有想到自己雇佣的30个Sư tử đá居然同那抢劫的30个石虎是一伙的，他们后面都有人指挥着，我此恨难消啊，你快点去将军古墓二层把那背叛我的30个Sư tử đá和抢劫我的30个石虎杀掉!\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.10\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_30,24) && !who->get_legend(TASK_30,25) )	
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看来你还是不行啊！\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_30,25) && !who->get_legend(TASK_30,26) )	
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这下终于有人能替我解决麻烦了。\n"ESC"Hoàn thành任务\ntalk %x# welcome.11\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_30,26) && !who->get_legend(TASK_30,27) )	
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    上月去楚国贩青铜，刚刚赚了个钵盆满贯，我已经小心藏行踪，我穿的是破衫，踩的是草鞋，混迹在人群，我雇佣的护卫是猛虎下山。谁知那同行中，居然有马小七，一双毒眼将我看穿，原来那护卫，都是他手下，怎奈我千防万防也不防，大队中也有人肆无忌惮。结果我被洗劫，除了身上那身破烂，他们也看不惯，留下我步履蹒跚回家园。可恨那马小七，将军古墓四层北筑老巢，我有心把仇报，却又知道只有被他当早点，现在只有盼壮士为我扫除匪人钱财还。听说那马小七，负案累累恶滔天，你只要送他去阎王殿，保我们御史乐翻天。\n"ESC"接受任务\ntalk %x# welcome.12\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    上月去楚国贩青铜，刚刚赚了个钵盆满贯，我已经小心藏行踪，我穿的是破衫，踩的是草鞋，混迹在人群，我雇佣的护卫是猛虎下山。谁知那同行中，居然有马小七，一双毒眼将我看穿，原来那护卫，都是他手下，怎奈我千防万防也不防，大队中也有人肆无忌惮。结果我被洗劫，除了身上那身破烂，他们也看不惯，留下我步履蹒跚回家园。可恨那马小七，将军古墓四层北筑老巢，我有心把仇报，却又知道只有被他当早点，现在只有盼壮士为我扫除匪人钱财还。听说那马小七，负案累累恶滔天，你只要送他去阎王殿，保我们御史乐翻天。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.12\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 			
 		break;
         case 9:
@@ -258,7 +258,7 @@ void do_welcome2( object me, string arg )
         	break;
 	case 13:
 		if ( who->get_level() >= 95 && !who->get_legend(TASK_38,23) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    素闻那赵王爱吃樱桃，可惜赵国并不盛产，所以赵王下令收集樱桃，以供他一饱口福。\n    我这最近到了一批好货，那樱桃鲜嫩欲滴，颗颗饱满，色泽又好，我想赵王一定会喜欢的，其实我也没别的意思，做生意的人，就想求点钱财。但我本是齐人，送樱桃给赵王定当不妥，所以还想请你去将樱桃交给赵王，赵王的赏金，我定会分你一半！\n"ESC"接受任务\ntalk %x# welcome.14\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    素闻那赵王爱吃樱桃，可惜赵国并不盛产，所以赵王下令收集樱桃，以供他一饱口福。\n    我这最近到了一批好货，那樱桃鲜嫩欲滴，颗颗饱满，色泽又好，我想赵王一定会喜欢的，其实我也没别的意思，做生意的人，就想求点钱财。但我本是齐人，送樱桃给赵王定当不妥，所以还想请你去将樱桃交给赵王，赵王的赏金，我定会分你一半！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.14\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		break;
         case 14:
         	if ( who->get_level() >= 95 && !who->get_legend(TASK_38,23) )
@@ -275,7 +275,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 15:
         	if ( who->get_level() >= 100 && !who->get_legend(TASK_35,27)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    行商走路，常常碰到不少怪物，我们当然得审时度势，看是消灭还是绕道，以前听其他商人说过Ác ma trong lọ凶恶，最近又有人传说罐中仙也是个狠角色，究竟怎么样我还是没有一个具体的概念，看这位大侠筋骨强健，身负宝器，定是降怪好手，不知道能不能前去消灭Ác ma trong lọ18只，罐中仙6只帮我比较一下他们能力如何、究竟有什么特点。据说Ác ma trong lọ多聚集在灵谷洞为恶，而罐中仙多游荡在九曲桥一带。\n"ESC"接受任务\ntalk %x# welcome.16\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    行商走路，常常碰到不少怪物，我们当然得审时度势，看是消灭还是绕道，以前听其他商人说过Ác ma trong lọ凶恶，最近又有人传说罐中仙也是个狠角色，究竟怎么样我还是没有一个具体的概念，看这位大侠筋骨强健，身负宝器，定是降怪好手，不知道能不能前去消灭Ác ma trong lọ18只，罐中仙6只帮我比较一下他们能力如何、究竟有什么特点。据说Ác ma trong lọ多聚集在灵谷洞为恶，而罐中仙多游荡在九曲桥一带。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.16\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_35,27) && !who->get_legend(TASK_35,28) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    如果你无此慧眼，无法区分妖与仙什么不同，也不用苛求，我再找其他人问问吧。\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_35,28) && !who->get_legend(TASK_35,29) )

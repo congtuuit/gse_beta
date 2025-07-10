@@ -99,7 +99,7 @@ void do_welcome2( object me, string arg )
         {
 	case 1:
 		if ( who->get_level() >= 95 && !who->get_legend(TASK_33,22) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，精灵与人之战持续已久，这场战争Từ thực phẩm，水精与火精繁衍越来越多，他们周围的食物已经不能满足他们的需求，于是仗着他们会变幻五行的法术，抢走了我们赖以生存的食物，虽然现在食物可能已经被他们吃光了，但是我们都咽不下这口气，所以你去替我消灭掉他们，然后回我这里来。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，精灵与人之战持续已久，这场战争Từ thực phẩm，水精与火精繁衍越来越多，他们周围的食物已经不能满足他们的需求，于是仗着他们会变幻五行的法术，抢走了我们赖以生存的食物，虽然现在食物可能已经被他们吃光了，但是我们都咽不下这口气，所以你去替我消灭掉他们，然后回我这里来。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_33,22) && !who->get_legend(TASK_33,23) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    出不了这口恶气，我们是绝对不是善罢甘休的！\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_33,23) && !who->get_legend(TASK_33,24) )

@@ -90,7 +90,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 25 && !who->get_legend(TASK_07,22)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    晚餐想喝点清淡的汤，我对汤这东西可挑剔得很，首先，煲汤的原材料必须是最新鲜的，煲出来的汤才有可能原汁原味，而火候也必须要恰到好处，今天我想喝的这汤必须用3个莲藕、2个玉米、4个萝卜熬成，莲藕和玉米可以在沼泽地带杀毒刺蜂拿到，萝卜可以去大别山杀牛头怪拿到。\n    你去给我收集来这些做晚餐的材料，我会重赏！\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    晚餐想喝点清淡的汤，我对汤这东西可挑剔得很，首先，煲汤的原材料必须是最新鲜的，煲出来的汤才有可能原汁原味，而火候也必须要恰到好处，今天我想喝的这汤必须用3个莲藕、2个玉米、4个萝卜熬成，莲藕和玉米可以在沼泽地带杀毒刺蜂拿到，萝卜可以去大别山杀牛头怪拿到。\n    你去给我收集来这些做晚餐的材料，我会重赏！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_07,22) && !who->get_legend(TASK_07,23) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你是怎么办事的！你非得要我等到明天晚上才能喝到今晚的汤吗？\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_07,23) && !who->get_legend(TASK_07,24) )
@@ -163,19 +163,19 @@ void do_welcome2( object me, string arg )
 		if ( who->get_legend(TASK_34,23) && !who->get_legend(TASK_34,24) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    呵呵……又来了一个管闲事的！\n"ESC"Hoàn thành任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_34,24) && !who->get_legend(TASK_34,25) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    呵呵，其实我只是对纱纤小姐颇为仰慕而已，哪里敢唐突佳人，做强逼之事呢?不过为了筹办婚事，我已经向火精和金精借了不少银钱，如果取消婚事这些银钱我也不能亏了才是啊，你代我去向火精和金精勾销这笔债务吧，用什么方法随你，帮我搞定就行。\n"ESC"接受任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    呵呵，其实我只是对纱纤小姐颇为仰慕而已，哪里敢唐突佳人，做强逼之事呢?不过为了筹办婚事，我已经向火精和金精借了不少银钱，如果取消婚事这些银钱我也不能亏了才是啊，你代我去向火精和金精勾销这笔债务吧，用什么方法随你，帮我搞定就行。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_34,25) && !who->get_legend(TASK_34,26) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你想本少爷总不能做赔本的事情吧。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_34,26) && !who->get_legend(TASK_34,27) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唔，本少爷自当应诺，不过之前好像还有点麻烦哦。\n"ESC"Hoàn thành任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_34,27) && !who->get_legend(TASK_34,28) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唔，但是朱老五也是我邀请的宾客，要是他赶来却告诉他婚礼取消他必定大闹一番，你如果能够打服让他不再闹事，我就同意你的请求。他如今正在虚陵洞西北处，你可去同他“好好”说一番。\n"ESC"接受任务\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唔，但是朱老五也是我邀请的宾客，要是他赶来却告诉他婚礼取消他必定大闹一番，你如果能够打服让他不再闹事，我就同意你的请求。他如今正在虚陵洞西北处，你可去同他“好好”说一番。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_34,28) && !who->get_legend(TASK_34,29) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哈哈哈，免费回程了吧？朱老五可是本少爷豢养的死士，你那点三脚猫的本事也来学人家行侠仗义？\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_34,29) && !who->get_legend(TASK_34,30) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    啊？朱老五死了？不可能！不可能，怎么可能……\n"ESC"Hoàn thành任务\ntalk %x# welcome.9\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_34,30) && !who->get_legend(TASK_35,1) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    （孙少果然是孙少，经历了金牌打手被清洗之后还能够很快的回复过来）好，很好，这样子，我这就去解除同纱纤小姐的婚约，哈哈哈，等他同李德那个穷书生订婚的时候不要忘记通知我啊！\n"ESC"接受任务\ntalk %x# welcome.10\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    （孙少果然是孙少，经历了金牌打手被清洗之后还能够很快的回复过来）好，很好，这样子，我这就去解除同纱纤小姐的婚约，哈哈哈，等他同李德那个穷书生订婚的时候不要忘记通知我啊！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.10\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 
         	break;
 	case 5:

@@ -53,7 +53,7 @@ int get_use_effect_callout(object me)
 		send_user(me, "%c%s", '!', "Bạn không thể sử dụng vé với sự trở lại tiền cho biểu tượng thành phố。");
 		return 0;
 	}
-	if (present("贵重物品", me, 1, MAX_CARRY * 4))
+	if (present("Vật phẩm quý giá", me, 1, MAX_CARRY * 4))
 	{
 		send_user(me, "%c%s", '!', "không thể được sử dụng với các vật có giá trị sao cho biểu tượng thành phố。");
 		return 0;

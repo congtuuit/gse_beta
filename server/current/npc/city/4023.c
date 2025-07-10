@@ -100,19 +100,19 @@ void do_welcome2( object me, string arg )
         {
 		case 1:
 			if ( who->get_level() >= 110 && !who->get_legend(TASK_44,4) )
-				send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我的女儿快要出嫁了，我这个当老爹的怎么也得拿出点像样的嫁妆吧，我最为自豪的就是我的手艺了，但是平时雕刻的东西我还不够满意，我一定要拿出压箱子的宝贝来，我师傅曾经传授了我一张图纸，唤作鹊缘床，据说睡上去能保佑夫妻夫妻恩爱，多得贵子。不知道大侠可愿意帮我达成这个心愿？首先我需要30个长一丈，宽三寸，没有树疙瘩的的美人松木头，不知道大侠有没有这个能力搞到？听说天门阵出产美人松木头，大侠可以前往看看。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+				send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我的女儿快要出嫁了，我这个当老爹的怎么也得拿出点像样的嫁妆吧，我最为自豪的就是我的手艺了，但是平时雕刻的东西我还不够满意，我一定要拿出压箱子的宝贝来，我师傅曾经传授了我一张图纸，唤作鹊缘床，据说睡上去能保佑夫妻夫妻恩爱，多得贵子。不知道大侠可愿意帮我达成这个心愿？首先我需要30个长一丈，宽三寸，没有树疙瘩的的美人松木头，不知道大侠有没有这个能力搞到？听说天门阵出产美人松木头，大侠可以前往看看。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 			else if ( who->get_legend(TASK_44,4) && !who->get_legend(TASK_44,5) )
 				send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    找不到美人松么？莫非我的心愿竟然要落空了么？唉，我真的不是个好老爹啊，这点嫁妆都不能给我闺女备好。\n"ESC"Rời khỏi.", me->get_name()));
 			else if ( who->get_legend(TASK_44,5) && !who->get_legend(TASK_44,6) )
 				send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    果然厉害，木材大小都一点不差，但是现在我却遇到了一个意料之外的麻烦。\n"ESC"Hoàn thành任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 			else if ( who->get_legend(TASK_44,6) && !who->get_legend(TASK_44,7) )
-				send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，不怕贼偷就怕贼惦记，我的锯子可是大师欧治子为了答谢我帮他做鹊缘床亲自锻造的，我本来一向为人低调，有宝也不外露，怎么那天酒醉了就说出来了呢，结果一向嗜宝如命的杜毒听说，昨天硬是闯我我家抢走了，我等安分小民哪里打的过不知道到哪里学了乱七八糟武艺的杜毒啊，看大侠你天庭饱满，气宇轩昂，定能帮我抢回宝物吧，小民在此多谢了。杜毒就在白马庄的紫竹小居，他家里可是有不少宝物，平时他巧取豪夺，相信没人关心他的宝物得失的。\n"ESC"接受任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+				send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，不怕贼偷就怕贼惦记，我的锯子可是大师欧治子为了答谢我帮他做鹊缘床亲自锻造的，我本来一向为人低调，有宝也不外露，怎么那天酒醉了就说出来了呢，结果一向嗜宝如命的杜毒听说，昨天硬是闯我我家抢走了，我等安分小民哪里打的过不知道到哪里学了乱七八糟武艺的杜毒啊，看大侠你天庭饱满，气宇轩昂，定能帮我抢回宝物吧，小民在此多谢了。杜毒就在白马庄的紫竹小居，他家里可是有不少宝物，平时他巧取豪夺，相信没人关心他的宝物得失的。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 			else if ( who->get_legend(TASK_44,7) && !who->get_legend(TASK_44,8) )
 				send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    啊，难道杜毒三脚猫的功夫大侠你都拿他没有办法吗？\n"ESC"Rời khỏi.", me->get_name()));
 			else if ( who->get_legend(TASK_44,8) && !who->get_legend(TASK_44,9) )
 				send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哈哈，早就看出大侠是神龙再世，定能帮我夺回宝物，（一脸贼兮兮的靠近，嗅了嗅，低低说了声）大侠神光护体，好宝气啊。\n"ESC"Hoàn thành任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 			else if ( who->get_legend(TASK_44,9) && !who->get_legend(TASK_44,10) )
-				send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嘿嘿，要是仅仅是美人松做的当然还不能发挥那些功效，要不我怎么能担当神匠呢，我要在床上刻上符咒和阵法，而黄晶石可是必要的法器载体，据说上古遗阵诛仙阵里有当初神魔战争残留的黄晶石，虽然说不比当初仙人用的法器那么威力巨大，可是用来做我的鹊缘床可是绰绰有余。你可敢闯诛仙阵，为我取来黄晶石？你要问我怎么刻，呵呵，独门手艺，恕不外传，要不我怎么叫神匠呢？\n"ESC"接受任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+				send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嘿嘿，要是仅仅是美人松做的当然还不能发挥那些功效，要不我怎么能担当神匠呢，我要在床上刻上符咒和阵法，而黄晶石可是必要的法器载体，据说上古遗阵诛仙阵里有当初神魔战争残留的黄晶石，虽然说不比当初仙人用的法器那么威力巨大，可是用来做我的鹊缘床可是绰绰有余。你可敢闯诛仙阵，为我取来黄晶石？你要问我怎么刻，呵呵，独门手艺，恕不外传，要不我怎么叫神匠呢？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 			else if ( who->get_legend(TASK_44,10) && !who->get_legend(TASK_44,11) )
 				send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n   呃，既然是仙人们留下来的东西，当然没有那么容易找到，你再耐心找找吧。\n"ESC"Rời khỏi.", me->get_name()));
 			else if ( who->get_legend(TASK_44,11) && !who->get_legend(TASK_44,12) )

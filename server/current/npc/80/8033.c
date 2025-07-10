@@ -96,7 +96,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 20 && !who->get_legend(TASK_05,22)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    人在江湖，身不由己，就连鬼魂也不例外。\n    最近很多人向我报告有一个剑魂为非作歹，正好昨天晚上他托梦告诉我，他活着的时候就是一个善良之人，死后本从未做过任何伤天害理，但是最近感受到一股邪恶的力量控制他的思想，让他神智不清，经常不受自己控制就去做一些伤害人的事情，他感到很懊恼，所以请求我的帮助。\n    经过我的调查，是一名叫赵术士的巫师在作法操纵他，所以请你前去消灭赵术士，他现在就在马陵道的古木丛林，我估计他又要开始施法了，你赶快去吧！\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    人在江湖，身不由己，就连鬼魂也不例外。\n    最近很多人向我报告有一个剑魂为非作歹，正好昨天晚上他托梦告诉我，他活着的时候就是一个善良之人，死后本从未做过任何伤天害理，但是最近感受到一股邪恶的力量控制他的思想，让他神智不清，经常不受自己控制就去做一些伤害人的事情，他感到很懊恼，所以请求我的帮助。\n    经过我的调查，是一名叫赵术士的巫师在作法操纵他，所以请你前去消灭赵术士，他现在就在马陵道的古木丛林，我估计他又要开始施法了，你赶快去吧！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_05,22) && !who->get_legend(TASK_05,23) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    看来这个剑魂从此将不会沉默下去，不知将会有多少无辜的人死在它剑下。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_05,23) && !who->get_legend(TASK_05,24) )
@@ -127,7 +127,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 4:
         	if ( who->get_level() >= 95 && !who->get_legend(TASK_34,21)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，有情不能相聚，老夫听了也扼腕叹息啊，如此好的一段姻缘竟然被拆散，你想知道事情的原因吗？那就去问城西小村的纱纤小姐吧！\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，有情不能相聚，老夫听了也扼腕叹息啊，如此好的一段姻缘竟然被拆散，你想知道事情的原因吗？那就去问城西小村的纱纤小姐吧！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 			
         	break;
         case 5:
@@ -142,7 +142,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 6:
         	if ( who->get_level() >= 95 && !who->get_legend(TASK_35,3)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近临河镇据说有许多怪事发生，民间流言甚多，什么神仙下凡收坐骑，什么妖怪出洞找生祭，你好好去调查一番到底什么人在装神弄鬼，据说城西临河镇的孟求见闻识广，你去多向他求教一下吧。\n"ESC"接受任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近临河镇据说有许多怪事发生，民间流言甚多，什么神仙下凡收坐骑，什么妖怪出洞找生祭，你好好去调查一番到底什么人在装神弄鬼，据说城西临河镇的孟求见闻识广，你去多向他求教一下吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 			
         	break;
         case 7:

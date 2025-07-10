@@ -67,13 +67,13 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_11,4)&&!who->get_legend(TASK_11,5) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这珍珠项链真漂亮，想必花了很多功夫才找到的，这程强看来是用心良苦啊。不过，我还得考验他一下。\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_11,5) && !who->get_legend(TASK_11,6) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    俗话说，物以类聚，人以群分。既然程强找上你来送信物，那你肯定也是他值得信任的人，现在你去郑国渠打败30个劳役，我就相信你的能力，也相信程强的眼光。\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    俗话说，物以类聚，人以群分。既然程强找上你来送信物，那你肯定也是他值得信任的人，现在你去郑国渠打败30个劳役，我就相信你的能力，也相信程强的眼光。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_11,6) && !who->get_legend(TASK_11,7) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你可别让我失望，不然我对程强也会失去信心的。\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_11,7) && !who->get_legend(TASK_11,8) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    果然不错!这程强没有看错人，也说明他的眼光相当有水准！\n"ESC"Hoàn thành任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_11,8) && !who->get_legend(TASK_11,9) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    从你的努力可以看出，你是一个很有责任感的人，我相信程强也会像你一样，是一个能肩负起家庭重任的男人，这是我亲手做的糕点，请你将它交给程强。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    从你的努力可以看出，你是一个很有责任感的人，我相信程强也会像你一样，是一个能肩负起家庭重任的男人，这是我亲手做的糕点，请你将它交给程强。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_11,9) && !who->get_legend(TASK_11,10) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    糕点放久了会坏掉的，还是赶紧送去吧！\n"ESC"Rời khỏi.", me->get_name()));
         	break;

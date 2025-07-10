@@ -138,7 +138,7 @@ void do_giveup2(  ) { TASK_MASTER_D->do_giveup2( this_player(), this_object() );
 
 // 函数：拜师
 void do_apprentice( string arg  ) { TASK_APPRENTICE_D->do_apprentice( this_player(), this_object(), arg ); }
-//接受任务
+//Nhận nhiệm vụ
 void accept_quest(  ) { TASK_MASTER_D->accept_quest( this_player(), this_object() ); }
 //任务信息
 void task_info(  ) { TASK_MASTER_D->task_info( this_player(), this_object() ); }
@@ -196,7 +196,7 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_23,4) && !who->get_legend(TASK_23,5) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    世间一切皆是因果报应，韩王安有今天孽必有他之前作的恶，正是天理循环，报应不爽啊！但这件事情我们茅山也逃脱不了责任，这次也算是韩王安的造化，我姑且就尽力而为吧。\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if (who->get_legend(TASK_23,5) && !who->get_legend(TASK_23,6))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    韩王安所中的邪术叫做游魂之术，一种已经被我茅山禁止使用多年的法术，当韩王安在梦里游魂的次数达到二十一次的时候，韩王安的灵魂也就会全部被吸光。到现在为止韩王安游魂的次数已经有十七次，如果再不抓紧时间的话韩王安很快就会一命呜呼。现在，我要你去给我找一把桃木剑和10张符纸回来，其他的你不必过问，你只要尽快去把这些东西找齐就可以了，我们所剩的时间已经不多了。\n    路途凶险，还望你能结伴而行。\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    韩王安所中的邪术叫做游魂之术，一种已经被我茅山禁止使用多年的法术，当韩王安在梦里游魂的次数达到二十一次的时候，韩王安的灵魂也就会全部被吸光。到现在为止韩王安游魂的次数已经有十七次，如果再不抓紧时间的话韩王安很快就会一命呜呼。现在，我要你去给我找一把桃木剑和10张符纸回来，其他的你不必过问，你只要尽快去把这些东西找齐就可以了，我们所剩的时间已经不多了。\n    路途凶险，还望你能结伴而行。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if (who->get_legend(TASK_23,6) && !who->get_legend(TASK_23,7))
 		{
 			if ( TASK_LEGEND_D->check_task_item_amount(who,"桃木剑") == 0 || TASK_LEGEND_D->check_task_item_amount(who,"符纸") < 10 )
@@ -206,31 +206,31 @@ void do_welcome2( object me, string arg )
         			
         	}
 		else if (who->get_legend(TASK_23,7) && !who->get_legend(TASK_23,8))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    仅有这把桃木剑跟这些符纸的远远不够的，要破解游魂之术我需要一件法器，这法器是一面镜子，现在这面镜子已经遗落在某一个地方，你去弯道2找找，这面镜子应该就在那附近。你找到镜子之后一定要马上把镜子送到我这里来。现在韩王安游魂的次数已经达到18次，你已经没有时间歇息了，你得赶快去帮我把这面镜子找回来。\n    路途凶险，你最好是结伴而行。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    仅有这把桃木剑跟这些符纸的远远不够的，要破解游魂之术我需要一件法器，这法器是一面镜子，现在这面镜子已经遗落在某一个地方，你去弯道2找找，这面镜子应该就在那附近。你找到镜子之后一定要马上把镜子送到我这里来。现在韩王安游魂的次数已经达到18次，你已经没有时间歇息了，你得赶快去帮我把这面镜子找回来。\n    路途凶险，你最好是结伴而行。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if (who->get_legend(TASK_23,8) && !who->get_legend(TASK_23,9))
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    快，尽快去把镜子找回来，它就在弯道2那边，我们的时间不多了。\n"ESC"Rời khỏi.", me->get_name()));
 		else if (who->get_legend(TASK_23,9) && !who->get_legend(TASK_23,10))
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    很好，这么快就把这面镜子给我找回来了。想要救韩王安需要有一件保存他被吸走的灵魂的器皿，用这面镜子就可以把韩王安被吸取的灵魂吸收到镜子里面保存起来，但是想要找回韩王安被吸走的灵魂，我们先要找出是施法者的所在…….\n"ESC"Hoàn thành任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if (who->get_legend(TASK_23,10) && !who->get_legend(TASK_23,11))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    要破解游魂之术，先要找出它的施法者所在地。我要作法祭天地找出施法者的所在地。所以，我需要一只狗作为祭品，而且不可以使用通常作法用的黑狗，我必须要用一只野生的斑点狗来做祭品，你去华山一带捉一只斑点狗来给我。韩王安的性命如何就要看的办事的效率了，赶快去吧。\n"ESC"接受任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    要破解游魂之术，先要找出它的施法者所在地。我要作法祭天地找出施法者的所在地。所以，我需要一只狗作为祭品，而且不可以使用通常作法用的黑狗，我必须要用一只野生的斑点狗来做祭品，你去华山一带捉一只斑点狗来给我。韩王安的性命如何就要看的办事的效率了，赶快去吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if (who->get_legend(TASK_23,11) && !who->get_legend(TASK_23,13) && !objectp(pet=USER_BEAST_D->have_beast(who,"斑点狗")))
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    捉斑点狗的时候你可能要用到乾坤绳，乾坤绳在杂货商哪里就有得卖，你如果没有的话就赶快去买一些吧。\n"ESC"Rời khỏi.", me->get_name()));
 		else if (who->get_legend(TASK_23,11) && !who->get_legend(TASK_23,13) && objectp(pet=USER_BEAST_D->have_beast(who,"斑点狗")))
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    有了这个斑点狗做祭品我很快就可以找出施法者的所在地了。施法所需要的其他东西我已经准备好了，马上我就要开坛作法祭天地。你就先歇息片刻，等祭治完之后还有最重要的任务要交给你。\n"ESC"Hoàn thành任务\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if (who->get_legend(TASK_23,13) && !who->get_legend(TASK_23,14))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    其实对韩王安施游魂之术的是我以前的一个徒弟：马宁。本来马宁是一个性情温顺的人，而且资质优秀，但是因为在三十多年前各国合纵攻齐，他的齐国的双亲都死于韩国兵士之手，所以他对韩王安恨之入骨。后来他为了报仇背叛了我们茅山，入了魔道。这次的邪术，正是他对韩王安的报复。破解游魂之术的唯一方法就是把施法者杀掉，马宁现在已经入了魔道，为了拯救韩国，我们只能把他杀死了，他现在就在太行山附近的神秘山洞一层施法，你去把他杀掉吧。现在韩王安游魂的次数已经达到20次，生命已经危在旦夕了。\n    路途凶险，你最好是结伴而行。\n"ESC"接受任务\ntalk %x# welcome.9\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    其实对韩王安施游魂之术的是我以前的一个徒弟：马宁。本来马宁是一个性情温顺的人，而且资质优秀，但是因为在三十多年前各国合纵攻齐，他的齐国的双亲都死于韩国兵士之手，所以他对韩王安恨之入骨。后来他为了报仇背叛了我们茅山，入了魔道。这次的邪术，正是他对韩王安的报复。破解游魂之术的唯一方法就是把施法者杀掉，马宁现在已经入了魔道，为了拯救韩国，我们只能把他杀死了，他现在就在太行山附近的神秘山洞一层施法，你去把他杀掉吧。现在韩王安游魂的次数已经达到20次，生命已经危在旦夕了。\n    路途凶险，你最好是结伴而行。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.9\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if (who->get_legend(TASK_23,14) && !who->get_legend(TASK_23,15))
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    现在让已经入魔的马宁重归正道已经不可能，唯一的方法就是把他杀掉，让他再也不可以对韩王安施游魂之术了，你快去吧！在韩王安第二十一次游魂之前把马宁杀掉！\n"ESC"Rời khỏi.", me->get_name()));
 		else if (who->get_legend(TASK_23,15) && !who->get_legend(TASK_23,16))
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    马宁他曾经是我最喜爱的一个徒弟。入魔后他内心一定相当痛苦，也许把他杀掉，是他最好的解脱，很感谢你替我杀掉马宁。但是，你还有最后一件事情是必须去做的……\n"ESC"Hoàn thành任务\ntalk %x# welcome.10\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if (who->get_legend(TASK_23,16) && !who->get_legend(TASK_23,17))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    虽然你成功杀掉了马宁，解除了游魂之术，但是韩王安已经被吸走的20个灵魂还没有收回来，韩王安被吸走的20个灵魂是被马宁封在灵谷洞最下层的恶灵身上，也就是韩王安之前梦见的那个洞穴和那些恶灵。你去马踏湖附近的灵谷洞最下层找出这些恶灵把它们杀掉，我会在这里用之前你找回来的镜子把韩王安的灵魂吸到镜子里面保存。去吧，找出那些恶灵并把它们杀掉，韩王安被吸走的灵魂是20个，你必须杀掉20个恶灵。\n    灵谷洞是个危险地方，你最好结伴而行。\n"ESC"接受任务\ntalk %x# welcome.11\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    虽然你成功杀掉了马宁，解除了游魂之术，但是韩王安已经被吸走的20个灵魂还没有收回来，韩王安被吸走的20个灵魂是被马宁封在灵谷洞最下层的恶灵身上，也就是韩王安之前梦见的那个洞穴和那些恶灵。你去马踏湖附近的灵谷洞最下层找出这些恶灵把它们杀掉，我会在这里用之前你找回来的镜子把韩王安的灵魂吸到镜子里面保存。去吧，找出那些恶灵并把它们杀掉，韩王安被吸走的灵魂是20个，你必须杀掉20个恶灵。\n    灵谷洞是个危险地方，你最好结伴而行。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.11\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if (who->get_legend(TASK_23,17) && !who->get_legend(TASK_23,18))
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    要韩王安真正得教，你还要把那20个恶灵杀掉，让我把那20个灵魂吸回来到镜子里面才可以。\n"ESC"Rời khỏi.", me->get_name()));
 		else if (who->get_legend(TASK_23,18) && !who->get_legend(TASK_23,19))
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你终于杀掉那20个恶灵了，现在，这面镜子里面已经存放了20次游魂中韩王安被吸走的灵魂了，你先休息一下，等我先把这面镜子封好，你就可以把这面镜子带回郑城救韩王安了。\n"ESC"Hoàn thành任务\ntalk %x# welcome.12\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if (who->get_legend(TASK_23,19) && !who->get_legend(TASK_23,20))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这一面就是已经保存了所有韩王安被吸走的灵魂的镜子，现在我把它交给你，你把它交给韩王安然后把镜子上面的红布打开，韩王安被吸走的灵魂就会回到韩王安的身体里面。不必谢我，其实这次的事情里面功劳最大的是你，把镜子拿给韩王安去吧，然后告诉韩王安一定要好好当一个国君，不要再让像马宁这样的悲剧重演了。\n"ESC"接受任务\ntalk %x# welcome.13\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这一面就是已经保存了所有韩王安被吸走的灵魂的镜子，现在我把它交给你，你把它交给韩王安然后把镜子上面的红布打开，韩王安被吸走的灵魂就会回到韩王安的身体里面。不必谢我，其实这次的事情里面功劳最大的是你，把镜子拿给韩王安去吧，然后告诉韩王安一定要好好当一个国君，不要再让像马宁这样的悲剧重演了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.13\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if (who->get_legend(TASK_23,20) && !who->get_legend(TASK_23,21))
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你帮了我那么多忙，现在终于拿到了解禁的铜镜了，为什么还不赶快送去呢？\n"ESC"Rời khỏi.", me->get_name()));
 

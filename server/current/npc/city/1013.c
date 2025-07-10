@@ -82,7 +82,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 80 && !who->get_legend(TASK_27,25) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    %s，我们盼星星盼月亮终于盼到了解救我们苦难的人，可把你盼到了。想当年，我祖爷爷的爷爷为了造成这个万人坑不遗余力的坑杀了多少人，杀的手都软了，我祖爷爷的奶奶每天回去都心疼得直掉眼泪，如今那些万人坑中骷髅竟然敢欺压我祖爷爷的爷爷的尸骨，我祖爷爷的爷爷经常夜里对我哭诉，说那些被他坑杀的贱民如何如何整治他，他如何如何的凄惨，听的我泪如雨下啊，你赶紧去干掉10个该死的刀盾骷髅，我们Chờ và xem等着你的好消息啊！\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),who->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    %s，我们盼星星盼月亮终于盼到了解救我们苦难的人，可把你盼到了。想当年，我祖爷爷的爷爷为了造成这个万人坑不遗余力的坑杀了多少人，杀的手都软了，我祖爷爷的奶奶每天回去都心疼得直掉眼泪，如今那些万人坑中骷髅竟然敢欺压我祖爷爷的爷爷的尸骨，我祖爷爷的爷爷经常夜里对我哭诉，说那些被他坑杀的贱民如何如何整治他，他如何如何的凄惨，听的我泪如雨下啊，你赶紧去干掉10个该死的刀盾骷髅，我们Chờ và xem等着你的好消息啊！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),who->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_27,25) && !who->get_legend(TASK_27,26) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你这样子的软脚虾怎么担当得起以后大王交付你的重任呢？\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_27,26) && !who->get_legend(TASK_27,27) )
@@ -115,7 +115,7 @@ void do_welcome2( object me, string arg )
         	break; 
         case 4:
         	if ( who->get_level() >= 30 && !who->get_legend(TASK_37,27) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    前些日子孙老头去我家，说我进城方便，所以托我给他带把种庄稼用的锄头，他说一定要挑把好用又便宜的，我那天去到市集，挑了老半天，终于选到一把不错的锄头，价格也不错，但是自己一直没有时间给他送去，我看不如这样吧，你替我把这锄头送去给孙老头，我想他现在应该在城外的园圃干活呢。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    前些日子孙老头去我家，说我进城方便，所以托我给他带把种庄稼用的锄头，他说一定要挑把好用又便宜的，我那天去到市集，挑了老半天，终于选到一把不错的锄头，价格也不错，但是自己一直没有时间给他送去，我看不如这样吧，你替我把这锄头送去给孙老头，我想他现在应该在城外的园圃干活呢。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	break;
 	case 5:
         	if ( who->get_level() >= 30 && !who->get_legend(TASK_37,27) )

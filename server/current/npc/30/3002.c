@@ -64,13 +64,13 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_19,24)&&!who->get_legend(TASK_19,25) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    承蒙吕大人的厚爱，礼物我收下了，还想请你帮个忙。\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_19,25)&&!who->get_legend(TASK_19,26) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    既然吕先生看得起小女子，妾身也当有所回报，听得赵长城有个兵士曾经得了一个宝剑，唤作韦剑，宝剑只能相佩者得之，我想请你取来送给吕先生，可以吗？\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    既然吕先生看得起小女子，妾身也当有所回报，听得赵长城有个兵士曾经得了一个宝剑，唤作韦剑，宝剑只能相佩者得之，我想请你取来送给吕先生，可以吗？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_19,26)&&!who->get_legend(TASK_19,27) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    难道宝剑已经被别人拿走了么？\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_19,27)&&!who->get_legend(TASK_19,28) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    谢谢你帮我找来宝剑，可否再帮个忙，送给吕先生？\n"ESC"Hoàn thành任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_19,28)&&!who->get_legend(TASK_19,29) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    既然你已经找来了宝剑，那也请你将宝剑交给吕大人吧。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    既然你已经找来了宝剑，那也请你将宝剑交给吕大人吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_19,29)&&!who->get_legend(TASK_19,30) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    赶快送过去，别弄丢了。\n"ESC"Rời khỏi.", me->get_name()));
  

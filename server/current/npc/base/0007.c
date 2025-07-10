@@ -139,7 +139,7 @@ void do_welcome2( object me, string arg )
 		break;
         case 5:
         	if ( who->get_level()>=5 && !who->get_legend(TASK_40, 20) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    孤独，注定孤独。\n    我为了能让家里人过上丰衣足食的生活，从小就跟随师傅学习修理各种武器、防具，等到我终于能够独立门户了，我就来到了这个新手村，开了这家修理店。\n    生意并不是很好，我苦苦支撑了这么多年，现在我老了，还是孤身一人，儿时的伙伴都不知所终，我记得清溪的孔老头曾经是我的好朋友，现在很想见见他，可是实在脱不开身，你能替我将这封叙旧信送到清溪的孔老头那吗？\n"ESC"接受任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    孤独，注定孤独。\n    我为了能让家里人过上丰衣足食的生活，从小就跟随师傅学习修理各种武器、防具，等到我终于能够独立门户了，我就来到了这个新手村，开了这家修理店。\n    生意并不是很好，我苦苦支撑了这么多年，现在我老了，还是孤身一人，儿时的伙伴都不知所终，我记得清溪的孔老头曾经是我的好朋友，现在很想见见他，可是实在脱不开身，你能替我将这封叙旧信送到清溪的孔老头那吗？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 	       	break;
         case 6:
         	if ( who->get_level()>=5 && !who->get_legend(TASK_40, 20) )
@@ -156,7 +156,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 11:
 		if ( who->get_legend(TASK_48, 17) && !who->get_legend(TASK_48, 18) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    原本幽谷的那群小动物是多么可爱，它们在野外觅食，在我上山打猎的时候，它们都会围绕在我周围，因为它们知道我不会伤害它们，但是现在，一切都变了……\n    它们不再可爱，不再善良，它们会攻击人类，我怀疑它们被妖怪迷惑，受了妖怪控制，才变成这样，这样吧，你先去消灭掉那些小蜜蜂、小蚂蚁和斑点蛙，去报告新手村的卫队长，看看他想怎么处理。\n    做完任务后，用alt+w打开人物属性界面，再使用新手信物就可以快速回到新手村哦！\n"ESC"接受任务\ntalk %x# welcome.12\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    原本幽谷的那群小动物是多么可爱，它们在野外觅食，在我上山打猎的时候，它们都会围绕在我周围，因为它们知道我不会伤害它们，但是现在，一切都变了……\n    它们不再可爱，不再善良，它们会攻击人类，我怀疑它们被妖怪迷惑，受了妖怪控制，才变成这样，这样吧，你先去消灭掉那些小蜜蜂、小蚂蚁和斑点蛙，去报告新手村的卫队长，看看他想怎么处理。\n    做完任务后，用alt+w打开人物属性界面，再使用新手信物就可以快速回到新手村哦！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.12\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	break;
         case 12:
 		if ( who->get_legend(TASK_48, 17) && !who->get_legend(TASK_48, 18) )
@@ -171,7 +171,7 @@ void do_welcome2( object me, string arg )
                 break;   
         case 13:
 		if( who->get_level()>=5 && !who->get_legend(TASK_49, 24) )
-        		send_user(who,"%c%s",':',sprintf("%s\n    新手村北面的巴丘是去洞庭湖的必经之路，行人商旅来往频繁。最近不知道怎么了，那里活动的子母蛙和赤褐蚁开始袭击行人，我有个朋友想来探望我，结果被堵在洞庭湖没法过来。我希望你去巴丘消灭几只子母蛙、赤褐蚁和持扇草人，解决商旅过往的难题。\n"ESC"接受任务\ntalk %x# welcome.14\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
+        		send_user(who,"%c%s",':',sprintf("%s\n    新手村北面的巴丘是去洞庭湖的必经之路，行人商旅来往频繁。最近不知道怎么了，那里活动的子母蛙和赤褐蚁开始袭击行人，我有个朋友想来探望我，结果被堵在洞庭湖没法过来。我希望你去巴丘消灭几只子母蛙、赤褐蚁和持扇草人，解决商旅过往的难题。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.14\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_49, 25) && !who->get_legend(TASK_49, 26) )
         		send_user(who,"%c%s",':',sprintf("%s\n    这下好了，我的朋友终于可以来探望我了，多亏你帮忙。以后要是你有什么东西要修理尽管来找我，我一定帮忙。\n"ESC"Hoàn thành任务\ntalk %x# welcome.15\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
         	break;

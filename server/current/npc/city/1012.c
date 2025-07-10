@@ -79,7 +79,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 80 && !who->get_legend(TASK_27,22) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我的父亲一直念念不忘灵谷洞，说是他见过最美丽的地方，结果不顾一把年纪还偷偷前往，结果得知父亲前去后赶到的乡亲只抢回了奄奄一息的父亲，没两天他老人家就过世了，但他过世时虽然满身是伤，居然还是含笑的，灵谷洞这个所谓最美丽的地方也是有妖魔的地方啊，只恨当初我们点起人手去扫荡的时候竟然被上面阻止，说是莫将仙灵之地染满污秽，我职责所限，不敢私自违背命令前去，但恳求大侠为我走一趟，铲除10只铁甲尸为我父亲报仇。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我的父亲一直念念不忘灵谷洞，说是他见过最美丽的地方，结果不顾一把年纪还偷偷前往，结果得知父亲前去后赶到的乡亲只抢回了奄奄一息的父亲，没两天他老人家就过世了，但他过世时虽然满身是伤，居然还是含笑的，灵谷洞这个所谓最美丽的地方也是有妖魔的地方啊，只恨当初我们点起人手去扫荡的时候竟然被上面阻止，说是莫将仙灵之地染满污秽，我职责所限，不敢私自违背命令前去，但恳求大侠为我走一趟，铲除10只铁甲尸为我父亲报仇。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_27,22) && !who->get_legend(TASK_27,23) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    如果此生不能报此仇，我想我到死都不会瞑目的。\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_27,23) && !who->get_legend(TASK_27,24) )

@@ -80,7 +80,7 @@ void do_welcome2( object me, string arg )
         	if (  who->get_legend(TASK_32,4) && !who->get_legend(TASK_32,5)  )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哦？是齐国内政官孟尝君啊，不错，上次我还送了他夫人一对燕北的路大师制作的燕蝶手镯呢，他还有事找我帮忙，哦，是他夫人的事？哈哈哈，老夫明白，让我看看信。\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_32,5) && !who->get_legend(TASK_32,6) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哈哈，原来是内政官夫人尝到上次我带给燕王喜的Vải thiều，想再多要点，可惜了，我带去的Vải thiều都是那个时节才有，现在除了一个地方还能保存Vải thiều外其他地方已经没有了。困魔阵是阴寒之地，那里的邪灵喜欢收集这种东西，并且能够保持长久不坏。如果你想帮助他取点回去，就去困魔阵碰碰运气吧。\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哈哈，原来是内政官夫人尝到上次我带给燕王喜的Vải thiều，想再多要点，可惜了，我带去的Vải thiều都是那个时节才有，现在除了一个地方还能保存Vải thiều外其他地方已经没有了。困魔阵是阴寒之地，那里的邪灵喜欢收集这种东西，并且能够保持长久不坏。如果你想帮助他取点回去，就去困魔阵碰碰运气吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_32,6) && !who->get_legend(TASK_32,7) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    如果你还没找到Vải thiều，那只得麻烦你多跑几趟了。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_32,7) && !who->get_legend(TASK_32,8) )

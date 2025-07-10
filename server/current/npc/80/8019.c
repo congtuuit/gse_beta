@@ -111,13 +111,13 @@ void do_welcome2(object me, string arg)
 		if (who->get_legend(TASK_43, 7) && !who->get_legend(TASK_43, 8))
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哎，其实我在这里日久，自然是知道一些事情端倪的，但是事关重大，我不敢轻易开口啊！\n"ESC"Hoàn thành nhiệm vụ\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
 		else if (who->get_legend(TASK_43, 8) && !who->get_legend(TASK_43, 9))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，看在我朋友的分上，我还是告诉你吧，不过在你没有把握干掉始作俑者之前，你千万莫要把我说出去，这可事关我一家大小的安危啊。最近这一带强盗龙九纠集了一帮子人在赵长城一带抢劫，要是只是抢劫恐怕还不足以让人心神剧裂，更为可怕的是龙九不知道从那个方士那里得知，要长生不老要吃掉活人的心脉100根，最近陆续起码有了五六十个人失踪在此，恐怕就是遭了他毒手，而龙九称，只要我们不揭发他，他就留我们活命，否则就拿我们家人的心脉去吃，哎，与这种丧尽天良的恶魔为邻，我们也是寝食难安，我们现在谁都不敢去买猪心牛心羊心吃，生怕会引起所有人呕吐出来，壮士你若是自忖不能杀死龙九，还是速速离去吧，要不然连累我们一家老小，你于心何忍啊。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，看在我朋友的分上，我还是告诉你吧，不过在你没有把握干掉始作俑者之前，你千万莫要把我说出去，这可事关我一家大小的安危啊。最近这一带强盗龙九纠集了一帮子人在赵长城一带抢劫，要是只是抢劫恐怕还不足以让人心神剧裂，更为可怕的是龙九不知道从那个方士那里得知，要长生不老要吃掉活人的心脉100根，最近陆续起码有了五六十个人失踪在此，恐怕就是遭了他毒手，而龙九称，只要我们不揭发他，他就留我们活命，否则就拿我们家人的心脉去吃，哎，与这种丧尽天良的恶魔为邻，我们也是寝食难安，我们现在谁都不敢去买猪心牛心羊心吃，生怕会引起所有人呕吐出来，壮士你若是自忖不能杀死龙九，还是速速离去吧，要不然连累我们一家老小，你于心何忍啊。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
 		else if (who->get_legend(TASK_43, 9) && !who->get_legend(TASK_43, 10))
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    据说他炼的是邪心大法，既然你知道奈何不了龙九，你还是速速离去吧，你斗不过就切莫牵连我们。\n"ESC"Rời khỏi.", me->get_name()));
 		else if (who->get_legend(TASK_43, 10) && !who->get_legend(TASK_43, 11))
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    天哪，这个恶魔终于死了，谢天谢地，我们可以睡个安稳觉了。\n"ESC"Hoàn thành nhiệm vụ\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
 		else if (who->get_legend(TASK_43, 11) && !who->get_legend(TASK_43, 12))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哎死者已矣，为今我所能做到的只有通知家属，准备后事了。那龙九活动之处，一定有那些失踪人员的名单，据说那名单被藏在天门阵三层中部的一个箱子里，你前去将它取回交给本Quốc典狱官。\n"ESC"接受任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哎死者已矣，为今我所能做到的只有通知家属，准备后事了。那龙九活动之处，一定有那些失踪人员的名单，据说那名单被藏在天门阵三层中部的一个箱子里，你前去将它取回交给本Quốc典狱官。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(), getoid(me)));
 
 		break;
 	case 4:

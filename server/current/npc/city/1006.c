@@ -92,7 +92,7 @@ void do_welcome2( object me, string arg )
         	if ( who->get_legend(TASK_30,1) && !who->get_legend(TASK_30,2) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    这事不好办啊！\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_30,2) && !who->get_legend(TASK_30,3) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    为今之计只得求助于民间流言了，看有没有什么线索，你先去问问齐国百姓唐茂吧，看有没有什么乡野传言。\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    为今之计只得求助于民间流言了，看有没有什么线索，你先去问问齐国百姓唐茂吧，看有没有什么乡野传言。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 
         	break;
 
@@ -123,7 +123,7 @@ void do_welcome2( object me, string arg )
         	break;
         case 4:
         	if ( who->get_level() >= 85 && !who->get_legend(TASK_30,8) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近有件案子让人头痛啊，民事纠纷最是难断是非，最近为了争地，李屠和雷霸天斗得不亦乐乎，里正也不知道如何插手，据说李屠如今争不过，被赶到河这边来了，你去他那里调查调查到底怎么回事。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近有件案子让人头痛啊，民事纠纷最是难断是非，最近为了争地，李屠和雷霸天斗得不亦乐乎，里正也不知道如何插手，据说李屠如今争不过，被赶到河这边来了，你去他那里调查调查到底怎么回事。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	break;
         case 5:
         	if ( who->get_level() >= 85 && !who->get_legend(TASK_30,8) )
@@ -137,11 +137,11 @@ void do_welcome2( object me, string arg )
         	break;
         case 6:
         	if ( who->get_level() >= 85 && !who->get_legend(TASK_30,20) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近本官心情好，想深入民间做点好事好得点风评，你去市井找百姓打听打听，最近他们有没有什么不棘手的下情禀报，你觉得本官能够不费力达成的就尽管答应他们吧。\n"ESC"接受任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近本官心情好，想深入民间做点好事好得点风评，你去市井找百姓打听打听，最近他们有没有什么不棘手的下情禀报，你觉得本官能够不费力达成的就尽管答应他们吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_30,28) && !who->get_legend(TASK_30,29) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哈哈，你果然是我的好助力，以后跟着我混，我吃肉决不会让你喝汤！\n"ESC"Hoàn thành任务\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_30,29) && !who->get_legend(TASK_24,29) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    那个马小七本来是一个汪洋大盗，还曾经伙同他人盗过王宫，他狡猾得很，一直没法把他抓捕归案，大王也很生气，如今终于将他除了，还顺便解决了民众的困难，真是一举两得啊！你赶紧进宫禀报大王，让他也高兴一下。\n"ESC"接受任务\ntalk %x# welcome.9\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    那个马小七本来是一个汪洋大盗，还曾经伙同他人盗过王宫，他狡猾得很，一直没法把他抓捕归案，大王也很生气，如今终于将他除了，还顺便解决了民众的困难，真是一举两得啊！你赶紧进宫禀报大王，让他也高兴一下。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.9\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	break;
         case 7:
         	if ( who->get_level() >= 85 && !who->get_legend(TASK_30,20) )

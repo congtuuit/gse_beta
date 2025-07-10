@@ -65,7 +65,7 @@ void do_welcome2( object me, string arg )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我与大王已达成协议，王允许我暂居赵国，但这一路上风餐露宿，得准备点干粮才是呀。\n"ESC"Hoàn thành任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	}
         	else if ( who->get_legend(TASK_NEWBIE_03,23) && !who->get_legend(TASK_NEWBIE_03,24) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我与大王已达成协议，王允许我暂居赵国，但这一路上风餐露宿，得准备点干粮才是呀。我刚听说上庸关的刀兵、剑兵囤储了一批干粮，这可是充饥的好东西呀！义士，你去给我找20包来吧！\n"ESC"接受任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我与大王已达成协议，王允许我暂居赵国，但这一路上风餐露宿，得准备点干粮才是呀。我刚听说上庸关的刀兵、剑兵囤储了一批干粮，这可是充饥的好东西呀！义士，你去给我找20包来吧！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_NEWBIE_03,24) && !who->get_legend(TASK_NEWBIE_03,25) )
 			me->do_welcome(4);
 		else if ( who->get_legend(TASK_NEWBIE_03,25) && !who->get_legend(TASK_NEWBIE_03,26) )	
@@ -162,7 +162,7 @@ void do_welcome2( object me, string arg )
 	        			place = "楚方城3";
 	        		who->set_save_2("zxkillnpc1",place);
 	        	}
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    自古邪不压正，经过我的一片苦心劝说，大王终于省悟过来了，令我杀掉只知奢侈淫的%s，可我不能露面，你替我杀掉他们吧！%s就在%s，你尽快去吧！杀死他们后报告给Tướng quân Hạng Vũ就是了！大王一定会按功行赏的。\n"ESC"接受任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),name,name,place,getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    自古邪不压正，经过我的一片苦心劝说，大王终于省悟过来了，令我杀掉只知奢侈淫的%s，可我不能露面，你替我杀掉他们吧！%s就在%s，你尽快去吧！杀死他们后报告给Tướng quân Hạng Vũ就是了！大王一定会按功行赏的。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),name,name,place,getoid(me)));
         	}
         	break;
         case 7:

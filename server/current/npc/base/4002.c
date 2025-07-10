@@ -91,7 +91,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 20 && !who->get_legend(TASK_05,16)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    年纪轻轻的就想成为英雄？有志气是不错，但是得看你有没有那个能力！\n    你想证明给我看你有那个能力吗？好吧，你去马陵道的樱桃园打败那只骷髅魔，我得警告你，如果不行可别硬撑，那只骷髅魔很难缠，万一出了什么问题我可负不起这个责任。\n    你要去的话就朝着大梁城的正北方向走，一到马陵道你就能看到那只骷髅魔，记得要小心。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    年纪轻轻的就想成为英雄？有志气是不错，但是得看你有没有那个能力！\n    你想证明给我看你有那个能力吗？好吧，你去马陵道的樱桃园打败那只骷髅魔，我得警告你，如果不行可别硬撑，那只骷髅魔很难缠，万一出了什么问题我可负不起这个责任。\n    你要去的话就朝着大梁城的正北方向走，一到马陵道你就能看到那只骷髅魔，记得要小心。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_05,16) && !who->get_legend(TASK_05,17) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    想成为英雄不是你想象的那么简单啊！看来你还得多磨练磨练。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_05,17) && !who->get_legend(TASK_05,18) )

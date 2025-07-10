@@ -87,7 +87,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 90 && !who->get_legend(TASK_32,26)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    听我父亲说，我祖父当年也是个非常了不起的英雄，可惜不知为何客死他乡，临死之前委托故人传来一帛书，居中画着一个骷髅，周围画中隐含着我们家族才懂的密语，翻译过来就是困魔阵三层魔神祭坛。我想一切秘密都在那里了，可惜我祖父临去只是我父亲尚在从军，没能够及时起出遗物，后来父亲年老还乡已经没有力气去寻了，我作为他唯一的儿子，势必要弄清楚当年事情的原委，但是可惜我父亲却没能学到祖父本事的十之一二，而我天生体弱，更不能习武，最近与壮士把腕论交，颇为相得，不知能否帮我起出祖父遗物，追查当年真相？\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    听我父亲说，我祖父当年也是个非常了不起的英雄，可惜不知为何客死他乡，临死之前委托故人传来一帛书，居中画着一个骷髅，周围画中隐含着我们家族才懂的密语，翻译过来就是困魔阵三层魔神祭坛。我想一切秘密都在那里了，可惜我祖父临去只是我父亲尚在从军，没能够及时起出遗物，后来父亲年老还乡已经没有力气去寻了，我作为他唯一的儿子，势必要弄清楚当年事情的原委，但是可惜我父亲却没能学到祖父本事的十之一二，而我天生体弱，更不能习武，最近与壮士把腕论交，颇为相得，不知能否帮我起出祖父遗物，追查当年真相？\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_32,26) && !who->get_legend(TASK_32,27) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    莫非我真看错了你，你竟然隐匿了我祖父的宝物？\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_32,27) && !who->get_legend(TASK_32,28) )

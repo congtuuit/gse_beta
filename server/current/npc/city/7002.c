@@ -105,7 +105,7 @@ void do_welcome2( object me, string arg )
         {
 	case 1:
         	if ( who->get_level() >=45 && !who->get_legend(TASK_11,24) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    让我看看你能不能对付这个Thử thách吧。你去长白山一带消灭10只花豹精，来证明你的能力！\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    让我看看你能不能对付这个Thử thách吧。你去长白山一带消灭10只花豹精，来证明你的能力！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_11,24) && !who->get_legend(TASK_11,25) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你得要加油，别辜负了我对你的期望。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_11,25) && !who->get_legend(TASK_11,26) )
@@ -137,7 +137,7 @@ void do_welcome2( object me, string arg )
         	break;   
 	case 4:
         	if ( who->get_level() >=50 && !who->get_legend(TASK_13,28) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    驻扎在燕长城上的那些刀盾兵都是当年从军营里叛逃出来的，说不定哪天他们又会策划一场大的暴动，这可是个大隐患啊，我每天都提心吊胆，想着要怎么解决这个问题，我想发动民间的力量来解决，可一直没有人帮我，你来得正好，你去燕长城消灭掉他们吧！\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    驻扎在燕长城上的那些刀盾兵都是当年从军营里叛逃出来的，说不定哪天他们又会策划一场大的暴动，这可是个大隐患啊，我每天都提心吊胆，想着要怎么解决这个问题，我想发动民间的力量来解决，可一直没有人帮我，你来得正好，你去燕长城消灭掉他们吧！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_13,28) && !who->get_legend(TASK_13,29) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    如果你不能Hoàn thành这件事情的话，那证明他们的能力太强，可能我要出兵了。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_13,29) && !who->get_legend(TASK_13,30) )
@@ -188,7 +188,7 @@ void do_welcome2( object me, string arg )
         	break;
 	case 9:
         	if ( who->get_level() >=90 && !who->get_legend(TASK_32,20) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    当年Lửa也是我手下副将，随我征战四方，谁知道他不服管教，后来竟然拿我方机密卖于敌国，几乎令我们全军覆没，要不是最近他花光了卖国求荣来的财宝，又开始在附近烧杀掳掠，一个逃回来的女子告诉我们他酒醉后说的话，我们还真没法把他同数年前那场大战的通敌之人联系起来，如此大奸大恶之徒，实在是难以容忍他继续逍遥在世上，简直是我们大燕的耻辱！我命你速速前去涿鹿的石门村，将Lửa碎尸万断！\n"ESC"接受任务\ntalk %x# welcome.10\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    当年Lửa也是我手下副将，随我征战四方，谁知道他不服管教，后来竟然拿我方机密卖于敌国，几乎令我们全军覆没，要不是最近他花光了卖国求荣来的财宝，又开始在附近烧杀掳掠，一个逃回来的女子告诉我们他酒醉后说的话，我们还真没法把他同数年前那场大战的通敌之人联系起来，如此大奸大恶之徒，实在是难以容忍他继续逍遥在世上，简直是我们大燕的耻辱！我命你速速前去涿鹿的石门村，将Lửa碎尸万断！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.10\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_32,20) && !who->get_legend(TASK_32,21) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    Lửa不除，本将军心头之恨难解，也对不起当初那场大战中死去的数万将士！\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_32,21) && !who->get_legend(TASK_32,22) )
@@ -234,7 +234,7 @@ void do_welcome2( object me, string arg )
         	break; 
 	case 14:
         	if ( who->get_level() >=110 && !who->get_legend(TASK_43,20) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    吾王雄才大略，本将军英明神武，本军将士狼狈为奸……呃不对，是同心同德，本国百姓万众一心，吾王征服天下的时机已经成熟，我军不日即将起拔，俗话说三军未动，粮草先行，该死的催粮官居然还没有把我们军补给备齐，现在他领50军棍去了，怎么样，身为英雄的你，有没有报效国家的觉悟啊，现在命令你去困魔阵给本将军找8个南瓜、12个萝卜、7个鸡蛋回来，不找怎么样，哼哼，你想步催粮官的后尘吗，不过呢如果你能按时找回来本将军重重有赏！\n"ESC"接受任务\ntalk %x# welcome.15\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    吾王雄才大略，本将军英明神武，本军将士狼狈为奸……呃不对，是同心同德，本国百姓万众一心，吾王征服天下的时机已经成熟，我军不日即将起拔，俗话说三军未动，粮草先行，该死的催粮官居然还没有把我们军补给备齐，现在他领50军棍去了，怎么样，身为英雄的你，有没有报效国家的觉悟啊，现在命令你去困魔阵给本将军找8个南瓜、12个萝卜、7个鸡蛋回来，不找怎么样，哼哼，你想步催粮官的后尘吗，不过呢如果你能按时找回来本将军重重有赏！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.15\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_43,20) && !who->get_legend(TASK_43,21) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    可不要小瞧这点东西，首先本将军要纠正你这种狭隘的观念，岂不闻人人动手，丰衣足食，众人拾柴火焰高？你还是速速前去吧。（画外音，军士拖着受了刑的催粮官经过，故意捅了捅催粮官受刑的地方，催粮官发出凄惨的叫声）\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_43,21) && !who->get_legend(TASK_43,22) )

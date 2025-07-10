@@ -84,7 +84,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 30 && !who->get_legend(TASK_08,10) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    沼泽，本是一个阴气很重的地方，因为很少有人去，所以聚集了不少游魂野鬼，而这些游魂野鬼里，有少数是含恨死去的，所以，它们幻化为厉鬼，专门祸害那些因为有重要事情而不得不去沼泽的人，只要是遇见这些厉鬼的人，没一个能从沼泽走出来……\n    我想你是习武之人，应该肩负起Trừ gian diệt ác的重任，所以，这件事情交给你了！当然，我不会让你白做这件事的，你去沼泽边缘铲除掉厉鬼后，回来我这里，我会付给你报酬的。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    沼泽，本是一个阴气很重的地方，因为很少有人去，所以聚集了不少游魂野鬼，而这些游魂野鬼里，有少数是含恨死去的，所以，它们幻化为厉鬼，专门祸害那些因为有重要事情而不得不去沼泽的人，只要是遇见这些厉鬼的人，没一个能从沼泽走出来……\n    我想你是习武之人，应该肩负起Trừ gian diệt ác的重任，所以，这件事情交给你了！当然，我不会让你白做这件事的，你去沼泽边缘铲除掉厉鬼后，回来我这里，我会付给你报酬的。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_08,10) && !who->get_legend(TASK_08,11) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    我以后再也不打那走了，我宁愿多走几步路都可以。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_08,11) && !who->get_legend(TASK_08,12) )
@@ -121,7 +121,7 @@ void do_welcome2( object me, string arg )
         	break;   
         case 4:
         	if ( who->get_level() >= 35 && !who->get_legend(TASK_09,10) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    黄鼠狼给鸡拜年——没安好心。\n    现在的黄鼠狼都成精了，不止是鸡，连家里养的猪啊羊啊之类的它们都敢咬，我听百姓说鄱阳湖那边的湖口村经常丢失牲口，估计就是黄鼠狼精们做的好事！\n    根据血迹的方向，我知道了黄鼠狼的老窝，但是我只不过是一个商人，所以没有能力去与它们决斗！但是这样拖下去也不是办法，所以你去鄱阳湖的湖口村瞅瞅吧，如果找到黄鼠狼精，你就干掉它吧！\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    黄鼠狼给鸡拜年——没安好心。\n    现在的黄鼠狼都成精了，不止是鸡，连家里养的猪啊羊啊之类的它们都敢咬，我听百姓说鄱阳湖那边的湖口村经常丢失牲口，估计就是黄鼠狼精们做的好事！\n    根据血迹的方向，我知道了黄鼠狼的老窝，但是我只不过是一个商人，所以没有能力去与它们决斗！但是这样拖下去也不是办法，所以你去鄱阳湖的湖口村瞅瞅吧，如果找到黄鼠狼精，你就干掉它吧！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_09,10) && !who->get_legend(TASK_09,11) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    那妖精真有这么厉害吗？真是可怕！\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_09,11) && !who->get_legend(TASK_09,12) )

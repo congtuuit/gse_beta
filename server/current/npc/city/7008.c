@@ -83,7 +83,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 40 && !who->get_legend(TASK_10,26) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    传说长白山每千年便会出现一个劫难，而这个劫难需要武林中人团结起来，才能化解，根据最近我观测到的情况来看，这次劫数可能是长白山的绿壳蜘蛛要作乱，最近那边忽然多出了很多绿壳蜘蛛，你去看看，如果真是这样，你就消灭掉它们再回来告诉我吧！\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    传说长白山每千年便会出现一个劫难，而这个劫难需要武林中人团结起来，才能化解，根据最近我观测到的情况来看，这次劫数可能是长白山的绿壳蜘蛛要作乱，最近那边忽然多出了很多绿壳蜘蛛，你去看看，如果真是这样，你就消灭掉它们再回来告诉我吧！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_10,26) && !who->get_legend(TASK_10,27) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    如果你帮不上忙，可能我得另找其他的途径，千万不能让这劫数应现。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_10,27) && !who->get_legend(TASK_10,28) )
@@ -115,7 +115,7 @@ void do_welcome2( object me, string arg )
         	break;    
         case 4:
         	if ( who->get_level() >= 55 && !who->get_legend(TASK_16,11) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    本官手上绝对不允许出现任何一个犯人Với sự trừng phạt，你去燕长城给我杀20个枪兵，宁可误杀一千，也不放过一个。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    本官手上绝对不允许出现任何一个犯人Với sự trừng phạt，你去燕长城给我杀20个枪兵，宁可误杀一千，也不放过一个。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_16,11) && !who->get_legend(TASK_16,12) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    如果你办不到这事，我就去另请高明了！\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_16,12) && !who->get_legend(TASK_16,13) )

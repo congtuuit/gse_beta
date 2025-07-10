@@ -135,7 +135,7 @@ void do_welcome2( object me, string arg )
 	case 3:
 		if ( who->get_legend(TASK_48, 10) )
 		{
-				send_user( who, "%c%c%w%s", ':',3,me->get_char_picid(), sprintf("%s:\n    前几天来了个重病之人，我给他开了几副药就叫人送回去了，他已是病入膏肓，可怜呀，不知他现在情况如何，这事也只有驿站老板能打听得到，他那里每天来来往往的人比较多，消息很灵通，劳驾你替我跑上这一趟，很近，就在我南边。\n"ESC"接受任务\ntalk %x# welcome.4\n",me->get_name(),getoid(me)));
+				send_user( who, "%c%c%w%s", ':',3,me->get_char_picid(), sprintf("%s:\n    前几天来了个重病之人，我给他开了几副药就叫人送回去了，他已是病入膏肓，可怜呀，不知他现在情况如何，这事也只有驿站老板能打听得到，他那里每天来来往往的人比较多，消息很灵通，劳驾你替我跑上这一趟，很近，就在我南边。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.4\n",me->get_name(),getoid(me)));
 		}
 		break;
 	case 13:
@@ -159,7 +159,7 @@ void do_welcome2( object me, string arg )
 		if( who->get_legend(TASK_40, 24) && !who->get_legend(TASK_40, 25) )
 			send_user(who,"%c%s",':',sprintf("%s:\n    灵芝草何等珍贵，怎能说给就给！要灵芝草是要付出代价的，你想好了再来找我吧。\n"ESC"Hoàn thành任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
 		else if( who->get_legend(TASK_40, 25) && !who->get_legend(TASK_40, 26) )
-			send_user(who,"%c%s",':',sprintf("%s:\n    其实我的要求并不高，前几天一群小野兔来我这里捣蛋，将我的药物全部弄洒，并且还偷走了一部分很名贵的药品，当时我只忙着去治疗一位病人去了，没来得及教训它们，后来看到一片狼藉，真是气死我了。\n    我想必须得教训它们，它们才有可能收敛，你去替我办这件事吧，你能办到的话，我一定会将灵芝草交给你。\n"ESC"接受任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
+			send_user(who,"%c%s",':',sprintf("%s:\n    其实我的要求并不高，前几天一群小野兔来我这里捣蛋，将我的药物全部弄洒，并且还偷走了一部分很名贵的药品，当时我只忙着去治疗一位病人去了，没来得及教训它们，后来看到一片狼藉，真是气死我了。\n    我想必须得教训它们，它们才有可能收敛，你去替我办这件事吧，你能办到的话，我一定会将灵芝草交给你。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.7\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
 		else if( who->get_legend(TASK_40, 27) && !who->get_legend(TASK_40, 28) )
 			send_user(who,"%c%s",':',sprintf("%s:\n    还算你遵守诺言，给我教训了它们，那我当然也不会食言，你拿着这颗灵芝草交给当铺老板去吧！\n"ESC"Hoàn thành任务\ntalk %x# welcome.8\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
 			

@@ -79,7 +79,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >=20 && !who->get_legend(TASK_05, 10) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嘿，你来得正好！\n    最近我这里生意大好，并且我发现像你们这样的武林中人对武器的要求实在是超乎我的想象，所以我决定锻造一批上好的武器来迎合你们的需求，当然，好的武器需要好的原材料，我现在缺的就是百炼精铁，听说有人在巨鹿的百丈原见过一块上好的百炼精铁，如果你想帮我这个忙的话，我绝不会亏待你的。\n    你出了魏国一直往北走，穿过桂陵、牧野、太行山就到巨鹿了，或者你可以从Triệu Quốc直接到巨鹿，这样可以节约不少时间，但是需要花费你一点路费哦。\n    到了巨鹿的百丈原你可以看到一块精铁矿石，采集回来交给我就是了。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嘿，你来得正好！\n    最近我这里生意大好，并且我发现像你们这样的武林中人对武器的要求实在是超乎我的想象，所以我决定锻造一批上好的武器来迎合你们的需求，当然，好的武器需要好的原材料，我现在缺的就是百炼精铁，听说有人在巨鹿的百丈原见过一块上好的百炼精铁，如果你想帮我这个忙的话，我绝不会亏待你的。\n    你出了魏国一直往北走，穿过桂陵、牧野、太行山就到巨鹿了，或者你可以从Triệu Quốc直接到巨鹿，这样可以节约不少时间，但是需要花费你一点路费哦。\n    到了巨鹿的百丈原你可以看到一块精铁矿石，采集回来交给我就是了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_05,10) && !who->get_legend(TASK_05,11) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    没有找到吗？那可能是别人瞎说的！我自己再重新打听打听去。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_05,11) && !who->get_legend(TASK_05,12) )

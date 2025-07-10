@@ -80,7 +80,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 90 && !who->get_legend(TASK_32,1) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    在困魔阵中有一些骸骨精，他们生前是上古神魔大战的将士，死后也不忘战斗，他们以自身的魔气淬炼了他们携带的Dao đơn，使得他们的Dao đơn无坚不摧，我们大将军非常希望得到这种刀装备我们的战士，你去困魔阵中杀掉骸骨精抢来8把Dao đơn，给我们大将军验看一下。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    在困魔阵中有一些骸骨精，他们生前是上古神魔大战的将士，死后也不忘战斗，他们以自身的魔气淬炼了他们携带的Dao đơn，使得他们的Dao đơn无坚不摧，我们大将军非常希望得到这种刀装备我们的战士，你去困魔阵中杀掉骸骨精抢来8把Dao đơn，给我们大将军验看一下。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 			
         	break;
         case 2:

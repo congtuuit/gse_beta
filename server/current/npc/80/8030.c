@@ -89,13 +89,13 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if ( who->get_level() >= 25 && !who->get_legend(TASK_07,1)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嘿，告诉你一个好消息，我将去拜访Yên Quốc的丁鹤年，这可是我朝思暮想了很久的事情！\n    Yên Quốc的丁鹤年是一个非常不错的人，我们神交已久，我对他的才学更是羡慕不已，从与他的书信往来中得知他就居住在Yên Quốc城内，一直想去拜访他，可从我这到Yên Quốc路途遥远，而我这家境……唉，不提也罢。最近想去拜访他的念头越来越强烈，苦于没有一件象样的礼物能拿得出手。\n    我听说易水的Yên Quốc巡逻兵爱喝酒，储藏了一批Rượu vang đỏ，你帮我这个忙，去那边给我找10坛来吧！\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    嘿，告诉你一个好消息，我将去拜访Yên Quốc的丁鹤年，这可是我朝思暮想了很久的事情！\n    Yên Quốc的丁鹤年是一个非常不错的人，我们神交已久，我对他的才学更是羡慕不已，从与他的书信往来中得知他就居住在Yên Quốc城内，一直想去拜访他，可从我这到Yên Quốc路途遥远，而我这家境……唉，不提也罢。最近想去拜访他的念头越来越强烈，苦于没有一件象样的礼物能拿得出手。\n    我听说易水的Yên Quốc巡逻兵爱喝酒，储藏了一批Rượu vang đỏ，你帮我这个忙，去那边给我找10坛来吧！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_07,1) && !who->get_legend(TASK_07,2) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    唉，如果还不能找到Rượu vang đỏ，估计我不能去拜访丁兄了。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_07,2) && !who->get_legend(TASK_07,3) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你已经给我找来了Rượu vang đỏ，实在是万分感谢！我现在终于有礼物送给丁兄了，与丁兄把酒言欢是一件多么惬意的事情啊！\n    可我算了下帐，我准备的盘缠似乎有些不够，路途遥远，我乃一介书生，如果盘缠花光，莫非要逼得我沿街乞讨？这可万万使不得！\n    我平日里就与Ngụy Quốc百姓乐羊比较交好，他现在居住在魏城内，你可否替我去找他借点盘缠，我从燕回来就还给他！\n"ESC"Hoàn thành任务\ntalk %x# welcome.3\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_07,3) && !who->get_legend(TASK_07,4) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你给我找来了Rượu vang đỏ，我终于有礼物送给丁兄了，可想了想，我的盘缠似乎不够，这可如何是好！平日里就与Ngụy Quốc百姓比较交好，他现在居住在魏城内，你可否替我去找他借点盘缠，我从燕回来就还给他！\n"ESC"接受任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    你给我找来了Rượu vang đỏ，我终于有礼物送给丁兄了，可想了想，我的盘缠似乎不够，这可如何是好！平日里就与Ngụy Quốc百姓比较交好，他现在居住在魏城内，你可否替我去找他借点盘缠，我从燕回来就还给他！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_07,4) && !who->get_legend(TASK_07,8) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    盘缠要到了吗？你可得快点啊，别担搁了我的行程。\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_07,8) && !who->get_legend(TASK_07,9) )
@@ -156,7 +156,7 @@ void do_welcome2( object me, string arg )
 		if (  who->get_legend(TASK_35,3) && !who->get_legend(TASK_35,4)  )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    啊，居然都惊动了总管大人了？哎，这可如何是好。\n"ESC"Hoàn thành任务\ntalk %x# welcome.7\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));	
 		else if (  who->get_legend(TASK_35,4) && !who->get_legend(TASK_35,5)  )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近镇上百姓经常的牲口和贴身事物经常莫名其妙丢失，有些牲口还居然又突然出现在其他人的圈里或者贴身事物出现在邻居的房间，这么诡异的事情搞得我们都疑神疑鬼，苦不堪言，镇口的周童对于这些事情知道得更详细一些，你再去问问他吧。\n"ESC"接受任务\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));	
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近镇上百姓经常的牲口和贴身事物经常莫名其妙丢失，有些牲口还居然又突然出现在其他人的圈里或者贴身事物出现在邻居的房间，这么诡异的事情搞得我们都疑神疑鬼，苦不堪言，镇口的周童对于这些事情知道得更详细一些，你再去问问他吧。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.8\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));	
 
 		break;
 	case 7:

@@ -61,7 +61,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
 	       	if ( who->get_level() >= 50 && !who->get_legend(TASK_13,22) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    民间有一门失传的手艺——Tượng bùn。\n    他们可以用黑泥土雕塑出各种各样的飞禽走兽，鱼虫花鸟，可惜的是，这门手艺已经失传很久很久了，近日，我听说在燕长城一带出现了一批Tượng bùn，可想而知，这是一批多么珍贵的Tượng bùn，如果你能想办法找到10个的话，我一定花高价钱收购！\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    民间有一门失传的手艺——Tượng bùn。\n    他们可以用黑泥土雕塑出各种各样的飞禽走兽，鱼虫花鸟，可惜的是，这门手艺已经失传很久很久了，近日，我听说在燕长城一带出现了一批Tượng bùn，可想而知，这是一批多么珍贵的Tượng bùn，如果你能想办法找到10个的话，我一定花高价钱收购！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		else if ( who->get_legend(TASK_13,22) && !who->get_legend(TASK_13,23) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    现在别人都还不知道此事，也不知这东西值钱，你可得赶紧给我找来！\n"ESC"Rời khỏi.", me->get_name()));
 		else if ( who->get_legend(TASK_13,23) && !who->get_legend(TASK_13,24) )

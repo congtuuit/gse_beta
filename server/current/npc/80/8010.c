@@ -92,7 +92,7 @@ void do_welcome2( object me, string arg )
         case 2:
 		if ( who->get_level()>=30 && who->get_legend(TASK_49,13) && !who->get_legend(TASK_49,14) && gone_time( who->get_quest("escort.time") ) < 2400 )
         	{
-        		if (TASK_LEGEND_D->check_task_item(who,"贵重物品",1) != 1 )
+        		if (TASK_LEGEND_D->check_task_item(who,"Vật phẩm quý giá",1) != 1 )
         			return;
                         who->delete_quest("escort.flag");
                         who->delete_quest("escort.leader");

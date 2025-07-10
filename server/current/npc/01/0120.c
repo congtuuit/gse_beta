@@ -56,7 +56,7 @@ void do_welcome2( object me, string arg )
 //        {
 //	case 1:
 //		if ( who->get_level() >=5 &&!who->get_legend(TASK_NEWBIE_02, 28) )
-//			send_user( who, "%c%c%w%s", ':',3,me->get_char_picid(), sprintf("%s:\n    如果你是正义之士，那么，属于你的时刻到来了！别以为我每天无所事事的在这钓鱼，其实我是一个密探，奉命秘密探访恶霸李麻子的藏身之处，因身份特殊，自己不好露脸，所以请你帮我这忙，替我把藏身于新手村外蝴蝶岗的恶霸李麻子击毙，我会给你丰厚的报酬。\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
+//			send_user( who, "%c%c%w%s", ':',3,me->get_char_picid(), sprintf("%s:\n    如果你是正义之士，那么，属于你的时刻到来了！别以为我每天无所事事的在这钓鱼，其实我是一个密探，奉命秘密探访恶霸李麻子的藏身之处，因身份特殊，自己不好露脸，所以请你帮我这忙，替我把藏身于新手村外蝴蝶岗的恶霸李麻子击毙，我会给你丰厚的报酬。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.",me->get_name(),getoid(me)));
 //		else if ( who->get_legend(TASK_NEWBIE_02, 28)&&!who->get_legend(TASK_NEWBIE_02, 29) )
 //			send_user( who, "%c%c%w%s", ':',3,me->get_char_picid(), sprintf("%s:\n    果然是作恶多端的恶霸，你居然不能杀掉他，不过你可以再去试试，或许这次可以成功！\n"ESC"Rời khỏi.",me->get_name()));			
 //		else if ( who->get_legend(TASK_NEWBIE_02, 29)&&!who->get_legend(TASK_NEWBIE_02, 30) )

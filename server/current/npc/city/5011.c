@@ -68,7 +68,7 @@ void do_welcome2( object me, string arg )
         {
         case 1:
         	if (who->get_level() >= 40 && !who->get_legend(TASK_11,11))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    一直以来，我都酝酿着要做件大事，当然，我是不会告诉你，我想要做什么的。如果你愿意帮助我成了这件大事，我一定不会亏待你的！\n    你先去给我找10个Đá ma thuật来，去郑国渠就能收集到！\n"ESC"接受任务\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    一直以来，我都酝酿着要做件大事，当然，我是不会告诉你，我想要做什么的。如果你愿意帮助我成了这件大事，我一定不会亏待你的！\n    你先去给我找10个Đá ma thuật来，去郑国渠就能收集到！\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.2\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_11,11) && !who->get_legend(TASK_11,12) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    如果此事不成，你可得负担一半的责任！\n"ESC"Rời khỏi.", me->get_name()));
         	else if ( who->get_legend(TASK_11,12) && !who->get_legend(TASK_11,13) )
@@ -102,7 +102,7 @@ void do_welcome2( object me, string arg )
         	break;     
         case 4:
         	if (who->get_level() >= 110 && !who->get_legend(TASK_43,17))
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    天有不测风云，人有旦夕祸福，谁知道好好的闺女怎么摊上这摊子毛病呢，城中百姓家中几个闺女最近每日夜里都闹头疼，请了几个大夫来都没有治好，越发作越厉害，眼睁睁看着活鲜鲜的大闺女那副痛不欲生的模样人都揪心啊。听说天门阵中多藏灵丹妙药，其中一味救急丹可以压制头疼，请大侠多加援手帮忙弄5颗救急丹给百姓吧，在此代表秦国百姓仲莫多谢你了。\n"ESC"接受任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    天有不测风云，人有旦夕祸福，谁知道好好的闺女怎么摊上这摊子毛病呢，城中百姓家中几个闺女最近每日夜里都闹头疼，请了几个大夫来都没有治好，越发作越厉害，眼睁睁看着活鲜鲜的大闺女那副痛不欲生的模样人都揪心啊。听说天门阵中多藏灵丹妙药，其中一味救急丹可以压制头疼，请大侠多加援手帮忙弄5颗救急丹给百姓吧，在此代表秦国百姓仲莫多谢你了。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 		break;
         case 5:
         	if (who->get_level() >= 110 && !who->get_legend(TASK_43,17))

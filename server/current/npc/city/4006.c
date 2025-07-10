@@ -108,11 +108,11 @@ void do_welcome2( object me, string arg )
         	break;
         case 3:
         	if ( who->get_level() >= 100 && !who->get_legend(TASK_35,15) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近魏老汉又有奏报，说城西临河镇又出现了同上次相似的事件，但是元凶已死，怎么会又出现了，莫非还有同党？你去找魏老汉详细询问一下事情经过。\n"ESC"接受任务\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    最近魏老汉又有奏报，说城西临河镇又出现了同上次相似的事件，但是元凶已死，怎么会又出现了，莫非还有同党？你去找魏老汉详细询问一下事情经过。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.4\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_35,23) && !who->get_legend(TASK_35,24) )
 			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    收到，本官必定会仔细遴选一名得力的官员治理临河。\n"ESC"Hoàn thành任务\ntalk %x# welcome.5\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
         	else if ( who->get_legend(TASK_35,24) && !who->get_legend(TASK_35,25) )
-			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哈哈哈，我刚刚又得到魏老汉找人转告的消息，原来此前石大龙一案，真的事有乾坤，石大龙伏案附近找到了一个名叫乾坤袋的玩意，后来有高人说出此袋可装容大许多的物品，而且毫无负重，此等宝物我一俟高人研究出了使用方法就给我王送去，你先去通报一声，让他高兴一下。\n"ESC"接受任务\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
+			send_user(who, "%c%c%w%s", ':', 3, me->get_char_picid(), sprintf("%s:\n    哈哈哈，我刚刚又得到魏老汉找人转告的消息，原来此前石大龙一案，真的事有乾坤，石大龙伏案附近找到了一个名叫乾坤袋的玩意，后来有高人说出此袋可装容大许多的物品，而且毫无负重，此等宝物我一俟高人研究出了使用方法就给我王送去，你先去通报一声，让他高兴一下。\n"ESC"Nhận nhiệm vụ\ntalk %x# welcome.6\n"ESC"Rời khỏi.", me->get_name(),getoid(me)));
 
         	break;
 	case 4:

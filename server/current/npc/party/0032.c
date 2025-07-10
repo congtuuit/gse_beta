@@ -108,7 +108,7 @@ void do_welcome2( object me, string arg )
         	}
 		if ( !who->is_leader() )
        		{
-			send_user(who,"%c%c%w%s",':',3,me->get_char_picid(),sprintf("%s：\n    你不是队长，不能接受任务！\n"ESC"Rời khỏi.",me->get_name(),));
+			send_user(who,"%c%c%w%s",':',3,me->get_char_picid(),sprintf("%s：\n    你不是队长，不能Nhận nhiệm vụ！\n"ESC"Rời khỏi.",me->get_name(),));
 			return ;
 		}
 		if ( who->get_level() >= 30 )
@@ -135,7 +135,7 @@ void do_welcome2( object me, string arg )
         	}
 		if ( !who->is_leader() )
        		{
-			send_user(who,"%c%c%w%s",':',3,me->get_char_picid(),sprintf("%s：\n    你不是队长，不能接受任务！\n"ESC"Rời khỏi.",me->get_name(),));
+			send_user(who,"%c%c%w%s",':',3,me->get_char_picid(),sprintf("%s：\n    你不是队长，不能Nhận nhiệm vụ！\n"ESC"Rời khỏi.",me->get_name(),));
 			return ;
 		}
 		if ( who->get_level() >= 30 )
