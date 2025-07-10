@@ -1,3 +1,4 @@
+
 #include <npc.h>
 #include <ansi.h>
 #include <cmd.h>
@@ -560,8 +561,8 @@ int set_pay_type(int flag) { return PayType = flag; }
 
 void get_more_tips(object me)
 {
-	send_user(me, "%c%c%d%s", 0x43, 10, 0, HIY "防沉迷系统会让您在游戏里的经验、收益都将随着时间变化而减少，最后将无法获取游戏收益。\n" NOR + HIY "如果您之前不慎身份证填写错误或使用非身份证以外证件注册，请及时至官方网站的会员中心帐号管理处进行"实名验证"修改身份证信息。");
-	send_user(me, "%c%s", ';', "防沉迷系统会让您在游戏里的经验、收益都将随着时间变化而减少，最后将无法获取游戏收益。\n如果您之前不慎身份证填写错误或使用非身份证以外证件注册，请及时至官方网站的会员中心帐号管理处进行"实名验证"修改身份证信息。");
+	send_user(me, "%c%c%d%s", 0x43, 10, 0, HIY "防沉迷系统会让您在游戏里的经验、收益都将随着时间变化而减少，最后将无法获取游戏收益。\n" NOR + HIY "如果您之前不慎身份证填写错误或使用非身份证以外证件注册，请及时至官方网站的会员中心帐号管理处进行“实名验证”修改身份证信息。");
+	send_user(me, "%c%s", ';', "防沉迷系统会让您在游戏里的经验、收益都将随着时间变化而减少，最后将无法获取游戏收益。\n如果您之前不慎身份证填写错误或使用非身份证以外证件注册，请及时至官方网站的会员中心帐号管理处进行“实名验证”修改身份证信息。");
 }
 
 private static int HeartSec = 0; // 心跳计时
@@ -1260,60 +1261,59 @@ void heart_beat_loop_callout(object me, int effect1, int effect2, int effect3, i
 	}
 
 	if (me->get_pk() >= 300 && sec % 900 == 0)
-	{
-		if (map)
 		{
-			if (!me->is_die())
+			if (map)
 			{
+				if (!me->is_die())
+				{
 				bennhat = sprintf("%c+%d,%s=%d%c-", '\t', 0xdc82fe, me->get_name(), me->get_number(), '\t');
 				map = get_map_object(get_z(me));
 				ben = new("/npc/event/loithan");
 
-				send_user(get_scene_object_2(me, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(me), 25163, 1, OVER_BODY, PF_ONCE);
-				send_user(get_scene_object_2(me, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(me), 25164, 1, OVER_BODY, PF_ONCE);
-				CHAT_D->rumor_channel(0, CHAT + sprintf(HIM "Vì tội nghiệt quá nặng nề nên %s (%d) đã bị Lôi Thần dùng Ngũ Lôi Áp Đỉnh trừng phạt !!", bennhat, me->get_number()));
-				if (me->get_hp() > me->get_max_hp() / 2)
-				{
-					send_user(me, "%c%d%w%c%d%w%c", 0x48, getoid(me), me->get_max_hp() / 2, get_d(ben), getoid(me),
-								hit_act, hit_act == HIT_NORMAL ? 2 : 1);
-					me->set_hp(me->get_hp() - ((me->get_max_hp() / 5) * 4));
-				}
-				else
-				{
-					send_user(me, "%c%d%w%c%d%w%c", 0x48, getoid(me), me->get_hp(), get_d(ben), getoid(me),
-								hit_act, hit_act == HIT_NORMAL ? 2 : 1);
-					CHAR_DIE_D->is_enemy_die(ben, me, me->get_hp());
+					send_user(get_scene_object_2(me, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(me), 25163, 1, OVER_BODY, PF_ONCE);
+					send_user(get_scene_object_2(me, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(me), 25164, 1, OVER_BODY, PF_ONCE);
+					CHAT_D->rumor_channel(0, CHAT + sprintf(HIM "Vì tội nghiệt quá nặng nề nên %s (%d) đã bị Lôi Thần dùng Ngũ Lôi Áp Đỉnh trừng phạt !!", bennhat, me->get_number()));
+					if (me->get_hp() > me->get_max_hp() / 2)
+					{
+						send_user(me, "%c%d%w%c%d%w%c", 0x48, getoid(me), me->get_max_hp() / 2, get_d(ben), getoid(me),
+								  hit_act, hit_act == HIT_NORMAL ? 2 : 1);
+						me->set_hp(me->get_hp() - ((me->get_max_hp() / 5) * 4));
+					}
+					else
+					{
+						send_user(me, "%c%d%w%c%d%w%c", 0x48, getoid(me), me->get_hp(), get_d(ben), getoid(me),
+								  hit_act, hit_act == HIT_NORMAL ? 2 : 1);
+						CHAR_DIE_D->is_enemy_die(ben, me, me->get_hp());
 				}
 			}
 		}
-	}
-
-
-	if (sec % 60 == 0)
-	{
-		if (sec % 360 == 0)
-		{
-			me->add_strength(1);
-			USER_RANK_D->online_rank(me, 1);
-			me->save();
-			send_user(me, "%c%c%d", 0x49, 0x03, time());
-		}
-		if (me->get_pk())
-		{
-			me->add_clean_pk_time(60);
-			if (me->get_clean_pk_time() >= 1800)
-			{
-				me->set_clean_pk_time(0);
-				me->add_pk(-1);
-			}
-		}
-
-		if (me->get_vip())
-			"item/sell/0061"->check_vip(me);
 	}
 
 	if (sec % 15 == 0)
 	{
+		if (sec % 60 == 0)
+		{
+			if (sec % 360 == 0)
+			{
+				me->add_strength(1);
+				USER_RANK_D->online_rank(me, 1);
+				me->save();
+				send_user(me, "%c%c%d", 0x49, 0x03, time());
+			}
+			if (me->get_pk())
+			{
+				me->add_clean_pk_time(60);
+				if (me->get_clean_pk_time() >= 1800)
+				{
+					me->set_clean_pk_time(0);
+					me->add_pk(-1);
+				}
+			}
+
+			if (me->get_vip())
+				"item/sell/0061"->check_vip(me);
+		}
+
 		if (!me->is_die())
 		{
 			add_hp = 10;
@@ -1349,9 +1349,9 @@ void heart_beat_loop_callout(object me, int effect1, int effect2, int effect3, i
 			me->add_mp(add_mp);
 		}
 
-		if (me->get_idle_time() >= 120)  // Giảm từ 180 xuống 120 giây (2 phút)
+		if (me->get_idle_time() >= 180)
 		{
-			me->set_idle_time(180);      // Giảm từ 300 xuống 180 giây
+			me->set_idle_time(300);
 			QUIT_CMD->main(me, "");
 			return;
 		}
@@ -1425,7 +1425,7 @@ void heart_beat_loop_callout(object me, int effect1, int effect2, int effect3, i
 		}
 	}
 
-	if (sec % 2 == 0)
+	if (sec % 1 == 0)
 	{
 		send_user(me, "%c%d%w%c%c%c", 0x6f, getoid(me), 10101, 1, OVER_BODY, PF_STOP);
 		if (objectp(item = present("Long Châu", me, 1, MAX_CARRY)))
