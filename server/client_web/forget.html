@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Chiến Quốc Online</title>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Responsive bootstrap 4 admin template" name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap-stylesheet" />
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" id="app-stylesheet" />
+</head>
+
+<body data-layout="horizontal">
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- Navigation Bar-->
+        <header id="topnav">
+            <!-- Topbar Start -->
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <!-- LOGO -->
+                    <div class="logo-box">
+                        <a href="index.html" class="logo text-center">
+                            <span class="logo-lg">
+                                <img src="assets/images/chienquoc/logo_2d.png" alt="" srcset="">
+                            </span>
+                            <span class="logo-sm">
+                                <img src="assets/images/chienquoc/logo_2d.png" alt="" srcset="">
+                            </span>
+                        </a>
+                    </div>
+
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="login.html">
+                                    THÔNG TIN
+                                </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="register.html">
+                                    ĐĂNG KÝ
+                                </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="login.html">
+                                    ĐĂNG NHẬP
+                                </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="forget.html">
+                                    QUÊN MẬT KHẨU
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- end Topbar -->
+        </header>
+
+        <div class="content-page">
+            <div class="content">
+                <div class="account-pages my-1 pt-0">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 col-lg-6">
+                                <div class="card">
+                                     <div class="card-header">
+                                        <h5 class="font-16 m-2">Quên Mật Khẩu</h5>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <ul class="nav nav-tabs mb-3" id="forgetTab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="email-tab" data-toggle="tab"
+                                                    href="#email-tab-pane" role="tab">Qua Email</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="mk2-tab" data-toggle="tab" href="#mk2-tab-pane"
+                                                    role="tab">Mật khẩu cấp 2</a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="tab-content" id="forgetTabContent">
+                                            <!-- Email Form -->
+                                            <div class="tab-pane fade show active" id="email-tab-pane" role="tabpanel">
+                                                <form action="/forget" method="post">
+                                                    <input type="hidden" name="_token" value="sKY8Lo7SN3...">
+                                                    <div class="form-group">
+                                                        <label for="taikhoan">Tài Khoản</label>
+                                                        <input type="text" class="form-control" name="taikhoan" required
+                                                            placeholder="Nhập tài khoản">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="email">Email</label>
+                                                        <input type="email" class="form-control" name="email" required
+                                                            placeholder="Nhập email đã đăng ký">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Mã Captcha</label><br>
+                                                        <img src="data:image/jpeg;base64,...captcha..." alt="captcha"
+                                                            class="mb-2">
+                                                        <input type="text" class="form-control" name="captcha" required
+                                                            placeholder="Nhập mã captcha">
+                                                    </div>
+                                                    <button class="btn btn-primary btn-block" name="forgetWithEmail">Xác
+                                                        Nhận</button>
+                                                </form>
+                                            </div>
+
+                                            <!-- Mật khẩu cấp 2 Form -->
+                                            <div class="tab-pane fade" id="mk2-tab-pane" role="tabpanel">
+                                                <form action="/forget" method="post">
+                                                    <input type="hidden" name="_token" value="sKY8Lo7SN3...">
+                                                    <div class="form-group">
+                                                        <label for="taikhoan2">Tài Khoản</label>
+                                                        <input type="text" class="form-control" name="taikhoan" required
+                                                            placeholder="Nhập tài khoản">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="matkhau2">Mật Khẩu Cấp 2</label>
+                                                        <input type="password" class="form-control" name="matkhau2"
+                                                            required placeholder="Nhập mật khẩu cấp 2">
+                                                    </div>
+                                                    <button class="btn btn-primary btn-block"
+                                                        name="forgetWithPassword2">Xác Nhận</button>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-center mt-3">
+                                            <a href="login.html">← Trở về trang Đăng Nhập</a>
+                                        </div>
+                                    </div>
+                                    <!-- end card-body -->
+                                </div>
+
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- end container -->
+                </div>
+                <script>
+                    function checkCapsLock(event) {
+                        var capsLockOn = event.getModifierState && event.getModifierState('CapsLock');
+                        if (capsLockOn) {
+                            // event.target.value = "";
+                            console.log('1');
+
+                        } else {
+                            console.log('');
+                        }
+                    }
+                </script>
+                <!-- Footer Start -->
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>2025 &copy; Chiến Quốc Online </p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vendor js -->
+    <script src="assets/js/vendor.min.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.min.js"></script>
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+</body>
+
+</html>

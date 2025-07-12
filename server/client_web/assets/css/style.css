@@ -1,0 +1,53 @@
+body {
+    color: black;
+}
+body[data-layout="horizontal"] #wrapper {
+    background-image: url("../images/chienquoc/cq7.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    background-attachment: fixed;
+}
+body[data-layout="horizontal"] .navbar-custom {
+    background-color: #222f3e !important;
+}
+body[data-layout="horizontal"] .content-page {
+    margin-top: 0px;
+}
+#topnav {
+    position: unset;
+}
+@media (max-width: 767.98px) {
+    .navbar-custom {
+        position: unset;
+    }
+}
+.text-muted {
+    color: black !important;
+}
+.table {
+    color: black;
+}
+.logo-box img {
+    width: 70%;
+}
+.card-header {
+    background-color: #222f3e;
+}
+.card-header h5 {
+    color: white;
+}
+.footer {
+    color: white;
+    background-color: #222f3e;
+    border-top: none;
+}
+#banner img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+	background-attachment: fixed;
+	overflow: scroll;
+}

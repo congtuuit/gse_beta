@@ -1,0 +1,819 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="www.w3.org/1999/xhtml/index.html">
+
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords"
+    content="Chien quoc, chien quoc, Chiến Quốc, Chiến Quốc, game chien quoc, game chien quoc, chienquoc, chienquoc, map sơn chiến quốc, game online chien quoc, chiến quốc loạn thế anh hùng, chien quoc game online, loạn thế anh hùng" />
+  <meta name="description" content="Game online đặc sắc với các hình ảnh ngộ nghĩnh rất phù hợp cho các teen." />
+  <title>Chiến Quốc Online | Loạn Thế Anh Hùng</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="modules/mod_ej_topnews/tmpl/ej_topnews.css" type="text/css" />
+  <script type="text/javascript" src="media/system/js/mootools.js"></script>
+  <script type="text/javascript" src="media/system/js/caption.js"></script>
+  <script type="text/javascript" src="plugins/content/avreloaded/silverlight.js"></script>
+  <script type="text/javascript" src="plugins/content/avreloaded/wmvplayer.js"></script>
+  <script type="text/javascript" src="plugins/content/avreloaded/swfobject.js"></script>
+  <script type="text/javascript" src="plugins/content/avreloaded/avreloaded.js"></script>
+  <script type="text/javascript" src="modules/mod_ej_topnews/tmpl/ej_topnews.js"></script>
+  <script type="text/javascript" src="modules/mod_rokslideshow/tmpl/rokslideshow.js"></script>
+  <script type="text/javascript">
+    window.addEvent('load', function () {
+      var imgs = [];
+      imgs.push({ file: 'kimbao.png', title: 'Chiến Quốc - Loạn Thế Anh Hùng', desc: '', url: 'http://www.chienquoc.com/gioi-thieu/ra-mat-he-thong-ky-gui-kim-bao.html' });
+      imgs.push({ file: 'doanhtraithanhkieu.png', title: 'Chiến Quốc - Loạn Thế Anh Hùng', desc: '', url: 'http://www.chienquoc.com/chien-quoc-dac-sac/doi-quan-thanh-kieu.html' });
+      imgs.push({ file: 'vosongthanh01.png', title: 'Chiến Quốc - Loạn Thế Anh Hùng', desc: '', url: 'http://www.chienquoc.com/gioi-thieu/vo-song-thanh.html' });
+      imgs.push({ file: 'lv75.png', title: 'Chiến Quốc - Loạn Thế Anh Hùng', desc: '', url: 'http://www.chienquoc.com/gioi-thieu/than-binh-chi-khi-75.html' });
+
+      var myshow = new Slideshow('slideshow', {
+        type: 'fade',
+        externals: 1,
+        showTitleCaption: 1,
+        captionHeight: 0.1,
+        width: 172,
+        height: 271,
+        pan: 50,
+        zoom: 50,
+        loadingDiv: 1,
+        resize: true,
+        duration: [1000, 6000],
+        transition: Fx.Transitions.Expo.easeOut,
+        images: imgs,
+        path: 'templates/chienquoc/images/bannerhomepage/'
+      });
+
+      myshow.caps.h2.setStyles({ color: '#fff', fontSize: '13px' });
+      myshow.caps.p.setStyles({ color: '#ccc', fontSize: '11px' });
+    });
+
+
+  </script>
+
+  <link href="templates/chienquoc/css/mainlayout.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" media="screen, tv, projection" type="text/css" href="templates/chienquoc/css/adxmenu.css" />
+  <script type="text/javascript" src="templates/chienquoc/js/mootools-1.2.js"></script>
+  <script type="text/javascript" src="templates/chienquoc/js/hover.js"></script>
+  <script type="text/javascript" src="templates/chienquoc/js/moomarquee.js"></script>
+  <script type="text/javascript" src="templates/chienquoc/js/homepage.js"></script>
+  <script type="text/javascript" src="templates/chienquoc/js/menu.js"></script>
+  <script type="text/javascript" src="templates/chienquoc/Scripts/AC_RunActiveContent.js"></script>
+  <script type="text/javascript" src="templates/chienquoc/code/browser.js"></script>
+  <script type="text/javascript" src="templates/chienquoc/code/ADxMenu.js"></script>
+
+  <script type="text/javascript" src="templates/chienquoc/js/tab.js"></script>
+  <style>
+    .ejcontent {
+      display: none;
+      clear: left;
+    }
+
+    .active {
+      display: block;
+      padding: 10px;
+    }
+
+    .hide {
+      display: none;
+    }
+
+
+    #slideshow img {
+      width: 100% !important;
+      height: 100% !important;
+      display: block;
+    }
+  </style>
+
+  <script type="text/javascript">
+    function madeCenter(strID) {
+      var numLeft = ($(window).getWidth() - $(strID).getSize().size.x) / 2 + $(window).getScrollLeft();
+      var numTop = ($(window).getHeight() - $(strID).getSize().size.y) / 2 + $(window).getScrollTop();
+      $(strID).setStyles({ 'top': numTop, 'left': numLeft });
+    }
+
+    function closeMe(strID) {
+      $('floating').fx = $('floating').effect('opacity', { duration: 1 }).start(0);
+      $('overlay').fx = $('overlay').effect('opacity', { duration: 1 }).start(0);
+    }
+
+    window.addEvent('domready', function () {
+
+
+      $('overlay').setStyles({ 'top': 0, 'height': $(window).getScrollHeight(), 'width': $(window).getScrollWidth() });
+
+      $('overlay').setOpacity(0.0);
+      $('floating').setOpacity(0.0);
+      $('floating').setStyles({ 'display': 'block' });
+      $('overlay').setStyles({ 'display': 'block' });
+
+      madeCenter('floating');
+
+      $('overlay').fx = $('overlay').effect('opacity', { duration: 100 }).start(0.8);
+      $('floating').fx = $('floating').effect('opacity', { duration: 500 }).start(1);
+
+    });
+
+    window.addEvent('scroll', function () {
+      madeCenter('floating');
+    });
+    /*]]>*/
+  </script>
+
+  <style>
+    .floating {
+      display: none;
+      z-index: 300;
+      position: absolute;
+      width: 600px;
+      height: 480px;
+      top: -500;
+      left: -1000;
+    }
+
+    .overlay {
+      display: none;
+      background: black;
+      z-index: 200;
+      position: absolute;
+      left: 0;
+      top: 0;
+
+    }
+  </style>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'www.google-analytics.com/analytics.html', 'ga');
+
+    ga('create', 'UA-46159685-1', 'chienquoc.com');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+
+<body>
+
+  <a name="top" id="toppage"></a>
+  <div id="bgpage">
+    <div class="bgframe1">
+      <div class="bgframe2">
+        <!-- container - start-->
+        <div class="maincontainer test">
+          <!-- LEFT COLUMN - START -->
+          <div id="column1" class="test1">
+            <div id="navi1" class="test2">
+              <ul>
+                <li> <a href="https://www.facebook.com/chienquoc/"><img
+                      src="templates/chienquoc/images/bt_diendan_n.png" border="0" /></a> </li>
+                <li> <a href="gioi-thieu/tai-game-chien-quoc.html"><img
+                      src="templates/chienquoc/images/bt_download_n.png" border="0" /></a>
+                </li>
+                <li> <a href="register.html"><img src="templates/chienquoc/images/bt_dangky_n.png" border="0" /></a>
+                </li>
+              </ul>
+            </div>
+
+
+            <div id="leftbanner"> <a href="gioi-thieu/tap-kich-mon-phai.html"><img
+                  src="templates/chienquoc/images/banner/tapkichmonphai.png" alt="Tap Kich Mon Phai" /></a> <a
+                href="gioi-thieu/nhiem-vu-ap-tieu.html"><img src="templates/chienquoc/images/banner/aptieu.png"
+                  alt="Ap Tieu" /></a> <img src="templates/chienquoc/images/banner/tusaccau.png" alt="Tu Sac Cau" />
+            </div>
+            <div id="fb-like-box"> </div>
+          </div>
+          <!-- LEFT COLUMN - END -->
+          <!-- RIGHT COLUMN - START -->
+          <div id="column2" class="test2">
+            <div id="navi2">
+              <div class="frame1">
+                <div class="frame2"> <a href="bo-cao/thong-bao-quy-tac.html"><img
+                      src="templates/chienquoc/images/banner/bt_quytac_n.png" alt="Quy Tac" /></a> <a
+                    href="gioi-thieu/tai-game-chien-quoc.html"><img
+                      src="templates/chienquoc/images/banner/bt_coban_n.png" alt="Co Ban" /></a>
+                  <!-- a href="#"><img src="/templates/chienquoc/images/banner/bt_huongdan_n.png" alt="Huong Dan" /></a -->
+                  <!-- a href="http://card.mmo.vn/"><img src="/templates/chienquoc/images/banner/bt_dailythe_n.png" alt="Dai Ly The" /></a -->
+                  <a href="login.html"><img src="templates/chienquoc/images/banner/bt_napthe_n.png" alt="Nap The" /></a>
+                  <a href="register.html"><img src="templates/chienquoc/images/banner/bt_dangkynhanh_n.png"
+                      alt="Dang Ky Nhanh" /></a>
+                </div>
+              </div>
+            </div>
+            <div id="rightbanner"> <a href="gioi-thieu/ra-mat-he-thong-ky-gui-kim-bao.html"><img
+                  src="templates/chienquoc/images/banner/kyguikimbao.gif" /></a> <img
+                src="templates/chienquoc/images/banner/vaybatphitac.gif" /> <a
+                href="chien-quoc-dac-sac/doi-quan-thanh-kieu.html"><img
+                  src="templates/chienquoc/images/banner/doanhtraithanhkieu.gif" /></a> <a
+                href="gioi-thieu/vo-song-thanh.html"><img src="templates/chienquoc/images/banner/vosongthanh.gif" /></a>
+              <a href="gioi-thieu/than-binh-chi-khi-75.html"><img
+                  src="templates/chienquoc/images/banner/lv75.gif" /></a>
+            </div>
+          </div>
+          <!-- RIGHT COLUMN - END -->
+          <!-- CENTER COLUMN - START -->
+          <div id="column3" class="test3">
+            <div id="mainmenu">
+              <ul class="adxm menu">
+                <li style="margin-left: 5px;"><a href="index.html">Trang chủ</a></li>
+                <li style="margin-left: 5px;"><a href="boi-canh/chien-quoc-truyen.html">Giới thiệu</a>
+                  <ul>
+                    <li><a href="boi-canh/chien-quoc-truyen.html">Bối Cảnh Trò Chơi</a>
+                      <ul>
+                        <li><a href="boi-canh/chien-quoc-truyen.html">Chiến Quốc Truyện</a></li>
+                        <li><a href="boi-canh/phong-cach-do-hoa.html">Phong Cách Đồ Họa</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="chien-quoc-dac-sac/chien-quoc-tran.html">Chiến Quốc Đặc Sắc</a>
+                      <ul>
+                        <li><a href="chien-quoc-dac-sac/ket-hon.html">Kết Hôn</a></li>
+                        <li><a href="chien-quoc-dac-sac/chien-quoc-tran.html">Chiến Quốc Trận</a></li>
+                        <li><a href="chien-quoc-dac-sac/bao-hiem.html">Bảo Hiểm</a></li>
+                        <li><a href="chien-quoc-dac-sac/chien-dau.html">Chiến đấu</a></li>
+                        <li><a href="chien-quoc-dac-sac/cua-hang.html">Cửa Hàng</a></li>
+                        <li><a href="chien-quoc-dac-sac/bao-ruong.html">Bảo Rương</a></li>
+                        <li><a href="chien-quoc-dac-sac/trong-trot.html">Trồng Trọt</a></li>
+                        <li><a href="chien-quoc-dac-sac/12-con-giap.html">12 Con Giáp</a></li>
+                        <li><a href="chien-quoc-dac-sac/tu-vi.html">Tu Vị</a></li>
+                        <li><a href="chien-quoc-dac-sac/bai-su.html">Bái Sư</a></li>
+                        <li><a href="chien-quoc-dac-sac/te-the-ho-lo.html">Tế Thế Hồ Lô</a></li>
+                        <li><a href="chien-quoc-dac-sac/dai-de-tu.html">Đại Đệ Tử</a></li>
+                        <li><a href="chien-quoc-dac-sac/kham-nam.html">Khảm Nạm</a></li>
+                        <li><a href="chien-quoc-dac-sac/thu-nuoi.html">Thú Nuôi</a></li>
+                        <li><a href="chien-quoc-dac-sac/thay-doi-he-thong-chien-dau-pk.html">Thay đổi hệ thống chiến đấu
+                            (PK)</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="gioi-thieu-mon-phai/con-luan.html">Giới Thiệu Môn Phái</a>
+                      <ul>
+                        <li><a href="gioi-thieu-mon-phai/con-luan.html">Côn Luân</a></li>
+                        <li><a href="gioi-thieu-mon-phai/mao-son.html">Mao Sơn</a></li>
+                        <li><a href="gioi-thieu-mon-phai/thuc-son.html">Thục Sơn</a></li>
+                        <li><a href="gioi-thieu-mon-phai/duong-mon.html">Đường Môn</a></li>
+                        <li><a href="gioi-thieu-mon-phai/cam-ve-quan.html">Cấm Vệ Quân</a></li>
+                        <li><a href="gioi-thieu-mon-phai/van-mong-coc.html">Vân Mộng Cốc</a></li>
+                        <li><a href="gioi-thieu-mon-phai/dao-hoa-nguyen.html">Đào Hoa Nguyên</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="quoc-gia/nuoc-chu.html">Quốc Gia</a>
+                      <ul>
+                        <li><a href="quoc-gia/nuoc-chu.html">Nước Chu</a></li>
+                        <li><a href="quoc-gia/nuoc-han.html">Nước Hàn</a></li>
+                        <li><a href="quoc-gia/nuoc-te.html">Nước Tề</a></li>
+                        <li><a href="quoc-gia/nuoc-so.html">Nước Sở</a></li>
+                        <li><a href="quoc-gia/nuoc-yen.html">Nước Yên</a></li>
+                        <li><a href="quoc-gia/nuoc-trieu.html">Nước Triệu</a></li>
+                        <li><a href="quoc-gia/nuoc-nguy.html">Nước Ngụy</a></li>
+                        <li><a href="quoc-gia/nuoc-tan.html">Nước Tần</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="vat-pham/tran-bao-kho.html">Vật Phẩm</a>
+                      <ul>
+                        <li><a href="vat-pham/tran-bao-kho.html">Trân Bảo Khố</a></li>
+                        <li><a href="vat-pham/vat-pham-nghe.html">Vật Phẩm Nghề</a></li>
+                        <li><a href="vat-pham/thu-cuoi.html">Thú Cưỡi</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="gioi-thieu/boss-ky-lan-quai-thu.html">Boss Kỳ Lân Quái Thú</a></li>
+                    <li><a href="gioi-thieu/le-bao-bao-thach.html">Lễ Bao Bảo Thạch</a></li>
+                    <li><a href="nghe-nghiep/nghe-nghiep-gioi-thieu.html">Nghề Nghiệp</a>
+                      <ul>
+                        <li><a href="nghe-nghiep/nghe-nghiep-gioi-thieu.html">Giới thiệu</a></li>
+                        <li><a href="nghe-nghiep/nghe-nghiep-co-quan.html">Cơ Quan</a></li>
+                        <li><a href="nghe-nghiep/nghe-nghiep-dau-bep.html">Đầu Bếp</a></li>
+                        <li><a href="nghe-nghiep/nghe-nghiep-dieu-khac.html">Điêu Khắc</a></li>
+                        <li><a href="nghe-nghiep/nghe-nghiep-luyen-don.html">Luyện Đơn</a></li>
+                        <li><a href="nghe-nghiep/nghe-nghiep-duoc-su.html">Dược Sư</a></li>
+                        <li><a href="nghe-nghiep/nghe-nghiep-khai-khoang.html">Khai Khoáng</a></li>
+                        <li><a href="nghe-nghiep/nghe-nghiep-ren-duc.html">Rèn Đúc</a></li>
+                        <li><a href="nghe-nghiep/nghe-nghiep-may-mac.html">May Mặc</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="gioi-thieu/boss-am-linh-dai-nao.html">Boss Âm Linh Đại Náo</a></li>
+                    <li><a href="gioi-thieu/boss-yeu-nghiet.html">Boss Yêu Nghiệt</a></li>
+                    <li><a href="gioi-thieu/choi-game-chien-quoc-mien-phi.html">Chơi game Chiến Quốc miễn phí</a></li>
+                    <li><a href="gioi-thieu/vo-song-thanh.html">Vô Song Thành</a></li>
+                    <li><a href="gioi-thieu/kham-nam.html">Khảm nạm</a></li>
+                    <li><a href="gioi-thieu/he-thong-ket-hon.html">Hệ thống Kết Hôn</a></li>
+                    <li><a href="gioi-thieu/than-binh-cap-100.html">Thần Binh Cấp 100</a></li>
+                    <li><a href="gioi-thieu/that-quoc-tuyet-anh.html">Thất Quốc Tuyệt Ảnh</a></li>
+                    <li><a href="gioi-thieu/than-binh-chi-khi-75.html">Thần Binh Chí Khí 75</a></li>
+                    <li><a href="gioi-thieu/gioi-thieu-bang-phai.html">Bang phái</a>
+                      <ul>
+                        <li><a href="gioi-thieu/gioi-thieu-bang-phai.html">Giới thiệu Bang Phái</a></li>
+                        <li><a href="gioi-thieu/ky-nang-bang-phai.html">Kỹ năng Bang Phái</a></li>
+                        <li><a href="gioi-thieu/dung-bang-lap-hoi.html">Dựng Bang lập Hội</a></li>
+                        <li><a href="gioi-thieu/bang-phai-noi-chinh.html">Bang phái nội chính</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="gioi-thieu/ra-mat-he-thong-ky-gui-kim-bao.html">Ra mắt hệ thống ký gửi Kim Bảo</a></li>
+                  </ul>
+                </li>
+                <li style="margin-left: 5px;"><a href="#">Tin Tức</a>
+                  <ul>
+                    <li><a href="bo-cao.html">Bố Cáo</a></li>
+                    <li><a href="dai-su.html">Đại Sự</a></li>
+                    <li><a href="thien-ha.html">Thiên Hạ</a></li>
+                  </ul>
+                </li>
+                <li style="margin-left: 5px;"><a href="#">Tải về</a>
+                  <ul>
+                    <li><a href="gioi-thieu/doan-phim-gioi-thieu.html">Đoạn phim giới thiệu</a></li>
+                    <li><a href="gioi-thieu/tai-game-chien-quoc.html">Tải Game Chiến Quốc</a></li>
+                  </ul>
+                </li>
+                <li style="margin-left: 5px;"><a href="#">Hướng dẫn</a>
+                  <ul>
+                    <li><a href="huong-dan/tai-game-chien-quoc.html">Hướng dẫn tân thủ</a>
+                      <ul>
+                        <li><a href="huong-dan/cai-game-chien-quoc.html">Cài Game Chiến Quốc</a></li>
+                        <li><a href="huong-dan/tai-game-chien-quoc.html">Tải Game Chiến Quốc</a></li>
+                        <li><a href="huong-dan/dang-nhap-game-va-tao-nhan-vat.html">Đăng nhập và tạo nhân vật</a></li>
+                        <li><a href="register.html">Đăng ký</a></li>
+                        <li><a href="huong-dan/xoa-nhan-vat.html">Xoá nhân vật</a></li>
+                        <li><a href="huong-dan/tao-nhom.html">Tạo nhóm</a></li>
+                        <li><a href="huong-dan/cac-chi-so-co-ban.html">Các chỉ sô cơ bản</a></li>
+                        <li><a href="huong-dan/cai-dat-va-check-sum.html">Cài đặt và check sum</a></li>
+                        <li><a href="huong-dan/cach-su-dung-ban-do.html">Cách sử dụng bản đồ</a></li>
+                        <li><a href="huong-dan/cach-tien-hanh-mot-nhiem-vu.html">Cách tiến hành một nhiệm vụ</a></li>
+                        <li><a href="huong-dan/chien-quoc-bao-dien.html">Chiến Quốc Bảo Điển</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="huong-dan-nang-cao/cac-phim-tat.html">Hướng dẫn nâng cao</a>
+                      <ul>
+                        <li><a href="huong-dan-nang-cao/cac-phim-tat.html">Các phím tắt</a></li>
+                        <li><a href="huong-dan-nang-cao/phuong-thuc-phan-phoi-trong-nhom.html">Phương Thức Phân Phối
+                            Trong Nhóm</a></li>
+                        <li><a href="huong-dan-nang-cao/gia-nhap-mon-phai-cach-hoc-ky-nang.html">Gia nhập môn phái -
+                            Cách học kỹ năng</a></li>
+                        <li><a href="huong-dan-nang-cao/che-tao-vat-pham-tu-ky-nang-nghe.html">chế tạo vật phẩm từ kỹ
+                            năng nghề</a></li>
+                        <li><a href="huong-dan-nang-cao/cach-su-dung-khung-tro-chuyen.html">Cách sử dụng khung trò
+                            chuyện</a></li>
+                        <li><a href="huong-dan-nang-cao/mo-cua-hang.html">Mở cửa hàng</a></li>
+                        <li><a href="huong-dan-nang-cao/cach-nhan-goi-vip-dung-thu.html">Cách nhận gói VIP dùng thử</a>
+                        </li>
+                        <li><a href="chien-quoc-dac-sac/chien-quoc-tran.html">Chiến Quốc Trận</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="nhiem-vu/0-10.html">Nhiệm vụ</a>
+                      <ul>
+                        <li><a href="nhiem-vu/0-10.html">0-10</a></li>
+                        <li><a href="nhiem-vu/11-20.html">11-20</a></li>
+                        <li><a href="nhiem-vu/21-30.html">21-30</a></li>
+                        <li><a href="nhiem-vu/31-40.html">31-40</a></li>
+                        <li><a href="nhiem-vu/41-50.html">41-50</a></li>
+                        <li><a href="nhiem-vu/51-60.html">51-60</a></li>
+                        <li><a href="nhiem-vu/61-70.html">61-70</a></li>
+                        <li><a href="nhiem-vu/71-80.html">71-80</a></li>
+                        <li><a href="nhiem-vu/81-90.html">81-90</a></li>
+                        <li><a href="nhiem-vu/91-100.html">91-100</a></li>
+                        <li><a href="nhiem-vu/101-110.html">101-110</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="phan-loai-nhiem-vu/nhiem-vu-cot-truyen.html">Phân loại nhiệm vụ</a>
+                      <ul>
+                        <li><a href="phan-loai-nhiem-vu/nhiem-vu-cot-truyen.html">Nhiệm vụ Cốt Truyện</a></li>
+                        <li><a href="phan-loai-nhiem-vu/nhiem-vu-su-mon.html">Nhiệm vụ Sư Môn</a></li>
+                        <li><a href="phan-loai-nhiem-vu/nhiem-vu-su-menh.html">Nhiệm vụ Sứ Mệnh</a></li>
+                        <li><a href="phan-loai-nhiem-vu/nhiem-vu-tam-bao.html">Nhiệm vụ Tầm Bảo</a></li>
+                        <li><a href="phan-loai-nhiem-vu/nhiem-vu-ap-tieu.html">Nhiệm vụ Áp Tiêu</a></li>
+                        <li><a href="phan-loai-nhiem-vu/nhiem-vu-bang-phai.html">Nhiệm vụ Bang Phái</a></li>
+                        <li><a href="phan-loai-nhiem-vu/nhiem-vu-dac-biet.html">Nhiệm vụ Đặc Biệt</a></li>
+                        <li><a href="phan-loai-nhiem-vu/nhiem-vu-nhom.html">Nhiệm vụ Nhóm</a></li>
+                        <li><a href="phan-loai-nhiem-vu/nhiem-vu-vuong-bo-dau.html">Nhiệm vụ Vương Bộ Đầu</a></li>
+                        <li><a href="phan-loai-nhiem-vu/nhiem-vu-ve-doi-truong.html">Nhiệm vụ Vệ Đội Trưởng</a></li>
+                        <li><a href="phan-loai-nhiem-vu/nhiem-vu-tu-va-de-vuong.html">Nhiệm vụ Tù và Đế Vương</a></li>
+                        <li><a href="phan-loai-nhiem-vu/nhan-thuong-tu-vi.html">Nhận Thưởng Tu Vị</a></li>
+                        <li><a href="phan-loai-nhiem-vu/nhiem-vu-tieu-phi.html">Nhiệm vụ Tiễu Phỉ</a></li>
+                        <li><a href="phan-loai-nhiem-vu/nhiem-vu-hoang-kim-cam-ve.html">Nhiệm vụ Hoàng Kim Cấm Vệ</a>
+                        </li>
+                        <li><a href="phan-loai-nhiem-vu/tap-kich-mon-phai.html">Tập Kích Môn Phái</a></li>
+                        <li><a href="phan-loai-nhiem-vu/nhiem-vu-danh-vong-quoc-gia.html">Nhiệm vụ Danh Vọng Quốc
+                            Gia</a></li>
+                        <li><a href="phan-loai-nhiem-vu/nhiem-vu-am-sat.html">Nhiệm vụ Ám Sát</a></li>
+                      </ul>
+                    </li>
+                    <!-- li><a href="/huong-dan/huong-dan-nap-the.html">Hướng dẫn nạp thẻ</a></li -->
+                    <li><a href="huong-dan/huong-dan-kham-nam.html">Hướng dẫn Khảm Nạm</a></li>
+                  </ul>
+                </li>
+                <li style="margin-left: 5px;"><a href="https://www.facebook.com/chienquoc/">Cộng đồng</a>
+                  <ul>
+                    <li><a href="register.html">Đăng ký nhanh Game Chiến Quốc</a></li>
+                    <li><a href="https://www.facebook.com/chienquoc/">Chiến Quốc Forum</a></li>
+                  </ul>
+                </li>
+              </ul>
+              </ul>
+
+              <script type="text/javascript">
+                /*<![CDATA[*/
+                ADxMenu.fixingLength();
+                /*]]>*/
+              </script>
+
+            </div>
+            <div id="topbanner" class="test">
+              <div id="logochienquoc"> <img src="templates/chienquoc/images/logo-chienquoc.png" alt="Chien Quoc" />
+              </div>
+              <div id="sublogo"> <img src="templates/chienquoc/images/sub-logo.png" alt=" Game Mien Phi Mai Mai" />
+              </div>
+
+              <!-- video -->
+              <!-- <div id="flashheader">
+                <script type="text/javascript">
+                  AC_FL_RunContent('codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0', 'width', '600', 'height', '160', 'title', 'Chien Quoc', 'src', '/templates/chienquoc/images/hearder', 'quality', 'high', 'pluginspage', 'http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash', 'wmode', 'transparent', 'movie', '/templates/chienquoc/images/hearder'); //end AC code
+                </script>
+                <noscript>
+                  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+                    codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0"
+                    width="600" height="160" title="Chien Quoc">
+                    <param name="movie" value="/templates/chienquoc/images/hearder.swf" />
+                    <param name="quality" value="high" />
+                    <param name="wmode" value="transparent" />
+                    <embed src="/templates/chienquoc/images/hearder.swf" width="600" height="160" quality="high"
+                      pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"
+                      type="application/x-shockwave-flash" wmode="transparent"></embed>
+                  </object>
+                </noscript>
+              </div> -->
+
+            </div>
+
+            <div id="flashbanner" class="test3">
+              <div id="slidewrap">
+                <div id="slideshow"></div>
+                <div id="loadingDiv"></div>
+              </div>
+            </div>
+
+            <div id="topnews" class="test2">
+              <div id="searchcontent" class="test">
+                <form action="https://www.chienquoc.com/index.html" method="post">
+                  <div class="searchcontent">
+                    <input name="searchword" id="mod_search_searchword" maxlength="20" alt="&nbsp;"
+                      class="inputboxcontent" type="text" size="20" value="search..."
+                      onblur="if(this.value=='') this.value='search...';"
+                      onfocus="if(this.value=='search...') this.value='';" /><input type="submit" value="&nbsp;"
+                      class="buttoncontent" onclick="this.form.searchword.focus();" />
+                  </div>
+                  <input type="hidden" name="task" value="search" />
+                  <input type="hidden" name="option" value="com_search" />
+                </form>
+              </div>
+              <div id="newsbox" class="test">
+                <div class="newstab">
+                  <ul>
+                    <li class="ejtab active"><a href="#"><img src="templates/chienquoc/images/btn_bocao_n.png"
+                          alt="Bo Cao" /></a> </li>
+                    <li class="ejtab"><a href="#"><img src="templates/chienquoc/images/btn_daisu_n.png"
+                          alt="Bo Cao" /></a></li>
+                    <li class="ejtab"><a href="#"><img src="templates/chienquoc/images/btn_thienha_n.png"
+                          alt="Bo Cao" /></a></li>
+                  </ul>
+                </div>
+
+                <div class="ejcontent">
+                  <div class="">
+
+                    <div class="ejtopnews" align="left">
+                      <a href="bo-cao/thong-bao-mo-may-chu-2d.html" class="title">Thông báo Open máy chủ Chiến Quốc
+                        Online
+                      </a><br /><span class="date">16-12-2024</span><br /><span class="note"></span>
+                      <p></p>
+                    </div>
+                  </div>
+
+                  <!-- <p class="readmore"> <a href="#"><img src="/images/bt_chitiet.gif" width="54" height="11" /></a></p> -->
+
+                </div>
+                <div class="ejcontent">
+                  <div class="">
+                    <div class="ejtopnews" align="left">
+                      <a href="bo-cao/thong-bao-mo-may-chu-2d.html" class="title">Thông báo Open máy chủ Chiến Quốc
+                        Online
+                      </a><br /><span class="date">16-12-2024</span><br /><span class="note"></span>
+                      <p></p>
+                    </div>
+
+                    <div class="ejtopnews" align="left">
+                      <a href="bo-cao/thong-bao-thoi-gian-mo-thu-nghiem.html" class="title">Thông báo mở thử nghiệm
+                        máy
+                        chủ Chiến Quốc Online
+                      </a><br /><span class="date">15-12-2024</span><br /><span class="note"></span>
+                      <p></p>
+                    </div>
+                  </div>
+                  <!--p class="readmore"> <a href="#"><img src="/images/bt_chitiet.gif" width="54" height="11" /></a></p-->
+                </div>
+
+                <div class="ejcontent">
+                  <div class="">
+                    <div class="ejtopnews" align="left">
+                      <a href="tin-tuc/tap-kich-mon-phai.html" class="title">Tập Kích Môn Phái </a><br /><span
+                        class="date">12-12-2024</span><br /><span class="note"></span>
+                      <p></p>
+                    </div>
+                  </div>
+                  <!--p class="readmore"> <a href="#"><img src="/images/bt_chitiet.gif" width="54" height="11" /></a></p-->
+                </div>
+
+                <div class="active" id="homepagenews" style="max-height: 180px; overflow-y: auto; padding-top: 0;">
+                  <div class="">
+
+                    <div class="ejtopnews" align="left">
+                      <a href="bo-cao/thong-bao-cap-nhat-t7-v2-2025.html" class="title">Bản Cập Nhật Tháng 7
+                      </a><br /><span class="date">08-07-2025</span><br /><span class="note"></span>
+                      <p></p>
+                    </div>
+
+                    <div class="ejtopnews" align="left">
+                      <a href="bo-cao/thong-bao-cap-nhat-t7-v1-2025.html" class="title">Thần Binh Long Khí
+                      </a><br /><span class="date">06-07-2025</span><br /><span class="note"></span>
+                      <p></p>
+                    </div>
+
+                    <div class="ejtopnews" align="left">
+                      <a href="bo-cao/thong-bao-cap-nhat-t6-2025.html" class="title">Bản Cập Nhật Tháng 6
+                      </a><br /><span class="date">21-06-2025</span><br /><span class="note"></span>
+                      <p></p>
+                    </div>
+
+                    <div class="ejtopnews" align="left">
+                      <a href="bo-cao/thong-bao-cap-nhat-t5-2025.html" class="title">Bản Cập Nhật Tháng 5
+                      </a><br /><span class="date">28-05-2025</span><br /><span class="note"></span>
+                      <p></p>
+                    </div>
+
+                    <div class="ejtopnews" align="left">
+                      <a href="bo-cao/thong-bao-cap-nhat-t42-2025.html" class="title">Bản Cập Nhật Lễ 30-4
+                      </a><br /><span class="date">26-04-2025</span><br /><span class="note"></span>
+                      <p></p>
+                    </div>
+
+                    <div class="ejtopnews" align="left">
+                      <a href="bo-cao/thong-bao-cap-nhat-t4-2025.html" class="title">Bản Cập Nhật Tháng 4-2025
+                      </a><br /><span class="date">04-04-2025</span><br /><span class="note"></span>
+                      <p></p>
+                    </div>
+
+                    <div class="ejtopnews" align="left">
+                      <a href="bo-cao/thong-bao-cap-nhat-t32-2025.html" class="title">Sự Kiện 8 Tháng 3-2025
+                      </a><br /><span class="date">05-03-2025</span><br /><span class="note"></span>
+                      <p></p>
+                    </div>
+
+                    <div class="ejtopnews" align="left">
+                      <a href="bo-cao/thong-bao-cap-nhat-t3-2025.html" class="title">Bản Cập Nhật Tháng 3-2025
+                      </a><br /><span class="date">01-03-2025</span><br /><span class="note"></span>
+                      <p></p>
+                    </div>
+
+                    <div class="ejtopnews" align="left">
+                      <a href="bo-cao/thong-bao-cap-nhat-t2-2025.html" class="title">Bản Cập Nhật Tháng 2-2025
+                      </a><br /><span class="date">13-02-2025</span><br /><span class="note"></span>
+                      <p></p>
+                    </div>
+
+                    <div class="ejtopnews" align="left">
+                      <a href="bo-cao/thong-bao-cap-nhat-tet2025.html" class="title">Bản Cập Nhật Tết Ất Tỵ
+                      </a><br /><span class="date">25-01-2025</span><br /><span class="note"></span>
+                      <p></p>
+                    </div>
+
+                    <div class="ejtopnews" align="left">
+                      <a href="bo-cao/thong-bao-cap-nhat-t12.html" class="title">Bản Cập Nhật Tháng 12
+                      </a><br /><span class="date">19-12-2024</span><br /><span class="note"></span>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+                <script language="javascript" type="text/javascript">
+                  var myTabs = new ejTabClass("ej");
+                </script>
+              </div>
+            </div>
+            <div id="hotitem">
+              <div id="listitem"> &nbsp;
+                &nbsp;<img src="templates/chienquoc/images/items/hotitem.gif" /><img
+                  src="templates/chienquoc/images/items/anxaphu.gif" /> &nbsp;<img
+                  src="templates/chienquoc/images/items/hotitem.gif" /><img
+                  src="templates/chienquoc/images/items/chiakhoahongmoc.gif" /> &nbsp;<img
+                  src="templates/chienquoc/images/items/hotitem.gif" /><img
+                  src="templates/chienquoc/images/items/goivip.gif" /> &nbsp;<img
+                  src="templates/chienquoc/images/items/hotitem.gif" /><img
+                  src="templates/chienquoc/images/items/socaplinhhonthuy.gif" /> &nbsp;<img
+                  src="templates/chienquoc/images/items/hotitem.gif" /><img
+                  src="templates/chienquoc/images/items/tethebaongoc.gif" /> &nbsp;<img
+                  src="templates/chienquoc/images/items/hotitem.gif" /><img
+                  src="templates/chienquoc/images/items/trungcaplinhhonthuy.gif" /> &nbsp;<img
+                  src="templates/chienquoc/images/items/hotitem.gif" /><img
+                  src="templates/chienquoc/images/items/tuvachienquoc.gif" /> &nbsp;<img
+                  src="templates/chienquoc/images/items/hotitem.gif" /><img
+                  src="templates/chienquoc/images/items/anxaphu.gif" /> &nbsp;<img
+                  src="templates/chienquoc/images/items/hotitem.gif" /><img
+                  src="templates/chienquoc/images/items/chiakhoahongmoc.gif" /> &nbsp;<img
+                  src="templates/chienquoc/images/items/hotitem.gif" /><img
+                  src="templates/chienquoc/images/items/goivip.gif" /> &nbsp;<img
+                  src="templates/chienquoc/images/items/hotitem.gif" /><img
+                  src="templates/chienquoc/images/items/socaplinhhonthuy.gif" /> &nbsp;<img
+                  src="templates/chienquoc/images/items/hotitem.gif" /><img
+                  src="templates/chienquoc/images/items/tethebaongoc.gif" /> &nbsp;<img
+                  src="templates/chienquoc/images/items/hotitem.gif" /><img
+                  src="templates/chienquoc/images/items/trungcaplinhhonthuy.gif" /> &nbsp;<img
+                  src="templates/chienquoc/images/items/hotitem.gif" /><img
+                  src="templates/chienquoc/images/items/tuvachienquoc.gif" /> &nbsp; </div>
+            </div>
+            <div class="boxcenter">
+              <div class="frame1">
+                <div class="frame2 test3">
+                  <p class="boxtitle"> <img src="templates/chienquoc/images/boxtitle_thatdaimonphai.gif"
+                      alt="That Dai Mon Phai" /> </p>
+                  <div class="menuchar test"> <a href="gioi-thieu-mon-phai/cam-ve-quan.html" id="camvequan"><img
+                        src="templates/chienquoc/images/bts_camvequan_n.gif" /></a> <a
+                      href="gioi-thieu-mon-phai/mao-son.html" id="maoson"><img
+                        src="templates/chienquoc/images/bts_maoson_n.gif" /></a> <a
+                      href="gioi-thieu-mon-phai/thuc-son.html" id="thucson"><img
+                        src="templates/chienquoc/images/bts_thucson_n.gif" /></a> <a
+                      href="gioi-thieu-mon-phai/duong-mon.html" id="duongmon"><img
+                        src="templates/chienquoc/images/bts_duongmon_n.gif" /></a> <a
+                      href="gioi-thieu-mon-phai/van-mong-coc.html" id="vanmongcoc"><img
+                        src="templates/chienquoc/images/bts_vanmongcoc_n.gif" /></a> <a
+                      href="gioi-thieu-mon-phai/dao-hoa-nguyen.html" id="daohoanguyen"><img
+                        src="templates/chienquoc/images/bts_daohoanguyen_n.gif" /></a> <a
+                      href="gioi-thieu-mon-phai/con-luan.html" id="conluan"><img
+                        src="templates/chienquoc/images/bts_conluan_n.gif" /></a> </div>
+                  <div id="character">&nbsp;</div>
+                </div>
+              </div>
+            </div>
+            <div class="boxcenter">
+              <div class="frame1">
+                <div class="frame2">
+                  <p class="boxtitle"> <img src="templates/chienquoc/images/boxtitle_hethonggameplay.gif"
+                      alt="He Thong GamePlay" /> </p>
+                  <p> <a href="chien-quoc-dac-sac/bai-su.html"><img
+                        src="templates/chienquoc/images/gameplay/gameplay_sudo_n.gif" /></a>
+                    <a href="chien-quoc-dac-sac/bao-hiem.html"><img
+                        src="templates/chienquoc/images/gameplay/gameplay_baohiem_n.gif" /></a>
+                    <a href="chien-quoc-dac-sac/trong-trot.html"><img
+                        src="templates/chienquoc/images/gameplay/gameplay_trongtrot_n.gif" /></a>
+                    <a href="chien-quoc-dac-sac/chien-quoc-tran.html"><img
+                        src="templates/chienquoc/images/gameplay/gameplay_chienquoctran_n.gif" /></a>
+                  </p>
+                  <p> <a href="chien-quoc-dac-sac/bao-thu.html"><img
+                        src="templates/chienquoc/images/gameplay/gameplay_baothu_n.gif" /></a>
+                    <a href="chien-quoc-dac-sac/cua-hang.html"><img
+                        src="templates/chienquoc/images/gameplay/gameplay_buonban_n.gif" /></a>
+                    <a href="chien-quoc-dac-sac/dai-de-tu.html"><img
+                        src="templates/chienquoc/images/gameplay/gameplay_monphai_n.gif" /></a>
+                    <a href="he-thong-gameplay/nhiem-vu.html"><img
+                        src="templates/chienquoc/images/gameplay/gameplay_nhiemvu_n.gif" /></a>
+                  </p>
+                  <p> <a href="nghe-nghiep/nghe-nghiep-gioi-thieu.html"><img
+                        src="templates/chienquoc/images/gameplay/gameplay_nghenghiep_n.gif" /></a>
+                    <a href="bang-phai/gioi-thieu-bang-phai.html"><img
+                        src="templates/chienquoc/images/gameplay/gameplay_banhoi_n.gif" /></a>
+                    <a href="chien-quoc-dac-sac/tu-vi.html"><img
+                        src="templates/chienquoc/images/gameplay/gameplay_tuvi_n.gif" /></a>
+                    <a href="chien-quoc-dac-sac/12-con-giap.html"><img
+                        src="templates/chienquoc/images/gameplay/gameplay_12congiap_n.gif" /></a>
+                  </p>
+                  <p> <a href="chien-quoc-dac-sac/kham-nam.html"><img
+                        src="templates/chienquoc/images/gameplay/gameplay_vukhi_n.gif" /></a>
+                    <a href="chien-quoc-dac-sac/te-the-ho-lo.html"><img
+                        src="templates/chienquoc/images/gameplay/gameplay_holo_n.gif" /></a>
+                    <a href="chien-quoc-dac-sac/chien-dau.html"><img
+                        src="templates/chienquoc/images/gameplay/gameplay_chiendau_n.gif" /></a>
+                    <a href="chien-quoc-dac-sac/bao-ruong.html"><img
+                        src="templates/chienquoc/images/gameplay/gameplay_baoruong_n.gif" /></a>
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="boxcenter">
+              <div class="frame1">
+                <div class="frame2">
+                  <p class="boxtitle"><img src="templates/chienquoc/images/boxtitle_thatquoctranhhung.gif"
+                      alt="That Quoc Tranh Hung" /></p>
+                  <div id="quocgia">
+                    <div class="frame0" id="showbox">
+                      <!-- Chu -->
+                      <img src="templates/chienquoc/images/quocgia_chu_img.gif" alt="Chu" />
+
+                      <p> Từ đời Chu Bình Vương, thiên triều Tây Chu trải qua 257 năm thịnh vượng cuối cùng cũng bị
+                        diệt
+                        vong. Vương triều Đông Chu cũng đã bị suy yếu đến cực điểm, các nước chư hầu lần lượt cát cứ
+                        xưng hùng không cần nể mặt thiên tử, thân phận chư hầu cũng chỉ còn trên danh nghĩa.</p>
+                      <p class="clear">&nbsp;</p>
+
+                      <!-- Han -->
+                      <img src="templates/chienquoc/images/quocgia_han_img.gif" alt="Han" />
+
+                      <p> Nguyên là gia tộc họ Hàn của nước Tấn thời Xuân thu, sau khi “Tam gia phân Tấn” mới trở
+                        thành
+                        một nước chư hầu độc lập. Trong 7 nước, lãnh thổ của nước Hàn nhỏ nhất. Nhưng từ khi Pháp gia
+                        Thân Bất Hại được trọng dụng đã sửa đổi lại nội chính minh bạch, làm cho nước Hàn hùng mạnh và
+                        cũng được liệt vào thất hùng. </p>
+                      <p class="clear">&nbsp;</p>
+
+                      <!-- Te -->
+                      <img src="templates/chienquoc/images/quocgia_te_img.gif" alt="Te" />
+
+                      <p> Là một trong “Xuân thu ngũ bá” và là nước đứng đầu trong 7 nước thời Chiến Quốc, cách xa và
+                        chưa hề có xung đột với nước Tần. Từ thời Tề Hoàn Công đến nay, nền quân chủ của nước Tề luôn
+                        giữ vững chính sách tôn vương, nhờ vậy mà nước Tề tồn tại lâu dài và có vị trí đáng kể trong
+                        chiến quốc thất hùng. </p>
+                      <p class="clear">&nbsp;</p>
+
+                      <!-- So -->
+                      <img src="templates/chienquoc/images/quocgia_so_img.gif" alt="So" />
+
+                      <p> Nằm ở vùng phía Nam Trung Quốc, vì thế thường xảy ra chiến tranh với các tiểu quốc Hoa Hạ.
+                        Qua
+                        các cuộc chinh phạt, Sở đã lần lượt thôn tính 45 nước chư hầu nhỏ và dần dần xác định được vị
+                        trí trong các cường quốc thời này. </p>
+                      <p class="clear">&nbsp;</p>
+
+                      <!-- Yen -->
+                      <img src="templates/chienquoc/images/quocgia_yen_img.gif" alt="Yen" />
+
+                      <p> Là quốc gia tự cường từ thân phận một nước tương đối yếu trong 7 nước thời Chiến Quốc. Khi
+                        Yên
+                        Chiêu Vương đăng cơ đã chỉnh đốn lại chính sách quốc gia, huấn luyện binh mã giúp nước Yên trở
+                        thành một cường quốc phía Bắc. </p>
+                      <p class="clear">&nbsp;</p>
+
+                      <!-- Trieu -->
+                      <img src="templates/chienquoc/images/quocgia_trieu_img.gif" alt="Trieu" />
+
+                      <p> Được hình thành sau thời “Tam gia phân Tấn”, lãnh thổ gần với 2 nước chư hầu khác là Tề và
+                        Yên. Ở Sơn Đông, Triệu là nước chư hầu duy nhất có thể sánh ngang hàng với Tần, nhờ văn quân
+                        Lạn
+                        Tương Như, võ tướng Liêm Pha cùng các trung thần đã tận trung báo quốc khiến cho nước Triệu
+                        lớn
+                        mạnh. </p>
+                      <p class="clear">&nbsp;</p>
+
+                      <!-- Nguy -->
+                      <img src="templates/chienquoc/images/quocgia_nguy_img.gif" alt="Nguy" />
+
+                      <p> Ở thời kì đầu chiến quốc, nước Ngụy đã sớm trở nên hưng thịnh và hùng mạnh nhất. Sau thời
+                        “Tam
+                        gia phân Tấn”, Ngụy là nước chư hầu được phân về vùng Linh Sơn Tây thuộc Tây Nam của Hà Đông.
+                        Ở
+                        thời kì Ngụy Văn Hầu, thông qua những biện pháp cải cách của Lý Lý đã thúc đẩy nền kinh tế
+                        phát
+                        triển, hình thành nên chế độ trung ương tập quyền. </p>
+                      <p class="clear">&nbsp;</p>
+
+                      <!-- Tan -->
+                      <img src="templates/chienquoc/images/quocgia_tan_img.gif" alt="Tan" />
+
+                      <p> Nằm về phía Tây trung nguyên, phía Bắc có Thượng Quận, phía Nam có Ba Thục, địa thế hiểm trở
+                        dễ thủ khó công nên được thiên hạ xưng tụng là “Thiên phủ hùng quốc”. Đến đời Tần Hiếu Công
+                        chiêu hiền đãi sĩ, áp dụng chính sách Pháp gia của Thương Ưởng, từ đó Tần ngày càng lớn mạnh.
+                        Đến đời Tần Vương Doanh Chính chinh phục 7 nước, thống nhất Trung Hoa. </p>
+                    </div>
+                  </div>
+                  <p class="thatquoc"><img src="templates/chienquoc/images/quocgia_1.gif" />
+                    <a href="javascript:;" id="chu"><img src="templates/chienquoc/images/quocgia_chu_n.gif" /></a> <a
+                      href="javascript:;" id="han"><img src="templates/chienquoc/images/quocgia_han_n.gif" /></a> <a
+                      href="javascript:;" id="te"><img src="templates/chienquoc/images/quocgia_te_n.gif" /></a> <a
+                      href="javascript:;" id="so"><img src="templates/chienquoc/images/quocgia_so_n.gif" /></a> <a
+                      href="javascript:;" id="yen"><img src="templates/chienquoc/images/quocgia_yen_n.gif" /></a> <a
+                      href="javascript:;" id="trieu"><img src="templates/chienquoc/images/quocgia_trieu_n.gif" /></a>
+                    <a href="javascript:;" id="nguy"><img src="templates/chienquoc/images/quocgia_nguy_n.gif" /></a>
+                    <a href="javascript:;" id="tan"><img src="templates/chienquoc/images/quocgia_tan_n.gif" /></a>
+                    <img src="templates/chienquoc/images/quocgia_2.gif" />
+                  </p>
+                  <p> </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="footer" class="test">
+             <!-- <img src="templates/chienquoc/images/logo_netgame.gif" alt="Net Game"
+              width="51" height="48" />  -->
+              <!-- <img src="templates/chienquoc/images/logo_saigontel.gif" alt="SaigonTel" width="109" height="48" /> -->
+            <div class="text"> © Bản quyền 2025 của Chiến Quốc Online.<br />
+               </div>
+          </div>
+        </div>
+        <!-- CENTER COLUMN - END -->
+        <!-- container - end -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>

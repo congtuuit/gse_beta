@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Chiến Quốc Online</title>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Responsive bootstrap 4 admin template" name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap-stylesheet" />
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" id="app-stylesheet" />
+</head>
+
+<body data-layout="horizontal">
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- Navigation Bar-->
+        <header id="topnav">
+            <!-- Topbar Start -->
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <!-- LOGO -->
+                    <div class="logo-box">
+                        <a href="index.html" class="logo text-center">
+                            <span class="logo-lg">
+                                <img src="assets/images/chienquoc/logo_2d.png" alt="" srcset="">
+                            </span>
+                            <span class="logo-sm">
+                                <img src="assets/images/chienquoc/logo_2d.png" alt="" srcset="">
+                            </span>
+                        </a>
+                    </div>
+
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+                            <li class="has-submenu">
+                                <a href="login.html">
+                                    THÔNG TIN
+                                </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="register.html">
+                                    ĐĂNG KÝ
+                                </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="login.html">
+                                    ĐĂNG NHẬP
+                                </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="forget.html">
+                                    QUÊN MẬT KHẨU
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- end Topbar -->
+        </header>
+
+        <div class="content-page">
+            <div class="content">
+                <div class="account-pages my-1 pt-0">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 col-lg-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 style="color: white" class="font-16 m-2">Đăng Ký</h5>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <form action="https://www.chienquoc.com/register" method="post" class="p-2">
+                                            <input type="hidden" name="_token"
+                                                value="sKY8Lo7SN3O60dF0h9tDuDwDyS0eqi7i7DtFUKst">
+                                            <div class="form-group">
+                                                <label for="username">Họ tên</label>
+                                                <input class="form-control" type="text" id="username" name="hoten"
+                                                    required="" value='' placeholder="Nhập họ tên" autocomplete="off">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="username">Tài khoản</label>
+                                                <input class="form-control" type="text" id="username" name="taikhoan"
+                                                    required="" onkeydown="checkCapsLock(event)" value=''
+                                                    placeholder="Nhập tài khoản ( 6 - 15 ký tự )" autocomplete="off">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="password">Mật khẩu</label>
+                                                <input class="form-control" type="password" required="" name="matkhau"
+                                                    id="password" placeholder="Nhập mật khẩu ( 6 - 15 ký tự )"
+                                                    autocomplete="off">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="password">Nhập lại mật khẩu</label>
+                                                <input class="form-control" type="password" required=""
+                                                    name="matkhaunhaplai" id="password"
+                                                    placeholder="Nhập lại mật khẩu ( 6 - 15 ký tự )" autocomplete="off">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="emailaddress">Email address</label>
+                                                <input class="form-control" type="email" id="emailaddress" name="email"
+                                                    required="" value='' placeholder="Nhập email ( 6 - 50 ký tự )"
+                                                    autocomplete="off">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="password">Mật khẩu Cấp 2</label>
+                                                <input class="form-control" type="password" required="" name="matkhau2"
+                                                    id="password" placeholder="Nhập mật khẩu ( 6 - 15 ký tự )"
+                                                    autocomplete="off">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="password">Captcha</label><br>
+                                                <img
+                                                    src="data:image/jpeg;base64,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" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="password">Nhập Mã Captcha</label>
+                                                <input class="form-control" type="text" required="" name="captcha"
+                                                    id="captcha" placeholder="Nhập mã Captcha vào đây"
+                                                    autocomplete="off">
+                                            </div>
+
+                                            <div class="mb-3 mt-4 d-flex justify-content-center">
+                                                <button style="width:50%" class="btn btn-primary btn-block"
+                                                    name="dangky" type="submit"> Đăng Ký </button>
+                                            </div>
+
+                                            <div class="col-sm-12 text-center">
+                                                <a class="mb-0" href="login.html">← Trở về trang Đăng
+                                                    Nhập</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- end card-body -->
+                                </div>
+
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- end container -->
+                </div>
+                <script>
+                    function checkCapsLock(event) {
+                        var capsLockOn = event.getModifierState && event.getModifierState('CapsLock');
+                        if (capsLockOn) {
+                            // event.target.value = "";
+                            console.log('1');
+
+                        } else {
+                            console.log('');
+                        }
+                    }
+                </script>
+                <!-- Footer Start -->
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>2025 &copy; Chiến Quốc Online </p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vendor js -->
+    <script src="assets/js/vendor.min.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.min.js"></script>
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+</body>
+
+</html>
