@@ -93,7 +93,12 @@ int set_channel(int input)
 	return LoggedChannel = input;
 }
 
-int get_channel() { return LoggedChannel; }
+int get_channel()
+{
+	if (!LoggedChannel) return 1;
+	
+	return LoggedChannel;
+}
 
 int get_login_flag();
 
@@ -589,7 +594,7 @@ void heart_beat_loop_callout(object me, int effect1, int effect2, int effect3, i
 	mixTime = localtime(iTime);
 
 	USER_EFFECT_D->into_effect(me, effect1, effect2, effect3, effect4, effect5, effect6, effect7, effect8);
-	//USER_HEART_D->heart_beat_other(me);
+	// USER_HEART_D->heart_beat_other(me);
 
 	if (me->get_perform_file() && gone_time(me->get_perform_enable_time()) > 8)
 	{
@@ -1123,7 +1128,7 @@ void heart_beat_loop_callout(object me, int effect1, int effect2, int effect3, i
 		me->set_2("checklogged", me->get_2("checklogged") + 1);
 	}*/
 
-	//move_to_pvp_lobby(me);
+	// move_to_pvp_lobby(me);
 
 	// Kiểm tra danh hiệu chiến trường
 	if (sec % 300 == 0)
@@ -1261,29 +1266,29 @@ void heart_beat_loop_callout(object me, int effect1, int effect2, int effect3, i
 	}
 
 	if (me->get_pk() >= 300 && sec % 900 == 0)
+	{
+		if (map)
 		{
-			if (map)
+			if (!me->is_die())
 			{
-				if (!me->is_die())
-				{
 				bennhat = sprintf("%c+%d,%s=%d%c-", '\t', 0xdc82fe, me->get_name(), me->get_number(), '\t');
 				map = get_map_object(get_z(me));
 				ben = new("/npc/event/loithan");
 
-					send_user(get_scene_object_2(me, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(me), 25163, 1, OVER_BODY, PF_ONCE);
-					send_user(get_scene_object_2(me, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(me), 25164, 1, OVER_BODY, PF_ONCE);
-					CHAT_D->rumor_channel(0, CHAT + sprintf(HIM "Vì tội nghiệt quá nặng nề nên %s (%d) đã bị Lôi Thần dùng Ngũ Lôi Áp Đỉnh trừng phạt !!", bennhat, me->get_number()));
-					if (me->get_hp() > me->get_max_hp() / 2)
-					{
-						send_user(me, "%c%d%w%c%d%w%c", 0x48, getoid(me), me->get_max_hp() / 2, get_d(ben), getoid(me),
-								  hit_act, hit_act == HIT_NORMAL ? 2 : 1);
-						me->set_hp(me->get_hp() - ((me->get_max_hp() / 5) * 4));
-					}
-					else
-					{
-						send_user(me, "%c%d%w%c%d%w%c", 0x48, getoid(me), me->get_hp(), get_d(ben), getoid(me),
-								  hit_act, hit_act == HIT_NORMAL ? 2 : 1);
-						CHAR_DIE_D->is_enemy_die(ben, me, me->get_hp());
+				send_user(get_scene_object_2(me, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(me), 25163, 1, OVER_BODY, PF_ONCE);
+				send_user(get_scene_object_2(me, USER_TYPE), "%c%d%w%c%c%c", 0x6f, getoid(me), 25164, 1, OVER_BODY, PF_ONCE);
+				CHAT_D->rumor_channel(0, CHAT + sprintf(HIM "Vì tội nghiệt quá nặng nề nên %s (%d) đã bị Lôi Thần dùng Ngũ Lôi Áp Đỉnh trừng phạt !!", bennhat, me->get_number()));
+				if (me->get_hp() > me->get_max_hp() / 2)
+				{
+					send_user(me, "%c%d%w%c%d%w%c", 0x48, getoid(me), me->get_max_hp() / 2, get_d(ben), getoid(me),
+							  hit_act, hit_act == HIT_NORMAL ? 2 : 1);
+					me->set_hp(me->get_hp() - ((me->get_max_hp() / 5) * 4));
+				}
+				else
+				{
+					send_user(me, "%c%d%w%c%d%w%c", 0x48, getoid(me), me->get_hp(), get_d(ben), getoid(me),
+							  hit_act, hit_act == HIT_NORMAL ? 2 : 1);
+					CHAR_DIE_D->is_enemy_die(ben, me, me->get_hp());
 				}
 			}
 		}

@@ -120,7 +120,7 @@ void reconnect( object me, object body )
         if(     me->get_quest("escort.flag") == 1    // 运镖任务(物品)
         &&      stringp( id = me->get_quest("escort.robber") )    // 寻找蒙面人
         &&      objectp( npc = find_char(id) ) && npc->is_escort_robber()
-        &&      present("Vật Phẩm Quý Bấu", me, 1, MAX_CARRY*4) )
+        &&      present("Vật phẩm quý giá", me, 1, MAX_CARRY*4) )
         {
                 npc->start_fight(me);
                 me->set_quest("escort.robber#", npc );

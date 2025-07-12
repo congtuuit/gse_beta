@@ -232,10 +232,12 @@ void init_loop_perform(object me)
 	int *pf = ({});
 	object map, item;
 	string name1, name2;
-	if (me->is_user()) // 玩家
+	string phap_bao;
+
+	if (me->is_user())
 	{
 		if (get_effect_3(me, EFFECT_USER_HERB))
-			pf += ({00131, 10, OVER_BODY}); // 采集草药(自用)
+			pf += ({00131, 10, OVER_BODY}); 
 		map = get_map_object(get_z(me));
 		if (map && (map->get_map_type() == BATTLE_MAP) && (me->is_die() == 0))
 		{
@@ -259,7 +261,6 @@ void init_loop_perform(object me)
 	}
 	else // ＮＰＣ
 	{
-		// if(!me->get_action()) pf += ({ 9414, 1, UNDER_FOOT });   	// 召唤兽停止
 		if (get_effect_3(me, EFFECT_NPC_0531_1))
 			pf += ({5311, 1, OVER_BODY}); // 迷魂诀(他用)
 		if (get_effect_3(me, EFFECT_CHAR_SOUL_LOCK))
@@ -317,37 +318,51 @@ void init_loop_perform(object me)
 
 	if (item = me->get_equip(107))
 	{
-		if (item->get_name() == "Thối Nguyệt Chi Hoàn" || item->get_name() == "Nhật Nguyệt Tinh Thần" || item->get_name() == "Nhẫn Tình Nhân")
+		phap_bao = item->get_name();
+		if (phap_bao == "Thối Nguyệt Chi Hoàn" || phap_bao == "Nhật Nguyệt Tinh Thần" || phap_bao == "Nhẫn Tình Nhân")
 		{
 			pf += ({9009, 1, UNDER_FOOT});
+
+			//pf += ({ 41311, 1, UNDER_FOOT });
+
+			//pf += ({ 41100, 1, UNDER_FOOT });
+			//pf += ({ 42100, 1, UNDER_FOOT }); // cos the tao hieu ung xat thuong quanh
+
+			//pf += ({00131, 10, OVER_BODY}); // Giỏ hoa quả trên đầu
+			//pf += ({01011, 1, OVER_BODY});  // Âm nhạc
+			//pf += ({53112, 1, OVER_BODY}); // Ngủ
+
+
+			//pf += ({ 40812, 1, UNDER_FOOT }); bangw
+
 		}
 
-		if (item->get_name() == "Cửu Long Thần Hỏa Trảo")
+		if (phap_bao == "Cửu Long Thần Hỏa Trảo")
 		{
 			pf += ({9321, 1, UNDER_FOOT});
 		}
 
-		if (item->get_name() == "Thổ Hành Châu")
+		if (phap_bao == "Thổ Hành Châu")
 		{
 			pf += ({9322, 1, UNDER_FOOT});
 		}
 
-		if (item->get_name() == "Linh Tê Hoàn")
+		if (phap_bao == "Linh Tê Hoàn")
 		{
 			pf += ({9323, 1, UNDER_FOOT});
 		}
 
-		if (item->get_name() == "Khu Thần Lệnh")
+		if (phap_bao == "Khu Thần Lệnh")
 		{
 			pf += ({9324, 1, UNDER_FOOT});
 		}
 
-		if (item->get_name() == "Nhiếp Hồn Linh")
+		if (phap_bao == "Nhiếp Hồn Linh" || phap_bao == "Nhiếp Hồn Phong")
 		{
 			pf += ({9325, 1, UNDER_FOOT});
 		}
 
-		if (item->get_name() == "Chuông Hám Thiên")
+		if (phap_bao == "Chuông Hám Thiên")
 		{
 			pf += ({9326, 1, UNDER_FOOT});
 		}
@@ -378,28 +393,28 @@ void init_loop_perform(object me)
 				break;
 			case 600:
 				pf += ({9009, 1, UNDER_FOOT});
-				pf += ({5116, 1, UNDER_FOOT});
+				//pf += ({5116, 1, UNDER_FOOT});
 				break;
 			case 700:
 				pf += ({41341, 1, UNDER_FOOT});
-				pf += ({5116, 1, UNDER_FOOT});
+				//pf += ({5116, 1, UNDER_FOOT});
 				pf += ({9009, 1, UNDER_FOOT});
 
 				break;
 			case 800:
 				pf += ({41322, 1, UNDER_FOOT});
 				pf += ({9009, 1, UNDER_FOOT});
-				pf += ({5116, 1, UNDER_FOOT});
+				//pf += ({5116, 1, UNDER_FOOT});
 				break;
 			case 900:
 				pf += ({36321, 1, UNDER_FOOT});
 				pf += ({51143, 1, UNDER_FOOT});
 				pf += ({9009, 1, UNDER_FOOT});
-				pf += ({5116, 1, UNDER_FOOT});
+				//pf += ({5116, 1, UNDER_FOOT});
 				break;
 			case 1000:
 				pf += ({51313, 1, UNDER_FOOT});
-				pf += ({5116, 1, UNDER_FOOT});
+				//pf += ({5116, 1, UNDER_FOOT});
 				pf += ({9009, 1, UNDER_FOOT});
 				break;
 			}
@@ -458,14 +473,14 @@ void init_loop_perform(object me)
 				{
 					pf += ({ 40812, 1, UNDER_FOOT });
 					pf += ({ 59111, 1, UNDER_FOOT });
-					pf += ({ 95619, 1, UNDER_FOOT });
+					//pf += ({ 95619, 1, UNDER_FOOT });
 				}
 			}	*/
 
 	// hieu ung phi phong
 	if (item = me->get_equip(109))
 	{
-		if (me->get_save_2("back_item_effect") == 1 && (item->level() > 1 || item->get_name() == "Thiên Ma Chi Dực +1" || item->get_name() == "Thiên Ma Chi Dực +2"))
+		if (me->get_save_2("back_item_effect") == 1 && (item->level() > 1 || phap_bao == "Thiên Ma Chi Dực +1" || phap_bao == "Thiên Ma Chi Dực +2"))
 		{
 			// vonglua
 			// pf += ({ 51313, 1, UNDER_FOOT });

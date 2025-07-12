@@ -7,6 +7,7 @@
 #include <city.h>
 #include <cmd.h>
 
+#define CHANNEL_D "/sys/channel/channel_d"
 #define SERVER INI_DIR "server.ini"
 #define WELCOME "welcome.txt"
 #define LOGIN_LOG "loginfo.txt"
@@ -226,6 +227,7 @@ void connect(object me, string id, string code, int order)
 
 		// Gọi vòng lặp để check kết quả
 		me->authentic_callout();
+
 		// Gọi vòng lặp để check kết quả
 		me->user_authentic_callout(passwd, order);
 	}
@@ -389,9 +391,11 @@ void enter_world(object me, int channelCode)
 	me->set_channel(channelCode);
 
 	// Add user to channel manager
-	if (CHANNEL_D)
+	//if (CHANNEL_D)
 	{
-		CHANNEL_D->add_user_to_channel(me, channelCode);
+    	log_file("_debug.txt", sprintf("LOGIN channelCode %d\n", channelCode));
+
+		"/sys/channel/channel_d"->add_user_to_channel(me, channelCode);
 	}
 
 	if ((is_gm(me) && CHECK_D->check_gm_ip(get_ip_name(me), 1) != 1) || (is_gm2(me) && CHECK_D->check_gm_ip(get_ip_name(me), 2) != 1) || (is_gm3(me) && CHECK_D->check_gm_ip(get_ip_name(me), 3) != 1) || (is_god(me) && CHECK_D->check_gm_ip(get_ip_name(me), 4) != 1))
@@ -575,7 +579,7 @@ void enter_world(object me, int channelCode)
 	USER_SLAVE_D->restore_all_slave(me); // 召唤兽保留１分钟
 
 	if (me->get_quest("escort.flag") == 1 && stringp(id = me->get_quest("escort.robber")) // 寻找蒙面人
-		&& objectp(npc = find_char(id)) && npc->is_escort_robber() && present("Vật Phẩm Quý Bấu", me, 1, MAX_CARRY * 4))
+		&& objectp(npc = find_char(id)) && npc->is_escort_robber() && present("Vật phẩm quý giá", me, 1, MAX_CARRY * 4))
 	{
 		npc->start_fight(me);
 		me->set_quest("escort.robber#", npc);

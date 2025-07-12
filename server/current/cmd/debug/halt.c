@@ -1,7 +1,6 @@
-
 #include <ansi.h>
 
-// 函数：命令处理
+// 函数：命令处理 → Hàm: Xử lý lệnh
 int main( object me, string arg )
 {
         object *char, who = me;
@@ -9,13 +8,13 @@ int main( object me, string arg )
 
         if( is_player(me) ) 
         {
-                notify( "。" );
+                notify( "Bạn không có quyền sử dụng lệnh này。" );
 		return 1;
         }
 
         if( arg && !( who = find_any_char(arg) ) ) 
         {
-                notify( "您无法找到这个人。" );
+                notify( "Không thể tìm thấy người này。" );
 		return 1;
         }
 
@@ -27,12 +26,12 @@ int main( object me, string arg )
 
         if( who == me )
         {
-                tell_user( me, HIY "您强行中止了涉及您的战斗。" );
+                tell_user( me, HIY "Bạn đã cưỡng chế kết thúc tất cả trận chiến liên quan đến mình。" );
         }
         else
         {
-                tell_user( me, HIY "您强行中止了涉及%s的战斗。", who->get_name() );
-                write_user( who, HIY "%s强行中止了涉及您的战斗。", me->get_name() );
+                tell_user( me, HIY "Bạn đã cưỡng chế kết thúc tất cả trận chiến liên quan đến %s。", who->get_name() );
+                write_user( who, HIY "%s đã cưỡng chế kết thúc tất cả trận chiến liên quan đến bạn。", me->get_name() );
         }
 
         return 1;

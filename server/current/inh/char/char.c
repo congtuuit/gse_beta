@@ -27,7 +27,11 @@ int set_channel(int input)
 {
         return Channel = input;
 }
-int get_channel() { return Channel; }
+
+int get_channel()
+{
+        return Channel;
+}
 
 // 函数：人物识别函数
 int is_char() { return 1; }
@@ -273,73 +277,76 @@ varargs void show_to_scene(object *user, int x, int y, int d, int add_pf, int ad
 // Chức năng: Nhập xử lý cảnh (chỉ dành cho NPC)
 varargs void add_to_scene(int z, int x, int y, int d, int add_pf, int add_pf_2, int rm_pf, int rm_pf_2)
 {
-	object me = this_object();
-	object who = me->get_owner();
-	int z0 = get_z(me), x0 = get_x(me), y0 = get_y(me);
-	int me_oid = getoid(me);
-	int me_channel = me->get_channel();
-	object *user, *npc;
+        object me = this_object();
+        object who = me->get_owner();
+        int z0 = get_z(me), x0 = get_x(me), y0 = get_y(me);
+        int me_oid = getoid(me);
+        int me_channel = me->get_channel();
+        object *user, *npc;
 
-	// Xóa block cũ và thông báo xoá
-	remove_block(z0, x0, y0, CHAR_BLOCK);
+        // Xóa block cũ và thông báo xoá
+        remove_block(z0, x0, y0, CHAR_BLOCK);
 
-	user = get_scene_object(z0, x0, y0, USER_TYPE) - ({me});
-	user = filter_by_channel(user, me_channel);
+        user = get_scene_object(z0, x0, y0, USER_TYPE) - ({me});
+        user = filter_by_channel(user, me_channel);
 
-	if (!rm_pf)
-		send_user(user, "%c%d", 0x78, me_oid);
-	else if (!rm_pf_2)
-		send_user(user, "%c%d%w%c%c", 0x78, me_oid, rm_pf, 1, OVER_BODY);
-	else
-		send_user(user, "%c%d%w%c%c%w%c%c", 0x78, me_oid, rm_pf, 1, OVER_BODY, rm_pf_2, 1, OVER_BODY);
+        if (!rm_pf)
+                send_user(user, "%c%d", 0x78, me_oid);
+        else if (!rm_pf_2)
+                send_user(user, "%c%d%w%c%c", 0x78, me_oid, rm_pf, 1, OVER_BODY);
+        else
+                send_user(user, "%c%d%w%c%c%w%c%c", 0x78, me_oid, rm_pf, 1, OVER_BODY, rm_pf_2, 1, OVER_BODY);
 
-	// Di chuyển
-	set_z(me, z); set_x(me, x); set_y(me, y); set_d(me, d);
-	set_block(z, x, y, CHAR_BLOCK);
+        // Di chuyển
+        set_z(me, z);
+        set_x(me, x);
+        set_y(me, y);
+        set_d(me, d);
+        set_block(z, x, y, CHAR_BLOCK);
 
-	if (objectp(who) && who->is_user())
-		move_object(me, z, x, y, USER_TYPE);
-	else
-		move_object(me, z, x, y, CHAR_TYPE);
+        if (objectp(who) && who->is_user())
+                move_object(me, z, x, y, USER_TYPE);
+        else
+                move_object(me, z, x, y, CHAR_TYPE);
 
-	// Gửi hiển thị mới
-	user = get_scene_object(z, x, y, USER_TYPE);
-	user = filter_by_channel(user, me_channel);
-	show_to_scene(user, x, y, d, add_pf, add_pf_2);
+        // Gửi hiển thị mới
+        user = get_scene_object(z, x, y, USER_TYPE);
+        user = filter_by_channel(user, me_channel);
+        show_to_scene(user, x, y, d, add_pf, add_pf_2);
 
-	// Xử lý vùng an toàn
-	if (MAP_D->is_inside_safe_zone(z, x, y))
-	{
-		me->set_no_fight(1);
-	}
-	else
-	{
-		me->set_no_fight(0);
+        // Xử lý vùng an toàn
+        if (MAP_D->is_inside_safe_zone(z, x, y))
+        {
+                me->set_no_fight(1);
+        }
+        else
+        {
+                me->set_no_fight(0);
 
-		if (me->get_action_mode() == 1)
-		{
-			if (objectp(who)) // Có chủ
-			{
-				npc = get_range_object_2(me, 6, CHAR_TYPE);
-				if (sizeof(npc))
-				{
-					npc->init_heart_beat_idle();
-					npc->auto_fight(me);
-				}
-			}
-			else
-			{
-				who = get_near_object(z, x, y, 6, USER_TYPE);
-				if (objectp(who)) me->auto_fight(who);
-			}
-		}
-	}
+                if (me->get_action_mode() == 1)
+                {
+                        if (objectp(who)) // Có chủ
+                        {
+                                npc = get_range_object_2(me, 6, CHAR_TYPE);
+                                if (sizeof(npc))
+                                {
+                                        npc->init_heart_beat_idle();
+                                        npc->auto_fight(me);
+                                }
+                        }
+                        else
+                        {
+                                who = get_near_object(z, x, y, 6, USER_TYPE);
+                                if (objectp(who))
+                                        me->auto_fight(who);
+                        }
+                }
+        }
 
-	// Loại bỏ hiệu ứng "dính tay"
-	if (get_effect(me, EFFECT_CHAR_CHAN))
-		set_effect(me, EFFECT_CHAR_CHAN, 1);
+        // Loại bỏ hiệu ứng "dính tay"
+        if (get_effect(me, EFFECT_CHAR_CHAN))
+                set_effect(me, EFFECT_CHAR_CHAN, 1);
 }
-
 
 void remove_to_user(object who)
 {

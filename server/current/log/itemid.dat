@@ -77,3 +77,20 @@
 2025-05-06 22:28:39 3077 Lạc Thanh Chi Tiễn /item/common/stone/duclo;1;[#3077#]0,0
 2025-05-06 22:38:15 3078 Đại Huyết Thạch /item/sell/0002;1;[#3078#]0,0
 2025-05-07 06:19:32 3079 Đá Mê Cung /item/common/stone/damecung;1;[#3079#]0,0
+2025-07-11 09:06:26 5001 Phong Hành Giả Trang (Nam) /item/100/10059;0;35099;35099;!%:1000,|!%:1000,dp:300,|dp:300,pp:300,|pp:300,hp:500,|hp:500,?%:500,|?%:500,bind:4,ADD:,=:2,+:0,$:50,B:0,;[#5001#]0,0
+2025-07-11 09:14:44 5002 Thiên Nguyên Đan /item/sell/0042;1;[#5002#]0,0
+2025-07-11 09:15:58 5003 Nhật Nguyệt Tinh Thần /item/mop/9988;0;35099;35099;0;[#5003#]0,0
+2025-07-11 12:46:22 5004 Long Châu /item/00/0001;0;[#5004#]0,0
+2025-07-11 12:57:56 5005 Túi Hoàng Kim Tân Thủ cấp 20 /item/test/tuihoangkimtanthucap20;0;[#5005#]0,0
+2025-07-11 13:34:37 5006 Rương Trang Bị (Khóa) /item/common/box/trangbi/box;1;[#5006#]0,0
+2025-07-11 13:35:16 5007 Tử Sâm Đơn /item/91/9167;0;[#5007#]0,0
+2025-07-11 13:38:10 5008 Auto Farm /item/common/tool;0;[#5008#]0,0
+2025-07-11 14:22:18 5009 Rương Trang Bị (Khóa) /item/common/box/trangbi/box;1;[#5009#]0,0
+2025-07-11 16:23:54 5010 Rương và Chìa khóa /item/common/box/tukim/1;1;[#5010#]0,0
+2025-07-11 16:24:05 5011 Tử Kim Bảo Rương (Khóa) /item/common/box/tukim/box;1;[#5011#]0,0
+2025-07-11 16:24:05 5012 Chìa Khoá Tử Kim /item/common/box/tukim/key;1;[#5012#]0,0
+2025-07-11 16:24:31 5013 Siêu Trị Dược /item/common/box/tukim/item/sieutriduoc;1;[#5013#]0,0
+2025-07-11 16:39:15 5014 Túi Thú Cưỡi Nâng Cấp /item/ride/thanthu2/tuithanthuVIP;0;[#5014#]0,0
+2025-07-11 16:39:16 5015 Hỏa Kì Lân /item/ride/thanthu2/003;0;0;0;ADD:,=:2,+:0,$:500,B:0,;[#5015#]0,0
+2025-07-11 16:39:29 5016 Túi Thú Cưỡi Nâng Cấp /item/ride/thanthu2/tuithanthuVIP;0;[#5016#]0,0
+2025-07-11 16:39:31 5017 Hoả Đại Hùng /item/ride/thanthu2/001;0;0;0;bind:1,ADD:,=:2,+:0,$:500,B:0,;[#5017#]0,0

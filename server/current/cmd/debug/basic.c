@@ -17,6 +17,10 @@ int main(object me, string arg2)
 		notify("。");
 		return 1;
 	}
+
+
+	notify(sprintf("Kenh %d", me->get_channel()));
+
 	if (!arg2)
 		return 1;
 	ids = explode(arg2, " ");

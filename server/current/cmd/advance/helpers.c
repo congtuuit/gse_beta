@@ -5,10 +5,10 @@ public int star = 9;
 public string VIP_CHAT_CONTENTS = "../common/vipchatcontents";
 public string ORG_CHAT_CONTENTS = "../common/orgchatcontents";
 public string LOGIN_CONTENTS = "../common/logins.txt";
-public string BAOTRI = "../common/baotri.txt";
 public string DEBUG = "../common/debug.txt";
 public string ALL_SERVER = "../common/server.txt";
 public string FILE_ACC = "../current/taikhoan.ini";
+public string BAOTRI = ".baotri";
 
 int get_level() {return number;}
 int set_level(int i){return number = i;}

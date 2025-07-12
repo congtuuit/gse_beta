@@ -392,3 +392,40 @@ object *filter_by_channel(object *users, int channel)
 {
 	return filter_array(users, ( : get_this_channel($1) == $2 || get_this_channel($1) == 0 :), channel);
 }
+
+// OPTIMIZED
+object *get_range_object_2_by_channel(object me, int range, int type)
+{
+    object *objects, *result;
+    int i, sz, channel;
+
+    // Lấy tất cả đối tượng trong phạm vi
+    objects = get_range_object_2(me, range, type);
+
+    // Không cần lọc nếu không phải người
+    if (type != USER_TYPE && type != CHAR_TYPE) return objects;
+
+    // Khởi tạo kênh và kết quả
+    channel = me->get_channel();
+    result = ({});
+
+    sz = sizeof(objects);
+    for (i = 0; i < sz; i++)
+    {
+        object obj = objects[i];
+        if (!objectp(obj)) continue;
+
+        if ((obj->is_user() || obj->is_player()) && obj->get_channel() == channel)
+        {
+            result += ({ obj });
+        }
+    }
+
+    // Chèn chính mình nếu cần
+    if ((me->is_user() || me->is_player()) && member_array(me, result) == -1)
+    {
+        result += ({ me });
+    }
+
+    return result;
+}

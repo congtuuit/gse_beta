@@ -442,7 +442,7 @@ void do_task_finish(object who, object me)
 			}
 			flag = 1;
 			name = who->get_quest("escort.escort");
-			if (!(item = present("Vật Phẩm Quý Bấu", who, 1, MAX_CARRY * 4)))
+			if (!(item = present("Vật phẩm quý giá", who, 1, MAX_CARRY * 4)))
 			{
 				send_user(who, "%c%s", '!', "Bạn đang hộ tống gì ?");
 				return;
@@ -612,7 +612,7 @@ void do_task_cancel(object who, object me)
 
 		if (who->get_quest("escort.leader") == 1)    // 队长取消
 		{
-			while (item = present("Vật Phẩm Quý Bấu", who, 1, MAX_CARRY * 4))
+			while (item = present("Vật phẩm quý giá", who, 1, MAX_CARRY * 4))
 			{
 				item->remove_from_user();
 				destruct(item);
@@ -690,7 +690,7 @@ void task_giveup(object who)
 
 		if (who->get_quest("escort.leader") == 1)    // 队长取消
 		{
-			while (item = present("Vật Phẩm Quý Bấu", who, 1, MAX_CARRY * 4))
+			while (item = present("Vật phẩm quý giá", who, 1, MAX_CARRY * 4))
 			{
 				item->remove_from_user();
 				destruct(item);

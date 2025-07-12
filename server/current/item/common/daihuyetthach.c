@@ -37,7 +37,7 @@ int get_use_effect_callout( object who,object item)
 {
 	if ( get_effect(who, EFFECT_XUESHI_HP) )
 	{
-		send_user( who, "%c%c%w%s", ':', 3, 0,sprintf("你身上已经有一个血石在产生作用，你确定要覆盖它的效果吗？\n"ESC"Đồng ý.\nuse ! %x#\n"ESC"Thoát.",getoid(item))); 
+		send_user( who, "%c%c%w%s", ':', 3, 0,sprintf("Bạn vẫn đang còn hiệu quả Huyết Thạch, bạn muốn sử dụng đè lên không ?\n"ESC"Xác nhận\nuse ! %x#\n"ESC"Huỷ bỏ",getoid(item))); 
 		return 0;
 	}
 	set_effect_2(who, EFFECT_XUESHI_HP,  1800, 2);
@@ -56,9 +56,9 @@ void into_effect(object me)
 string get_loop_desc(object me)
 {
 	if (me->get_save("stone_hp")==40)
-		return sprintf("Tiểu Huyết Thạch:\n    使用后每2秒可恢复%d点气血值", me->get_save("stone_hp"));
+		return sprintf("Tiểu Huyết Thạch:\n    Mỗi 2 giây hồi phục %d Khí Huyết", me->get_save("stone_hp"));
 	else
-		return sprintf("Đại Huyết Thạch:\n    使用后每2秒可恢复%d点气血值", me->get_save("stone_hp"));
+		return sprintf("Đại Huyết Thạch:\n    Mỗi 2 giây hồi phục %d Khí Huyết", me->get_save("stone_hp"));
 }
 // 函数：使用效果
 int confirm_use( object me ) { return __FILE__ ->confirm_use_callout( me, this_object() ); }

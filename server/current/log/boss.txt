@@ -134,3 +134,312 @@
 2025-05-06 22:47:05 Âm Gian Bạn Đồ xuất hiện
 2025-05-06 22:47:05 Hổ Vương xuất hiện
 2025-05-06 22:47:05 Khuyển Thái Lang xuất hiện
+2025-07-10 19:30:16 Khu Thi Đạo Trưởng xuất hiện
+2025-07-10 19:30:16 Âm Gian Bạn Đồ xuất hiện
+2025-07-10 19:30:16 Hổ Vương xuất hiện
+2025-07-10 19:30:16 Khuyển Thái Lang xuất hiện
+2025-07-10 19:31:17 Uy Võ Đại Tướng Quân xuất hiện
+2025-07-10 19:45:54 Khu Thi Đạo Trưởng xuất hiện
+2025-07-10 19:45:54 Uy Võ Đại Tướng Quân xuất hiện
+2025-07-10 19:45:54 Âm Gian Bạn Đồ xuất hiện
+2025-07-10 19:45:54 Hổ Vương xuất hiện
+2025-07-10 19:45:54 Khuyển Thái Lang xuất hiện
+2025-07-10 19:48:30 Khu Thi Đạo Trưởng xuất hiện
+2025-07-10 19:48:30 Uy Võ Đại Tướng Quân xuất hiện
+2025-07-10 19:48:30 Âm Gian Bạn Đồ xuất hiện
+2025-07-10 19:48:30 Hổ Vương xuất hiện
+2025-07-10 19:48:30 Khuyển Thái Lang xuất hiện
+2025-07-10 19:49:00 Khu Thi Đạo Trưởng xuất hiện
+2025-07-10 19:49:00 Uy Võ Đại Tướng Quân xuất hiện
+2025-07-10 19:49:00 Âm Gian Bạn Đồ xuất hiện
+2025-07-10 19:49:00 Hổ Vương xuất hiện
+2025-07-10 19:49:00 Khuyển Thái Lang xuất hiện
+2025-07-10 19:51:57 Khu Thi Đạo Trưởng xuất hiện
+2025-07-10 19:51:57 Âm Gian Bạn Đồ xuất hiện
+2025-07-10 19:51:57 Hổ Vương xuất hiện
+2025-07-10 19:51:57 Khuyển Thái Lang xuất hiện
+2025-07-10 19:56:51 Uy Võ Đại Tướng Quân xuất hiện
+2025-07-10 19:57:28 Khu Thi Đạo Trưởng xuất hiện
+2025-07-10 19:57:28 Uy Võ Đại Tướng Quân xuất hiện
+2025-07-10 19:57:28 Âm Gian Bạn Đồ xuất hiện
+2025-07-10 19:57:28 Hổ Vương xuất hiện
+2025-07-10 19:57:28 Khuyển Thái Lang xuất hiện
+2025-07-10 20:00:27 Huyễn Thú xuất hiện
+2025-07-10 20:00:27 Long Thần xuất hiện
+2025-07-10 20:00:27 Long Thần xuất hiện
+2025-07-10 20:00:27 Thiên Long
+2025-07-10 20:00:27 Sơn đại vương
+2025-07-10 21:39:27 Sơn Đại Vương xuất hiện
+2025-07-10 21:39:27 Huyễn Thú xuất hiện
+2025-07-10 21:39:27Ảo Ảnh xuất hiện
+2025-07-10 21:39:27Ảo Ảnh xuất hiện
+2025-07-10 21:44:10 Huyễn Thú xuất hiện
+2025-07-10 21:44:10Ảo Ảnh xuất hiện
+2025-07-10 21:44:10Ảo Ảnh xuất hiện
+2025-07-10 21:44:11 Khu Thi Đạo Trưởng xuất hiện
+2025-07-10 21:44:11 Uy Võ Đại Tướng Quân xuất hiện
+2025-07-10 21:44:11 Âm Gian Bạn Đồ xuất hiện
+2025-07-10 21:44:11 Hổ Vương xuất hiện
+2025-07-10 21:44:11 Khuyển Thái Lang xuất hiện
+2025-07-10 21:48:24 Huyễn Thú xuất hiện
+2025-07-10 21:48:24Ảo Ảnh xuất hiện
+2025-07-10 21:48:24Ảo Ảnh xuất hiện
+2025-07-10 21:48:25 Khu Thi Đạo Trưởng xuất hiện
+2025-07-10 21:48:25 Uy Võ Đại Tướng Quân xuất hiện
+2025-07-10 21:48:25 Âm Gian Bạn Đồ xuất hiện
+2025-07-10 21:48:25 Hổ Vương xuất hiện
+2025-07-10 21:48:25 Khuyển Thái Lang xuất hiện
+2025-07-10 21:48:43 Huyễn Thú xuất hiện
+2025-07-10 21:48:43Ảo Ảnh xuất hiện
+2025-07-10 21:48:43Ảo Ảnh xuất hiện
+2025-07-10 21:48:45 Khu Thi Đạo Trưởng xuất hiện
+2025-07-10 21:48:45 Âm Gian Bạn Đồ xuất hiện
+2025-07-10 21:48:45 Hổ Vương xuất hiện
+2025-07-10 21:48:45 Khuyển Thái Lang xuất hiện
+2025-07-10 21:49:19 Huyễn Thú xuất hiện
+2025-07-10 21:49:19Ảo Ảnh xuất hiện
+2025-07-10 21:49:19Ảo Ảnh xuất hiện
+2025-07-10 21:49:20 Khu Thi Đạo Trưởng xuất hiện
+2025-07-10 21:49:20 Uy Võ Đại Tướng Quân xuất hiện
+2025-07-10 21:49:20 Âm Gian Bạn Đồ xuất hiện
+2025-07-10 21:49:20 Hổ Vương xuất hiện
+2025-07-10 21:49:20 Khuyển Thái Lang xuất hiện
+2025-07-10 21:50:21 Huyễn Thú xuất hiện
+2025-07-10 21:50:21Ảo Ảnh xuất hiện
+2025-07-10 21:50:21Ảo Ảnh xuất hiện
+2025-07-10 21:50:23 Khu Thi Đạo Trưởng xuất hiện
+2025-07-10 21:50:23 Âm Gian Bạn Đồ xuất hiện
+2025-07-10 21:50:23 Hổ Vương xuất hiện
+2025-07-10 21:50:23 Khuyển Thái Lang xuất hiện
+2025-07-10 21:52:03 Uy Võ Đại Tướng Quân xuất hiện
+2025-07-10 21:53:20 Huyễn Thú xuất hiện
+2025-07-10 21:53:20Ảo Ảnh xuất hiện
+2025-07-10 21:53:20Ảo Ảnh xuất hiện
+2025-07-10 21:53:21 Khu Thi Đạo Trưởng xuất hiện
+2025-07-10 21:53:21 Uy Võ Đại Tướng Quân xuất hiện
+2025-07-10 21:53:21 Âm Gian Bạn Đồ xuất hiện
+2025-07-10 21:53:21 Hổ Vương xuất hiện
+2025-07-10 21:53:21 Khuyển Thái Lang xuất hiện
+2025-07-10 21:56:20 Huyễn Thú xuất hiện
+2025-07-10 21:56:20Ảo Ảnh xuất hiện
+2025-07-10 21:56:20Ảo Ảnh xuất hiện
+2025-07-10 21:56:21 Khu Thi Đạo Trưởng xuất hiện
+2025-07-10 21:56:21 Uy Võ Đại Tướng Quân xuất hiện
+2025-07-10 21:56:21 Âm Gian Bạn Đồ xuất hiện
+2025-07-10 21:56:21 Hổ Vương xuất hiện
+2025-07-10 21:56:21 Khuyển Thái Lang xuất hiện
+2025-07-10 22:07:01 Huyễn Thú xuất hiện
+2025-07-10 22:07:01 Long Thần xuất hiện
+2025-07-10 22:07:01 Long Thần xuất hiện
+2025-07-10 22:07:01 Thiên Long
+2025-07-10 22:07:03 Khu Thi Đạo Trưởng xuất hiện
+2025-07-10 22:07:03 Âm Gian Bạn Đồ xuất hiện
+2025-07-10 22:07:03 Hổ Vương xuất hiện
+2025-07-10 22:07:03 Khuyển Thái Lang xuất hiện
+2025-07-10 22:07:32 Huyễn Thú xuất hiện
+2025-07-10 22:07:32 Long Thần xuất hiện
+2025-07-10 22:07:32 Long Thần xuất hiện
+2025-07-10 22:07:32 Thiên Long
+2025-07-10 22:07:34 Khu Thi Đạo Trưởng xuất hiện
+2025-07-10 22:07:34 Âm Gian Bạn Đồ xuất hiện
+2025-07-10 22:07:34 Hổ Vương xuất hiện
+2025-07-10 22:07:34 Khuyển Thái Lang xuất hiện
+2025-07-10 22:09:16 Uy Võ Đại Tướng Quân xuất hiện
+2025-07-10 22:11:59 Huyễn Thú xuất hiện
+2025-07-10 22:11:59 Long Thần xuất hiện
+2025-07-10 22:11:59 Long Thần xuất hiện
+2025-07-10 22:11:59 Thiên Long
+2025-07-10 22:12:00 Khu Thi Đạo Trưởng xuất hiện
+2025-07-10 22:12:00 Uy Võ Đại Tướng Quân xuất hiện
+2025-07-10 22:12:00 Âm Gian Bạn Đồ xuất hiện
+2025-07-10 22:12:00 Hổ Vương xuất hiện
+2025-07-10 22:12:00 Khuyển Thái Lang xuất hiện
+2025-07-10 22:13:52 Huyễn Thú xuất hiện
+2025-07-10 22:13:52 Long Thần xuất hiện
+2025-07-10 22:13:52 Long Thần xuất hiện
+2025-07-10 22:13:52 Thiên Long
+2025-07-10 22:13:53 Khu Thi Đạo Trưởng xuất hiện
+2025-07-10 22:13:53 Uy Võ Đại Tướng Quân xuất hiện
+2025-07-10 22:13:53 Âm Gian Bạn Đồ xuất hiện
+2025-07-10 22:13:53 Hổ Vương xuất hiện
+2025-07-10 22:13:53 Khuyển Thái Lang xuất hiện
+2025-07-10 22:19:47 Huyễn Thú xuất hiện
+2025-07-10 22:19:47 Long Thần xuất hiện
+2025-07-10 22:19:47 Long Thần xuất hiện
+2025-07-10 22:19:47 Thiên Long
+2025-07-10 22:19:48 Khu Thi Đạo Trưởng xuất hiện
+2025-07-10 22:19:48 Âm Gian Bạn Đồ xuất hiện
+2025-07-10 22:19:48 Hổ Vương xuất hiện
+2025-07-10 22:19:48 Khuyển Thái Lang xuất hiện
+2025-07-10 22:21:28 Uy Võ Đại Tướng Quân xuất hiện
+2025-07-11 08:42:11 Đoạt Bảo Mã Tặc đã xuất hiện
+2025-07-11 08:42:11 Đoạt Bảo tặc
+2025-07-11 08:43:13 Đoạt Bảo Mã Tặc đã xuất hiện
+2025-07-11 08:43:13 Đoạt Bảo tặc
+2025-07-11 10:00:13 Đoạt Bảo Mã Tặc đã xuất hiện
+2025-07-11 10:00:13 Đoạt Bảo tặc
+2025-07-11 10:16:02 Đoạt Bảo Mã Tặc đã xuất hiện
+2025-07-11 10:16:02 Đoạt Bảo tặc
+2025-07-11 10:30:27 Đoạt Bảo Mã Tặc đã xuất hiện
+2025-07-11 10:30:27 Đoạt Bảo tặc
+2025-07-11 12:00:57 Đoạt Bảo Mã Tặc đã xuất hiện
+2025-07-11 12:00:57 Đoạt Bảo tặc
+2025-07-11 12:05:24 Đoạt Bảo Mã Tặc đã xuất hiện
+2025-07-11 12:05:24 Đoạt Bảo tặc
+2025-07-11 12:10:28 Đoạt Bảo Mã Tặc đã xuất hiện
+2025-07-11 12:10:28 Đoạt Bảo tặc
+2025-07-11 12:11:18 Đoạt Bảo Mã Tặc đã xuất hiện
+2025-07-11 12:11:18 Đoạt Bảo tặc
+2025-07-11 14:00:44 Đoạt Bảo Mã Tặc đã xuất hiện
+2025-07-11 14:00:44 Đoạt Bảo tặc
+2025-07-11 15:54:51 Huyễn Thú xuất hiện
+2025-07-11 15:54:51 Phi Tặc Vương xuất hiện
+2025-07-11 15:54:51Ảo Ảnh xuất hiện
+2025-07-11 15:54:51Ảo Ảnh xuất hiện
+2025-07-11 15:54:51 Long Thần xuất hiện
+2025-07-11 15:54:51 Long Thần xuất hiện
+2025-07-11 15:59:52 Huyễn Thú xuất hiện
+2025-07-11 15:59:52 Phi Tặc Vương xuất hiện
+2025-07-11 15:59:52Ảo Ảnh xuất hiện
+2025-07-11 15:59:52 Long Thần xuất hiện
+2025-07-11 16:00:51 Đoạt Bảo Mã Tặc đã xuất hiện
+2025-07-11 16:00:51 Đoạt Bảo tặc
+2025-07-11 16:04:52 Huyễn Thú xuất hiện
+2025-07-11 16:04:52 Phi Tặc Vương xuất hiện
+2025-07-11 16:04:52Ảo Ảnh xuất hiện
+2025-07-11 16:04:52 Long Thần xuất hiện
+2025-07-11 16:06:47 Huyễn Thú xuất hiện
+2025-07-11 16:06:47 Phi Tặc Vương xuất hiện
+2025-07-11 16:06:47Ảo Ảnh xuất hiện
+2025-07-11 16:06:47Ảo Ảnh xuất hiện
+2025-07-11 16:06:47 Long Thần xuất hiện
+2025-07-11 16:06:47 Long Thần xuất hiện
+2025-07-11 16:06:47 Đoạt Bảo Mã Tặc đã xuất hiện
+2025-07-11 16:06:47 Đoạt Bảo tặc
+2025-07-11 16:09:36 Huyễn Thú xuất hiện
+2025-07-11 16:09:36 Phi Tặc Vương xuất hiện
+2025-07-11 16:09:36Ảo Ảnh xuất hiện
+2025-07-11 16:09:36Ảo Ảnh xuất hiện
+2025-07-11 16:09:36 Long Thần xuất hiện
+2025-07-11 16:09:36 Long Thần xuất hiện
+2025-07-11 16:09:36 Đoạt Bảo Mã Tặc đã xuất hiện
+2025-07-11 16:09:36 Đoạt Bảo tặc
+2025-07-11 16:11:42 Huyễn Thú xuất hiện
+2025-07-11 16:11:42 Phi Tặc Vương xuất hiện
+2025-07-11 16:11:42Ảo Ảnh xuất hiện
+2025-07-11 16:11:42Ảo Ảnh xuất hiện
+2025-07-11 16:11:42 Long Thần xuất hiện
+2025-07-11 16:11:42 Long Thần xuất hiện
+2025-07-11 16:11:42 Đoạt Bảo Mã Tặc đã xuất hiện
+2025-07-11 16:11:42 Đoạt Bảo tặc
+2025-07-11 16:16:42 Huyễn Thú xuất hiện
+2025-07-11 16:16:42 Phi Tặc Vương xuất hiện
+2025-07-11 16:16:42Ảo Ảnh xuất hiện
+2025-07-11 16:16:42 Long Thần xuất hiện
+2025-07-11 16:17:43 Huyễn Thú xuất hiện
+2025-07-11 16:17:43 Phi Tặc Vương xuất hiện
+2025-07-11 16:17:43Ảo Ảnh xuất hiện
+2025-07-11 16:17:43Ảo Ảnh xuất hiện
+2025-07-11 16:17:43 Long Thần xuất hiện
+2025-07-11 16:17:43 Long Thần xuất hiện
+2025-07-11 16:17:43 Đoạt Bảo Mã Tặc đã xuất hiện
+2025-07-11 16:17:43 Đoạt Bảo tặc
+2025-07-11 16:22:44 Huyễn Thú xuất hiện
+2025-07-11 16:22:44 Phi Tặc Vương xuất hiện
+2025-07-11 16:22:44Ảo Ảnh xuất hiện
+2025-07-11 16:22:44 Long Thần xuất hiện
+2025-07-11 16:27:44 Huyễn Thú xuất hiện
+2025-07-11 16:27:44 Phi Tặc Vương xuất hiện
+2025-07-11 16:27:44Ảo Ảnh xuất hiện
+2025-07-11 16:27:44 Long Thần xuất hiện
+2025-07-11 16:32:45 Huyễn Thú xuất hiện
+2025-07-11 16:32:45 Phi Tặc Vương xuất hiện
+2025-07-11 16:32:45Ảo Ảnh xuất hiện
+2025-07-11 16:32:45 Long Thần xuất hiện
+2025-07-11 16:37:07 Huyễn Thú xuất hiện
+2025-07-11 16:37:07 Phi Tặc Vương xuất hiện
+2025-07-11 16:37:07Ảo Ảnh xuất hiện
+2025-07-11 16:37:07Ảo Ảnh xuất hiện
+2025-07-11 16:37:07 Long Thần xuất hiện
+2025-07-11 16:37:07 Long Thần xuất hiện
+2025-07-11 16:37:07 Đoạt Bảo Mã Tặc đã xuất hiện
+2025-07-11 16:37:07 Đoạt Bảo tặc
+2025-07-11 16:42:08 Huyễn Thú xuất hiện
+2025-07-11 16:42:08 Phi Tặc Vương xuất hiện
+2025-07-11 16:42:08Ảo Ảnh xuất hiện
+2025-07-11 16:42:08 Long Thần xuất hiện
+2025-07-11 16:47:08 Huyễn Thú xuất hiện
+2025-07-11 16:47:08 Phi Tặc Vương xuất hiện
+2025-07-11 16:47:08Ảo Ảnh xuất hiện
+2025-07-11 16:47:08 Long Thần xuất hiện
+2025-07-11 16:52:08 Huyễn Thú xuất hiện
+2025-07-11 16:52:08 Phi Tặc Vương xuất hiện
+2025-07-11 16:52:08Ảo Ảnh xuất hiện
+2025-07-11 16:52:08 Long Thần xuất hiện
+2025-07-11 16:57:08 Huyễn Thú xuất hiện
+2025-07-11 16:57:08 Phi Tặc Vương xuất hiện
+2025-07-11 16:57:08Ảo Ảnh xuất hiện
+2025-07-11 16:57:08 Long Thần xuất hiện
+2025-07-11 17:02:08 Huyễn Thú xuất hiện
+2025-07-11 17:02:08 Phi Tặc Vương xuất hiện
+2025-07-11 17:02:08Ảo Ảnh xuất hiện
+2025-07-11 17:02:08 Long Thần xuất hiện
+2025-07-11 17:07:07 Sơn Đại Vương xuất hiện
+2025-07-11 17:07:09 Huyễn Thú xuất hiện
+2025-07-11 17:07:09 Phi Tặc Vương xuất hiện
+2025-07-11 17:07:09Ảo Ảnh xuất hiện
+2025-07-11 17:07:09 Long Thần xuất hiện
+2025-07-11 17:12:08 Sơn Đại Vương xuất hiện
+2025-07-11 17:12:09 Huyễn Thú xuất hiện
+2025-07-11 17:12:09 Phi Tặc Vương xuất hiện
+2025-07-11 17:12:09Ảo Ảnh xuất hiện
+2025-07-11 17:12:09 Long Thần xuất hiện
+2025-07-11 17:17:08 Sơn Đại Vương xuất hiện
+2025-07-11 17:17:09 Huyễn Thú xuất hiện
+2025-07-11 17:17:09 Phi Tặc Vương xuất hiện
+2025-07-11 17:17:09Ảo Ảnh xuất hiện
+2025-07-11 17:17:09 Long Thần xuất hiện
+2025-07-11 17:22:08 Sơn Đại Vương xuất hiện
+2025-07-11 17:22:09 Huyễn Thú xuất hiện
+2025-07-11 17:22:09 Phi Tặc Vương xuất hiện
+2025-07-11 17:22:09Ảo Ảnh xuất hiện
+2025-07-11 17:22:09 Long Thần xuất hiện
+2025-07-11 17:27:08 Sơn Đại Vương xuất hiện
+2025-07-11 17:27:09 Huyễn Thú xuất hiện
+2025-07-11 17:27:09 Phi Tặc Vương xuất hiện
+2025-07-11 17:27:09Ảo Ảnh xuất hiện
+2025-07-11 17:27:09 Long Thần xuất hiện
+2025-07-11 17:32:09 Sơn Đại Vương xuất hiện
+2025-07-11 17:32:09 Huyễn Thú xuất hiện
+2025-07-11 17:32:09 Phi Tặc Vương xuất hiện
+2025-07-11 17:32:09Ảo Ảnh xuất hiện
+2025-07-11 17:32:09 Long Thần xuất hiện
+2025-07-11 17:37:09 Huyễn Thú xuất hiện
+2025-07-11 17:37:09 Phi Tặc Vương xuất hiện
+2025-07-11 17:37:09Ảo Ảnh xuất hiện
+2025-07-11 17:37:09 Long Thần xuất hiện
+2025-07-11 17:37:09 Sơn Đại Vương xuất hiện
+2025-07-11 17:42:09 Huyễn Thú xuất hiện
+2025-07-11 17:42:09 Phi Tặc Vương xuất hiện
+2025-07-11 17:42:09Ảo Ảnh xuất hiện
+2025-07-11 17:42:09 Long Thần xuất hiện
+2025-07-11 17:42:09 Sơn Đại Vương xuất hiện
+2025-07-11 17:47:09 Huyễn Thú xuất hiện
+2025-07-11 17:47:09 Phi Tặc Vương xuất hiện
+2025-07-11 17:47:09Ảo Ảnh xuất hiện
+2025-07-11 17:47:09 Long Thần xuất hiện
+2025-07-11 17:47:09 Sơn Đại Vương xuất hiện
+2025-07-11 17:52:10 Huyễn Thú xuất hiện
+2025-07-11 17:52:10 Phi Tặc Vương xuất hiện
+2025-07-11 17:52:10Ảo Ảnh xuất hiện
+2025-07-11 17:52:10 Long Thần xuất hiện
+2025-07-11 17:52:10 Sơn Đại Vương xuất hiện
+2025-07-11 18:08:32 Sơn Đại Vương xuất hiện
+2025-07-11 18:08:32 Huyễn Thú xuất hiện
+2025-07-11 18:08:32 Phi Tặc Vương xuất hiện
+2025-07-11 18:08:32Ảo Ảnh xuất hiện
+2025-07-11 18:08:32 Long Thần xuất hiện
+2025-07-11 18:08:32 Đoạt Bảo Mã Tặc đã xuất hiện
+2025-07-11 18:08:32 Đoạt Bảo tặc
+2025-07-11 18:08:32 Sơn Đại Vương xuất hiện
+2025-07-11 18:08:32 Sơn Đại Vương xuất hiện

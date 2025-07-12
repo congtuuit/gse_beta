@@ -408,9 +408,9 @@ void do_welcome2(object who, string arg)
 		send_user(me, "%c%c%w%s", ':', 3, who->get_char_picid(), result);
 		return;
 	}
-	if (present("Vật Phẩm Quý Bấu", me, 1, MAX_CARRY))
+	if (present("Vật phẩm quý giá", me, 1, MAX_CARRY))
 	{
-		result = sprintf("%s:\n    Ngươi đang mang theo Vật Phẩm Quý Bấu, không thể di chuyển tới bất kỳ bản đồ nào thông qua ta.\n", who->get_name());
+		result = sprintf("%s:\n    Ngươi đang mang theo Vật phẩm quý giá, không thể di chuyển tới bất kỳ bản đồ nào thông qua ta.\n", who->get_name());
 		result += ESC "Rời khỏi\nCLOSE";
 		send_user(me, "%c%c%w%s", ':', 3, who->get_char_picid(), result);
 		return;

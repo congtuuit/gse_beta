@@ -30,6 +30,7 @@ void create()
 		return;
 
 	call_out("min2_callout", (time() + MIN2) / MIN2 * MIN2 - time());
+	
 	// call_out("min3_callout", (time() + MIN3) / MIN3 * MIN3 - time());
 
 	call_out("hour_callout", (time() + HOUR) / HOUR * HOUR - time() + 15);	   // 滞后 15 秒
@@ -48,12 +49,13 @@ void create()
 	// Ap tieu
 	"/sys/task/escort"->do_nothing();
 
-	//"/sys/party/defence"->check_time();
+	"/sys/party/defence"->check_time();
 
 	// Cổ mộ
 	"/sys/party/gumu_check_time"->check_time();
 
 	//"sys/party/tet"->check_time();
+
 	"sys/party/valentine"->check_time();
 	"sys/party/haiqua"->check_time();
 	"sys/party/christmas"->check_time();
@@ -65,16 +67,19 @@ void create()
 
 	//"/sys/party/phando"->check_time();
 	//"sys/party/pvp"->check_time();
+
 	"sys/party/autoNapKNB"->check_time();
+
 	// "sys/party/chat_channel"->check_time();
 	// "sys/party/org_chat_channel"->check_time();
-
 	//"sys/party/autoreboot"->check_time();
 
 	// ngu ho tuong
 	//"/sys/party/bossthegioi"->check_time();
+
 	"/sys/party/tongbaoyeu"->check_time();
 	"/sys/party/doatbaomatac"->check_time();
+	
 	"/sys/party/feizei"->check_time();
 	//"/sys/party/phitac"->check_time();
 }
@@ -200,6 +205,7 @@ void hour_callout()
 			log_file("users.dat", sprintf(" %d", count[i]));
 		log_file("users.dat", "\n");
 	}
+
 	if ("/sys/sys/id"->get_quit_count() > 0 || "/sys/sys/id"->get_reconnect_count() > 0 || "/sys/sys/id"->get_netdead_count() > 0 || "/sys/sys/id"->get_kick_count() > 0)
 	{
 		log_file("quit.dat", sprintf("normal:%d reconnect:%d netdead=%d kickout=%d\n", "/sys/sys/id"->get_quit_count(), "/sys/sys/id"->get_reconnect_count(), "/sys/sys/id"->get_netdead_count(), "/sys/sys/id"->get_kick_count()));
@@ -208,6 +214,7 @@ void hour_callout()
 		"/sys/sys/id"->set_netdead_count(0);
 		"/sys/sys/id"->set_kick_count(0);
 	}
+
 	check_org();
 }
 

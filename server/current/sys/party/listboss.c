@@ -55,6 +55,18 @@ void check_time()
 	object robber;
 
 	remove_call_out("check_time");
+
+	if (MAIN_D->get_test_mode() == 1) {
+		call_huyenthu();
+		call_PhiTacVuong();
+		call_boss_ao_canh();
+		call_rong();
+		call_thuong_nhan_bi_an();
+		generate_scum();
+		call_out("check_time", 60 * 5); // Lặp lại sau 1 phút khi test
+		return;
+	}
+
 	iTime = time();
 
 	mixTime = localtime(iTime);

@@ -1,7 +1,5 @@
-private
-object *Chat = ({});
-private
-object *Rumor = ({});
+private object *Chat = ({});
+private object *Rumor = ({});
 
 void add_chat(object who);
 void add_rumor(object who);
@@ -62,15 +60,23 @@ void sub_rumor(object who)
 
 void chat_channel(int id, string chat)
 {
+        object *channel_users;
+
         Chat -= ({0});
         if (sizeof(Chat))
         {
+
+
                 // Filter users by channel if channel_id is specified
                 if (id > 0 && CHANNEL_D)
                 {
-                        object *channel_users = CHANNEL_D->get_channel_users(id);
+
+                       channel_users  = CHANNEL_D->get_channel_users(id);
                         if (sizeof(channel_users))
                                 send_user(channel_users, "%c%c%d%s", 0x43, 1, id, chat);
+
+        log_file("_debug.txt", sprintf("LOG chat_channel size %s %s %d\n", short_time(), sizeof(channel_users), id));
+
                 }
                 else
                 {

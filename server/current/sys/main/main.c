@@ -6,6 +6,7 @@
 void SAVE_BINARY() {}
 
 int Region, Host, HostType;
+int TestMode = 1;
 
 int get_region() { return Region; }
 
@@ -138,6 +139,9 @@ int get_absolute_random_number()
 	result = ValidAbsoluteRandomNumber <= 0 ? random(MAX_NUMBER) + 1 : 0;
 	return result;
 }
+
+int get_test_mode() { return TestMode; }
+int set_test_mode(int v) { return TestMode = v; }
 
 void create()
 {

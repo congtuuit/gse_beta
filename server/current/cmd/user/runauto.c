@@ -8,253 +8,209 @@
 #include <npc.h>
 #include <skill.h>
 
-#define GET "cmd/std/get" 
+#define GET "cmd/std/get"
 
 string AUTO = "E100";
-
 int ON = 1;
 int OFF = 0;
 
-int removeTitle(object me);
-int addTitle(object me);
-int backHome(object me);
-
-int finMin(int *rangeArr) {
-	int i = 0, position = 0;
-	int min = 999999;
-
-	for (i = 0; i < sizeof(rangeArr); i++) {
-		if (rangeArr[i] < min){
-			min = rangeArr[i];
-			position = i;
-		}
-	}
-
-	return position;
-}
-
-object nearObject(object me) {
-	object targetNpc, map, * member, * all = ({}), * npc = ({});
-	object* item, who, * nObj, empty;
-
-	int z, x, y, p, max_x, max_y, x_me, y_me, range = 13;
-	int i, size, index = 0, *rangeArr = ({}), distanceX = 0, distanceY = 0;
-
-	z = get_z(me);
-	x_me = get_x(me);
-	y_me = get_y(me);
-
-	map = get_map_object(z);
-	if (!map) return 0;
-	reset_eval_cost();
-
-	z = map->get_id();  max_x = get_map_max_x(z);  max_y = get_map_max_y(z);
-
-	for (x = (x_me - range); x < (x_me + range); x += AREA_SIZE)
-	{
-		for (y = (y_me - range); y < (y_me + range + 5); y += AREA_SIZE)
-		{
-			if (have_scene_object(z, x, y, CHAR_TYPE, 1))
-			{
-				item = get_scene_object(z, x, y, CHAR_TYPE, 1);
-				for (i = 0, size = sizeof(item); i < size; i++)
-				{
-					if (who = item[i])
-					{
-						if (who->can_be_fighted(me)) 
-						{
-							//tell_user(me, ECHO"NPC: %s (%d, %d)", who->get_name(), get_x(who), get_y(who));
-							distanceX = abs(get_x(who) - x_me);
-							distanceY = abs(get_y(who) - y_me);
-							distanceX = distanceX * distanceX + distanceY * distanceY;
-
-							rangeArr += ({ distanceX });
-							npc += ({ who });
-						}
-					}
-				}
-			}
-		}
-	}
-
-	index = finMin(rangeArr);
-
-	if (sizeof(npc) == 0) {
-		return empty;
-	}
-
-	if (index >= 0 && sizeof(npc) > 1) {
-
-		return npc[index];
-		
-	} else {
-		return empty;
-	}
-}
-
-int getItemAround(object me) 
+int findMinIndex(int *arr, int size)
 {
-	object targetNpc, map, * member, * all = ({}), * npc = ({});
-	object* item, _thisItem, * nObj, empty;
+	int i, min = arr[0], pos = 0;
+	for (i = 1; i < size; i++)
+		if (arr[i] < min)
+		{
+			min = arr[i];
+			pos = i;
+		}
+	return pos;
+}
 
-	int z, x, y, p, max_x, max_y, x_me, y_me, range = 8;
-	int i, size, index = 0, *rangeArr = ({}), distanceX = 0, distanceY = 0;
+object nearObject(object me)
+{
+	object *objs, who, best = 0;
+	int i, sz, x_me, y_me, bestDist, dist, my_channel;
 
-	z = get_z(me);
+	objs = get_range_object_2(me, 20, CHAR_TYPE);
 	x_me = get_x(me);
 	y_me = get_y(me);
+	bestDist = 999999;
+	my_channel = me->get_channel();
+	sz = sizeof(objs);
 
-	if(!z)
+	for (i = 0; i < sz; i++)
 	{
+		who = objs[i];
+		if (!objectp(who))
+			continue;
+
+		if ((who->is_user() || who->is_player()))
+			continue;
+
+		if (who->get_channel() != my_channel)
+			continue;
+
+		if (!who->can_be_fighted(me))
+			continue;
+
+		dist = (get_x(who) - x_me) * (get_x(who) - x_me) + (get_y(who) - y_me) * (get_y(who) - y_me);
+		if (dist < bestDist)
+		{
+			bestDist = dist;
+			best = who;
+			if (dist == 0)
+				break;
+		}
+	}
+	return best;
+}
+
+int getItemAround(object me)
+{
+	object *items, best = 0;
+	int i, sz, x_me, y_me, dist, bestDist;
+
+	items = get_range_object_2(me, 8, ITEM_TYPE);
+	x_me = get_x(me);
+	y_me = get_y(me);
+	bestDist = 999999;
+	sz = sizeof(items);
+
+	for (i = 0; i < sz; i++)
+	{
+		if (!objectp(items[i]))
+			continue;
+		dist = (get_x(items[i]) - x_me) * (get_x(items[i]) - x_me) + (get_y(items[i]) - y_me) * (get_y(items[i]) - y_me);
+		if (dist < bestDist)
+		{
+			bestDist = dist;
+			best = items[i];
+		}
+	}
+
+	if (objectp(best))
+	{
+		tell_user(me, ECHO "Nhặt vật phẩm: %s", best->get_name());
+		GET->main(me, sprintf("%d %d", get_x(best), get_y(best)));
+	}
+	return 1;
+}
+
+int autoRecall(object me)
+{
+	mapping throttle = ([]);
+	int now, z, x, y, p, target_id;
+	string dir;
+	object target;
+
+	now = time();
+
+	if (throttle[me] && now - throttle[me] < 2)
+		return 1;
+	throttle[me] = now;
+
+	if (me->get_save_2("autoFarm") - time() < 0)
+	{
+		me->set_2("autoFarm", OFF);
+		__FILE__->removeTitle(me);
+		__FILE__->backHome(me);
 		return 0;
 	}
 
-	map = get_map_object(z);
-	if (!map) return 0;
-	reset_eval_cost();
+	if (me->get_2("autoFarm") != ON)
+		return 0;
 
-	z = map->get_id();  max_x = get_map_max_x(z);  max_y = get_map_max_y(z);
+	__FILE__->getItemAround(me);
 
-	for (x = (x_me - range); x < (x_me + range); x += AREA_SIZE)
+	target = me->get_2("targetNPC");
+	if (objectp(target) && !target->is_die())
 	{
-		for (y = (y_me - range); y < (y_me + range + 5); y += AREA_SIZE)
+		// log_file("_debug.txt", sprintf("LOG autoRecall  11 %s\n", short_time()));
+
+		if (!me->is_fighting(target))
 		{
-			if (have_scene_object(z, x, y, ITEM_TYPE, 1))
-			{
-				item = get_scene_object(z, x, y, ITEM_TYPE, 1);
-				for (i = 0, size = sizeof(item); i < size; i++)
-				{
-					if (_thisItem = item[i])
-					{
-						tell_user(me, ECHO"Item: %s (%d, %d)", _thisItem->get_name(), get_x(_thisItem), get_y(_thisItem));
-						GET->main(me,sprintf("%d %d", get_x(_thisItem), get_y(_thisItem)));
-					}
-				}
-			}
+			// log_file("_debug.txt", sprintf("LOG autoRecall  111 %s\n", short_time()));
+
+			me->start_fight(target);
+			me->to_front_xy(get_x(target), get_y(target));
 		}
+		call_out("autoRecall", 2, me);
+		return 1;
 	}
 
-	return 1;
-} 
+	target = nearObject(me);
 
-int autoRecall(object me) {
-	object targetNpc, map, * member, * all = ({}), * npc = ({}), oldNpc;
-	object* item, who, * nObj;
-
-	int z, x, y, p, max_x, max_y, x_me, y_me, range = 10, d, walk;
-	int i, size;
-	int  x0, y0, dx, dy;
-
-	int currentStatus = me->get_2("autoFarm");
-	string cmd="";
-
-	//Timeout
-	if (me->get_save_2("autoFarm") - time() < 0) 
+	if (objectp(target) && !target->is_die())
 	{
-		me->set_2("autoFarm", OFF);
-		removeTitle(me);
-		backHome(me);
+		// log_file("_debug.txt", sprintf("LOG autoRecall  22 %s\n", short_time()));
+
+		target_id = getoid(target);
+		z = get_z(target);
+		x = get_x(target);
+		y = get_y(target);
+		p = get_valid_xy(z, x, y, IS_CHAR_BLOCK);
+		if (p)
+		{
+			x = p / 1000;
+			y = p % 1000;
+
+			me->add_to_scene(z, x, y, 3); // COMMENT: Dịch chuyển tức thời
+		}
+
+		// log_file("_debug.txt", sprintf("LOG autoRecall  222 %s\n", short_time()));
+
+		tell_user(me, ECHO "Tấn công: %s (%d,%d) ID %x", target->get_name(), x, y, target_id);
+
+		me->start_fight(target);
+		me->set_2("targetNPC", target);
+
+		call_out("autoRecall", 2, me);
+		return 1;
+	}
+	else
+	{
+		// log_file("_debug.txt", sprintf("LOG autoRecall KHÔNG TÌM THẤY  2 %s\n", short_time()));
 	}
 
-	if (currentStatus == ON) {
-		remove_call_out("autoRecall");
-		getItemAround(me);
-
-		targetNpc = me->get_2("targetNPC");
-		if (targetNpc && !targetNpc->is_die()) {
-			me->start_fight(targetNpc);
-			call_out("autoRecall", 3, me);
-		}
-		else {
-			me->delete_2("targetNPC");
-		}
-
-		oldNpc = me->get_2("targetNPC");
-		if (oldNpc && !oldNpc->is_die())
-		{
-			me->start_fight(targetNpc);
-			me->to_front_xy(get_x(targetNpc), get_y(targetNpc));
-
-			call_out("autoRecall", 3, me);
-			return 1;
-		}
-
-		targetNpc = nearObject(me);
-		if (targetNpc && !targetNpc->is_die()) 
-		{
-			z = get_z(targetNpc);
-			x = get_x(targetNpc);
-			y = get_y(targetNpc);
-
-			p = get_valid_xy(z, x, y, IS_CHAR_BLOCK);
-			if (p)
-			{
-				x = p / 1000;  y = p % 1000;
-				me->add_to_scene(z, x, y, 3);
-			}
-
-			me->start_fight(targetNpc);
-			me->set_2("targetNPC", targetNpc);
-			call_out("autoRecall", 1, me);
-
-			tell_user(me, ECHO"Tấn công mục tiêu: %s (%d, %d) ID %x", targetNpc->get_name(), get_x(targetNpc), get_y(targetNpc), getoid(targetNpc));
-			return 1;
-		}
-
-		if(!targetNpc)
-		{
-			getItemAround(me);
-			call_out("autoRecall", 3, me);
-		}
-	}
-
+	call_out("autoRecall", 3, me);
 	return 1;
 }
 
 int main(object me, string arg)
 {
-	object map, * member, * all = ({}), * npc = ({});
-	object* item, who, * nObj;
-	string cName, titleAuto;
-
-	int z, x, y, p, max_x, max_y;
-	int i, size, color = 0;
-	int type;
-
-	if (arg) {
-
-		if (arg == "auto") {
-			me->set_2("autoFarm", ON);
-			if (me->get_save_2("autoFarm") - time() > 0) {
-				getItemAround(me);
-				autoRecall(me);
-				addTitle(me);
-			}
-
-			return 1;
+	if (arg == "auto")
+	{
+		me->set_2("autoFarm", ON);
+		if (me->get_save_2("autoFarm") - time() > 0)
+		{
+			__FILE__->getItemAround(me);
+			__FILE__->autoRecall(me);
+			__FILE__->addTitle(me);
 		}
-
-		if (arg == "offauto") {
-			me->set_2("autoFarm", OFF);
-			removeTitle(me);
-			return 1;
+		else
+		{
+			notify("Bạn đã hết thời gian sử dụng Auto!");
 		}
+		return 1;
+	}
 
+	if (arg == "offauto")
+	{
+		me->set_2("autoFarm", OFF);
+		__FILE__->removeTitle(me);
+		return 1;
 	}
 
 	return 1;
 }
 
-
 int addTitle(object me)
 {
-	string cName;
-	cName = TITLE_D->get_titlename(AUTO);
+	string cName = TITLE_D->get_titlename(AUTO);
 	send_user(me, "%c%s", '!', "" + cName);
 	me->add_title(AUTO);
 	me->show_title(AUTO);
 	MAILBOX->sys_mail(me->get_id(), me->get_number(), HIR + cName);
-
 	return 1;
 }
 
@@ -266,7 +222,6 @@ int removeTitle(object me)
 	me->hide_title(AUTO);
 	me->delete_title(AUTO);
 	MAILBOX->sys_mail(me->get_id(), me->get_number(), "Ngưng tự động đánh");
-
 	return 1;
 }
 
@@ -274,9 +229,8 @@ int backHome(object me)
 {
 	removeTitle(me);
 	me->set_login_flag(2);
-    set_invisible(me, 1);
-    set_effect(me, EFFECT_USER_LOGIN, 4);
-    me->add_to_scene(80, 293 + random(10), 186 + random(10));
-
+	set_invisible(me, 1);
+	set_effect(me, EFFECT_USER_LOGIN, 4);
+	me->add_to_scene(80, 293 + random(10), 186 + random(10));
 	return 1;
 }

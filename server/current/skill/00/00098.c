@@ -92,15 +92,18 @@ void do_look(object me)
 	string result;
 
 	result = sprintf(PF_NAME + ":\nVui lòng chọn tính năng cần hỗ trợ!\n");
-	result += sprintf(ESC "Trang phục\nsupport ? 1\n");
-	result += sprintf(ESC "Hiệu ứng\nsupport ? 2\n");
-	result += sprintf(ESC "Ẩn/hiện kỹ năng nghề\nsupport ? 3\n");
-	result += sprintf(ESC "Sử dụng Kho từ xa\nsupport ? 4\n");
-	result += sprintf(ESC HIY"Danh hiệu\nsupport ? 5\n");
-	result += sprintf(ESC "Hoạt động hôm nay\ntimeparty\n");
-	result += sprintf(ESC "Tất cả hoạt động\ntimeparty all\n");
-	result += sprintf(ESC "Mốc nạp\nmocnap\n");
-	result += sprintf(ESC "Nhận thưởng mốc nạp\nmocnap @\n");
+	result += sprintf(ESC "Bật AutoFarm\nrunauto auto\n");
+	result += sprintf(ESC "Tắt AutoFarm\nrunauto offauto\n");
+
+	// result += sprintf(ESC "Trang phục\nsupport ? 1\n");
+	// result += sprintf(ESC "Hiệu ứng\nsupport ? 2\n");
+	// result += sprintf(ESC "Ẩn/hiện kỹ năng nghề\nsupport ? 3\n");
+	// result += sprintf(ESC "Sử dụng Kho từ xa\nsupport ? 4\n");
+	// result += sprintf(ESC HIY"Danh hiệu\nsupport ? 5\n");
+	// result += sprintf(ESC "Hoạt động hôm nay\ntimeparty\n");
+	// result += sprintf(ESC "Tất cả hoạt động\ntimeparty all\n");
+	// result += sprintf(ESC "Mốc nạp\nmocnap\n");
+	// result += sprintf(ESC "Nhận thưởng mốc nạp\nmocnap @\n");
 	result += sprintf(ESC "Đóng.\nCLOSE\n");
 	send_user(me, "%c%c%w%s", ':', 3, 0, result);
 }

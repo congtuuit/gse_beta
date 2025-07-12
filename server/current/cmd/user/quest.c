@@ -1,6 +1,7 @@
 
 #include <ansi.h>
 #include <task.h>
+
 int quest_other(object me, string arg);
 
 int do_quest_camnang(object me, int typeQuest);
@@ -457,118 +458,119 @@ int quest_other(object me, string arg)
 
 		return 1;
 	}
+}
 
-	int do_quest_camnang(object me, int typeQuest)
+int do_quest_camnang(object me, int typeQuest)
+{
+
+	string result = "", cmd = "";
+	int isOK = 0, i;
+	object item;
+
+	switch (typeQuest)
 	{
+	case 1:
+		result = sprintf(" %s :\n Tên " HIR "Tổng Bảo Tiểu Yêu" NOR " đang gây rối loạn nhân gian. Mau đi tiêu diệt hắn...\n" ESC "Nhận nhiệm vụ\nquest camnang %d\n" ESC "Đóng lại\nCLOSE\n", "Cẩm nang", typeQuest * 100);
+		break;
+	case 100:
+		me->delete_save("qcamnang100");
+		send_user(me, "%c%s", '!', "Ngươi đã nhận được nhiệm vụ " HIR "Cẩm nang - Tổng bảo tiểu yêu!");
+		send_user(me, "%c%c%c%w%s", 0x51, 2, 1, TID_NEWITEMS, "Cẩm nang");
+		send_user(me, "%c%c%c%w%w%s", 0x51, 2, 2, TID_NEWITEMS, typeQuest + 1, "Tổng bảo tiểu yêu");
 
-		string result = "", cmd = "";
-		int isOK = 0, i;
-		object item;
+		me->set_save("qcamnang", typeQuest + 1);
+		break;
 
-		switch (typeQuest)
+	case 2:
+		result = sprintf(" %s :\n Nhiệm vụ thu thập. Nghe nói Yên Quốc sản xuất " HIR "Cuốc Tinh Thiết" NOR " rất thích hợp để làm việc. Nhờ ngươi đi mua giúp ta một chuyến rồi.\n" ESC "Nhận nhiệm vụ\nquest camnang %d\n" ESC "Đóng lại\nCLOSE\n", "Cẩm nang", typeQuest * 100);
+		break;
+	case 200:
+
+		send_user(me, "%c%s", '!', "Ngươi đã nhận được nhiệm vụ " HIR "Cẩm nang - Cuốc Tinh Thiết");
+		send_user(me, "%c%c%c%w%s", 0x51, 2, 1, TID_NEWITEMS, "Cẩm nang");
+		send_user(me, "%c%c%c%w%w%s", 0x51, 2, 2, TID_NEWITEMS, typeQuest + 1, "Cuốc Tinh Thiết");
+
+		me->set_save("qcamnang", typeQuest + 1);
+		break;
+
+	case 3:
+		result = sprintf(" %s :\n Quyên góp 50000 lượng xây dựng lại Thôn\n" ESC "Nhận nhiệm vụ\nquest camnang %d\n" ESC "Đóng lại\nCLOSE\n", "Cẩm nang", typeQuest * 100);
+		break;
+	case 300:
+		me->set_save("qcamnang", typeQuest + 1);
+		break;
+
+	case 101:
+	case 201:
+	case 301:
+		result = sprintf(" %s :\n Ngươi đã hoàn tất nhiệm vụ chưa?.\n" ESC "Hoàn thành nhiệm vụ\nquest camnang %d\n" ESC "Đóng lại\nCLOSE\n", "Cẩm nang", typeQuest + 1);
+		break;
+
+	case 102:
+		if (USER_INVENTORY_D->get_free_count(me) < 1)
 		{
-		case 1:
-			result = sprintf(" %s :\n Tên " HIR "Tổng Bảo Tiểu Yêu" NOR " đang gây rối loạn nhân gian. Mau đi tiêu diệt hắn...\n" ESC "Nhận nhiệm vụ\nquest camnang %d\n" ESC "Đóng lại\nCLOSE\n", "Cẩm nang", typeQuest * 100);
-			break;
-		case 100:
-			me->delete_save("qcamnang100");
-			send_user(me, "%c%s", '!', "Ngươi đã nhận được nhiệm vụ " HIR "Cẩm nang - Tổng bảo tiểu yêu!");
-			send_user(me, "%c%c%c%w%s", 0x51, 2, 1, TID_NEWITEMS, "Cẩm nang");
-			send_user(me, "%c%c%c%w%w%s", 0x51, 2, 2, TID_NEWITEMS, typeQuest + 1, "Tổng bảo tiểu yêu");
+			notify("Hành trang không đủ 1 chỗ trống");
+			return;
+		}
 
-			me->set_save("qcamnang", typeQuest + 1);
-			break;
-
-		case 2:
-			result = sprintf(" %s :\n Nhiệm vụ thu thập. Nghe nói Yên Quốc sản xuất " HIR "Cuốc Tinh Thiết" NOR " rất thích hợp để làm việc. Nhờ ngươi đi mua giúp ta một chuyến rồi.\n" ESC "Nhận nhiệm vụ\nquest camnang %d\n" ESC "Đóng lại\nCLOSE\n", "Cẩm nang", typeQuest * 100);
-			break;
-		case 200:
-
-			send_user(me, "%c%s", '!', "Ngươi đã nhận được nhiệm vụ " HIR "Cẩm nang - Cuốc Tinh Thiết");
-			send_user(me, "%c%c%c%w%s", 0x51, 2, 1, TID_NEWITEMS, "Cẩm nang");
-			send_user(me, "%c%c%c%w%w%s", 0x51, 2, 2, TID_NEWITEMS, typeQuest + 1, "Cuốc Tinh Thiết");
-
-			me->set_save("qcamnang", typeQuest + 1);
-			break;
-
-		case 3:
-			result = sprintf(" %s :\n Quyên góp 50000 lượng xây dựng lại Thôn\n" ESC "Nhận nhiệm vụ\nquest camnang %d\n" ESC "Đóng lại\nCLOSE\n", "Cẩm nang", typeQuest * 100);
-			break;
-		case 300:
-			me->set_save("qcamnang", typeQuest + 1);
-			break;
-
-		case 101:
-		case 201:
-		case 301:
-			result = sprintf(" %s :\n Ngươi đã hoàn tất nhiệm vụ chưa?.\n" ESC "Hoàn thành nhiệm vụ\nquest camnang %d\n" ESC "Đóng lại\nCLOSE\n", "Cẩm nang", typeQuest + 1);
-			break;
-
-		case 102:
-			if (USER_INVENTORY_D->get_free_count(me) < 1)
+		if (typeQuest == 102 && isOK == 0)
+		{
+			if (me->get_save("qcamnang100") >= 1)
 			{
-				notify("Hành trang không đủ 1 chỗ trống");
+				isOK = 1;
+			}
+		}
+	case 202:
+		if (typeQuest == 202 && isOK == 0)
+		{
+			if (TASK_LEGEND_D->check_task_item1(me, "Cái Cuốc Tinh Thiết", 1))
+			{
+				isOK = 1;
+			}
+		}
+	case 302:
+
+		if (typeQuest == 302 && isOK == 0)
+		{
+			if (me->get_cash() < 50000)
+			{
+				send_user(me, "%c%s", '!', "Bạn không có đủ 50.000 lượng.");
 				return;
 			}
 
-			if (typeQuest == 102 && isOK == 0)
-			{
-				if (me->get_save("qcamnang100") >= 1)
-				{
-					isOK = 1;
-				}
-			}
-		case 202:
-			if (typeQuest == 202 && isOK == 0)
-			{
-				if (TASK_LEGEND_D->check_task_item1(me, "Cái Cuốc Tinh Thiết", 1))
-				{
-					isOK = 1;
-				}
-			}
-		case 302:
-
-			if (typeQuest == 302 && isOK == 0)
-			{
-				if (me->get_cash() < 50000)
-				{
-					send_user(me, "%c%s", '!', "Bạn không có đủ 50.000 lượng.");
-					return;
-				}
-
-				me->add_cash(-50000);
-				isOK = 1;
-			}
-
-			// bonus nhiệm vụ
-			if (isOK == 1)
-			{
-				TASK_LEGEND_D->check_task_item1(me, "Cẩm nang nhiệm vụ", 1);
-				tell_user(me, ECHO "Hoàn thành nhiệm vụ, EXP +9999, Tiềm năng +124");
-				me->delete_save("qcamnang");
-				me->add_exp(9999);
-				me->add_potential(124);
-
-				me->add_save("camnangTotal", 1);
-
-				if (random(100) < 40)
-				{
-					item = new ("/item/tuilinhthach/ngaunhien/2");
-					if (item)
-					{
-						send_user(me, "%c%s", '!', "Bạn nhận được " + item->get_name());
-						i = item->move2(me);
-						item->add_to_user(i);
-						USER_D->user_channel(sprintf(HIG "Chúc mừng " HIR "%s" HIG " hoàn thành nhiệm vụ từ Cẩm nang may mắn nhận được " HIR "%s ", me->get_name(), item->get_name()));
-					}
-				}
-			}
-
-			break;
+			me->add_cash(-50000);
+			isOK = 1;
 		}
 
-		if (isOK != 1)
+		// bonus nhiệm vụ
+		if (isOK == 1)
 		{
-			send_user(me, "%c%c%w%s", ':', 3, 6008, result);
+			TASK_LEGEND_D->check_task_item1(me, "Cẩm nang nhiệm vụ", 1);
+			tell_user(me, ECHO "Hoàn thành nhiệm vụ, EXP +9999, Tiềm năng +124");
+			me->delete_save("qcamnang");
+			me->add_exp(9999);
+			me->add_potential(124);
+
+			me->add_save("camnangTotal", 1);
+
+			if (random(100) < 40)
+			{
+				item = new("/item/tuilinhthach/ngaunhien/2");
+				if (item)
+				{
+					send_user(me, "%c%s", '!', "Bạn nhận được " + item->get_name());
+					i = item->move2(me);
+					item->add_to_user(i);
+					USER_D->user_channel(sprintf(HIG "Chúc mừng " HIR "%s" HIG " hoàn thành nhiệm vụ từ Cẩm nang may mắn nhận được " HIR "%s ", me->get_name(), item->get_name()));
+				}
+			}
 		}
+
+		break;
 	}
+
+	if (isOK != 1)
+	{
+		send_user(me, "%c%c%w%s", ':', 3, 6008, result);
+	}
+}

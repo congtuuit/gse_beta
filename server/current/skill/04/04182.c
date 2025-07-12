@@ -82,9 +82,9 @@ int main( object me, object who, int x, int y, string arg )
                         printf( ECHO "带着钱票不能使用\"" PF_NAME "\"." );
                         return 1;
                 }
-                if( present("Vật Phẩm Quý Bấu", me, 1, MAX_CARRY) )
+                if( present("Vật phẩm quý giá", me, 1, MAX_CARRY) )
                 {
-                        printf( ECHO "Mang theo Vật Phẩm Quý Bấu không thể sử dụng \"" PF_NAME "\"." );
+                        printf( ECHO "Mang theo Vật phẩm quý giá không thể sử dụng \"" PF_NAME "\"." );
                         return 1;
                 }
                 if( objectp( who = me->get_quest("escort.robber#") ) && who->is_escort_robber() )    // 寻找蒙面人

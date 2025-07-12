@@ -3,23 +3,20 @@
  * 用户新登录模块
  */
 #include <task.h>
-// 函数:生成二进制码
 void SAVE_BINARY() {}
 
 void add_pet(object who);
 void add_item(object me);
 
-// 函数:新登录准备
-void new_login_1(object me, string passwd, string name) // 输入帐号密码通过，但找不到用户资料
+void new_login_1(object me, string passwd, string name) 
 {
-	send_user(me, "%c%c", 0x49, 0x08); // 无此用户(打开新登录界面)
+	send_user(me, "%c%c", 0x49, 0x08);
 	db_user_clear(me, me->get_id());
 	destruct(me);
 	return;
 }
 
-// 函数:新登录处理
-void new_login_2(object me, string id, string code, string name, int gender, int order) // 输入新登录资料:帐号、密码、姓名、性别、序号
+void new_login_2(object me, string id, string code, string name, int gender, int order)
 {
 	string lowId, passwd;
 
@@ -76,7 +73,6 @@ void new_login_2(object me, string id, string code, string name, int gender, int
 	me->user_authentic_callout_2(passwd, name, gender, order);
 }
 
-// 函数:本地用户校验
 void do_user_exist_2(object me, string passwd, string name, int gender, int order)
 {
 	object *user;
